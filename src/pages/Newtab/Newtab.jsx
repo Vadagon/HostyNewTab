@@ -1,7 +1,12 @@
+import '../../assets/styles/tailwind.css';
 import React from 'react';
 import logo from '../../assets/img/logo.svg';
-import './Newtab.css';
-import './Newtab.scss';
+import './index.scss';
+import Sample from '../../components/Sample/Sample'
+
+
+
+
 
 const Newtab = () => {
   return (
@@ -17,12 +22,13 @@ const Newtab = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React!
+          Learn React! <Sample name="Sara" />
         </a>
-        <h6>The color of this paragraph is defined using SASS.</h6>
+        <h6 className="text-red-500">color.</h6>
       </header>
     </div>
   );
 };
 
 export default Newtab;
+
