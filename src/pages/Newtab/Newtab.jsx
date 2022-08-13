@@ -1,34 +1,30 @@
-import '../../assets/styles/tailwind.css';
-import React from 'react';
-import logo from '../../assets/img/logo.svg';
+import React, { useState } from 'react';
 import './index.scss';
-import Sample from '../../components/Sample/Sample'
-
-
-
-
-
+import Draggable from 'react-draggable';
+import Navbar from './components/navbar';
 const Newtab = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/pages/Newtab/Newtab.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React! <Sample name="Sara" />
-        </a>
-        <h6 className="text-red-500">color.</h6>
-      </header>
+      <Navbar />
+      <Draggable
+        axis="both"
+        handle=".handle"
+        defaultPosition={{ x: 0, y: 0 }}
+        position={null}
+        grid={[25, 25]}
+        scale={1}
+        // cancel={'.navbar'}
+        // onStart={this.handleStart}
+        // onDrag={this.handleDrag}
+        // onStop={this.handleStop}
+      >
+        <div className="bg-white w-10">
+          <div className="handle">Drag from here</div>
+          <div>This readme is really dragging on...</div>
+        </div>
+      </Draggable>
     </div>
   );
 };
 
 export default Newtab;
-
