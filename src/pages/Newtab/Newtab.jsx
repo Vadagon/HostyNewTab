@@ -13,6 +13,7 @@ const Newtab = () => {
         position={null}
         grid={[25, 25]}
         scale={1}
+        bounds={'body'}
         // cancel={'.navbar'}
         // onStart={this.handleStart}
         // onDrag={this.handleDrag}

@@ -1,10 +1,24 @@
 import React, { useState } from 'react';
 import logo from '../../../assets/img/logo.svg';
 import burger from '../../../assets/img/burger.svg';
-import DraggableList from 'react-draggable-lists';
 import DraggableListItem from './draggable_list_item';
+import { SortableContainer, SortableElement } from 'react-sortable-hoc';
 const Navbar = () => {
-  const listItems = ['Entertainment', 'Private Time'];
+  const SortableItem = SortableElement(({ value }) => (
+    <DraggableListItem item={value} />
+  ));
+
+  const SortableList = SortableContainer(({ items }) => {
+    return (
+      <ul>
+        {items.map((value, index) => (
+          <SortableItem key={`item-${value}`} index={index} value={value} />
+        ))}
+      </ul>
+    );
+  });
+  const listItems = ['EntertainmentEntertainment', 'Private Time'];
+
   return (
     <div className="navbar ">
       <div className="nav_header flex flex-none w-[220px] justify-between">
@@ -16,11 +30,17 @@ const Navbar = () => {
         </div>
       </div>
       <div className="nav_content ">
-        <DraggableList width={220} height={60} rowSize={1}>
+        {/* <DraggableList width={220} height={60} rowSize={1}>
           {listItems.map((item, index) => (
             <DraggableListItem item={item} index={index} />
           ))}
-        </DraggableList>
+        </DraggableList> */}
+        <SortableList
+          items={listItems}
+          onSortEnd={(e) => {
+            console.log(e);
+          }}
+        />
       </div>
       <div className="nav_footer absolute bottom-0">
         <div className="bg-blue-400 cursor-pointer h-[50px] flex justify-center items-center w-[220px] text-white">

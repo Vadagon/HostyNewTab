@@ -20,7 +20,8 @@
     "react-draggable-lists": "^1.0.1",
     "react-gesture-responder": "^2.1.0",
     "react-grid-dnd": "^2.1.2",
-    "react-hot-loader": "^4.13.0"
+    "react-hot-loader": "^4.13.0",
+    "react-sortable-hoc": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
