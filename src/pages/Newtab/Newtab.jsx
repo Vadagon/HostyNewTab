@@ -4,9 +4,7 @@ import amazon from '../../assets/img/amazon.png';
 import search from '../../assets/img/search.svg';
 import Draggable from 'react-draggable';
 import Navbar from './components/navbar';
-import Modal from './components/modal';
 const Newtab = () => {
-  var [modal, openModal] = useState(false);
   return (
     <div className="App">
       <Navbar />
@@ -67,11 +65,7 @@ const Newtab = () => {
           <div className="text-white text-sm">Amazon</div>
         </div>
       </Draggable>
-      <div
-        onClick={() => {
-          openModal(!modal);
-        }}
-      >
+      <div>
         <Draggable
           axis="both"
           handle=".handle"
@@ -90,10 +84,6 @@ const Newtab = () => {
           </div>
         </Draggable>
       </div>
-
-      <Modal open={modal} openModal={openModal}>
-        <div className="text-white bg-slate-800">asdadssad</div>
-      </Modal>
     </div>
   );
 };
