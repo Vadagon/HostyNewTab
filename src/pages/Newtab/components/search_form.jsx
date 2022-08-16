@@ -26,7 +26,7 @@ const SearchForm = (props) => {
         type={'text'}
         placeholder="Search the Web..."
         className={
-          'rounded-md  w-full text-base h-[60px]  p-4 bg-[#3D3D3DFF] text-[#1deee2] placeholder:text-white transition-all duration-150'
+          'rounded-md  w-full text-base h-[60px]  p-4 bg-[#3D3D3DFF] text-white placeholder:text-gray-300 transition-all duration-150'
         }
       />
     </form>
