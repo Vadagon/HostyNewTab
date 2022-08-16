@@ -12,6 +12,7 @@ import {
 const Navbar = () => {
   var [modal, openModal] = useState(false);
   var [modalBookmarks, openModalBookmarks] = useState(false);
+  var [modalAddFolder, openModalAddFolder] = useState(false);
   const [listItems, changeOrder] = useState([
     'Private Time',
     'EntertainmentEntertainment',
@@ -73,7 +74,12 @@ const Navbar = () => {
           />
         </div>
         <div className="nav_footer absolute bottom-0">
-          <div className="bg-blue-400 cursor-pointer h-[50px] flex justify-center items-center w-[220px] text-white">
+          <div
+            onClick={() => {
+              openModalAddFolder(!modalAddFolder);
+            }}
+            className="bg-blue-400 cursor-pointer h-[50px] flex justify-center items-center w-[220px] text-white"
+          >
             Add Folder
           </div>
         </div>
@@ -85,6 +91,9 @@ const Navbar = () => {
         <div className="text-white bg-slate-800">
           Are you sure you want to open all bookmarks?
         </div>
+      </Modal>
+      <Modal open={modalAddFolder} openModal={openModalAddFolder}>
+        <div className="text-white bg-slate-800">settings</div>
       </Modal>
     </div>
   );
