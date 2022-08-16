@@ -2,8 +2,19 @@ import React, { useState } from 'react';
 import logo from '../../../assets/img/logo.svg';
 import burger from '../../../assets/img/burger.svg';
 import DraggableListItem from './draggable_list_item';
-import { SortableContainer, SortableElement } from 'react-sortable-hoc';
+import {
+  SortableContainer,
+  SortableElement,
+  arrayMove,
+} from 'react-sortable-hoc';
+
 const Navbar = () => {
+  const [listItems, changeOrder] = useState([
+    'Private Time',
+    'EntertainmentEntertainment',
+    '12345',
+    'gggggg',
+  ]);
   const SortableItem = SortableElement(({ value }) => (
     <DraggableListItem item={value} />
   ));
@@ -17,13 +28,19 @@ const Navbar = () => {
       </ul>
     );
   });
-  const listItems = ['EntertainmentEntertainment', 'Private Time'];
 
+  function onSortEnd({ oldIndex, newIndex }) {
+    changeOrder(arrayMove(listItems, oldIndex, newIndex));
+    console.log(listItems);
+  }
   return (
     <div className="navbar ">
       <div className="nav_header flex flex-none w-[220px] justify-between">
-        <div className="w-[50px] h-[50px] ">
-          <img src={logo} alt="" />
+        <div
+          className="w-[50px] h-[50px] "
+          style={{ backgroundImage: 'url(' + logo + ')' }}
+        >
+          {/* <img src={logo} alt="" /> */}
         </div>
         <div className="w-[50px] h-[50px] cursor-pointer flex justify-center items-center">
           <img src={burger} alt="" />
@@ -36,10 +53,9 @@ const Navbar = () => {
           ))}
         </DraggableList> */}
         <SortableList
+          useDragHandle={true}
           items={listItems}
-          onSortEnd={(e) => {
-            console.log(e);
-          }}
+          onSortEnd={(e) => onSortEnd(e)}
         />
       </div>
       <div className="nav_footer absolute bottom-0">
