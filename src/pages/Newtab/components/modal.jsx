@@ -16,14 +16,17 @@ const Modal = (props) => {
           ></div>
         </div>
         <div className="flex">
-          <div className="modal_sidebar">
-            <div className="">General</div>
-            <div className="">Search Box</div>
-            <div className="">Background</div>
-            <div className="">Sidebar</div>
-            <div className="">Time</div>
-            <div className="">Privacy and Security</div>
-          </div>
+          {!props.nosidebar && (
+            <div className="modal_sidebar">
+              <div className="">General</div>
+              <div className="">Search Box</div>
+              <div className="">Background</div>
+              <div className="">Sidebar</div>
+              <div className="">Time</div>
+              <div className="">Privacy and Security</div>
+              <div className="rate-us">Rate Us</div>
+            </div>
+          )}
           <div className="modal_content">{props.children}</div>
         </div>
         <div className="modal_controls absolute bottom-0">asddsadsa</div>

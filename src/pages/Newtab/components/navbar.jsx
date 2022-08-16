@@ -11,6 +11,7 @@ import {
 
 const Navbar = () => {
   var [modal, openModal] = useState(false);
+  var [modalBookmarks, openModalBookmarks] = useState(false);
   const [listItems, changeOrder] = useState([
     'Private Time',
     'EntertainmentEntertainment',
@@ -18,7 +19,12 @@ const Navbar = () => {
     'gggggg',
   ]);
   const SortableItem = SortableElement(({ value }) => (
-    <DraggableListItem item={value} />
+    <DraggableListItem
+      bookmarks={() => {
+        openModalBookmarks(!modalBookmarks);
+      }}
+      item={value}
+    />
   ));
 
   const SortableList = SortableContainer(({ items }) => {
@@ -73,7 +79,12 @@ const Navbar = () => {
         </div>
       </div>
       <Modal open={modal} openModal={openModal}>
-        <div className="text-white bg-slate-800">asdadssad</div>
+        <div className="text-white bg-slate-800">settings</div>
+      </Modal>
+      <Modal nosidebar open={modalBookmarks} openModal={openModalBookmarks}>
+        <div className="text-white bg-slate-800">
+          Are you sure you want to open all bookmarks?
+        </div>
       </Modal>
     </div>
   );

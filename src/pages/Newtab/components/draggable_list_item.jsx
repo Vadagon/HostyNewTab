@@ -30,6 +30,9 @@ const DraggableListItem = (props) => {
       </div>
       <div className="manage flex">
         <div
+          onClick={() => {
+            props.bookmarks();
+          }}
           style={{ backgroundImage: 'url(' + open_all + ')' }}
           className="w-[24px] h-[24px] bg-[length:14px_14px] bg-center bg-no-repeat cursor-pointer flex justify-center items-center p-1 mr-1"
         ></div>
