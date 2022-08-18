@@ -14,6 +14,7 @@ import theme from '../../../assets/img/theme.png';
 import Dropdown from './dropdown';
 import ModalRowItem from './modal_components/modal_row_item';
 import { PopoverPicker } from './color_picker';
+import ModalRowItemDropdown from './modal_components/modal_row_item_dropdown';
 var items = [
   'General',
   'Search Box',
@@ -45,19 +46,27 @@ const Modal = (props) => {
         </div>
         <div className="flex h-full">
           {props.nosidebar && (
-            <div className="modal_sidebar pt-5 w-[170px] flex flex-col flex-none border-[#313131] border-r">
+            <div className="modal_sidebar relative pt-5 w-[170px] flex flex-col flex-none border-[#313131] border-r">
               {items.map((item, i) => (
                 <div
                   onClick={() => {
                     selectTab(i);
                   }}
                   key={i}
-                  className="pl-5 py-[9px] mb-3 text-[13px] pr-3 cursor-pointer text-white"
+                  active={i === selectedTab ? 'true' : ''}
+                  className={
+                    'pl-5 list_item relative py-[9px] mb-3 text-[13px] pr-3 cursor-pointer text-white'
+                  }
                 >
                   {item}
                 </div>
               ))}
-              <div className="rate-us">Rate Us</div>
+              <a
+                href=""
+                className="cursor-pointer rounded-md flex items-center justify-center text-white rate-us absolute bottom-5 bg-yellow-500 h-[34px] w-[calc(100%-40px)] mx-5"
+              >
+                Rate Us
+              </a>
             </div>
           )}
           <div className="modal_content p-5 w-full">
@@ -100,12 +109,12 @@ const Modal = (props) => {
               {/* Background */}
               {selectedTab === 2 && (
                 <div className="tab ">
-                  <ModalRowItem title={'Default'} img={default_}>
-                    <PopoverPicker color={color} onChange={setColor} />
-                  </ModalRowItem>
-                  <ModalRowItem title={'Custom'} img={upload_}>
-                    <PopoverPicker color={color} onChange={setColor} />
-                  </ModalRowItem>
+                  <ModalRowItemDropdown title={'Default'} img={default_}>
+                    asddsa
+                  </ModalRowItemDropdown>
+                  <ModalRowItemDropdown title={'Custom'} img={upload_}>
+                    asddsa
+                  </ModalRowItemDropdown>
                 </div>
               )}
               {/* Time */}
@@ -119,13 +128,58 @@ const Modal = (props) => {
                   </ModalRowItem>
                 </div>
               )}
-              {selectedTab === 4 && <div className="tab ">5</div>}
-              {selectedTab === 5 && <div className="tab ">6</div>}
+              {/* Privacy and Security */}
+              {selectedTab === 4 && (
+                <div className="tab ">
+                  <div className="text-white mb-3">
+                    This privacy statement describes how uTab collects and uses
+                    the personal information you provide.
+                    <a href="#" className="underline ml-1 cursor-pointer">
+                      Learn more
+                    </a>
+                  </div>
+                  <div className="text-white mb-3">
+                    Terms of use:
+                    <a href="#" className="underline ml-1 cursor-pointer">
+                      Learn more
+                    </a>
+                  </div>
+                  <div className="text-white mb-3">
+                    Contact Us:
+                    <a href="#" className="underline ml-1 cursor-pointer">
+                      contact@appolo1.com
+                    </a>
+                    , +442045773098, 7 Bell Yard, WC2A 2JR, London, England
+                  </div>
+                  <div className="text-white mb-3">
+                    <a href="#" className="underline ml-1 cursor-pointer">
+                      About Us
+                    </a>
+                  </div>
+                </div>
+              )}
             </div>
             {props.children}
           </div>
         </div>
-        <div className="modal_controls absolute bottom-0">asddsadsa</div>
+        <div className="modal_controls absolute flex  bottom-5 right-5">
+          <div
+            onClick={() => {
+              props.openModal(false);
+            }}
+            className="mr-5 cursor-pointer rounded-md flex items-center justify-center text-white  w-[129px] flex-none  bg-[#464646] h-[34px]  border border-[#575757]"
+          >
+            Cancel
+          </div>
+          <div
+            onClick={() => {
+              props.openModal(false);
+            }}
+            className="cursor-pointer rounded-md flex items-center justify-center text-white  w-[129px] flex-none  bg-[#1493ff] h-[34px] border border-[#575757]"
+          >
+            Save
+          </div>
+        </div>
       </div>
       <div
         onClick={() => {

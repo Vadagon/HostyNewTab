@@ -2,7 +2,7 @@ import React from 'react';
 
 const ModalRowItem = (props) => {
   return (
-    <div className="flex mb-5 justify-between">
+    <div className="flex h-[36px] items-center  mb-5 justify-between">
       <div className="flex items-center">
         <div
           style={{ backgroundImage: 'url(' + props.img + ')' }}
