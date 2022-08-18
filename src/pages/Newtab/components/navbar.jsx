@@ -84,17 +84,13 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <Modal open={modal} openModal={openModal}>
-        <div className="text-white bg-slate-800">settings</div>
-      </Modal>
+      <Modal title={'Settings'} open={modal} openModal={openModal}></Modal>
       <Modal nosidebar open={modalBookmarks} openModal={openModalBookmarks}>
         <div className="text-white bg-slate-800">
           Are you sure you want to open all bookmarks?
         </div>
       </Modal>
-      <Modal open={modalAddFolder} openModal={openModalAddFolder}>
-        <div className="text-white bg-slate-800">settings</div>
-      </Modal>
+      <Modal open={modalAddFolder} openModal={openModalAddFolder}></Modal>
     </div>
   );
 };
