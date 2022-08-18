@@ -25,13 +25,13 @@ const MainView = (props) => {
       url: 'https://www.amazon.com/',
     },
   ];
-  const isIdle = useIdle({ timeToIdle: 20000 });
+  const isIdle = useIdle({ timeToIdle: 5000 });
 
   return (
     <div>
       <div
         className={
-          isIdle
+          false
             ? 'opacity-0 duration-500 transition-all'
             : 'opacity-100 transition-all duration-500'
         }
@@ -49,7 +49,7 @@ const MainView = (props) => {
         ></Modal>
       </div>
       {/* BACKGROUND CLOCK */}
-      <ClockBg active={isIdle} />
+      <ClockBg active={false} />
     </div>
   );
 };
