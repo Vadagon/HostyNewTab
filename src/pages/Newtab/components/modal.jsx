@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import close_ from '../../../assets/img/close.svg';
 import lang from '../../../assets/img/lang.png';
 import import_ from '../../../assets/img/import.png';
 import upload_ from '../../../assets/img/upload.png';
@@ -15,6 +14,9 @@ import Dropdown from './dropdown';
 import ModalRowItem from './modal_components/modal_row_item';
 import { PopoverPicker } from './color_picker';
 import ModalRowItemDropdown from './modal_components/modal_row_item_dropdown';
+import ModalHeader from './modal_components/modal_header';
+import ModalSidebar from './modal_components/modal_sidebar';
+import ModalOverlay from './modal_components/modal_overlay';
 var items = [
   'General',
   'Search Box',
@@ -32,42 +34,16 @@ const Modal = (props) => {
   const [colorFont, setColorFont] = useState('#aabbcc');
   const [colorIcon, setColorIcon] = useState('#aabbcc');
   return (
-    <div className={props.open ? 'modal active' : 'modal active'}>
+    <div className={props.open ? 'modal active' : 'modal '}>
       <div className="modal_content_wrapper">
-        <div className="modal_header border-b border-[#313131] h-[60px] flex items-center font-base justify-between p-6">
-          <div className="font-base">{props.title}</div>
-          <div
-            style={{ backgroundImage: 'url(' + close_ + ')' }}
-            className="w-[34px] h-[34px] cursor-pointer p-2 bg-[length:14px_14px] bg-no-repeat bg-center"
-            onClick={() => {
-              props.openModal(false);
-            }}
-          ></div>
-        </div>
+        <ModalHeader openModal={props.openModal} title={props.title} />
         <div className="flex h-full">
-          {props.nosidebar && (
-            <div className="modal_sidebar relative pt-5 w-[170px] flex flex-col flex-none border-[#313131] border-r">
-              {items.map((item, i) => (
-                <div
-                  onClick={() => {
-                    selectTab(i);
-                  }}
-                  key={i}
-                  active={i === selectedTab ? 'true' : ''}
-                  className={
-                    'pl-5 list_item relative py-[9px] mb-3 text-[13px] pr-3 cursor-pointer text-white'
-                  }
-                >
-                  {item}
-                </div>
-              ))}
-              <a
-                href=""
-                className="cursor-pointer rounded-md flex items-center justify-center text-white rate-us absolute bottom-5 bg-yellow-500 h-[34px] w-[calc(100%-40px)] mx-5"
-              >
-                Rate Us
-              </a>
-            </div>
+          {!props.nosidebar && (
+            <ModalSidebar
+              items={items}
+              selectTab={selectTab}
+              selectedTab={selectedTab}
+            />
           )}
           <div className="modal_content p-5 w-full">
             <div className="tabs">
@@ -110,7 +86,14 @@ const Modal = (props) => {
               {selectedTab === 2 && (
                 <div className="tab ">
                   <ModalRowItemDropdown title={'Default'} img={default_}>
-                    asddsa
+                    <div className=" grid grid-cols-3">
+                      <div className="bg-[#343434] h-[80px] cursor-pointer mr-2 mb-2"></div>
+                      <div className="bg-[#343434] h-[80px] cursor-pointer mr-2 mb-2"></div>
+                      <div className="bg-[#343434] h-[80px] cursor-pointer mr-2 mb-2"></div>
+                      <div className="bg-[#343434] h-[80px] cursor-pointer mr-2 mb-2"></div>
+                      <div className="bg-[#343434] h-[80px] cursor-pointer mr-2 mb-2"></div>
+                      <div className="bg-[#343434] h-[80px] cursor-pointer mr-2 mb-2"></div>
+                    </div>
                   </ModalRowItemDropdown>
                   <ModalRowItemDropdown title={'Custom'} img={upload_}>
                     asddsa
@@ -181,12 +164,7 @@ const Modal = (props) => {
           </div>
         </div>
       </div>
-      <div
-        onClick={() => {
-          props.openModal(false);
-        }}
-        className={props.open ? 'modal_overlay active' : 'modal_overlay'}
-      ></div>
+      <ModalOverlay openModal={props.openModal} open={props.open} />
     </div>
   );
 };
