@@ -1,11 +1,11 @@
 {
-   "desc": {
-      "message": "Perfect New tab to organize bookmarks with lots of features. Create named folders with bookmarks, organize apps, set search bar..."
-   },
-   "name": {
-      "message": "uTab - Creative New Tab"
-   },
-   "title": {
-      "message": "uTab - Creative New Tab"
-   }
+    "app_name": {
+        "message": "qTab – Vlastná nová karta"
+    },
+    "app_description": {
+        "message": "Prispôsobte si pozadie stránky na novej karte prehliadača Google Chrome"
+    },
+    "general": {
+        "message": "generál"
+    }
 }

@@ -1,0 +1,11 @@
+{
+    "app_name": {
+        "message": "qTab - カスタムの新しいタブ"
+    },
+    "app_description": {
+        "message": "Google Chrome の新しいタブ ページの背景をカスタマイズする"
+    },
+    "general": {
+        "message": "全般的"
+    }
+}

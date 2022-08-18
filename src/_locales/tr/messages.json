@@ -1,11 +1,11 @@
 {
-   "desc": {
-      "message": "Çok sayıda kullanışlı özelliğe sahip yer imlerini düzenlemek için Mükemmel Yeni sekmesi. Yer imleriyle adlandırılmış klasörler oluşturun, uygulamaları düzenleyin, arama çubuğunu ayarlayın..."
-   },
-   "name": {
-      "message": "uTab - Custom New Tab"
-   },
-   "title": {
-      "message": "uTab - Custom New Tab"
-   }
+    "app_name": {
+        "message": "qTab - Özel Yeni Sekme"
+    },
+    "app_description": {
+        "message": "Google Chrome yeni sekme sayfası arka planınızı özelleştirin"
+    },
+    "general": {
+        "message": "Genel"
+    }
 }

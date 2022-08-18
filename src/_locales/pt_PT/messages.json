@@ -1,0 +1,11 @@
+{
+    "app_name": {
+        "message": "qTab - Nova guia personalizada"
+    },
+    "app_description": {
+        "message": "Personalize o fundo da página de nova guia do Google Chrome"
+    },
+    "general": {
+        "message": "Em geral"
+    }
+}

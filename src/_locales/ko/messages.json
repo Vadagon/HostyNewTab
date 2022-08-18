@@ -1,0 +1,11 @@
+{
+    "app_name": {
+        "message": "qTab - 사용자 정의 새 탭"
+    },
+    "app_description": {
+        "message": "Chrome 새 탭 페이지 배경 맞춤설정"
+    },
+    "general": {
+        "message": "일반적인"
+    }
+}

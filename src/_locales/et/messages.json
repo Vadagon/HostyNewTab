@@ -1,11 +1,11 @@
 {
-   "desc": {
-      "message": "Perfect New tab to organize bookmarks with lots of features. Create named folders with bookmarks, organize apps, set search bar..."
-   },
-   "name": {
-      "message": "uTab - Google Startpage"
-   },
-   "title": {
-      "message": "uTab - Google Startpage"
-   }
+    "app_name": {
+        "message": "qTab – kohandatud uus vahekaart"
+    },
+    "app_description": {
+        "message": "Kohandage oma Google Chrome'i uue vahelehe tausta"
+    },
+    "general": {
+        "message": "Kindral"
+    }
 }

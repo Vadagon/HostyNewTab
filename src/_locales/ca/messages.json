@@ -1,0 +1,11 @@
+{
+    "app_name": {
+        "message": "qTab - Pestanya nova personalitzada"
+    },
+    "app_description": {
+        "message": "Personalitzeu el fons de la pàgina de la pestanya nova de Google Chrome"
+    },
+    "general": {
+        "message": "General"
+    }
+}

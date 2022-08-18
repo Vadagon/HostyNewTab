@@ -1,0 +1,11 @@
+{
+    "app_name": {
+        "message": "qTab — Пользовательская новая вкладка"
+    },
+    "app_description": {
+        "message": "Настройте фон страницы новой вкладки Google Chrome"
+    },
+    "general": {
+        "message": "Общий"
+    }
+}

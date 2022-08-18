@@ -1,11 +1,11 @@
 {
-   "desc": {
-      "message": "Perfect New tab to organize bookmarks with lots of features. Create named folders with bookmarks, organize apps, set search bar..."
-   },
-   "name": {
-      "message": "uTab - Google Homepage"
-   },
-   "title": {
-      "message": "uTab - Google Homepage"
-   }
+    "app_name": {
+        "message": "qTab - தனிப்பயன் புதிய தாவல்"
+    },
+    "app_description": {
+        "message": "உங்கள் Google Chrome புதிய தாவல் பக்கத்தின் பின்னணியைத் தனிப்பயனாக்குங்கள்"
+    },
+    "general": {
+        "message": "பொது"
+    }
 }

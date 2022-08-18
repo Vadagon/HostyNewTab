@@ -1,11 +1,11 @@
 {
-   "desc": {
-      "message": "Nuova scheda perfetta per organizzare i segnalibri con molte funzioni utili. Crea cartelle con segnalibri, organizza app, imposta la barra di ricerca..."
-   },
-   "name": {
-      "message": "uTab - Unlimited Custom Dashboard"
-   },
-   "title": {
-      "message": "uTab - Unlimited Custom Dashboard"
-   }
+    "app_name": {
+        "message": "qTab - Nuova scheda personalizzata"
+    },
+    "app_description": {
+        "message": "Personalizza lo sfondo della pagina della nuova scheda di Google Chrome"
+    },
+    "general": {
+        "message": "Generale"
+    }
 }

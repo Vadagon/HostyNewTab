@@ -1,11 +1,11 @@
 {
-   "desc": {
-      "message": "Perfect New tab to organize bookmarks with lots of features. Create named folders with bookmarks, organize apps, set search bar..."
-   },
-   "name": {
-      "message": "uTab - Change New Tab"
-   },
-   "title": {
-      "message": "uTab - Change New Tab"
-   }
+    "app_name": {
+        "message": "qTab - सानुकूल नवीन टॅब"
+    },
+    "app_description": {
+        "message": "तुमची Google Chrome नवीन टॅब पृष्ठ पार्श्वभूमी सानुकूलित करा"
+    },
+    "general": {
+        "message": "सामान्य"
+    }
 }

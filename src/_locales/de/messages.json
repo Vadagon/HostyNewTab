@@ -1,11 +1,11 @@
 {
-   "desc": {
-      "message": "Perfekte neue Registerkarte zum Organisieren von Lesezeichen mit vielen nützlichen Funktionen. Erstellen Sie benannte Ordner mit Lesezeichen, organisieren Sie Apps, legen Sie die Suchleiste fest ..."
-   },
-   "name": {
-      "message": "uTab - Unlimited Custom Dashboard"
-   },
-   "title": {
-      "message": "uTab - Unlimited Custom Dashboard"
-   }
+    "app_name": {
+        "message": "qTab - Benutzerdefinierte neue Registerkarte"
+    },
+    "app_description": {
+        "message": "Passen Sie den Hintergrund Ihrer neuen Registerkarte in Google Chrome an"
+    },
+    "general": {
+        "message": "Allgemein"
+    }
 }

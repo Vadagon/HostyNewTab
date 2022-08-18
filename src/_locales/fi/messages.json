@@ -1,11 +1,11 @@
 {
-   "desc": {
-      "message": "Täydellinen Uusi-välilehti kirjanmerkkien järjestämiseen paljon hyödyllisiä ominaisuuksia. Luo nimettyjä kansioita kirjanmerkeillä, järjestä sovelluksia, aseta hakupalkki..."
-   },
-   "name": {
-      "message": "uTab - Unlimited Custom Dashboard"
-   },
-   "title": {
-      "message": "uTab - Unlimited Custom Dashboard"
-   }
+    "app_name": {
+        "message": "qTab - Mukautettu uusi välilehti"
+    },
+    "app_description": {
+        "message": "Muokkaa Google Chromen uuden välilehden sivun taustaa"
+    },
+    "general": {
+        "message": "Kenraali"
+    }
 }
