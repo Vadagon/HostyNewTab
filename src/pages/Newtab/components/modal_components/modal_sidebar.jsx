@@ -17,12 +17,14 @@ const ModalSidebar = (props) => {
           {item}
         </div>
       ))}
-      <a
-        href=""
-        className="cursor-pointer rounded-md flex items-center justify-center text-white rate-us absolute bottom-5 bg-yellow-500 h-[34px] w-[calc(100%-40px)] mx-5"
-      >
-        Rate Us
-      </a>
+      {props.settings && (
+        <a
+          href=""
+          className="cursor-pointer rounded-md flex items-center justify-center text-white rate-us absolute bottom-5 bg-yellow-500 h-[34px] w-[calc(100%-40px)] mx-5"
+        >
+          Rate Us
+        </a>
+      )}
     </div>
   );
 };

@@ -19,6 +19,14 @@ const Navbar = () => {
     '12345',
     'gggggg',
   ]);
+  var settingsSidebar = [
+    'General',
+    'Search Box',
+    'Background',
+    'Time',
+    'Privacy and Security',
+  ];
+  var addFolderSidebar = ['General', 'Bookmarks'];
   const SortableItem = SortableElement(({ value }) => (
     <DraggableListItem
       bookmarks={() => {
@@ -84,13 +92,26 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <Modal title={'Settings'} open={modal} openModal={openModal}></Modal>
-      <Modal nosidebar open={modalBookmarks} openModal={openModalBookmarks}>
-        <div className="text-white bg-slate-800">
-          Are you sure you want to open all bookmarks?
-        </div>
-      </Modal>
-      <Modal open={modalAddFolder} openModal={openModalAddFolder}></Modal>
+      <Modal
+        settings
+        sidebar={settingsSidebar}
+        title={'Settings'}
+        open={modal}
+        openModal={openModal}
+      ></Modal>
+      <Modal
+        nosidebar
+        open={modalBookmarks}
+        openModal={openModalBookmarks}
+      ></Modal>
+
+      {/* click Add Folder modal*/}
+      <Modal
+        sidebar={addFolderSidebar}
+        title={'Add Folder'}
+        open={modalAddFolder}
+        openModal={openModalAddFolder}
+      ></Modal>
     </div>
   );
 };
