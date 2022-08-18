@@ -336,3 +336,37 @@ div[active='active'] .drop_down_options{
 div[active='active'] .drop_down_tringle{
   transform: rotate(-180deg);
 }
+
+.clock_bg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: rgba(48,48,48,0.418);
+  transition: all 0.2s ease-in;
+  display: none;
+  backdrop-filter: blur(5px);
+}
+
+div[active='active'].clock_bg{
+  display: block;
+}
+time{
+  color: white;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.main_clock time{
+  color: white;
+  font-size: 18vw;
+  filter: drop-shadow(1px 5px 11px rgb(0 0 0 / 20%)); 
+  font-weight: 500;
+  line-height: 20vw;
+}
+.main_clock time:last-child{
+font-size: 3vw;
+line-height: 4vw;
+
+}
