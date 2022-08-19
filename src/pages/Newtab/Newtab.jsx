@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import './index.scss';
 
 import MainView from './components/main_view';
 import { useEffect } from 'react';
+import I18n, { getLocalisations } from '../../components/Translation/Translation';
+export const UserContext = createContext();
+
+export const initial_store = { l10n: {}, settings: { lang: 'uk' } };
+const l10n = getLocalisations({ store: initial_store });
 const Newtab = () => {
+  const [store, setStore] = useState({ l10n: l10n, settings: { lang: 'uk' } });
+
 
   useEffect(() => {
-    console.log(chrome.i18n.getMessage('general'));
+    getLocalisations({ store, setStore });
     // chrome.storage.sync.set({key: value}, function() {
     //   console.log('Value is set to ' + value);
     // });
@@ -16,10 +23,16 @@ const Newtab = () => {
     // });
   }, [])
 
+  console.log(l10n, store);
   return (
-    <div className="App">
-      <MainView />
-    </div>
+    < UserContext.Provider value={{ store, setStore }
+    }>
+      <I18n>general</I18n>
+
+      <div className="App">
+        <MainView />
+      </div>
+    </UserContext.Provider >
   );
 };
 
