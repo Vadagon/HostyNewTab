@@ -49,6 +49,12 @@ const MainView = (props) => {
           open={modal}
           nosidebar
           openModal={openModal}
+          remove_click={() => {
+            console.log('remove bookmark');
+          }}
+          confirm_click={() => {
+            console.log('edit bookmark');
+          }}
         >
           <div className="">
             <div className="flex mb-5 items-center">
@@ -63,7 +69,7 @@ const MainView = (props) => {
               </label>
               <div className="flex flex-col ml-5">
                 <div className="text-white">
-                  Click and create the preview you need (How?)
+                  Click and create the preview you need
                 </div>
                 <label
                   htmlFor="file"
@@ -74,13 +80,18 @@ const MainView = (props) => {
               </div>
               <input id="file" type={'file'} className={'hidden'} />
             </div>
-            <ModalRowItem title={'Folder Name'}>
+            <ModalRowItem title={'Name'}>
               <input
                 className="border border-[#575757] h-[34px] w-[250px] py-2 px-3 text-[#929292] bg-[#464646]"
                 placeholder="Name"
               />
             </ModalRowItem>
-            <ModalRowItem title={'Font Color'}></ModalRowItem>
+            <ModalRowItem title={'URL'}>
+              <input
+                className="border border-[#575757] h-[34px] w-[250px] py-2 px-3 text-[#929292] bg-[#464646]"
+                placeholder="http://pdr.hsc.gov.ua/test-pdd/uk/"
+              />
+            </ModalRowItem>
           </div>
         </Modal>
       </div>

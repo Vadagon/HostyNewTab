@@ -104,9 +104,16 @@ const Navbar = () => {
         title={'Settings'}
         open={modal}
         openModal={openModal}
+        confirm_click={() => {
+          console.log('save settings');
+        }}
       ></Modal>
       <Modal
+        confirm_text={'Open'}
         title={'Open Bookmarks'}
+        confirm_click={() => {
+          console.log('asd');
+        }}
         nosidebar
         open={modalBookmarks}
         openModal={openModalBookmarks}
@@ -122,6 +129,9 @@ const Navbar = () => {
         title={'Add Folder'}
         open={modalAddFolder}
         openModal={openModalAddFolder}
+        confirm_click={() => {
+          console.log('add folder');
+        }}
       ></Modal>
     </div>
   );

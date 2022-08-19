@@ -19,8 +19,9 @@ const ModalRowItemDropdown = (props) => {
           <div className="text-[13px] text-white">{props.title}</div>
         </div>
         <div
+          active={open ? 'true' : ''}
           style={{ backgroundImage: 'url(' + arrow + ')' }}
-          className="w-[12px] h-[12px] mr-3 -mt-1  bg-[length:12px_12px] bg-no-repeat bg-center"
+          className="arrow_down transition-all w-[12px] h-[12px] mr-3 -mt-1  bg-[length:12px_12px] bg-no-repeat bg-center"
         ></div>
       </div>
       {

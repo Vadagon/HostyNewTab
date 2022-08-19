@@ -15,7 +15,7 @@ const Modal = (props) => {
         active={props.children ? 'true' : ''}
         className="modal_content_wrapper"
       >
-        <ModalHeader openModal={props.openModal} title={props.title} />
+        <ModalHeader closeModal={props.openModal} title={props.title} />
         <div className="flex h-full">
           {props.children ? (
             <div className="modal_content p-5 w-full pb-20">
@@ -40,9 +40,15 @@ const Modal = (props) => {
             </div>
           )}
         </div>
-        <ModalControls openModal={props.openModal} />
+        <ModalControls
+          settings={props.settings}
+          remove_click={props.remove_click}
+          confirm_text={props.confirm_text}
+          cancel_click={props.openModal}
+          confirm_click={props.confirm_click}
+        />
       </div>
-      <ModalOverlay openModal={props.openModal} open={props.open} />
+      <ModalOverlay close={props.openModal} open={props.open} />
     </div>
   );
 };
