@@ -19,8 +19,19 @@ const Navbar = () => {
     '12345',
     'gggggg',
   ]);
+  var settingsSidebar = [
+    'General',
+    'Search Box',
+    'Background',
+    'Time',
+    'Privacy and Security',
+  ];
+  var addFolderSidebar = ['General', 'Bookmarks'];
   const SortableItem = SortableElement(({ value }) => (
     <DraggableListItem
+      edit_folder={() => {
+        openModalAddFolder(!modalAddFolder);
+      }}
       bookmarks={() => {
         openModalBookmarks(!modalBookmarks);
       }}
@@ -45,19 +56,19 @@ const Navbar = () => {
   return (
     <div>
       <div className="navbar ">
-        <div
-          onClick={() => {
-            openModal(!modal);
-          }}
-          className="nav_header flex flex-none w-[220px] justify-between"
-        >
+        <div className="nav_header flex flex-none w-[220px] justify-between">
           <div
             className="w-[50px] h-[50px] "
             style={{ backgroundImage: 'url(' + logo + ')' }}
           >
             {/* <img src={logo} alt="" /> */}
           </div>
-          <div className="w-[50px] h-[50px] cursor-pointer flex justify-center items-center">
+          <div
+            onClick={() => {
+              openModal(!modal);
+            }}
+            className="w-[50px] h-[50px] cursor-pointer flex justify-center items-center"
+          >
             <img src={burger} alt="" />
           </div>
         </div>
@@ -84,13 +95,31 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <Modal title={'Settings'} open={modal} openModal={openModal}></Modal>
-      <Modal nosidebar open={modalBookmarks} openModal={openModalBookmarks}>
-        <div className="text-white bg-slate-800">
+      <Modal
+        settings
+        sidebar={settingsSidebar}
+        title={'Settings'}
+        open={modal}
+        openModal={openModal}
+      ></Modal>
+      <Modal
+        title={'Open Bookmarks'}
+        nosidebar
+        open={modalBookmarks}
+        openModal={openModalBookmarks}
+      >
+        <div className="text-white">
           Are you sure you want to open all bookmarks?
         </div>
       </Modal>
-      <Modal open={modalAddFolder} openModal={openModalAddFolder}></Modal>
+
+      {/* click Add Folder modal*/}
+      <Modal
+        sidebar={addFolderSidebar}
+        title={'Add Folder'}
+        open={modalAddFolder}
+        openModal={openModalAddFolder}
+      ></Modal>
     </div>
   );
 };

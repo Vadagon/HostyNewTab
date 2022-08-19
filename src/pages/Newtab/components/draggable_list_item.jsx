@@ -33,6 +33,9 @@ const DraggableListItem = (props) => {
           className="w-[24px] h-[24px] bg-[length:14px_14px] bg-center bg-no-repeat cursor-pointer flex justify-center items-center p-1 mr-1"
         ></div>
         <div
+          onClick={() => {
+            props.edit_folder();
+          }}
           style={{ backgroundImage: 'url(' + edit_tab + ')' }}
           className="w-[24px] h-[24px] bg-[length:14px_14px] bg-center bg-no-repeat cursor-pointer flex justify-center items-center p-1 mr-1"
         ></div>
