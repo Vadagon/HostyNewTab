@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import logo from '../../../assets/img/logo.svg';
 import burger from '../../../assets/img/burger.svg';
 import DraggableListItem from './draggable_list_item';
@@ -8,11 +8,14 @@ import {
   SortableElement,
   arrayMove,
 } from 'react-sortable-hoc';
+import { i18n } from '../../../components/Translation/Translation';
+import { UserContext } from '../Newtab';
 
 const Navbar = () => {
   var [modal, openModal] = useState(false);
   var [modalBookmarks, openModalBookmarks] = useState(false);
   var [modalAddFolder, openModalAddFolder] = useState(false);
+  const store = useContext(UserContext);
   const [listItems, changeOrder] = useState([
     'Private Time',
     'EntertainmentEntertainment',
@@ -20,7 +23,7 @@ const Navbar = () => {
     'gggggg',
   ]);
   var settingsSidebar = [
-    'General',
+    i18n('general', store),
     'Search Box',
     'Background',
     'Time',
