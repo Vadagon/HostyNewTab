@@ -15,7 +15,7 @@ export const getAcceptLanguages = async () => {
 export const getLocalisations = ({ store, setStore }) => {
     if (!store) store = {}
     const l10n = localStorage.getItem('l10n');
-    if (l10n.length) {
+    if (l10n?.length) {
         var l10nJSON = JSON.parse(l10n);
         setStore && setStore(Object.assign(store, { l10n: l10nJSON }));
         return l10nJSON;
@@ -41,9 +41,7 @@ export const loadLocalisations = async ({ store, setStore }) => {
 
 
 export const i18n = (str, { store }) => {
-    // store.
-    // console.log(store, store.settings.lang)
-    var locale = store.l10n[store.settings.lang];
+    var locale = store.l10n?.[store.settings.lang];
     console.log(locale)
     var tr = locale?.[str]?.message;
     return tr ?? str;
