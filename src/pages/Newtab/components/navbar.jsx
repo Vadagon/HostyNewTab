@@ -29,6 +29,9 @@ const Navbar = () => {
   var addFolderSidebar = ['General', 'Bookmarks'];
   const SortableItem = SortableElement(({ value }) => (
     <DraggableListItem
+      edit_folder={() => {
+        openModalAddFolder(!modalAddFolder);
+      }}
       bookmarks={() => {
         openModalBookmarks(!modalBookmarks);
       }}
@@ -53,19 +56,19 @@ const Navbar = () => {
   return (
     <div>
       <div className="navbar ">
-        <div
-          onClick={() => {
-            openModal(!modal);
-          }}
-          className="nav_header flex flex-none w-[220px] justify-between"
-        >
+        <div className="nav_header flex flex-none w-[220px] justify-between">
           <div
             className="w-[50px] h-[50px] "
             style={{ backgroundImage: 'url(' + logo + ')' }}
           >
             {/* <img src={logo} alt="" /> */}
           </div>
-          <div className="w-[50px] h-[50px] cursor-pointer flex justify-center items-center">
+          <div
+            onClick={() => {
+              openModal(!modal);
+            }}
+            className="w-[50px] h-[50px] cursor-pointer flex justify-center items-center"
+          >
             <img src={burger} alt="" />
           </div>
         </div>
@@ -100,10 +103,15 @@ const Navbar = () => {
         openModal={openModal}
       ></Modal>
       <Modal
+        title={'Open Bookmarks'}
         nosidebar
         open={modalBookmarks}
         openModal={openModalBookmarks}
-      ></Modal>
+      >
+        <div className="text-white">
+          Are you sure you want to open all bookmarks?
+        </div>
+      </Modal>
 
       {/* click Add Folder modal*/}
       <Modal
