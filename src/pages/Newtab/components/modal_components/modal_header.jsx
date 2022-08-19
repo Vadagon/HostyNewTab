@@ -9,7 +9,7 @@ const ModalHeader = (props) => {
         style={{ backgroundImage: 'url(' + close_ + ')' }}
         className="w-[34px] h-[34px] cursor-pointer p-2 bg-[length:14px_14px] bg-no-repeat bg-center"
         onClick={() => {
-          props.openModal(false);
+          props.closeModal(false);
         }}
       ></div>
     </div>
