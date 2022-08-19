@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import import_ from '../../../../assets/img/import.png';
 import lang from '../../../../assets/img/lang.png';
 import plus from '../../../../assets/img/plus.svg';
@@ -25,7 +25,39 @@ var time = ['20 sec', '30 sec', '40 sec', '1 min', 'Disable Time'];
 var time_format_ = ['24-based Hour', '12-based Hour'];
 var mode = ['Dark', 'Ligth'];
 var bg = [bg_1, bg_2, bg_3, bg_4, bg_5];
+var bookmarks = {};
 const ModalTabs = (props) => {
+  useEffect(() => {
+    function fetchFavicon(url) {
+      return new Promise(function (resolve, reject) {
+        var img = new Image();
+        img.onload = function () {
+          var canvas = document.createElement('canvas');
+          canvas.width = this.width;
+          canvas.height = this.height;
+
+          var ctx = canvas.getContext('2d');
+          ctx.drawImage(this, 0, 0);
+
+          var dataURL = canvas.toDataURL('image/png');
+          resolve(dataURL);
+        };
+        img.src = 'Not allowed to load local resource:' + url;
+      });
+    }
+    chrome.bookmarks.getTree().then((e) => {
+      bookmarks = e[0].children;
+      bookmarks.forEach((e) => {
+        e.children.forEach((e2) => {
+          fetchFavicon(e2.url).then((e3) => {
+            e2.img = e3;
+          });
+        });
+      });
+
+      console.log(bookmarks);
+    });
+  }, []);
   const [color, setColor] = useState('#aabbcc');
   const [colorFont, setColorFont] = useState('#ffffff');
   const [colorIcon, setColorIcon] = useState('#aabbcc');
@@ -155,7 +187,7 @@ const ModalTabs = (props) => {
     );
   } else {
     return (
-      <div>
+      <div className="flex h-[calc(100%-60px)] overflow-hidden overflow-y-auto w-full flex-col">
         {props.selectedTab === 0 && (
           <div className="tab ">
             <div className="flex mb-5 items-center">
@@ -191,7 +223,35 @@ const ModalTabs = (props) => {
             </ModalRowItem>
           </div>
         )}
-        {props.selectedTab === 1 && <div className="tab ">bookmarks</div>}
+        {props.selectedTab === 1 && (
+          <div className="tab ">
+            <input
+              className="border border-[#575757] h-[34px] mb-5 w-full py-2 px-3 text-[#929292] bg-[#464646]"
+              placeholder="Search bookmark"
+            />
+            <div>
+              {bookmarks.map((e, i) => {
+                return (
+                  <ModalRowItemDropdown key={i} title={e.title}>
+                    <div>
+                      {e.children.map((e2, i) => {
+                        return (
+                          <a
+                            className="flex w-full mb-1 text-white"
+                            href={e2.url}
+                            key={'i' + i}
+                          >
+                            {e2.title}
+                          </a>
+                        );
+                      })}
+                    </div>
+                  </ModalRowItemDropdown>
+                );
+              })}
+            </div>
+          </div>
+        )}
       </div>
     );
   }
