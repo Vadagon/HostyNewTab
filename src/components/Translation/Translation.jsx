@@ -13,17 +13,18 @@ export const getAcceptLanguages = async () => {
 };
 
 export const getLocalisations = ({ store, setStore }) => {
-  if (!store) store = {};
-  const l10n = localStorage.getItem('l10n');
-  if (l10n.length) {
-    var l10nJSON = JSON.parse(l10n);
-    setStore && setStore(Object.assign(store, { l10n: l10nJSON }));
-    return l10nJSON;
-  }
+    if (!store) store = {}
+    const l10n = localStorage.getItem('l10n');
+    if (l10n?.length) {
+        var l10nJSON = JSON.parse(l10n);
+        setStore && setStore(Object.assign(store, { l10n: l10nJSON }));
+        return l10nJSON;
+    }
 
-  loadLocalisations({ store, setStore });
-  // var languageList = await getAcceptLanguages();
-};
+    loadLocalisations({ store, setStore })
+    // var languageList = await getAcceptLanguages();
+
+}
 export const loadLocalisations = async ({ store, setStore }) => {
   var list = {};
   for (let index = 0; index < l10nList.length; index++) {
@@ -40,13 +41,11 @@ export const loadLocalisations = async ({ store, setStore }) => {
 };
 
 export const i18n = (str, { store }) => {
-  // store.
-  // console.log(store, store.settings.lang)
-  var locale = store.l10n[store.settings.lang];
-  console.log(locale);
-  var tr = locale?.[str]?.message;
-  return tr ?? str;
-};
+    var locale = store.l10n?.[store.settings.lang];
+    console.log(locale)
+    var tr = locale?.[str]?.message;
+    return tr ?? str;
+}
 
 export function I18n(prop) {
   const store = useContext(UserContext);
