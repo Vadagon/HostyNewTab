@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Clock from 'react-live-clock';
 const ClockBg = (props) => {
   var timezones = [

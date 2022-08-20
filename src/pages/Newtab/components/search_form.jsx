@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import search from '../../../assets/img/search.svg';
+import { i18n } from '../../../components/Translation/Translation';
+import { UserContext } from '../context';
 const SearchForm = (props) => {
+  const store = useContext(UserContext);
   return (
     <form action="http://www.google.com/search" method="get" className="flex  ">
       <div
@@ -20,7 +23,7 @@ const SearchForm = (props) => {
       <input
         name="q"
         type={'text'}
-        placeholder="Search the Web..."
+        placeholder={i18n('search_placeholder', store)}
         className={
           'rounded-md  w-full text-base h-[60px]  p-4 bg-[#3D3D3DFF] text-white placeholder:text-gray-300 transition-all duration-150'
         }

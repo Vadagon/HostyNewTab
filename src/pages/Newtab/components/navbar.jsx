@@ -24,10 +24,10 @@ const Navbar = () => {
   ]);
   var settingsSidebar = [
     i18n('general', store),
-    'Search Box',
-    'Background',
-    'Time',
-    'Privacy and Security',
+    i18n('search_box', store),
+    i18n('background', store),
+    i18n('time', store),
+    i18n('privacy_and_security', store),
   ];
   var addFolderSidebar = ['General', 'Bookmarks'];
   const SortableItem = SortableElement(({ value }) => (
@@ -94,14 +94,14 @@ const Navbar = () => {
             }}
             className="bg-blue-400 cursor-pointer h-[50px] flex justify-center items-center w-[220px] text-white"
           >
-            Add Folder
+            {i18n('add_folder', store)}
           </div>
         </div>
       </div>
       <Modal
         settings
         sidebar={settingsSidebar}
-        title={'Settings'}
+        title={i18n('settings', store)}
         open={modal}
         openModal={openModal}
         confirm_click={() => {
@@ -110,7 +110,7 @@ const Navbar = () => {
       ></Modal>
       <Modal
         confirm_text={'Open'}
-        title={'Open Bookmarks'}
+        title={i18n('open_bookmarks', store)}
         confirm_click={() => {
           console.log('asd');
         }}
@@ -118,15 +118,13 @@ const Navbar = () => {
         open={modalBookmarks}
         openModal={openModalBookmarks}
       >
-        <div className="text-white">
-          Are you sure you want to open all bookmarks?
-        </div>
+        <div className="text-white">{i18n('open_bookmars_text', store)}</div>
       </Modal>
 
       {/* click Add Folder modal*/}
       <Modal
         sidebar={addFolderSidebar}
-        title={'Add Folder'}
+        title={i18n('add_folder', store)}
         open={modalAddFolder}
         openModal={openModalAddFolder}
         confirm_click={() => {

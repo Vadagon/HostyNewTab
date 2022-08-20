@@ -14,13 +14,13 @@ const GridLayout = (props) => {
   var activeFolder = store.settings.folders[store.settings.activeFolder];
   activeFolder.bookmarks.forEach((bookmark, bookmarkId) => {
     layout.push({
-      i: 'custom-' + bookmark.id + "-" + bookmark.name,
+      i: 'custom-' + bookmark.id + '-' + bookmark.name,
       x: bookmark.position.x,
       y: bookmark.position.y,
       w: 1,
-      h: 1
-    })
-  })
+      h: 1,
+    });
+  });
   // store.settings.folders.forEach((folder) => {
   //   folder.bookmarks.forEach((bookmark, bookmarkId) =>
   //     layout.push({

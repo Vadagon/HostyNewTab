@@ -18,6 +18,7 @@ function useIdle(options) {
   return isIdle;
 }
 const MainView = (props) => {
+  const store = useContext(UserContext);
   var [modal, openModal] = useState(false);
   // var [clock, openClock] = useState(false);
 
@@ -36,7 +37,7 @@ const MainView = (props) => {
 
         <GridLayout openModal={openModal} />
         <Modal
-          title={'Edit Bookmark'}
+          title={i18n('edit_bookmarks', store)}
           open={modal}
           nosidebar
           openModal={openModal}
