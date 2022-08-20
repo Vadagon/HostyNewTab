@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import import_ from '../../../../assets/img/import.png';
 import lang from '../../../../assets/img/lang.png';
 import plus from '../../../../assets/img/plus.svg';
+import amazon from '../../../../assets/img/amazon.png';
 import Dropdown from '../dropdown';
 import ModalRowItem from './modal_row_item';
 import ModalRowItemDropdown from './modal_row_item_dropdown';
@@ -233,16 +234,32 @@ const ModalTabs = (props) => {
               {bookmarks.map((e, i) => {
                 return (
                   <ModalRowItemDropdown key={i} title={e.title}>
-                    <div>
+                    <div className="flex w-full flex-col">
                       {e.children.map((e2, i) => {
                         return (
-                          <a
-                            className="flex w-full mb-1 text-white"
-                            href={e2.url}
-                            key={'i' + i}
-                          >
-                            {e2.title}
-                          </a>
+                          <div key={i} className="flex w-full mb-1">
+                            <label className="checbox_wrapper">
+                              <a
+                                target={'_blank'}
+                                rel="noreferrer"
+                                className={' text-white flex w-full '}
+                                href={e2.url}
+                                key={'i' + i}
+                              >
+                                <div
+                                  style={{
+                                    backgroundImage: 'url(' + amazon + ')',
+                                  }}
+                                  className="w-[16px] flex-none h-[16px] bg-[length:16px_16px] bg-no-repeat bg-center mr-2"
+                                ></div>
+                                <div className=" overflow-hidden text-ellipsis whitespace-nowrap max-w-[calc(100%-30px)]">
+                                  {e2.title ? e2.title : e2.url}
+                                </div>
+                              </a>
+                              <input type="checkbox" />
+                              <span className="checkmark"></span>
+                            </label>
+                          </div>
                         );
                       })}
                     </div>
