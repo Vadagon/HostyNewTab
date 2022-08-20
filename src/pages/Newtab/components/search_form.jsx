@@ -2,11 +2,7 @@ import React from 'react';
 import search from '../../../assets/img/search.svg';
 const SearchForm = (props) => {
   return (
-    <form
-      action="http://www.google.com/search"
-      method="get"
-      className="flex w-1/3 fixed left-1/2 top-1/3 -translate-x-1/2 z-10"
-    >
+    <form action="http://www.google.com/search" method="get" className="flex  ">
       <div
         style={{ backgroundImage: 'url(' + search + ')' }}
         className={
