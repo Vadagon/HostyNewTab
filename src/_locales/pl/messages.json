@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "Ogólny"
+    },
+    "search_box": {
+        "message": "Pole wyszukiwania"
+    },
+    "background": {
+        "message": "Tło"
+    },
+    "time": {
+        "message": "Czas"
+    },
+    "privacy_and_security": {
+        "message": "Prywatność i ochrona"
+    },
+    "add_folder": {
+        "message": "Dodaj folder"
+    },
+    "settings": {
+        "message": "Ustawienia"
+    },
+    "open_bookmarks": {
+        "message": "Otwórz zakładki"
+    },
+    "theme": {
+        "message": "Motyw"
+    },
+    "edit_bookmarks": {
+        "message": "Edytuj zakładki"
+    },
+    "open_bookmars_text": {
+        "message": "Czy na pewno chcesz otworzyć wszystkie zakładki?"
+    },
+    "upload_img_text": {
+        "message": "Kliknij i utwórz podgląd, którego potrzebujesz"
+    },
+    "create_preview": {
+        "message": "Utwórz podgląd"
+    },
+    "less_100": {
+        "message": "Plik musi być mniejszy niż 100kb"
+    },
+    "search_placeholder": {
+        "message": "Przeszukaj internet..."
+    },
+    "name": {
+        "message": "Nazwa"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Usunąć"
+    },
+    "rate_us": {
+        "message": "Oceń nas"
+    },
+    "cancel": {
+        "message": "Anulować"
+    },
+    "save": {
+        "message": "Ratować"
+    },
+    "language": {
+        "message": "Język"
+    },
+    "import_bookmarks": {
+        "message": "Importuj zakładki"
+    },
+    "export_bookmarks": {
+        "message": "Eksportuj zakładki"
+    },
+    "import": {
+        "message": "Import"
+    },
+    "export": {
+        "message": "Eksport"
+    },
+    "default": {
+        "message": "Domyślna"
+    },
+    "custom": {
+        "message": "Zwyczaj"
+    },
+    "upload_image": {
+        "message": "Załaduj obrazek"
+    },
+    "add_image_url": {
+        "message": "Dodaj URL obrazu i kliknij wczytaj"
+    },
+    "load": {
+        "message": "Obciążenie"
+    },
+    "delay": {
+        "message": "Opóźnienie"
+    },
+    "time_format": {
+        "message": "Format czasu"
+    },
+    "learn_more": {
+        "message": "Ucz się więcej"
+    },
+    "about_us": {
+        "message": "O nas"
+    },
+    "folder_name": {
+        "message": "Nazwa folderu"
+    },
+    "font_color": {
+        "message": "Kolor czcionki"
+    },
+    "search_bookmark": {
+        "message": "Wyszukaj zakładkę"
+    },
+    "based_hour24": {
+        "message": "24-godzinna godzina"
+    },
+    "based_hour12": {
+        "message": "Godzina oparta na 12"
+    },
+    "dark": {
+        "message": "Ciemny"
+    },
+    "light": {
+        "message": "Światło"
+    },
+    "sec20": {
+        "message": "20 sekund"
+    },
+    "sec30": {
+        "message": "30 sekund"
+    },
+    "sec40": {
+        "message": "40 sekund"
+    },
+    "min1": {
+        "message": "1 minuta"
+    },
+    "disable_time": {
+        "message": "Wyłącz czas"
     }
 }

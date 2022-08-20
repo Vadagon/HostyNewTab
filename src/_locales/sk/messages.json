@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "generál"
+    },
+    "search_box": {
+        "message": "Vyhľadávacie pole"
+    },
+    "background": {
+        "message": "Pozadie"
+    },
+    "time": {
+        "message": "Čas"
+    },
+    "privacy_and_security": {
+        "message": "Súkromie a bezpečnosť"
+    },
+    "add_folder": {
+        "message": "Pridať priečinok"
+    },
+    "settings": {
+        "message": "nastavenie"
+    },
+    "open_bookmarks": {
+        "message": "Otvorte Záložky"
+    },
+    "theme": {
+        "message": "Téma"
+    },
+    "edit_bookmarks": {
+        "message": "Upraviť záložky"
+    },
+    "open_bookmars_text": {
+        "message": "Naozaj chcete otvoriť všetky záložky?"
+    },
+    "upload_img_text": {
+        "message": "Kliknite a vytvorte požadovaný náhľad"
+    },
+    "create_preview": {
+        "message": "Vytvoriť ukážku"
+    },
+    "less_100": {
+        "message": "Súbor musí mať menej ako 100 kB"
+    },
+    "search_placeholder": {
+        "message": "Hladanie na internete..."
+    },
+    "name": {
+        "message": "názov"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Odstrániť"
+    },
+    "rate_us": {
+        "message": "Ohodnoť nás"
+    },
+    "cancel": {
+        "message": "Zrušiť"
+    },
+    "save": {
+        "message": "Uložiť"
+    },
+    "language": {
+        "message": "Jazyk"
+    },
+    "import_bookmarks": {
+        "message": "Importovať záložky"
+    },
+    "export_bookmarks": {
+        "message": "Exportovať záložky"
+    },
+    "import": {
+        "message": "Importovať"
+    },
+    "export": {
+        "message": "Export"
+    },
+    "default": {
+        "message": "Predvolené"
+    },
+    "custom": {
+        "message": "Vlastné"
+    },
+    "upload_image": {
+        "message": "Nahrať obrázok"
+    },
+    "add_image_url": {
+        "message": "Pridajte adresu URL obrázka a kliknite na tlačidlo Načítať"
+    },
+    "load": {
+        "message": "Naložiť"
+    },
+    "delay": {
+        "message": "Oneskorenie"
+    },
+    "time_format": {
+        "message": "Formát času"
+    },
+    "learn_more": {
+        "message": "Uč sa viac"
+    },
+    "about_us": {
+        "message": "O nás"
+    },
+    "folder_name": {
+        "message": "Názov priečinka"
+    },
+    "font_color": {
+        "message": "Farba písma"
+    },
+    "search_bookmark": {
+        "message": "Hľadať v záložke"
+    },
+    "based_hour24": {
+        "message": "24-hodinová"
+    },
+    "based_hour12": {
+        "message": "12-založená hodina"
+    },
+    "dark": {
+        "message": "Tmavý"
+    },
+    "light": {
+        "message": "Svetlo"
+    },
+    "sec20": {
+        "message": "20 sek"
+    },
+    "sec30": {
+        "message": "30 sek"
+    },
+    "sec40": {
+        "message": "40 sek"
+    },
+    "min1": {
+        "message": "1 minúta"
+    },
+    "disable_time": {
+        "message": "Zakázať čas"
     }
 }

@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "Ģenerālis"
+    },
+    "search_box": {
+        "message": "Meklēšanas lodziņš"
+    },
+    "background": {
+        "message": "Fons"
+    },
+    "time": {
+        "message": "Laiks"
+    },
+    "privacy_and_security": {
+        "message": "Privātums un drošība"
+    },
+    "add_folder": {
+        "message": "Pievienot mapi"
+    },
+    "settings": {
+        "message": "Iestatījumi"
+    },
+    "open_bookmarks": {
+        "message": "Atveriet sadaļu Grāmatzīmes"
+    },
+    "theme": {
+        "message": "Tēma"
+    },
+    "edit_bookmarks": {
+        "message": "Rediģēt grāmatzīmes"
+    },
+    "open_bookmars_text": {
+        "message": "Vai tiešām vēlaties atvērt visas grāmatzīmes?"
+    },
+    "upload_img_text": {
+        "message": "Noklikšķiniet un izveidojiet vajadzīgo priekšskatījumu"
+    },
+    "create_preview": {
+        "message": "Izveidot priekšskatījumu"
+    },
+    "less_100": {
+        "message": "Faila lielumam ir jābūt mazākam par 100 KB"
+    },
+    "search_placeholder": {
+        "message": "Meklēt tīmeklī..."
+    },
+    "name": {
+        "message": "Vārds"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Noņemt"
+    },
+    "rate_us": {
+        "message": "Novērtē mūs"
+    },
+    "cancel": {
+        "message": "Atcelt"
+    },
+    "save": {
+        "message": "Saglabāt"
+    },
+    "language": {
+        "message": "Valoda"
+    },
+    "import_bookmarks": {
+        "message": "Importēt grāmatzīmes"
+    },
+    "export_bookmarks": {
+        "message": "Eksportēt grāmatzīmes"
+    },
+    "import": {
+        "message": "Importēt"
+    },
+    "export": {
+        "message": "Eksportēt"
+    },
+    "default": {
+        "message": "Noklusējums"
+    },
+    "custom": {
+        "message": "Pielāgots"
+    },
+    "upload_image": {
+        "message": "Augšupielādēt attēlu"
+    },
+    "add_image_url": {
+        "message": "Pievienojiet attēla URL un noklikšķiniet uz Ielādēt"
+    },
+    "load": {
+        "message": "Ielādēt"
+    },
+    "delay": {
+        "message": "Kavēšanās"
+    },
+    "time_format": {
+        "message": "Laika formāts"
+    },
+    "learn_more": {
+        "message": "Uzzināt vairāk"
+    },
+    "about_us": {
+        "message": "Par mums"
+    },
+    "folder_name": {
+        "message": "Mapes nosaukums"
+    },
+    "font_color": {
+        "message": "Fonta krāsa"
+    },
+    "search_bookmark": {
+        "message": "Meklēt grāmatzīmi"
+    },
+    "based_hour24": {
+        "message": "Diennakts stunda"
+    },
+    "based_hour12": {
+        "message": "12 bāzes stunda"
+    },
+    "dark": {
+        "message": "Tumšs"
+    },
+    "light": {
+        "message": "Gaisma"
+    },
+    "sec20": {
+        "message": "20 sek"
+    },
+    "sec30": {
+        "message": "30 sek"
+    },
+    "sec40": {
+        "message": "40 sek"
+    },
+    "min1": {
+        "message": "1 min"
+    },
+    "disable_time": {
+        "message": "Atspējot laiku"
     }
 }

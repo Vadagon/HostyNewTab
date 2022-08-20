@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "عمومی"
+    },
+    "search_box": {
+        "message": "جعبه جستجو"
+    },
+    "background": {
+        "message": "زمینه"
+    },
+    "time": {
+        "message": "زمان"
+    },
+    "privacy_and_security": {
+        "message": "حریم خصوصی و امنیت"
+    },
+    "add_folder": {
+        "message": "اضافه کردن پوشه"
+    },
+    "settings": {
+        "message": "تنظیمات"
+    },
+    "open_bookmarks": {
+        "message": "نشانک ها را باز کنید"
+    },
+    "theme": {
+        "message": "موضوع"
+    },
+    "edit_bookmarks": {
+        "message": "ویرایش بوک مارک ها"
+    },
+    "open_bookmars_text": {
+        "message": "آیا مطمئن هستید که می خواهید همه نشانک ها را باز کنید؟"
+    },
+    "upload_img_text": {
+        "message": "کلیک کنید و پیش نمایش مورد نیاز خود را ایجاد کنید"
+    },
+    "create_preview": {
+        "message": "ایجاد پیش نمایش"
+    },
+    "less_100": {
+        "message": "فایل باید کمتر از 100 کیلوبایت باشد"
+    },
+    "search_placeholder": {
+        "message": "وب را جستجو کن..."
+    },
+    "name": {
+        "message": "نام"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "برداشتن"
+    },
+    "rate_us": {
+        "message": "به ما رای دهید"
+    },
+    "cancel": {
+        "message": "لغو کنید"
+    },
+    "save": {
+        "message": "صرفه جویی"
+    },
+    "language": {
+        "message": "زبان"
+    },
+    "import_bookmarks": {
+        "message": "وارد کردن نشانک ها"
+    },
+    "export_bookmarks": {
+        "message": "صادر کردن نشانک ها"
+    },
+    "import": {
+        "message": "وارد كردن"
+    },
+    "export": {
+        "message": "صادرات"
+    },
+    "default": {
+        "message": "پیش فرض"
+    },
+    "custom": {
+        "message": "سفارشی"
+    },
+    "upload_image": {
+        "message": "آپلود تصویر"
+    },
+    "add_image_url": {
+        "message": "آدرس تصویر را اضافه کنید و روی بارگذاری کلیک کنید"
+    },
+    "load": {
+        "message": "بار"
+    },
+    "delay": {
+        "message": "تاخیر انداختن"
+    },
+    "time_format": {
+        "message": "فرمت زمان"
+    },
+    "learn_more": {
+        "message": "بیشتر بدانید"
+    },
+    "about_us": {
+        "message": "درباره ما"
+    },
+    "folder_name": {
+        "message": "نام پوشه"
+    },
+    "font_color": {
+        "message": "رنگ فونت"
+    },
+    "search_bookmark": {
+        "message": "جستجوی نشانک"
+    },
+    "based_hour24": {
+        "message": "ساعت مبتنی بر 24"
+    },
+    "based_hour12": {
+        "message": "ساعت مبتنی بر 12"
+    },
+    "dark": {
+        "message": "تاریک"
+    },
+    "light": {
+        "message": "سبک"
+    },
+    "sec20": {
+        "message": "20 ثانیه"
+    },
+    "sec30": {
+        "message": "30 ثانیه"
+    },
+    "sec40": {
+        "message": "40 ثانیه"
+    },
+    "min1": {
+        "message": "1 دقیقه"
+    },
+    "disable_time": {
+        "message": "زمان را غیرفعال کنید"
     }
 }

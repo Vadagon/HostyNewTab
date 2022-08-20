@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "Загальний"
+    },
+    "search_box": {
+        "message": "Поле пошуку"
+    },
+    "background": {
+        "message": "Фон"
+    },
+    "time": {
+        "message": "час"
+    },
+    "privacy_and_security": {
+        "message": "Конфіденційність і безпека"
+    },
+    "add_folder": {
+        "message": "Додати папку"
+    },
+    "settings": {
+        "message": "Налаштування"
+    },
+    "open_bookmarks": {
+        "message": "Відкрийте Закладки"
+    },
+    "theme": {
+        "message": "Тема"
+    },
+    "edit_bookmarks": {
+        "message": "Редагувати закладки"
+    },
+    "open_bookmars_text": {
+        "message": "Ви впевнені, що бажаєте відкрити всі закладки?"
+    },
+    "upload_img_text": {
+        "message": "Натисніть і створіть потрібний попередній перегляд"
+    },
+    "create_preview": {
+        "message": "Створити попередній перегляд"
+    },
+    "less_100": {
+        "message": "Файл має бути менше 100 Кб"
+    },
+    "search_placeholder": {
+        "message": "Пошук в Інтернеті..."
+    },
+    "name": {
+        "message": "Ім'я"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "видалити"
+    },
+    "rate_us": {
+        "message": "Оцініть нас"
+    },
+    "cancel": {
+        "message": "Скасувати"
+    },
+    "save": {
+        "message": "зберегти"
+    },
+    "language": {
+        "message": "Мову"
+    },
+    "import_bookmarks": {
+        "message": "Імпорт закладок"
+    },
+    "export_bookmarks": {
+        "message": "Експорт закладок"
+    },
+    "import": {
+        "message": "Імпорт"
+    },
+    "export": {
+        "message": "Експорт"
+    },
+    "default": {
+        "message": "За замовчуванням"
+    },
+    "custom": {
+        "message": "Custom"
+    },
+    "upload_image": {
+        "message": "Завантажити зображення"
+    },
+    "add_image_url": {
+        "message": "Додайте URL-адресу зображення та натисніть «Завантажити»."
+    },
+    "load": {
+        "message": "навантаження"
+    },
+    "delay": {
+        "message": "Затримка"
+    },
+    "time_format": {
+        "message": "Формат часу"
+    },
+    "learn_more": {
+        "message": "Вивчайте більше"
+    },
+    "about_us": {
+        "message": "Про нас"
+    },
+    "folder_name": {
+        "message": "Назва папки"
+    },
+    "font_color": {
+        "message": "Колір шрифту"
+    },
+    "search_bookmark": {
+        "message": "Закладка пошуку"
+    },
+    "based_hour24": {
+        "message": "24 години"
+    },
+    "based_hour12": {
+        "message": "12 основ Год"
+    },
+    "dark": {
+        "message": "Темний"
+    },
+    "light": {
+        "message": "світло"
+    },
+    "sec20": {
+        "message": "20 сек"
+    },
+    "sec30": {
+        "message": "30 сек"
+    },
+    "sec40": {
+        "message": "40 сек"
+    },
+    "min1": {
+        "message": "1 хв"
+    },
+    "disable_time": {
+        "message": "Вимкнути час"
     }
 }

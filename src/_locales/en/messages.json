@@ -1,149 +1,149 @@
 {
-  "app_name": {
-    "message": "qTab - Custom New Tab"
-  },
-  "app_description": {
-    "message": "Customize your Google Chrome new tab page background"
-  },
-  "general": {
-    "message": "General"
-  },
-  "search_box": {
-    "message": "Search Box"
-  },
-  "background": {
-    "message": "Background"
-  },
-  "time": {
-    "message": "Time"
-  },
-  "privacy_and_security": {
-    "message": "Privacy and Security"
-  },
-  "add_folder": {
-    "message": "Add Folder"
-  },
-  "settings": {
-    "message": "Settings"
-  },
-  "open_bookmarks": {
-    "message": "Open Bookmarks"
-  },
-  "theme": {
-    "message": "Theme"
-  },
-  "edit_bookmarks": {
-    "message": "Edit Bookmarks"
-  },
-  "open_bookmars_text": {
-    "message": "Are you sure you want to open all bookmarks?"
-  },
-  "upload_img_text": {
-    "message": "Click and create the preview you need"
-  },
-  "create_preview": {
-    "message": "Create Preview"
-  },
-  "less_100": {
-    "message": "File need to be less 100kb"
-  },
-  "search_placeholder": {
-    "message": "Search the Web..."
-  },
-  "name": {
-    "message": "Name"
-  },
-  "url": {
-    "message": "URL"
-  },
-  "remove": {
-    "message": "Remove"
-  },
-  "rate_us": {
-    "message": "Rate Us"
-  },
-  "cancel": {
-    "message": "Cancel"
-  },
-  "save": {
-    "message": "Save"
-  },
-  "language": {
-    "message": "Language"
-  },
-  "import_bookmarks": {
-    "message": "Import Bookmarks"
-  },
-  "export_bookmarks": {
-    "message": "Export Bookmarks"
-  },
-  "import": {
-    "message": "Import"
-  },
-  "export": {
-    "message": "Export"
-  },
-  "default": {
-    "message": "Default"
-  },
-  "custom": {
-    "message": "Custom"
-  },
-  "upload_image": {
-    "message": "Upload Image"
-  },
-  "add_image_url": {
-    "message": "Add image Url and click load"
-  },
-  "load": {
-    "message": "Load"
-  },
-  "delay": {
-    "message": "Delay"
-  },
-  "time_format": {
-    "message": "Time Format"
-  },
-  "learn_more": {
-    "message": "Learn more"
-  },
-  "about_us": {
-    "message": "About Us"
-  },
-  "folder_name": {
-    "message": "Folder Name"
-  },
-  "font_color": {
-    "message": "Font Color"
-  },
-  "search_bookmark": {
-    "message": "Search bookmark"
-  },
-  "based_hour24": {
-    "message": "24-based Hour"
-  },
-  "based_hour12": {
-    "message": "12-based Hour"
-  },
-  "dark": {
-    "message": "Dark"
-  },
-  "ligth": {
-    "message": "Ligth"
-  },
-  "sec20": {
-    "message": "20 sec"
-  },
-  "sec30": {
-    "message": "30 sec"
-  },
-  "sec40": {
-    "message": "40 sec"
-  },
-  "min1": {
-    "message": "1 min"
-  },
-  "disable_time": {
-    "message": "Disable Time"
-  }
+    "app_name": {
+        "message": "qTab - Custom New Tab"
+    },
+    "app_description": {
+        "message": "Customize your Google Chrome new tab page background"
+    },
+    "general": {
+        "message": "General"
+    },
+    "search_box": {
+        "message": "Search Box"
+    },
+    "background": {
+        "message": "Background"
+    },
+    "time": {
+        "message": "Time"
+    },
+    "privacy_and_security": {
+        "message": "Privacy and Security"
+    },
+    "add_folder": {
+        "message": "Add Folder"
+    },
+    "settings": {
+        "message": "Settings"
+    },
+    "open_bookmarks": {
+        "message": "Open Bookmarks"
+    },
+    "theme": {
+        "message": "Theme"
+    },
+    "edit_bookmarks": {
+        "message": "Edit Bookmarks"
+    },
+    "open_bookmars_text": {
+        "message": "Are you sure you want to open all bookmarks?"
+    },
+    "upload_img_text": {
+        "message": "Click and create the preview you need"
+    },
+    "create_preview": {
+        "message": "Create Preview"
+    },
+    "less_100": {
+        "message": "File need to be less 100kb"
+    },
+    "search_placeholder": {
+        "message": "Search the Web..."
+    },
+    "name": {
+        "message": "Name"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Remove"
+    },
+    "rate_us": {
+        "message": "Rate Us"
+    },
+    "cancel": {
+        "message": "Cancel"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "language": {
+        "message": "Language"
+    },
+    "import_bookmarks": {
+        "message": "Import Bookmarks"
+    },
+    "export_bookmarks": {
+        "message": "Export Bookmarks"
+    },
+    "import": {
+        "message": "Import"
+    },
+    "export": {
+        "message": "Export"
+    },
+    "default": {
+        "message": "Default"
+    },
+    "custom": {
+        "message": "Custom"
+    },
+    "upload_image": {
+        "message": "Upload Image"
+    },
+    "add_image_url": {
+        "message": "Add image Url and click load"
+    },
+    "load": {
+        "message": "Load"
+    },
+    "delay": {
+        "message": "Delay"
+    },
+    "time_format": {
+        "message": "Time Format"
+    },
+    "learn_more": {
+        "message": "Learn more"
+    },
+    "about_us": {
+        "message": "About Us"
+    },
+    "folder_name": {
+        "message": "Folder Name"
+    },
+    "font_color": {
+        "message": "Font Color"
+    },
+    "search_bookmark": {
+        "message": "Search bookmark"
+    },
+    "based_hour24": {
+        "message": "24-based Hour"
+    },
+    "based_hour12": {
+        "message": "12-based Hour"
+    },
+    "dark": {
+        "message": "Dark"
+    },
+    "light": {
+        "message": "Light"
+    },
+    "sec20": {
+        "message": "20 sec"
+    },
+    "sec30": {
+        "message": "30 sec"
+    },
+    "sec40": {
+        "message": "40 sec"
+    },
+    "min1": {
+        "message": "1 min"
+    },
+    "disable_time": {
+        "message": "Disable Time"
+    }
 }

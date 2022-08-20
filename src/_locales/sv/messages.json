@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "Allmän"
+    },
+    "search_box": {
+        "message": "Sökruta"
+    },
+    "background": {
+        "message": "Bakgrund"
+    },
+    "time": {
+        "message": "Tid"
+    },
+    "privacy_and_security": {
+        "message": "Sekretess och säkerhet"
+    },
+    "add_folder": {
+        "message": "Lägg till mapp"
+    },
+    "settings": {
+        "message": "inställningar"
+    },
+    "open_bookmarks": {
+        "message": "Öppna Bokmärken"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "edit_bookmarks": {
+        "message": "Redigera bokmärken"
+    },
+    "open_bookmars_text": {
+        "message": "Är du säker på att du vill öppna alla bokmärken?"
+    },
+    "upload_img_text": {
+        "message": "Klicka och skapa den förhandsvisning du behöver"
+    },
+    "create_preview": {
+        "message": "Skapa förhandsgranskning"
+    },
+    "less_100": {
+        "message": "Filen måste vara mindre än 100 kb"
+    },
+    "search_placeholder": {
+        "message": "Sök på webben..."
+    },
+    "name": {
+        "message": "namn"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Ta bort"
+    },
+    "rate_us": {
+        "message": "Gradera oss"
+    },
+    "cancel": {
+        "message": "Avbryt"
+    },
+    "save": {
+        "message": "Spara"
+    },
+    "language": {
+        "message": "Språk"
+    },
+    "import_bookmarks": {
+        "message": "Importera bokmärken"
+    },
+    "export_bookmarks": {
+        "message": "Exportera bokmärken"
+    },
+    "import": {
+        "message": "Importera"
+    },
+    "export": {
+        "message": "Exportera"
+    },
+    "default": {
+        "message": "Standard"
+    },
+    "custom": {
+        "message": "Beställnings"
+    },
+    "upload_image": {
+        "message": "Ladda upp bild"
+    },
+    "add_image_url": {
+        "message": "Lägg till bildadress och klicka på ladda"
+    },
+    "load": {
+        "message": "Ladda"
+    },
+    "delay": {
+        "message": "Dröjsmål"
+    },
+    "time_format": {
+        "message": "Tidsformat"
+    },
+    "learn_more": {
+        "message": "Läs mer"
+    },
+    "about_us": {
+        "message": "Om oss"
+    },
+    "folder_name": {
+        "message": "Mapp namn"
+    },
+    "font_color": {
+        "message": "Fontfärg"
+    },
+    "search_bookmark": {
+        "message": "Sök bokmärke"
+    },
+    "based_hour24": {
+        "message": "24-baserade timmar"
+    },
+    "based_hour12": {
+        "message": "12-baserad timme"
+    },
+    "dark": {
+        "message": "Mörk"
+    },
+    "light": {
+        "message": "Ljus"
+    },
+    "sec20": {
+        "message": "20 sek"
+    },
+    "sec30": {
+        "message": "30 sek"
+    },
+    "sec40": {
+        "message": "40 sek"
+    },
+    "min1": {
+        "message": "1 min"
+    },
+    "disable_time": {
+        "message": "Inaktivera tid"
     }
 }

@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "አጠቃላይ"
+    },
+    "search_box": {
+        "message": "የፍለጋ ሳጥን"
+    },
+    "background": {
+        "message": "ዳራ"
+    },
+    "time": {
+        "message": "ጊዜ"
+    },
+    "privacy_and_security": {
+        "message": "ግላዊነት እና ደህንነት"
+    },
+    "add_folder": {
+        "message": "አቃፊ ጨምር"
+    },
+    "settings": {
+        "message": "ቅንብሮች"
+    },
+    "open_bookmarks": {
+        "message": "ዕልባቶችን ክፈት"
+    },
+    "theme": {
+        "message": "ጭብጥ"
+    },
+    "edit_bookmarks": {
+        "message": "ዕልባቶችን አርትዕ"
+    },
+    "open_bookmars_text": {
+        "message": "እርግጠኛ ነህ ሁሉንም ዕልባቶችን መክፈት ትፈልጋለህ?"
+    },
+    "upload_img_text": {
+        "message": "ጠቅ ያድርጉ እና የሚፈልጉትን ቅድመ እይታ ይፍጠሩ"
+    },
+    "create_preview": {
+        "message": "ቅድመ እይታ ይፍጠሩ"
+    },
+    "less_100": {
+        "message": "ፋይል ከ100 ኪባ ያነሰ መሆን አለበት።"
+    },
+    "search_placeholder": {
+        "message": "ድሩን ፈልግ..."
+    },
+    "name": {
+        "message": "ስም"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "አስወግድ"
+    },
+    "rate_us": {
+        "message": "ደረጃ ይስጡን።"
+    },
+    "cancel": {
+        "message": "ሰርዝ"
+    },
+    "save": {
+        "message": "አስቀምጥ"
+    },
+    "language": {
+        "message": "ቋንቋ"
+    },
+    "import_bookmarks": {
+        "message": "ዕልባቶችን አስመጣ"
+    },
+    "export_bookmarks": {
+        "message": "ዕልባቶችን ወደ ውጪ ላክ"
+    },
+    "import": {
+        "message": "አስመጣ"
+    },
+    "export": {
+        "message": "ወደ ውጪ ላክ"
+    },
+    "default": {
+        "message": "ነባሪ"
+    },
+    "custom": {
+        "message": "ብጁ"
+    },
+    "upload_image": {
+        "message": "ምስል ስቀል"
+    },
+    "add_image_url": {
+        "message": "የምስል ዩአርኤል ያክሉ እና ጭነትን ጠቅ ያድርጉ"
+    },
+    "load": {
+        "message": "ጫን"
+    },
+    "delay": {
+        "message": "መዘግየት"
+    },
+    "time_format": {
+        "message": "የጊዜ ቅርጸት"
+    },
+    "learn_more": {
+        "message": "ተጨማሪ እወቅ"
+    },
+    "about_us": {
+        "message": "ስለ እኛ"
+    },
+    "folder_name": {
+        "message": "የአቃፊ ስም"
+    },
+    "font_color": {
+        "message": "የቅርጸ ቁምፊ ቀለም"
+    },
+    "search_bookmark": {
+        "message": "ዕልባት ይፈልጉ"
+    },
+    "based_hour24": {
+        "message": "24-የተመሰረተ ሰዓት"
+    },
+    "based_hour12": {
+        "message": "12-የተመሰረተ ሰዓት"
+    },
+    "dark": {
+        "message": "ጨለማ"
+    },
+    "light": {
+        "message": "ብርሃን"
+    },
+    "sec20": {
+        "message": "20 ሰከንድ"
+    },
+    "sec30": {
+        "message": "30 ሰከንድ"
+    },
+    "sec40": {
+        "message": "40 ሰከንድ"
+    },
+    "min1": {
+        "message": "1 ደቂቃ"
+    },
+    "disable_time": {
+        "message": "ጊዜን አሰናክል"
     }
 }

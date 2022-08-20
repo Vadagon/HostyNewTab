@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "ทั่วไป"
+    },
+    "search_box": {
+        "message": "กล่องค้นหา"
+    },
+    "background": {
+        "message": "พื้นหลัง"
+    },
+    "time": {
+        "message": "เวลา"
+    },
+    "privacy_and_security": {
+        "message": "ความเป็นส่วนตัวและความปลอดภัย"
+    },
+    "add_folder": {
+        "message": "เพิ่มแฟ้มข้อมูล"
+    },
+    "settings": {
+        "message": "การตั้งค่า"
+    },
+    "open_bookmarks": {
+        "message": "เปิดบุ๊คมาร์ค"
+    },
+    "theme": {
+        "message": "ธีม"
+    },
+    "edit_bookmarks": {
+        "message": "แก้ไขบุ๊กมาร์ก"
+    },
+    "open_bookmars_text": {
+        "message": "คุณแน่ใจหรือไม่ว่าต้องการเปิดบุ๊กมาร์กทั้งหมด"
+    },
+    "upload_img_text": {
+        "message": "คลิกและสร้างตัวอย่างที่คุณต้องการ"
+    },
+    "create_preview": {
+        "message": "สร้างตัวอย่าง"
+    },
+    "less_100": {
+        "message": "ไฟล์ต้องน้อยกว่า 100kb"
+    },
+    "search_placeholder": {
+        "message": "ค้นหาเว็บ..."
+    },
+    "name": {
+        "message": "ชื่อ"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "ลบ"
+    },
+    "rate_us": {
+        "message": "ให้คะแนนเรา"
+    },
+    "cancel": {
+        "message": "ยกเลิก"
+    },
+    "save": {
+        "message": "บันทึก"
+    },
+    "language": {
+        "message": "ภาษา"
+    },
+    "import_bookmarks": {
+        "message": "นำเข้าบุ๊กมาร์ก"
+    },
+    "export_bookmarks": {
+        "message": "ส่งออกบุ๊กมาร์ก"
+    },
+    "import": {
+        "message": "นำเข้า"
+    },
+    "export": {
+        "message": "ส่งออก"
+    },
+    "default": {
+        "message": "ค่าเริ่มต้น"
+    },
+    "custom": {
+        "message": "กำหนดเอง"
+    },
+    "upload_image": {
+        "message": "อัพโหลดภาพ"
+    },
+    "add_image_url": {
+        "message": "เพิ่ม URL รูปภาพแล้วคลิกโหลด"
+    },
+    "load": {
+        "message": "โหลด"
+    },
+    "delay": {
+        "message": "ล่าช้า"
+    },
+    "time_format": {
+        "message": "รูปแบบเวลา"
+    },
+    "learn_more": {
+        "message": "เรียนรู้เพิ่มเติม"
+    },
+    "about_us": {
+        "message": "เกี่ยวกับเรา"
+    },
+    "folder_name": {
+        "message": "ชื่อโฟลเดอร์"
+    },
+    "font_color": {
+        "message": "สีตัวอักษร"
+    },
+    "search_bookmark": {
+        "message": "ค้นหาบุ๊คมาร์ค"
+    },
+    "based_hour24": {
+        "message": "24 ชั่วโมง"
+    },
+    "based_hour12": {
+        "message": "แบบ 12 ชั่วโมง"
+    },
+    "dark": {
+        "message": "มืด"
+    },
+    "light": {
+        "message": "แสงสว่าง"
+    },
+    "sec20": {
+        "message": "20 วินาที"
+    },
+    "sec30": {
+        "message": "30 วินาที"
+    },
+    "sec40": {
+        "message": "40 วินาที"
+    },
+    "min1": {
+        "message": "1 นาที"
+    },
+    "disable_time": {
+        "message": "ปิดการใช้งานเวลา"
     }
 }

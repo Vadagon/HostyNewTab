@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "பொது"
+    },
+    "search_box": {
+        "message": "தேடல் பெட்டி"
+    },
+    "background": {
+        "message": "பின்னணி"
+    },
+    "time": {
+        "message": "நேரம்"
+    },
+    "privacy_and_security": {
+        "message": "தனியுரிமை மற்றும் பாதுகாப்பு"
+    },
+    "add_folder": {
+        "message": "கோப்புறையைச் சேர்க்கவும்"
+    },
+    "settings": {
+        "message": "அமைப்புகள்"
+    },
+    "open_bookmarks": {
+        "message": "புக்மார்க்குகளைத் திறக்கவும்"
+    },
+    "theme": {
+        "message": "தீம்"
+    },
+    "edit_bookmarks": {
+        "message": "புக்மார்க்குகளைத் திருத்தவும்"
+    },
+    "open_bookmars_text": {
+        "message": "எல்லா புக்மார்க்குகளையும் நிச்சயமாகத் திறக்க விரும்புகிறீர்களா?"
+    },
+    "upload_img_text": {
+        "message": "உங்களுக்குத் தேவையான மாதிரிக்காட்சியைக் கிளிக் செய்து உருவாக்கவும்"
+    },
+    "create_preview": {
+        "message": "முன்னோட்டத்தை உருவாக்கவும்"
+    },
+    "less_100": {
+        "message": "கோப்பு 100kb குறைவாக இருக்க வேண்டும்"
+    },
+    "search_placeholder": {
+        "message": "இணையத்தில் தேடு..."
+    },
+    "name": {
+        "message": "பெயர்"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "அகற்று"
+    },
+    "rate_us": {
+        "message": "எங்களை மதிப்பிடு"
+    },
+    "cancel": {
+        "message": "ரத்து செய்"
+    },
+    "save": {
+        "message": "சேமிக்கவும்"
+    },
+    "language": {
+        "message": "மொழி"
+    },
+    "import_bookmarks": {
+        "message": "புக்மார்க்குகளை இறக்குமதி செய்யவும்"
+    },
+    "export_bookmarks": {
+        "message": "புக்மார்க்குகளை ஏற்றுமதி செய்யவும்"
+    },
+    "import": {
+        "message": "இறக்குமதி"
+    },
+    "export": {
+        "message": "ஏற்றுமதி"
+    },
+    "default": {
+        "message": "இயல்புநிலை"
+    },
+    "custom": {
+        "message": "தனிப்பயன்"
+    },
+    "upload_image": {
+        "message": "படத்தை பதிவேற்றம் செய்யவும்"
+    },
+    "add_image_url": {
+        "message": "படத்தின் URL ஐச் சேர்த்து, ஏற்ற என்பதைக் கிளிக் செய்யவும்"
+    },
+    "load": {
+        "message": "ஏற்றவும்"
+    },
+    "delay": {
+        "message": "தாமதம்"
+    },
+    "time_format": {
+        "message": "நேர அமைப்பு"
+    },
+    "learn_more": {
+        "message": "மேலும் அறிக"
+    },
+    "about_us": {
+        "message": "எங்களை பற்றி"
+    },
+    "folder_name": {
+        "message": "கோப்புறை பெயர்"
+    },
+    "font_color": {
+        "message": "எழுத்துரு நிறம்"
+    },
+    "search_bookmark": {
+        "message": "புக்மார்க்கைத் தேடுங்கள்"
+    },
+    "based_hour24": {
+        "message": "24 அடிப்படையிலான மணிநேரம்"
+    },
+    "based_hour12": {
+        "message": "12 அடிப்படையிலான மணிநேரம்"
+    },
+    "dark": {
+        "message": "இருள்"
+    },
+    "light": {
+        "message": "ஒளி"
+    },
+    "sec20": {
+        "message": "20 நொடி"
+    },
+    "sec30": {
+        "message": "30 நொடி"
+    },
+    "sec40": {
+        "message": "40 நொடி"
+    },
+    "min1": {
+        "message": "1 நிமிடம்"
+    },
+    "disable_time": {
+        "message": "நேரத்தை முடக்கு"
     }
 }

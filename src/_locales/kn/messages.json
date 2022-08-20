@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "ಸಾಮಾನ್ಯ"
+    },
+    "search_box": {
+        "message": "ಹುಡುಕಾಟ ಪೆಟ್ಟಿಗೆ"
+    },
+    "background": {
+        "message": "ಹಿನ್ನೆಲೆ"
+    },
+    "time": {
+        "message": "ಸಮಯ"
+    },
+    "privacy_and_security": {
+        "message": "ಗೌಪ್ಯತೆ ಮತ್ತು ಭದ್ರತೆ"
+    },
+    "add_folder": {
+        "message": "ಫೋಲ್ಡರ್ ಸೇರಿಸು"
+    },
+    "settings": {
+        "message": "ಸಂಯೋಜನೆಗಳು"
+    },
+    "open_bookmarks": {
+        "message": "ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ"
+    },
+    "theme": {
+        "message": "ಥೀಮ್"
+    },
+    "edit_bookmarks": {
+        "message": "ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳನ್ನು ಸಂಪಾದಿಸಿ"
+    },
+    "open_bookmars_text": {
+        "message": "ನೀವು ಎಲ್ಲಾ ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳನ್ನು ತೆರೆಯಲು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?"
+    },
+    "upload_img_text": {
+        "message": "ನಿಮಗೆ ಅಗತ್ಯವಿರುವ ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ರಚಿಸಿ"
+    },
+    "create_preview": {
+        "message": "ಪೂರ್ವವೀಕ್ಷಣೆ ರಚಿಸಿ"
+    },
+    "less_100": {
+        "message": "ಫೈಲ್ 100kb ಗಿಂತ ಕಡಿಮೆ ಇರಬೇಕು"
+    },
+    "search_placeholder": {
+        "message": "ವೆಬ್ ಹುಡುಕಿ..."
+    },
+    "name": {
+        "message": "ಹೆಸರು"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "ತೆಗೆದುಹಾಕಿ"
+    },
+    "rate_us": {
+        "message": "ನಮ್ಮನ್ನು ರೇಟ್ ಮಾಡಿ"
+    },
+    "cancel": {
+        "message": "ರದ್ದುಮಾಡಿ"
+    },
+    "save": {
+        "message": "ಉಳಿಸಿ"
+    },
+    "language": {
+        "message": "ಭಾಷೆ"
+    },
+    "import_bookmarks": {
+        "message": "ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳನ್ನು ಆಮದು ಮಾಡಿ"
+    },
+    "export_bookmarks": {
+        "message": "ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳನ್ನು ರಫ್ತು ಮಾಡಿ"
+    },
+    "import": {
+        "message": "ಆಮದು"
+    },
+    "export": {
+        "message": "ರಫ್ತು ಮಾಡಿ"
+    },
+    "default": {
+        "message": "ಡೀಫಾಲ್ಟ್"
+    },
+    "custom": {
+        "message": "ಕಸ್ಟಮ್"
+    },
+    "upload_image": {
+        "message": "ಚಿತ್ರವನ್ನು ಅಪ್ಲೋಡ್ ಮಾಡಿ"
+    },
+    "add_image_url": {
+        "message": "ಚಿತ್ರದ URL ಅನ್ನು ಸೇರಿಸಿ ಮತ್ತು ಲೋಡ್ ಅನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ"
+    },
+    "load": {
+        "message": "ಲೋಡ್ ಮಾಡಿ"
+    },
+    "delay": {
+        "message": "ವಿಳಂಬ"
+    },
+    "time_format": {
+        "message": "ಸಮಯ ಸ್ವರೂಪ"
+    },
+    "learn_more": {
+        "message": "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
+    },
+    "about_us": {
+        "message": "ನಮ್ಮ ಬಗ್ಗೆ"
+    },
+    "folder_name": {
+        "message": "ಫೋಲ್ಡರ್ ಹೆಸರು"
+    },
+    "font_color": {
+        "message": "ಫಾಂಟ್ ಬಣ್ಣ"
+    },
+    "search_bookmark": {
+        "message": "ಬುಕ್ಮಾರ್ಕ್ ಹುಡುಕಿ"
+    },
+    "based_hour24": {
+        "message": "24-ಆಧಾರಿತ ಗಂಟೆ"
+    },
+    "based_hour12": {
+        "message": "12-ಆಧಾರಿತ ಗಂಟೆ"
+    },
+    "dark": {
+        "message": "ಕತ್ತಲು"
+    },
+    "light": {
+        "message": "ಬೆಳಕು"
+    },
+    "sec20": {
+        "message": "20 ಸೆ"
+    },
+    "sec30": {
+        "message": "30 ಸೆ"
+    },
+    "sec40": {
+        "message": "40 ಸೆ"
+    },
+    "min1": {
+        "message": "1 ನಿಮಿಷ"
+    },
+    "disable_time": {
+        "message": "ಸಮಯವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ"
     }
 }

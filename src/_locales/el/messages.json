@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "Γενικός"
+    },
+    "search_box": {
+        "message": "Κουτί αναζήτησης"
+    },
+    "background": {
+        "message": "Ιστορικό"
+    },
+    "time": {
+        "message": "χρόνος"
+    },
+    "privacy_and_security": {
+        "message": "Απόρρητο και ασφάλεια"
+    },
+    "add_folder": {
+        "message": "Προσθήκη φακέλου"
+    },
+    "settings": {
+        "message": "Ρυθμίσεις"
+    },
+    "open_bookmarks": {
+        "message": "Ανοίξτε τους Σελιδοδείκτες"
+    },
+    "theme": {
+        "message": "Θέμα"
+    },
+    "edit_bookmarks": {
+        "message": "Επεξεργασία σελιδοδεικτών"
+    },
+    "open_bookmars_text": {
+        "message": "Είστε βέβαιοι ότι θέλετε να ανοίξετε όλους τους σελιδοδείκτες;"
+    },
+    "upload_img_text": {
+        "message": "Κάντε κλικ και δημιουργήστε την προεπισκόπηση που χρειάζεστε"
+    },
+    "create_preview": {
+        "message": "Δημιουργία προεπισκόπησης"
+    },
+    "less_100": {
+        "message": "Το αρχείο πρέπει να είναι μικρότερο από 100 kb"
+    },
+    "search_placeholder": {
+        "message": "Αναζήτηση στον Ιστό..."
+    },
+    "name": {
+        "message": "Ονομα"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Αφαιρώ"
+    },
+    "rate_us": {
+        "message": "Βαθμολογήστε μας"
+    },
+    "cancel": {
+        "message": "Ματαίωση"
+    },
+    "save": {
+        "message": "Αποθηκεύσετε"
+    },
+    "language": {
+        "message": "Γλώσσα"
+    },
+    "import_bookmarks": {
+        "message": "Εισαγωγή σελιδοδεικτών"
+    },
+    "export_bookmarks": {
+        "message": "Εξαγωγή σελιδοδεικτών"
+    },
+    "import": {
+        "message": "Εισαγωγή"
+    },
+    "export": {
+        "message": "Εξαγωγή"
+    },
+    "default": {
+        "message": "Προκαθορισμένο"
+    },
+    "custom": {
+        "message": "Εθιμο"
+    },
+    "upload_image": {
+        "message": "Μεταφόρτωση εικόνας"
+    },
+    "add_image_url": {
+        "message": "Προσθέστε URL εικόνας και κάντε κλικ στο φόρτωση"
+    },
+    "load": {
+        "message": "Φορτώνω"
+    },
+    "delay": {
+        "message": "Καθυστέρηση"
+    },
+    "time_format": {
+        "message": "Μορφή ώρας"
+    },
+    "learn_more": {
+        "message": "Μάθε περισσότερα"
+    },
+    "about_us": {
+        "message": "Σχετικά με εμάς"
+    },
+    "folder_name": {
+        "message": "Ονομα φακέλου"
+    },
+    "font_color": {
+        "message": "Χρώμα γραμματοσειράς"
+    },
+    "search_bookmark": {
+        "message": "Αναζήτηση σελιδοδείκτη"
+    },
+    "based_hour24": {
+        "message": "24ωρη ώρα"
+    },
+    "based_hour12": {
+        "message": "Ώρα με βάση 12"
+    },
+    "dark": {
+        "message": "Σκοτάδι"
+    },
+    "light": {
+        "message": "Φως"
+    },
+    "sec20": {
+        "message": "20 δευτ"
+    },
+    "sec30": {
+        "message": "30 δευτ"
+    },
+    "sec40": {
+        "message": "40 δευτ"
+    },
+    "min1": {
+        "message": "1 λεπτό"
+    },
+    "disable_time": {
+        "message": "Απενεργοποίηση χρόνου"
     }
 }

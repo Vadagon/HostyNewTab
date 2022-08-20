@@ -24,7 +24,7 @@ export const getLocalisations = ({ store, setStore }) => {
     // var languageList = await getAcceptLanguages();
 
     var d = Object.assign(store, { l10n: l10nJSON })
-    setStore && setStore(d);
+    // setStore && setStore(d);
     return d;
 }
 export const loadLocalisations = async ({ store, setStore }) => {
@@ -38,7 +38,7 @@ export const loadLocalisations = async ({ store, setStore }) => {
     }
     // console.log(store)
     localStorage.setItem('l10n', JSON.stringify(list));
-    setStore && setStore(Object.assign(store, { l10n: list }));
+    // setStore && setStore(Object.assign(store, { l10n: list }));
     return list;
 };
 
