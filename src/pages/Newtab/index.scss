@@ -423,6 +423,7 @@ div[active=true].drop_down_bg{
   opacity: 1;
   height: auto;
   display: flex;
+  padding-right: 12px;
 }
 
 div[active=true].arrow_down{
@@ -445,4 +446,66 @@ div[active=true].arrow_down{
 }
 div[active=true].bgs::after{
   opacity: 1;
+}
+
+
+.checbox_wrapper {
+  display: flex;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  padding-right: 30px;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+}
+
+/* Hide the browser's default checkbox */
+.checbox_wrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* When the checkbox is checked, add a blue background */
+.checbox_wrapper input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checbox_wrapper input:checked ~ .checkmark:after {
+  display: flex;
+}
+
+/* Style the checkmark/indicator */
+.checbox_wrapper .checkmark:after {
+  background: #1493ff;
+  width: 14px;
+  height: 14px;
+  
 }

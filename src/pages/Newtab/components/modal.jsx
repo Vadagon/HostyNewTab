@@ -18,7 +18,7 @@ const Modal = (props) => {
         <ModalHeader closeModal={props.openModal} title={props.title} />
         <div className="flex h-[calc(100%-60px)]">
           {props.children ? (
-            <div className="modal_content p-5 w-full pb-20">
+            <div className="modal_content  p-5 w-[calc(100%-170px)] pb-20">
               {props.children}
             </div>
           ) : (
@@ -31,7 +31,7 @@ const Modal = (props) => {
                   selectedTab={selectedTab}
                 />
               )}
-              <div className="modal_content p-5 w-full">
+              <div className="modal_content w-[calc(100%-170px)] p-5 ">
                 <ModalTabs
                   settings={props.settings}
                   selectedTab={selectedTab}
