@@ -12,11 +12,13 @@ const ReactGridLayoutItem = (props) => {
           }}
           className="edit_on_hover  w-[24px] bg-[length:14px_14px]  bg-center bg-no-repeat h-[24px] bg-black bg-opacity-40 rounded-full -top-3 -right-3 cursor-pointer delay-200 transition-all duration-150 flex opacity-0 pointer-events-none absolute justify-center items-center p-1 "
         ></div>
-        <div
-          className="rounded-full w-full bg-cover bg-center min-h-[64px] bg-no-repeat  "
-          style={{ backgroundImage: 'url(' + amazon + ')' }}
-        ></div>
-        <div className="text-white text-sm">{props.title}</div>
+        <div className="w-full flex justify-center min-h-[64px]">
+          <div
+            className="  bg-cover  rounded-md bg-center w-full h-full max-w-[64px] bg-no-repeat  "
+            style={{ backgroundImage: 'url(' + amazon + ')' }}
+          ></div>
+        </div>
+        <div className="text-white text-sm mt-[10%]">{props.title}</div>
       </div>
     </div>
   );
