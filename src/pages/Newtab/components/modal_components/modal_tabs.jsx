@@ -21,10 +21,11 @@ import search_bar_color from '../../../../assets/img/search-bar-color.png';
 import export_ from '../../../../assets/img/export.png';
 import theme from '../../../../assets/img/theme.png';
 import { PopoverPicker } from './color_picker';
-var langs = ['English', 'Deutsch', 'Español', 'Français', 'Русский'];
+var langs = ['English', 'Deutsch', 'Español', 'Français', 'Русский', 'Укрїнська'];
+export const langsShorhands = ['en', 'de', 'es', 'fr', 'ru', 'uk']
 var time = ['20 sec', '30 sec', '40 sec', '1 min', 'Disable Time'];
 var time_format_ = ['24-based Hour', '12-based Hour'];
-var mode = ['Dark', 'Ligth'];
+var mode = ['dark', 'ligth'];
 var bg = [bg_1, bg_2, bg_3, bg_4, bg_5];
 var bookmarks = {};
 function getBookmarksArr(e) {
@@ -40,7 +41,6 @@ function getBookmarksArr(e) {
   return arr;
 }
 function getChildrens(e, i) {
-  console.log(getBookmarksArr(e));
   return (
     <div>
       {getBookmarksArr(e).map((e2, i) => {
@@ -56,7 +56,7 @@ function getChildrens(e, i) {
               >
                 <div
                   style={{
-                    backgroundImage: 'url(' + amazon + ')',
+                    backgroundImage: 'url(http://www.google.com/s2/favicons?domain=' + e2.url + ')',
                   }}
                   className="w-[16px] flex-none h-[16px] bg-[length:16px_16px] bg-no-repeat bg-center mr-2"
                 ></div>
@@ -75,33 +75,8 @@ function getChildrens(e, i) {
 }
 const ModalTabs = (props) => {
   useEffect(() => {
-    function fetchFavicon(url) {
-      return new Promise(function (resolve, reject) {
-        var img = new Image();
-        img.onload = function () {
-          var canvas = document.createElement('canvas');
-          canvas.width = this.width;
-          canvas.height = this.height;
-
-          var ctx = canvas.getContext('2d');
-          ctx.drawImage(this, 0, 0);
-
-          var dataURL = canvas.toDataURL('image/png');
-          resolve(dataURL);
-        };
-        img.src = 'Not allowed to load local resource:' + url;
-      });
-    }
-
     chrome.bookmarks.getTree().then((e) => {
       bookmarks = e[0].children;
-      bookmarks.forEach((e) => {
-        e.children.forEach((e2) => {
-          // fetchFavicon(e2.url).then((e3) => {
-          //   e2.img = e3;
-          // });
-        });
-      });
     });
   }, []);
   const [color, setColor] = useState('#aabbcc');
@@ -115,10 +90,10 @@ const ModalTabs = (props) => {
         {props.selectedTab === 0 && (
           <div className="tab ">
             <ModalRowItem title={'Language'} img={lang}>
-              <Dropdown data={langs} />
+              <Dropdown data={langsShorhands} setting={'lang'} />
             </ModalRowItem>
             <ModalRowItem title={'Theme'} img={theme}>
-              <Dropdown data={mode} />
+              <Dropdown data={mode} setting={'theme'} />
             </ModalRowItem>
             <ModalRowItem title={'Import Bookmarks'} img={import_}>
               <div className="bg-[#2abe7d] text-white w-[135px] h-[34px] flex justify-center items-center rounded-md cursor-pointer">

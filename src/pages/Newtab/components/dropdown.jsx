@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { save } from '../../../components/Store/Store';
+import { UserContext } from '../Newtab';
+import { langsShorhands } from './modal_components/modal_tabs';
 
 const Dropdown = (props) => {
   var [drop, openDropdown] = useState(false);
-  var [selected, selectVal] = useState(0);
+  const storage = useContext(UserContext);
+  var el = props.data.indexOf(storage.store.settings[props.setting]);
+  var [selected, selectVal] = useState(el === -1 ? 0 : el);
   return (
+
     <div
       onClick={() => {
         openDropdown(!drop);
@@ -22,6 +28,8 @@ const Dropdown = (props) => {
             <div
               onClick={() => {
                 selectVal(i);
+                storage.store.settings[props.setting] = props.data[i];
+                save(storage.store, storage)
               }}
               key={item}
               className={' px-2 py-1 '}

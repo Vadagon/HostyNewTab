@@ -12,8 +12,8 @@ const Newtab = () => {
   const [store, setStore] = useState(updated_localisation_store);
 
   useEffect(() => {
-    console.log(store);
-    getLocalisations({ store, setStore });
+    // console.log(store);
+    // getLocalisations({ store, setStore });
     // chrome.storage.sync.set({key: value}, function() {
     //   console.log('Value is set to ' + value);
     // });

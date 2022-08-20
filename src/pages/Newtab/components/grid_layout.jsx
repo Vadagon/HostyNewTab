@@ -10,30 +10,29 @@ import { save } from '../../../components/Store/Store';
 const ReactGridLayout = WidthProvider(RGL);
 const GridLayout = (props) => {
   const { store, setStore } = useContext(UserContext);
-  console.log(store.settings);
   var layout = [{ i: 'searchBar', x: 4, y: 3, w: 5, h: 1, static: true }];
   var activeFolder = store.settings.folders[store.settings.activeFolder];
   activeFolder.bookmarks.forEach((bookmark, bookmarkId) => {
     layout.push({
-      i: 'custom-' + bookmarkId + "-" + bookmark.name,
+      i: 'custom-' + bookmark.id + "-" + bookmark.name,
       x: bookmark.position.x,
       y: bookmark.position.y,
       w: 1,
       h: 1
     })
   })
-  store.settings.folders.forEach((folder) => {
-    folder.bookmarks.forEach((bookmark, bookmarkId) =>
-      layout.push({
-        i: bookmarkId + '-' + bookmark.name,
-        x: bookmark.position.x,
-        y: bookmark.position.y,
-        w: 1,
-        h: 1,
-        title: bookmark.name,
-      })
-    );
-  });
+  // store.settings.folders.forEach((folder) => {
+  //   folder.bookmarks.forEach((bookmark, bookmarkId) =>
+  //     layout.push({
+  //       i: 'custom_bookmark-' + bookmark.id,
+  //       x: bookmark.position.x,
+  //       y: bookmark.position.y,
+  //       w: 1,
+  //       h: 1,
+  //       title: bookmark.name,
+  //     })
+  //   );
+  // });
   for (let x = 0; x < 13; x++) {
     layout.push({ i: 'astatic' + x, x: x, y: 8, w: 1, h: 2, static: true });
   }
@@ -58,7 +57,7 @@ const GridLayout = (props) => {
       cols={13}
       rowHeight={(window.innerHeight - 40) / 8}
       isBounded={true}
-      verticalCompact={false}
+      verticalCompact={'horizontal'}
       preventCollision={true}
       isResizable={false}
       margin={[0, 0]}
@@ -66,7 +65,7 @@ const GridLayout = (props) => {
         var d = layout.map(function (e) {
           if (e.i.includes('custom-')) {
             var sss = parseInt(e.i.split('-')[1]);
-            activeFolder.bookmarks[sss].position = { x: e.x, y: e.y }
+            activeFolder.bookmarks.filter(e => e.id === sss)[0].position = { x: e.x, y: e.y }
             // console.log(store)
             store.settings.lang && save(store, { store, setStore });
             return e;

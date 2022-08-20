@@ -13,11 +13,11 @@ export const initial_store = {
         folders: [
             {
                 name: 'Welcome', font_color: '#202124', preview: null, bookmarks: [
-                    { position: { x: 4, y: 4 }, name: null, url: null, preview: null },
-                    { position: { x: 5, y: 4 }, name: null, url: null, preview: null },
-                    { position: { x: 6, y: 4 }, name: null, url: null, preview: null },
-                    { position: { x: 7, y: 4 }, name: null, url: null, preview: null },
-                    { position: { x: 8, y: 4 }, name: null, url: null, preview: null }
+                    { id: 0, position: { x: 4, y: 4 }, name: 'Amazon', url: 'https://www.amazon.com/', preview: null },
+                    { id: 1, position: { x: 5, y: 4 }, name: null, url: null, preview: null },
+                    { id: 2, position: { x: 6, y: 4 }, name: null, url: null, preview: null },
+                    { id: 3, position: { x: 7, y: 4 }, name: null, url: null, preview: null },
+                    { id: 4, position: { x: 8, y: 4 }, name: null, url: null, preview: null }
                 ]
             }
         ],
@@ -26,6 +26,7 @@ export const initial_store = {
 };
 
 export const save = (data, storage) => {
+    console.log('saved!')
     const { store, setStore } = storage;
     localStorage.setItem('data', JSON.stringify(data));
     setStore && setStore(Object.assign(store, data));
