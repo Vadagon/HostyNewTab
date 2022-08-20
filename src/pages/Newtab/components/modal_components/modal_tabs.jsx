@@ -27,6 +27,52 @@ var time_format_ = ['24-based Hour', '12-based Hour'];
 var mode = ['Dark', 'Ligth'];
 var bg = [bg_1, bg_2, bg_3, bg_4, bg_5];
 var bookmarks = {};
+function getBookmarksArr(e) {
+  var arr = [];
+  e.children.map(function (e, i) {
+    if (e.hasOwnProperty('children')) {
+      arr.push(...getBookmarksArr(e));
+    } else {
+      arr.push(e);
+    }
+    return e;
+  });
+  return arr;
+}
+function getChildrens(e, i) {
+  console.log(getBookmarksArr(e));
+  return (
+    <div>
+      {getBookmarksArr(e).map((e2, i) => {
+        return (
+          <div key={i} className="flex w-full mb-1">
+            <label className="checbox_wrapper">
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={' text-white flex w-full '}
+                href={e2.url}
+                key={'i' + i}
+              >
+                <div
+                  style={{
+                    backgroundImage: 'url(' + amazon + ')',
+                  }}
+                  className="w-[16px] flex-none h-[16px] bg-[length:16px_16px] bg-no-repeat bg-center mr-2"
+                ></div>
+                <div className=" overflow-hidden text-ellipsis whitespace-nowrap max-w-[calc(100%-30px)]">
+                  {e2.title ? e2.title : e2.url}
+                </div>
+              </a>
+              <input type="checkbox" />
+              <span className="checkmark"></span>
+            </label>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
 const ModalTabs = (props) => {
   useEffect(() => {
     function fetchFavicon(url) {
@@ -46,17 +92,16 @@ const ModalTabs = (props) => {
         img.src = 'Not allowed to load local resource:' + url;
       });
     }
+
     chrome.bookmarks.getTree().then((e) => {
       bookmarks = e[0].children;
       bookmarks.forEach((e) => {
         e.children.forEach((e2) => {
-          fetchFavicon(e2.url).then((e3) => {
-            e2.img = e3;
-          });
+          // fetchFavicon(e2.url).then((e3) => {
+          //   e2.img = e3;
+          // });
         });
       });
-
-      console.log(bookmarks);
     });
   }, []);
   const [color, setColor] = useState('#aabbcc');
@@ -232,36 +277,11 @@ const ModalTabs = (props) => {
             />
             <div>
               {bookmarks.map((e, i) => {
+                if (e.children.length === 0) return <div key={i}></div>;
                 return (
                   <ModalRowItemDropdown key={i} title={e.title}>
                     <div className="flex w-full flex-col">
-                      {e.children.map((e2, i) => {
-                        return (
-                          <div key={i} className="flex w-full mb-1">
-                            <label className="checbox_wrapper">
-                              <a
-                                target={'_blank'}
-                                rel="noreferrer"
-                                className={' text-white flex w-full '}
-                                href={e2.url}
-                                key={'i' + i}
-                              >
-                                <div
-                                  style={{
-                                    backgroundImage: 'url(' + amazon + ')',
-                                  }}
-                                  className="w-[16px] flex-none h-[16px] bg-[length:16px_16px] bg-no-repeat bg-center mr-2"
-                                ></div>
-                                <div className=" overflow-hidden text-ellipsis whitespace-nowrap max-w-[calc(100%-30px)]">
-                                  {e2.title ? e2.title : e2.url}
-                                </div>
-                              </a>
-                              <input type="checkbox" />
-                              <span className="checkmark"></span>
-                            </label>
-                          </div>
-                        );
-                      })}
+                      {getChildrens(e, i)}
                     </div>
                   </ModalRowItemDropdown>
                 );

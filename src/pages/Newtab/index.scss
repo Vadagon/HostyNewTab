@@ -1,6 +1,4 @@
-.react-grid-item{
-  background-color: green;
-}
+
 
 @font-face {
   font-family: 'Lato Hairline';
@@ -508,4 +506,8 @@ div[active=true].bgs::after{
   width: 14px;
   height: 14px;
   
+}
+
+.react-grid-item{
+  background-color: green;
 }
