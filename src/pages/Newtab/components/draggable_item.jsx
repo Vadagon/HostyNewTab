@@ -8,20 +8,11 @@ import RGL, { WidthProvider } from "react-grid-layout";
 const ReactGridLayout = WidthProvider(RGL);
 const DraggableItem = (props) => {
   var layout = [
-    { i: "searchBar", x: 3, y: 6, w: 3, h: 2, static: true },
-    { i: "b2", x: 1, y: 0, w: 1, h: 2, asdasd: 'asdas' },
-    // { i: "c3", x: 4, y: 0, w: 1, h: 1 },
-    // { i: "d4", x: 0, y: 1, w: 1, h: 1, static: true },
-    // { i: "b5", x: 1, y: 0, w: 1, h: 2 },
-    // { i: "c6", x: 4, y: 5, w: 1, h: 1 },
-    // { i: "a6", x: 0, y: 1, w: 1, h: 1, static: true },
-    // { i: "b7", x: 1, y: 5, w: 1, h: 2 },
-    // { i: "c8", x: 4, y: 0, w: 1, h: 1 },
-    // { i: "a", x: 0, y: 1, w: 1, h: 1, static: true },
-    // { i: "b", x: 1, y: 5, w: 1, h: 2 },
-    // { i: "c", x: 4, y: 9, w: 1, h: 1 },
+    { i: "searchBar", x: 4, y: 6, w: 5, h: 2, static: true },
+    { i: "b2", x: 1, y: 0, w: 1, h: 2 },
+    { i: "b4", x: 1, y: 0, w: 1, h: 2 },
   ];
-  for (let x = 0; x < 9; x++) {
+  for (let x = 0; x < 13; x++) {
     for (let y = 0; y < 1; y++) {
       // layout.push({ i: "a" + x + y, x: x, y: y * 2, w: 1, h: 2 })
     }
@@ -32,7 +23,7 @@ const DraggableItem = (props) => {
     <ReactGridLayout
       className="layout"
       layout={layout}
-      cols={9}
+      cols={13}
       rowHeight={(window.innerHeight - 40) / 16}
       isBounded={true}
       verticalCompact={false}
