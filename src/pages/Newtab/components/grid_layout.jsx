@@ -14,13 +14,13 @@ const GridLayout = (props) => {
   var activeFolder = store.settings.folders[store.settings.activeFolder];
   activeFolder.bookmarks.forEach((bookmark, bookmarkId) => {
     layout.push({
-      i: 'custom-' + bookmark.id + "-" + bookmark.name,
+      i: 'custom-' + bookmark.id + '-' + bookmark.name,
       x: bookmark.position.x,
       y: bookmark.position.y,
       w: 1,
-      h: 1
-    })
-  })
+      h: 1,
+    });
+  });
   // store.settings.folders.forEach((folder) => {
   //   folder.bookmarks.forEach((bookmark, bookmarkId) =>
   //     layout.push({
@@ -65,15 +65,18 @@ const GridLayout = (props) => {
         var d = layout.map(function (e) {
           if (e.i.includes('custom-')) {
             var sss = parseInt(e.i.split('-')[1]);
-            activeFolder.bookmarks.filter(e => e.id === sss)[0].position = { x: e.x, y: e.y }
+            activeFolder.bookmarks.filter((e) => e.id === sss)[0].position = {
+              x: e.x,
+              y: e.y,
+            };
             // console.log(store)
             store.settings.lang && save(store, { store, setStore });
             return e;
           } else {
-            return null
+            return null;
           }
         });
-        console.log(d.filter(e => e))
+        console.log(d.filter((e) => e));
       }}
     >
       {layout.map((e) => (
