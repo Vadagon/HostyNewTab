@@ -16,7 +16,7 @@ const Modal = (props) => {
         className="modal_content_wrapper"
       >
         <ModalHeader closeModal={props.openModal} title={props.title} />
-        <div className="flex h-full">
+        <div className="flex h-[calc(100%-60px)]">
           {props.children ? (
             <div className="modal_content p-5 w-full pb-20">
               {props.children}
