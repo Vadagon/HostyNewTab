@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import GridLayout from './grid_layout';
 import Modal from './modal';
 import ClockBg from './clock';
 import Navbar from './navbar';
 import createActivityDetector from 'activity-detector';
 import ModalEditBookmarks from './edit_bookmarks_modal';
+import { UserContext } from '../context';
 
 function useIdle(options) {
   const [isIdle, setIsIdle] = React.useState(false);
@@ -32,6 +33,7 @@ const MainView = (props) => {
         }
       >
         <Navbar />
+
         <GridLayout openModal={openModal} />
         <Modal
           title={'Edit Bookmark'}

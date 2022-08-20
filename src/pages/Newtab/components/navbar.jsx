@@ -9,7 +9,7 @@ import {
   arrayMove,
 } from 'react-sortable-hoc';
 import { i18n } from '../../../components/Translation/Translation';
-import { UserContext } from '../Newtab';
+import { UserContext } from '../context';
 
 const Navbar = () => {
   var [modal, openModal] = useState(false);

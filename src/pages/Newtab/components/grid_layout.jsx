@@ -1,12 +1,12 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 
 import '/node_modules/react-grid-layout/css/styles.css';
 import '/node_modules/react-resizable/css/styles.css';
 import RGL, { WidthProvider } from 'react-grid-layout';
-import { UserContext } from '../Newtab';
 import SearchForm from './search_form';
 import ReactGridLayoutItem from './react_grid_layout_item';
 import { save } from '../../../components/Store/Store';
+import { UserContext } from '../context';
 const ReactGridLayout = WidthProvider(RGL);
 const GridLayout = (props) => {
   const { store, setStore } = useContext(UserContext);
@@ -51,35 +51,37 @@ const GridLayout = (props) => {
     }
   }
   return (
-    <ReactGridLayout
-      className="layout"
-      layout={layout}
-      cols={13}
-      rowHeight={(window.innerHeight - 40) / 8}
-      isBounded={true}
-      verticalCompact={'horizontal'}
-      preventCollision={true}
-      isResizable={false}
-      margin={[0, 0]}
-      onLayoutChange={(layout, layouts) => {
-        var d = layout.map(function (e) {
-          if (e.i.includes('custom-')) {
-            var sss = parseInt(e.i.split('-')[1]);
-            activeFolder.bookmarks.filter(e => e.id === sss)[0].position = { x: e.x, y: e.y }
-            // console.log(store)
-            store.settings.lang && save(store, { store, setStore });
-            return e;
-          } else {
-            return null
-          }
-        });
-        console.log(d.filter(e => e))
-      }}
-    >
-      {layout.map((e) => (
-        <div key={e.i}>{renderSwitch(e)}</div>
-      ))}
-    </ReactGridLayout>
+    <div>
+      {store.settings.theme}
+      <ReactGridLayout
+        className="layout"
+        layout={layout}
+        cols={13}
+        rowHeight={(window.innerHeight - 40) / 8}
+        isBounded={true}
+        verticalCompact={false}
+        preventCollision={true}
+        isResizable={false}
+        margin={[0, 0]}
+        onLayoutChange={(layout, layouts) => {
+          var d = layout.map(function (e) {
+            if (e.i.includes('custom-')) {
+              var sss = parseInt(e.i.split('-')[1]);
+              activeFolder.bookmarks.filter(e => e.id === sss)[0].position = { x: e.x, y: e.y }
+              // console.log(store)
+              store.settings.lang && save(store, { store, setStore });
+              return e;
+            } else {
+              return null
+            }
+          });
+          console.log(d.filter(e => e))
+        }}
+      >
+        {layout.map((e) => (
+          <div key={e.i}>{renderSwitch(e)}</div>
+        ))}
+      </ReactGridLayout></div>
   );
 };
 

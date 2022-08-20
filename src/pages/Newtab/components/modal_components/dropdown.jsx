@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { save } from '../../../../components/Store/Store';
-import { UserContext } from '../../Newtab';
+import { UserContext } from '../../context';
 // import { langsShorhands } from './modal_components/modal_tabs';
 
 const Dropdown = (props) => {
@@ -30,6 +30,7 @@ const Dropdown = (props) => {
                 selectVal(i);
                 storage.store.settings[props.setting] = props.data[i];
                 save(storage.store, storage)
+                props.onChange && props.onChange(props.data[i])
               }}
               key={item}
               className={' px-2 py-1 '}

@@ -21,11 +21,11 @@ import export_ from '../../../../assets/img/export.png';
 import theme from '../../../../assets/img/theme.png';
 import { PopoverPicker } from './color_picker';
 import UploadImage from '../upload_img';
-export const langsShorhands = ['en', 'de', 'es', 'fr', 'ru', 'uk']
+import { langsShorhands } from '../../../../components/Translation/Translation';
 var langs = ['English', 'Deutsch', 'Español', 'Français', 'Русский', 'Укрїнська'];
 var time = ['20 sec', '30 sec', '40 sec', '1 min', 'Disable Time'];
 var time_format_ = ['24-based Hour', '12-based Hour'];
-var mode = ['dark', 'ligth'];
+var mode = ['dark', 'light'];
 var bg = [bg_1, bg_2, bg_3, bg_4, bg_5];
 var bookmarks = {};
 
@@ -113,7 +113,9 @@ const ModalTabs = (props) => {
         {props.selectedTab === 0 && (
           <div className="tab ">
             <ModalRowItem title={'Language'} img={lang}>
-              <Dropdown data={langsShorhands} setting={'lang'} />
+              <Dropdown data={langsShorhands} setting={'lang'} onChange={(lang) => {
+                // window.location.reload()
+              }} />
             </ModalRowItem>
             <ModalRowItem title={'Theme'} img={theme}>
               <Dropdown data={mode} setting={'theme'} />

@@ -1,13 +1,12 @@
 import React, { useContext } from 'react';
-import { UserContext } from '../../pages/Newtab/Newtab';
+import { UserContext } from '../../pages/Newtab/context';
 
-const l10nList = ['ro', 'uk', 'en'];
+export const langsShorhands = ['en', 'de', 'es', 'fr', 'ru', 'uk']
 
 export const getAcceptLanguages = async () => {
     return new Promise((resolve, reject) => {
         chrome.i18n.getAcceptLanguages(function (languageList) {
             resolve(languageList);
-            console.log(languageList);
         });
     });
 };
@@ -30,12 +29,12 @@ export const getLocalisations = ({ store, setStore }) => {
 }
 export const loadLocalisations = async ({ store, setStore }) => {
     var list = {};
-    for (let index = 0; index < l10nList.length; index++) {
+    for (let index = 0; index < langsShorhands.length; index++) {
         var file = chrome.runtime.getURL(
-            '_locales/' + l10nList[index] + '/messages.json'
+            '_locales/' + langsShorhands[index] + '/messages.json'
         );
         let res = await fetch(file).then((response) => response.json());
-        list[l10nList[index]] = res;
+        list[langsShorhands[index]] = res;
     }
     // console.log(store)
     localStorage.setItem('l10n', JSON.stringify(list));
