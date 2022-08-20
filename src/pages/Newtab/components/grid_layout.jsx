@@ -7,11 +7,13 @@ import SearchForm from './search_form';
 import ReactGridLayoutItem from './react_grid_layout_item';
 import { save } from '../../../components/Store/Store';
 import { UserContext } from '../context';
+import _ from 'lodash';
 const ReactGridLayout = WidthProvider(RGL);
 const GridLayout = (props) => {
   const { store, setStore } = useContext(UserContext);
   var layout = [{ i: 'searchBar', x: 4, y: 3, w: 5, h: 1, static: true }];
-  var activeFolder = store.settings.folders[store.settings.activeFolder];
+  var storeClone = _.cloneDeep(store);
+  var activeFolder = storeClone.settings.folders[store.settings.activeFolder];
   activeFolder.bookmarks.forEach((bookmark, bookmarkId) => {
     layout.push({
       i: 'custom-' + bookmark.id + '-' + bookmark.name,
@@ -52,7 +54,6 @@ const GridLayout = (props) => {
   }
   return (
     <div>
-      {store.settings.theme}
       <ReactGridLayout
         className="layout"
         layout={layout}
@@ -68,8 +69,8 @@ const GridLayout = (props) => {
             if (e.i.includes('custom-')) {
               var sss = parseInt(e.i.split('-')[1]);
               activeFolder.bookmarks.filter(e => e.id === sss)[0].position = { x: e.x, y: e.y }
-              // console.log(store)
-              store.settings.lang && save(store, { store, setStore });
+              // console.log('store')
+              store.settings.lang && !_.isEqual(storeClone, store) && save(store, { store, setStore });
               return e;
             } else {
               return null

@@ -118,7 +118,7 @@ const ModalTabs = (props) => {
     i18n('min1', store),
     i18n('disable_time', store),
   ];
-  var mode = [i18n('dark', store), i18n('ligth', store)];
+  var mode = [i18n('dark', store), i18n('light', store)];
   if (props.settings) {
     return (
       <div className="tabs">

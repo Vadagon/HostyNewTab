@@ -1,3 +1,5 @@
+import _ from 'lodash/core';
+
 export const initial_store = {
     l10n: {},
     settings: {
@@ -25,14 +27,16 @@ export const initial_store = {
     }
 };
 
-export const save = (data, storage) => {
+export const save = function (data, storage) {
+    // console.log(JSON.stringify(data).length, JSON.stringify(storage.store).length)
+    // if (_.isEqual(data, storage.store)) return;
     console.log('saved!')
     const { store, setStore } = storage;
     localStorage.setItem('data', JSON.stringify(data));
     // storage.store.settings.theme
     // store.settings.theme = 'dark'
-    setStore && setStore(Object.assign(store, data));
-    chrome.storage.sync.set({ data: data });
+    setStore && setStore({ ...store, data });
+    chrome.storage.local.set({ data: data });
 };
 
 export const get = () => {

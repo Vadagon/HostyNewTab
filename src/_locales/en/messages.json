@@ -128,8 +128,8 @@
   "dark": {
     "message": "Dark"
   },
-  "ligth": {
-    "message": "Ligth"
+  "light": {
+    "message": "Light"
   },
   "sec20": {
     "message": "20 sec"
