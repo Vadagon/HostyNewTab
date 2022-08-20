@@ -21,12 +21,21 @@ import export_ from '../../../../assets/img/export.png';
 import theme from '../../../../assets/img/theme.png';
 import { PopoverPicker } from './color_picker';
 import UploadImage from '../upload_img';
-import { i18n, langsShorhands } from '../../../../components/Translation/Translation';
+import {
+  i18n,
+  langsShorhands,
+} from '../../../../components/Translation/Translation';
 import { UserContext } from '../../context';
-var langs = ['English', 'Deutsch', 'Español', 'Français', 'Русский', 'Укрїнська'];
-var time = ['20 sec', '30 sec', '40 sec', '1 min', 'Disable Time'];
-var time_format_ = ['24-based Hour', '12-based Hour'];
-var mode = ['dark', 'light'];
+import { save } from '../../../../components/Store/Store';
+var langs = [
+  'English',
+  'Deutsch',
+  'Español',
+  'Français',
+  'Русский',
+  'Укрїнська',
+];
+
 var bg = [bg_1, bg_2, bg_3, bg_4, bg_5];
 var bookmarks = {};
 
@@ -106,9 +115,13 @@ const ModalTabs = (props) => {
       bookmarks = e[0].children;
     });
   }, []);
-  const [color, setColor] = useState('#aabbcc');
-  const [colorFont, setColorFont] = useState('#ffffff');
-  const [colorIcon, setColorIcon] = useState('#aabbcc');
+  const [color, setColor] = useState(store.store.settings['search_box'].color);
+  const [colorFont, setColorFont] = useState(
+    store.store.settings['search_box'].font_color
+  );
+  const [colorIcon, setColorIcon] = useState(
+    store.store.settings['search_box'].icon_color
+  );
   const [selected, selectBg] = useState(5);
   var time_format_ = [i18n('based_hour24', store), i18n('based_hour12', store)];
   var time = [
@@ -125,10 +138,14 @@ const ModalTabs = (props) => {
         {/* General */}
         {props.selectedTab === 0 && (
           <div className="tab ">
-            <ModalRowItem title={'Language'} img={lang}>
-              <Dropdown data={langsShorhands} setting={'lang'} onChange={(lang) => {
-                // window.location.reload()
-              }} />
+            <ModalRowItem title={i18n('language', store)} img={lang}>
+              <Dropdown
+                data={langsShorhands}
+                setting={'lang'}
+                onChange={(lang) => {
+                  // window.location.reload()
+                }}
+              />
             </ModalRowItem>
             <ModalRowItem title={i18n('theme', store)} img={theme}>
               <Dropdown data={mode} setting={'theme'} />
@@ -149,13 +166,37 @@ const ModalTabs = (props) => {
         {props.selectedTab === 1 && (
           <div className="tab ">
             <ModalRowItem title={'Color'} img={search_bar_color}>
-              <PopoverPicker color={color} onChange={setColor} />
+              <PopoverPicker
+                color={color}
+                onChange={(e) => {
+                  store.store.settings['search_box'].color = e;
+                  save(store.store, store);
+                  console.log(store);
+                  setColor(e);
+                }}
+              />
             </ModalRowItem>
             <ModalRowItem title={'Font Color'} img={font_color}>
-              <PopoverPicker color={colorFont} onChange={setColorFont} />
+              <PopoverPicker
+                color={colorFont}
+                onChange={(e) => {
+                  store.store.settings['search_box'].font_color = e;
+                  save(store.store, store);
+                  console.log(store);
+                  setColorFont(e);
+                }}
+              />
             </ModalRowItem>
             <ModalRowItem title={'Icon Color'} img={icon_color}>
-              <PopoverPicker color={colorIcon} onChange={setColorIcon} />
+              <PopoverPicker
+                onChange={(e) => {
+                  store.store.settings['search_box'].icon_color = e;
+                  save(store.store, store);
+                  console.log(store);
+                  setColorIcon(e);
+                }}
+                color={colorIcon}
+              />
             </ModalRowItem>
           </div>
         )}

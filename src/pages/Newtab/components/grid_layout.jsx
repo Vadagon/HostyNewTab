@@ -67,21 +67,25 @@ const GridLayout = (props) => {
           var d = layout.map(function (e) {
             if (e.i.includes('custom-')) {
               var sss = parseInt(e.i.split('-')[1]);
-              activeFolder.bookmarks.filter(e => e.id === sss)[0].position = { x: e.x, y: e.y }
+              activeFolder.bookmarks.filter((e) => e.id === sss)[0].position = {
+                x: e.x,
+                y: e.y,
+              };
               // console.log(store)
               store.settings.lang && save(store, { store, setStore });
               return e;
             } else {
-              return null
+              return null;
             }
           });
-          console.log(d.filter(e => e))
+          console.log(d.filter((e) => e));
         }}
       >
         {layout.map((e) => (
           <div key={e.i}>{renderSwitch(e)}</div>
         ))}
-      </ReactGridLayout></div>
+      </ReactGridLayout>
+    </div>
   );
 };
 
