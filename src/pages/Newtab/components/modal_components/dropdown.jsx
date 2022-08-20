@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
-import { save } from '../../../components/Store/Store';
+import { save } from '../../../../components/Store/Store';
 import { UserContext } from '../../Newtab';
-import { langsShorhands } from './modal_components/modal_tabs';
+// import { langsShorhands } from './modal_components/modal_tabs';
 
 const Dropdown = (props) => {
   var [drop, openDropdown] = useState(false);
