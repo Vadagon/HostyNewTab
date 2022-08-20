@@ -6,6 +6,7 @@ import Navbar from './navbar';
 import createActivityDetector from 'activity-detector';
 import ModalEditBookmarks from './edit_bookmarks_modal';
 import { UserContext } from '../context';
+import { i18n } from '../../../components/Translation/Translation';
 
 function useIdle(options) {
   const [isIdle, setIsIdle] = React.useState(false);
