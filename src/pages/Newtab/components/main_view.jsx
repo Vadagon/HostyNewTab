@@ -27,6 +27,16 @@ const MainView = (props) => {
       img: '../../../assets/img/amazon.png',
       url: 'https://www.amazon.com/',
     },
+    {
+      title: 'Amazoasdn',
+      img: '../../../assets/img/amazon.png',
+      url: 'https://www.amazon.com/',
+    },
+    {
+      title: 'Amazoasdn',
+      img: '../../../assets/img/amazon.png',
+      url: 'https://www.amazon.com/',
+    },
   ];
   const isIdle = useIdle({ timeToIdle: 5000 });
 
@@ -41,9 +51,11 @@ const MainView = (props) => {
       >
         <Navbar />
         <SearchForm />
-        {bookmarks.map((item, i) => (
-          <DraggableItem key={i} openModal={openModal} {...item} />
-        ))}
+        {/* {bookmarks.map((item, i) => ( */}
+        <DraggableItem openModal={openModal} />
+        {/* <DraggableItem key={i} openModal={openModal} {...item} /> */}
+
+        {/* ))} */}
         <Modal
           title={'Edit Bookmark'}
           open={modal}

@@ -27,8 +27,7 @@ const Newtab = () => {
   return (
     < UserContext.Provider value={{ store, setStore }
     }>
-      <I18n>general</I18n>
-
+      {/* <I18n>general</I18n> */}
       <div className="App">
         <MainView />
       </div>
