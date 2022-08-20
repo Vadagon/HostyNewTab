@@ -3,7 +3,7 @@ import open_all from '../../../assets/img/open_all.svg';
 import edit_tab from '../../../assets/img/edit_tab.svg';
 import move_folder from '../../../assets/img/move_folder.svg';
 import { sortableHandle } from 'react-sortable-hoc';
-import React, { useState } from 'react';
+import React from 'react';
 
 const DragHandle = sortableHandle(() => (
   <div

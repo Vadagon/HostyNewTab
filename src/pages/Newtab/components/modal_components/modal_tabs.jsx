@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import import_ from '../../../../assets/img/import.png';
 import lang from '../../../../assets/img/lang.png';
 import amazon from '../../../../assets/img/amazon.png';
@@ -21,11 +21,18 @@ import export_ from '../../../../assets/img/export.png';
 import theme from '../../../../assets/img/theme.png';
 import { PopoverPicker } from './color_picker';
 import UploadImage from '../upload_img';
-export const langsShorhands = ['en', 'de', 'es', 'fr', 'ru', 'uk']
-var langs = ['English', 'Deutsch', 'Español', 'Français', 'Русский', 'Укрїнська'];
-var time = ['20 sec', '30 sec', '40 sec', '1 min', 'Disable Time'];
-var time_format_ = ['24-based Hour', '12-based Hour'];
-var mode = ['dark', 'ligth'];
+import { UserContext } from '../../Newtab';
+import { i18n } from '../../../../components/Translation/Translation';
+export const langsShorhands = ['en', 'de', 'es', 'fr', 'ru', 'uk'];
+var langs = [
+  'English',
+  'Deutsch',
+  'Español',
+  'Français',
+  'Русский',
+  'Укрїнська',
+];
+
 var bg = [bg_1, bg_2, bg_3, bg_4, bg_5];
 var bookmarks = {};
 
@@ -57,7 +64,10 @@ function getChildrens(e, i) {
               >
                 <div
                   style={{
-                    backgroundImage: 'url(http://www.google.com/s2/favicons?domain=' + e2.url + ')',
+                    backgroundImage:
+                      'url(http://www.google.com/s2/favicons?domain=' +
+                      e2.url +
+                      ')',
                   }}
                   className="w-[16px] flex-none h-[16px] bg-[length:16px_16px] bg-no-repeat bg-center mr-2"
                 ></div>
@@ -75,6 +85,7 @@ function getChildrens(e, i) {
   );
 }
 const ModalTabs = (props) => {
+  const store = useContext(UserContext);
   var [file, uploadFile] = useState('');
   async function convertBase64(file) {
     return new Promise((resolve, reject) => {
@@ -105,29 +116,37 @@ const ModalTabs = (props) => {
   const [colorFont, setColorFont] = useState('#ffffff');
   const [colorIcon, setColorIcon] = useState('#aabbcc');
   const [selected, selectBg] = useState(5);
-
+  var time_format_ = [i18n('based_hour24', store), i18n('based_hour12', store)];
+  var time = [
+    i18n('sec20', store),
+    i18n('sec30', store),
+    i18n('sec40', store),
+    i18n('min1', store),
+    i18n('disable_time', store),
+  ];
+  var mode = [i18n('dark', store), i18n('ligth', store)];
   if (props.settings) {
     return (
       <div className="tabs">
         {/* General */}
         {props.selectedTab === 0 && (
           <div className="tab ">
-            <ModalRowItem title={'Language'} img={lang}>
+            <ModalRowItem title={i18n('language', store)} img={lang}>
               <Dropdown data={langsShorhands} setting={'lang'} />
             </ModalRowItem>
-            <ModalRowItem title={'Theme'} img={theme}>
+            <ModalRowItem title={i18n('theme', store)} img={theme}>
               <Dropdown data={mode} setting={'theme'} />
             </ModalRowItem>
-            <ModalRowItem title={'Import Bookmarks'} img={import_}>
+            {/* <ModalRowItem title={i18n('import_bookmarks', store)} img={import_}>
               <div className="bg-[#2abe7d] text-white w-[135px] h-[34px] flex justify-center items-center rounded-md cursor-pointer">
-                Import
+                {i18n('import', store)}
               </div>
             </ModalRowItem>
-            <ModalRowItem title={'Export Bookmarks'} img={export_}>
+            <ModalRowItem title={i18n('export_bookmarks', store)} img={export_}>
               <div className="bg-[#2abe7d] text-white w-[135px] h-[34px] flex justify-center items-center rounded-md cursor-pointer">
-                Export
+                {i18n('export', store)}
               </div>
-            </ModalRowItem>
+            </ModalRowItem> */}
           </div>
         )}
         {/* Search Box */}
@@ -147,7 +166,7 @@ const ModalTabs = (props) => {
         {/* Background */}
         {props.selectedTab === 2 && (
           <div className="tab ">
-            <ModalRowItemDropdown title={'Default'} img={default_}>
+            <ModalRowItemDropdown title={i18n('default', store)} img={default_}>
               <div className=" grid grid-cols-3">
                 <div
                   active={selected === 0 ? 'true' : ''}
@@ -165,10 +184,10 @@ const ModalTabs = (props) => {
                 ))}
               </div>
             </ModalRowItemDropdown>
-            <ModalRowItemDropdown title={'Custom'} img={upload_}>
+            <ModalRowItemDropdown title={i18n('custom', store)} img={upload_}>
               <ModalRowItem title={'JPG / PNG'}>
                 <label className="bg-[#2abe7d] text-white w-[135px] h-[34px] flex justify-center items-center rounded-md cursor-pointer">
-                  Upload Image
+                  {i18n('upload_image', store)}
                   <input
                     onChange={(e) => {
                       handleFileRead(e);
@@ -182,10 +201,10 @@ const ModalTabs = (props) => {
                 <div className="flex">
                   <input
                     className="border border-[#575757] h-[34px] w-[150px] py-2 px-3 text-[#929292] bg-[#464646]"
-                    placeholder="Add image Url and click load"
+                    placeholder={i18n('add_image_url', store)}
                   />
                   <div className="bg-[#2abe7d] rounded-l-none text-white w-[50px] h-[34px] flex justify-center items-center rounded-md cursor-pointer">
-                    Load
+                    {i18n('load', store)}
                   </div>
                 </div>
               </ModalRowItem>
@@ -195,10 +214,10 @@ const ModalTabs = (props) => {
         {/* Time */}
         {props.selectedTab === 3 && (
           <div className="tab ">
-            <ModalRowItem title={'Delay'} img={clock_}>
+            <ModalRowItem title={i18n('delay', store)} img={clock_}>
               <Dropdown data={time} />
             </ModalRowItem>
-            <ModalRowItem title={'Time Format'} img={time_format}>
+            <ModalRowItem title={i18n('time_format', store)} img={time_format}>
               <Dropdown data={time_format_} />
             </ModalRowItem>
           </div>
@@ -210,13 +229,13 @@ const ModalTabs = (props) => {
               This privacy statement describes how uTab collects and uses the
               personal information you provide.
               <a href="#" className="underline ml-1 cursor-pointer">
-                Learn more
+                {i18n('learn_more', store)}
               </a>
             </div>
             <div className="text-white mb-3">
               Terms of use:
               <a href="#" className="underline ml-1 cursor-pointer">
-                Learn more
+                {i18n('learn_more', store)}
               </a>
             </div>
             <div className="text-white mb-3">
@@ -228,7 +247,7 @@ const ModalTabs = (props) => {
             </div>
             <div className="text-white mb-3">
               <a href="#" className="underline ml-1 cursor-pointer">
-                About Us
+                {i18n('about_us', store)}
               </a>
             </div>
           </div>
@@ -242,13 +261,13 @@ const ModalTabs = (props) => {
           <div className="tab ">
             <UploadImage />
 
-            <ModalRowItem title={'Folder Name'}>
+            <ModalRowItem title={i18n('folder_name', store)}>
               <input
                 className="border border-[#575757] h-[34px] w-[250px] py-2 px-3 text-[#929292] bg-[#464646]"
-                placeholder="Name"
+                placeholder={i18n('name', store)}
               />
             </ModalRowItem>
-            <ModalRowItem title={'Font Color'}>
+            <ModalRowItem title={i18n('font_color', store)}>
               <PopoverPicker color={colorFont} onChange={setColorFont} />
             </ModalRowItem>
           </div>
@@ -257,7 +276,7 @@ const ModalTabs = (props) => {
           <div className="tab ">
             <input
               className="border border-[#575757] h-[34px] mb-5 w-full py-2 px-3 text-[#929292] bg-[#464646]"
-              placeholder="Search bookmark"
+              placeholder={i18n('search_bookmark', store)}
             />
             <div>
               {bookmarks.map((e, i) => {
