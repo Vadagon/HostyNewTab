@@ -515,3 +515,6 @@ div[active=true].bg_upload{
   background-color: #fff !important;
   border-radius: 6px;
 }
+div[placeholder-color] {
+  color: attr(placeholder-color);
+}

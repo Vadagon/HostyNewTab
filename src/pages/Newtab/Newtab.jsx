@@ -5,11 +5,10 @@ import MainView from './components/main_view';
 import { ProviderContext } from './context';
 
 const Newtab = () => {
-
   return (
     <ProviderContext>
       {/* <I18n>general</I18n> */}
-      <div className={"App"}>
+      <div className={'App'}>
         <MainView />
       </div>
     </ProviderContext>

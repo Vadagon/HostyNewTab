@@ -10,7 +10,6 @@ const Dropdown = (props) => {
   var el = props.data.indexOf(storage.store.settings[props.setting]);
   var [selected, selectVal] = useState(el === -1 ? 0 : el);
   return (
-
     <div
       onClick={() => {
         openDropdown(!drop);
@@ -30,8 +29,8 @@ const Dropdown = (props) => {
               onClick={() => {
                 selectVal(i);
                 storage.store.settings[props.setting] = props.data[i];
-                save(storage.store, storage)
-                props.onChange && props.onChange(props.data[i])
+                save(storage.store, storage);
+                props.onChange && props.onChange(props.data[i]);
               }}
               key={item}
               className={' px-2 py-1 '}

@@ -4,12 +4,16 @@ import { i18n } from '../../../components/Translation/Translation';
 import { UserContext } from '../context';
 const SearchForm = (props) => {
   const store = useContext(UserContext);
+
   return (
     <form action="http://www.google.com/search" method="get" className="flex  ">
       <div
-        style={{ backgroundImage: 'url(' + search + ')' }}
+        style={{
+          backgroundImage: 'url(' + search + ')',
+          backgroundColor: store.store.settings['search_box'].color,
+        }}
         className={
-          'rounded-md relative mr-2 w-[60px] bg-[length:24px_24px] bg-[#3D3D3DFF]  p-2 bg-center bg-no-repeat'
+          'rounded-md relative mr-2 w-[60px] bg-[length:24px_24px]  bg-[#3D3D3DFF]  p-2 bg-center bg-no-repeat'
         }
       >
         <input
@@ -24,6 +28,11 @@ const SearchForm = (props) => {
         name="q"
         type={'text'}
         placeholder={i18n('search_placeholder', store)}
+        style={{
+          backgroundColor: store.store.settings['search_box'].color,
+          color: store.store.settings['search_box'].font_color,
+        }}
+        placeholder-color={store.store.settings['search_box'].font_color}
         className={
           'rounded-md  w-full text-base h-[60px]  p-4 bg-[#3D3D3DFF] text-white placeholder:text-gray-300 transition-all duration-150'
         }
