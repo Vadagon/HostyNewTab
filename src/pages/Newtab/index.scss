@@ -420,8 +420,8 @@ div[active=true].drop_down_bg{
   pointer-events: all;
   opacity: 1;
   height: auto;
-  display: flex;
   padding-right: 12px;
+  display: block;
 }
 
 div[active=true].arrow_down{
@@ -445,8 +445,12 @@ div[active=true].arrow_down{
 div[active=true].bgs::after{
   opacity: 1;
 }
-
-
+.bg_upload{
+  background-size: 24px;
+}
+div[active=true].bg_upload{
+  background-size: cover;
+}
 .checbox_wrapper {
   display: flex;
   position: relative;
@@ -507,6 +511,7 @@ div[active=true].bgs::after{
   height: 14px;
   
 }
-
-.react-grid-item{
+.react-grid-placeholder {
+  background-color: #fff !important;
+  border-radius: 6px;
 }

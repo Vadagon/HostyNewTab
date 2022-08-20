@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import import_ from '../../../../assets/img/import.png';
 import lang from '../../../../assets/img/lang.png';
-import plus from '../../../../assets/img/plus.svg';
 import amazon from '../../../../assets/img/amazon.png';
-import Dropdown from '../dropdown';
+import Dropdown from './dropdown';
 import ModalRowItem from './modal_row_item';
 import ModalRowItemDropdown from './modal_row_item_dropdown';
 import upload_ from '../../../../assets/img/upload.png';
@@ -21,13 +20,15 @@ import search_bar_color from '../../../../assets/img/search-bar-color.png';
 import export_ from '../../../../assets/img/export.png';
 import theme from '../../../../assets/img/theme.png';
 import { PopoverPicker } from './color_picker';
-var langs = ['English', 'Deutsch', 'Español', 'Français', 'Русский', 'Укрїнська'];
+import UploadImage from '../upload_img';
 export const langsShorhands = ['en', 'de', 'es', 'fr', 'ru', 'uk']
+var langs = ['English', 'Deutsch', 'Español', 'Français', 'Русский', 'Укрїнська'];
 var time = ['20 sec', '30 sec', '40 sec', '1 min', 'Disable Time'];
 var time_format_ = ['24-based Hour', '12-based Hour'];
 var mode = ['dark', 'ligth'];
 var bg = [bg_1, bg_2, bg_3, bg_4, bg_5];
 var bookmarks = {};
+
 function getBookmarksArr(e) {
   var arr = [];
   e.children.map(function (e, i) {
@@ -74,6 +75,27 @@ function getChildrens(e, i) {
   );
 }
 const ModalTabs = (props) => {
+  var [file, uploadFile] = useState('');
+  async function convertBase64(file) {
+    return new Promise((resolve, reject) => {
+      const fileReader = new FileReader();
+      fileReader.readAsDataURL(file);
+      fileReader.onload = () => {
+        resolve(fileReader.result);
+      };
+      fileReader.onerror = (error) => {
+        reject(error);
+      };
+    });
+  }
+  async function handleFileRead(event) {
+    const file = event.target.files[0];
+    const base64 = await convertBase64(file);
+    uploadFile(base64);
+    console.log(base64);
+    // file
+  }
+
   useEffect(() => {
     chrome.bookmarks.getTree().then((e) => {
       bookmarks = e[0].children;
@@ -83,6 +105,7 @@ const ModalTabs = (props) => {
   const [colorFont, setColorFont] = useState('#ffffff');
   const [colorIcon, setColorIcon] = useState('#aabbcc');
   const [selected, selectBg] = useState(5);
+
   if (props.settings) {
     return (
       <div className="tabs">
@@ -146,7 +169,13 @@ const ModalTabs = (props) => {
               <ModalRowItem title={'JPG / PNG'}>
                 <label className="bg-[#2abe7d] text-white w-[135px] h-[34px] flex justify-center items-center rounded-md cursor-pointer">
                   Upload Image
-                  <input type={'file'} className={'hidden'} />
+                  <input
+                    onChange={(e) => {
+                      handleFileRead(e);
+                    }}
+                    type={'file'}
+                    className={'hidden'}
+                  />
                 </label>
               </ModalRowItem>
               <ModalRowItem title={'JPG / PNG / GIF'}>
@@ -211,27 +240,7 @@ const ModalTabs = (props) => {
       <div className="flex h-[calc(100%-60px)] overflow-hidden overflow-y-auto w-full flex-col">
         {props.selectedTab === 0 && (
           <div className="tab ">
-            <div className="flex mb-5 items-center">
-              <label
-                htmlFor="file"
-                className="cursor-pointer bg-[#464646] border border-[#575757] flex items-center justify-center rounded-full h-[82px] w-[82px]"
-              >
-                <div
-                  style={{ backgroundImage: 'url(' + plus + ')' }}
-                  className="w-[24px] h-[24px] bg-[length:24px_24px] bg-no-repeat bg-center"
-                ></div>
-              </label>
-              <div className="flex flex-col ml-5">
-                <div className="text-white">JPG or PNG</div>
-                <label
-                  htmlFor="file"
-                  className=" bg-[#2abe7d] mt-3 text-white w-[135px] h-[34px] flex justify-center items-center rounded-md cursor-pointer"
-                >
-                  Upload Preview
-                </label>
-              </div>
-              <input id="file" type={'file'} className={'hidden'} />
-            </div>
+            <UploadImage />
 
             <ModalRowItem title={'Folder Name'}>
               <input
