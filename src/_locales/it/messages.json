@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "Generale"
+    },
+    "search_box": {
+        "message": "Casella di ricerca"
+    },
+    "background": {
+        "message": "Sfondo"
+    },
+    "time": {
+        "message": "Volta"
+    },
+    "privacy_and_security": {
+        "message": "Privacy e sicurezza"
+    },
+    "add_folder": {
+        "message": "Aggiungi cartella"
+    },
+    "settings": {
+        "message": "Impostazioni"
+    },
+    "open_bookmarks": {
+        "message": "Apri segnalibri"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "edit_bookmarks": {
+        "message": "Modifica segnalibri"
+    },
+    "open_bookmars_text": {
+        "message": "Sei sicuro di voler aprire tutti i segnalibri?"
+    },
+    "upload_img_text": {
+        "message": "Fare clic e creare l'anteprima di cui hai bisogno"
+    },
+    "create_preview": {
+        "message": "Crea anteprima"
+    },
+    "less_100": {
+        "message": "Il file deve essere inferiore a 100 kb"
+    },
+    "search_placeholder": {
+        "message": "Cercare in rete..."
+    },
+    "name": {
+        "message": "Nome"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Rimuovere"
+    },
+    "rate_us": {
+        "message": "Valutaci"
+    },
+    "cancel": {
+        "message": "Annulla"
+    },
+    "save": {
+        "message": "Salva"
+    },
+    "language": {
+        "message": "Lingua"
+    },
+    "import_bookmarks": {
+        "message": "Importa segnalibri"
+    },
+    "export_bookmarks": {
+        "message": "Esporta segnalibri"
+    },
+    "import": {
+        "message": "Importare"
+    },
+    "export": {
+        "message": "Esportare"
+    },
+    "default": {
+        "message": "Predefinito"
+    },
+    "custom": {
+        "message": "Costume"
+    },
+    "upload_image": {
+        "message": "Carica immagine"
+    },
+    "add_image_url": {
+        "message": "Aggiungi l'URL dell'immagine e fai clic su Carica"
+    },
+    "load": {
+        "message": "Carico"
+    },
+    "delay": {
+        "message": "Ritardo"
+    },
+    "time_format": {
+        "message": "Formato orario"
+    },
+    "learn_more": {
+        "message": "Scopri di più"
+    },
+    "about_us": {
+        "message": "Chi siamo"
+    },
+    "folder_name": {
+        "message": "Nome della cartella"
+    },
+    "font_color": {
+        "message": "Colore del carattere"
+    },
+    "search_bookmark": {
+        "message": "Cerca segnalibro"
+    },
+    "based_hour24": {
+        "message": "24 ore"
+    },
+    "based_hour12": {
+        "message": "Ora basata su 12"
+    },
+    "dark": {
+        "message": "Scuro"
+    },
+    "light": {
+        "message": "Luce"
+    },
+    "sec20": {
+        "message": "20 sec"
+    },
+    "sec30": {
+        "message": "30 sec"
+    },
+    "sec40": {
+        "message": "40 sec"
+    },
+    "min1": {
+        "message": "1 minuto"
+    },
+    "disable_time": {
+        "message": "Disabilita il tempo"
     }
 }

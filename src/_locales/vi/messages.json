@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "Chung"
+    },
+    "search_box": {
+        "message": "Hộp tìm kiếm"
+    },
+    "background": {
+        "message": "Tiểu sử"
+    },
+    "time": {
+        "message": "Thời gian"
+    },
+    "privacy_and_security": {
+        "message": "Quyền riêng tư và Bảo mật"
+    },
+    "add_folder": {
+        "message": "Thêm thư mục"
+    },
+    "settings": {
+        "message": "Cài đặt"
+    },
+    "open_bookmarks": {
+        "message": "Mở Dấu trang"
+    },
+    "theme": {
+        "message": "Chủ đề"
+    },
+    "edit_bookmarks": {
+        "message": "Chỉnh sửa Dấu trang"
+    },
+    "open_bookmars_text": {
+        "message": "Bạn có chắc chắn muốn mở tất cả các dấu trang không?"
+    },
+    "upload_img_text": {
+        "message": "Nhấp và tạo bản xem trước bạn cần"
+    },
+    "create_preview": {
+        "message": "Tạo bản xem trước"
+    },
+    "less_100": {
+        "message": "Tệp cần nhỏ hơn 100kb"
+    },
+    "search_placeholder": {
+        "message": "Tìm kiếm trên mạng..."
+    },
+    "name": {
+        "message": "Tên"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Loại bỏ"
+    },
+    "rate_us": {
+        "message": "Đánh giá chúng tôi"
+    },
+    "cancel": {
+        "message": "Hủy bỏ"
+    },
+    "save": {
+        "message": "Tiết kiệm"
+    },
+    "language": {
+        "message": "Ngôn ngữ"
+    },
+    "import_bookmarks": {
+        "message": "Nhập dấu trang"
+    },
+    "export_bookmarks": {
+        "message": "Xuất dấu trang"
+    },
+    "import": {
+        "message": "Nhập khẩu"
+    },
+    "export": {
+        "message": "Xuất khẩu"
+    },
+    "default": {
+        "message": "Mặc định"
+    },
+    "custom": {
+        "message": "Phong tục"
+    },
+    "upload_image": {
+        "message": "Tải lên hình ảnh"
+    },
+    "add_image_url": {
+        "message": "Thêm Url hình ảnh và nhấp vào tải"
+    },
+    "load": {
+        "message": "Trọng tải"
+    },
+    "delay": {
+        "message": "Sự chậm trễ"
+    },
+    "time_format": {
+        "message": "Định dạng thời gian"
+    },
+    "learn_more": {
+        "message": "Tìm hiểu thêm"
+    },
+    "about_us": {
+        "message": "Về chúng tôi"
+    },
+    "folder_name": {
+        "message": "Tên thư mục"
+    },
+    "font_color": {
+        "message": "Màu phông chữ"
+    },
+    "search_bookmark": {
+        "message": "Tìm kiếm dấu trang"
+    },
+    "based_hour24": {
+        "message": "24 giờ dựa trên"
+    },
+    "based_hour12": {
+        "message": "12 giờ dựa trên"
+    },
+    "dark": {
+        "message": "Tối"
+    },
+    "light": {
+        "message": "Nhẹ"
+    },
+    "sec20": {
+        "message": "20 giây"
+    },
+    "sec30": {
+        "message": "30 giây"
+    },
+    "sec40": {
+        "message": "40 giây"
+    },
+    "min1": {
+        "message": "1 phút"
+    },
+    "disable_time": {
+        "message": "Tắt thời gian"
     }
 }

@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "Umum"
+    },
+    "search_box": {
+        "message": "Kotak pencarian"
+    },
+    "background": {
+        "message": "Latar belakang"
+    },
+    "time": {
+        "message": "Waktu"
+    },
+    "privacy_and_security": {
+        "message": "Privasi dan Keamanan"
+    },
+    "add_folder": {
+        "message": "Tambah Folder"
+    },
+    "settings": {
+        "message": "Pengaturan"
+    },
+    "open_bookmarks": {
+        "message": "Buka Bookmark"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "edit_bookmarks": {
+        "message": "Edit Bookmark"
+    },
+    "open_bookmars_text": {
+        "message": "Anda yakin ingin membuka semua bookmark?"
+    },
+    "upload_img_text": {
+        "message": "Klik dan buat pratinjau yang Anda butuhkan"
+    },
+    "create_preview": {
+        "message": "Buat Pratinjau"
+    },
+    "less_100": {
+        "message": "File harus kurang dari 100kb"
+    },
+    "search_placeholder": {
+        "message": "Cari di Web..."
+    },
+    "name": {
+        "message": "Nama"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Menghapus"
+    },
+    "rate_us": {
+        "message": "Nilai Kami"
+    },
+    "cancel": {
+        "message": "Membatalkan"
+    },
+    "save": {
+        "message": "Menyimpan"
+    },
+    "language": {
+        "message": "Bahasa"
+    },
+    "import_bookmarks": {
+        "message": "Impor Bookmark"
+    },
+    "export_bookmarks": {
+        "message": "Ekspor Bookmark"
+    },
+    "import": {
+        "message": "Impor"
+    },
+    "export": {
+        "message": "Ekspor"
+    },
+    "default": {
+        "message": "Bawaan"
+    },
+    "custom": {
+        "message": "Kebiasaan"
+    },
+    "upload_image": {
+        "message": "Unggah Gambar"
+    },
+    "add_image_url": {
+        "message": "Tambahkan Url gambar dan klik muat"
+    },
+    "load": {
+        "message": "Memuat"
+    },
+    "delay": {
+        "message": "Menunda"
+    },
+    "time_format": {
+        "message": "Format waktu"
+    },
+    "learn_more": {
+        "message": "Belajarlah lagi"
+    },
+    "about_us": {
+        "message": "Tentang kami"
+    },
+    "folder_name": {
+        "message": "Nama folder"
+    },
+    "font_color": {
+        "message": "Warna huruf"
+    },
+    "search_bookmark": {
+        "message": "Cari bookmark"
+    },
+    "based_hour24": {
+        "message": "24 jam berbasis"
+    },
+    "based_hour12": {
+        "message": "Jam berbasis 12"
+    },
+    "dark": {
+        "message": "Gelap"
+    },
+    "light": {
+        "message": "Lampu"
+    },
+    "sec20": {
+        "message": "20 detik"
+    },
+    "sec30": {
+        "message": "30 detik"
+    },
+    "sec40": {
+        "message": "40 detik"
+    },
+    "min1": {
+        "message": "1 menit"
+    },
+    "disable_time": {
+        "message": "Nonaktifkan Waktu"
     }
 }

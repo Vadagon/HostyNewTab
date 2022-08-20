@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "全般的"
+    },
+    "search_box": {
+        "message": "検索ボックス"
+    },
+    "background": {
+        "message": "バックグラウンド"
+    },
+    "time": {
+        "message": "時間"
+    },
+    "privacy_and_security": {
+        "message": "プライバシーとセキュリティ"
+    },
+    "add_folder": {
+        "message": "フォルダーを追加"
+    },
+    "settings": {
+        "message": "設定"
+    },
+    "open_bookmarks": {
+        "message": "ブックマークを開く"
+    },
+    "theme": {
+        "message": "テーマ"
+    },
+    "edit_bookmarks": {
+        "message": "ブックマークを編集する"
+    },
+    "open_bookmars_text": {
+        "message": "すべてのブックマークを開きますか?"
+    },
+    "upload_img_text": {
+        "message": "必要なプレビューをクリックして作成します"
+    },
+    "create_preview": {
+        "message": "プレビューを作成"
+    },
+    "less_100": {
+        "message": "ファイルは 100kb 以下である必要があります"
+    },
+    "search_placeholder": {
+        "message": "ウェブを検索..."
+    },
+    "name": {
+        "message": "名前"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "削除する"
+    },
+    "rate_us": {
+        "message": "私たちを評価してください"
+    },
+    "cancel": {
+        "message": "キャンセル"
+    },
+    "save": {
+        "message": "保存"
+    },
+    "language": {
+        "message": "言語"
+    },
+    "import_bookmarks": {
+        "message": "ブックマークをインポート"
+    },
+    "export_bookmarks": {
+        "message": "ブックマークのエクスポート"
+    },
+    "import": {
+        "message": "輸入"
+    },
+    "export": {
+        "message": "書き出す"
+    },
+    "default": {
+        "message": "デフォルト"
+    },
+    "custom": {
+        "message": "カスタム"
+    },
+    "upload_image": {
+        "message": "画像をアップロード"
+    },
+    "add_image_url": {
+        "message": "画像の URL を追加し、[読み込み] をクリックします"
+    },
+    "load": {
+        "message": "ロード"
+    },
+    "delay": {
+        "message": "遅れ"
+    },
+    "time_format": {
+        "message": "時刻形式"
+    },
+    "learn_more": {
+        "message": "もっと詳しく知る"
+    },
+    "about_us": {
+        "message": "私たちに関しては"
+    },
+    "folder_name": {
+        "message": "フォルダ名"
+    },
+    "font_color": {
+        "message": "フォントの色"
+    },
+    "search_bookmark": {
+        "message": "ブックマークを検索"
+    },
+    "based_hour24": {
+        "message": "24時間制"
+    },
+    "based_hour12": {
+        "message": "12時間制"
+    },
+    "dark": {
+        "message": "暗い"
+    },
+    "light": {
+        "message": "光"
+    },
+    "sec20": {
+        "message": "20秒"
+    },
+    "sec30": {
+        "message": "30秒"
+    },
+    "sec40": {
+        "message": "40秒"
+    },
+    "min1": {
+        "message": "1分"
+    },
+    "disable_time": {
+        "message": "無効時間"
     }
 }

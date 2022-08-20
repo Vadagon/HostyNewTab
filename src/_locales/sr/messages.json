@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "Генерал"
+    },
+    "search_box": {
+        "message": "Оквир за претрагу"
+    },
+    "background": {
+        "message": "Позадина"
+    },
+    "time": {
+        "message": "време"
+    },
+    "privacy_and_security": {
+        "message": "Приватност и безбедност"
+    },
+    "add_folder": {
+        "message": "Додај фолдер"
+    },
+    "settings": {
+        "message": "Подешавања"
+    },
+    "open_bookmarks": {
+        "message": "Отворите обележиваче"
+    },
+    "theme": {
+        "message": "Тема"
+    },
+    "edit_bookmarks": {
+        "message": "Уреди обележиваче"
+    },
+    "open_bookmars_text": {
+        "message": "Да ли сте сигурни да желите да отворите све обележиваче?"
+    },
+    "upload_img_text": {
+        "message": "Кликните и направите преглед који вам је потребан"
+    },
+    "create_preview": {
+        "message": "Креирајте преглед"
+    },
+    "less_100": {
+        "message": "Датотека треба да буде мања од 100 кб"
+    },
+    "search_placeholder": {
+        "message": "Тражити на интернету..."
+    },
+    "name": {
+        "message": "Име"
+    },
+    "url": {
+        "message": "УРЛ"
+    },
+    "remove": {
+        "message": "Уклони"
+    },
+    "rate_us": {
+        "message": "Оцените нас"
+    },
+    "cancel": {
+        "message": "Поништити, отказати"
+    },
+    "save": {
+        "message": "сачувати"
+    },
+    "language": {
+        "message": "Језик"
+    },
+    "import_bookmarks": {
+        "message": "Увоз обележивача"
+    },
+    "export_bookmarks": {
+        "message": "Извези обележиваче"
+    },
+    "import": {
+        "message": "Увоз"
+    },
+    "export": {
+        "message": "Извоз"
+    },
+    "default": {
+        "message": "Уобичајено"
+    },
+    "custom": {
+        "message": "Обичај"
+    },
+    "upload_image": {
+        "message": "Учитај слику"
+    },
+    "add_image_url": {
+        "message": "Додајте УРЛ слике и кликните на учитавање"
+    },
+    "load": {
+        "message": "Учитај"
+    },
+    "delay": {
+        "message": "Кашњење"
+    },
+    "time_format": {
+        "message": "Формат времена"
+    },
+    "learn_more": {
+        "message": "Сазнајте више"
+    },
+    "about_us": {
+        "message": "О нама"
+    },
+    "folder_name": {
+        "message": "Име фасцикле"
+    },
+    "font_color": {
+        "message": "Боја фонта"
+    },
+    "search_bookmark": {
+        "message": "Претражи обележивач"
+    },
+    "based_hour24": {
+        "message": "24-басед Хоур"
+    },
+    "based_hour12": {
+        "message": "12-басед Хоур"
+    },
+    "dark": {
+        "message": "Дарк"
+    },
+    "light": {
+        "message": "Светлост"
+    },
+    "sec20": {
+        "message": "20 сец"
+    },
+    "sec30": {
+        "message": "30 сец"
+    },
+    "sec40": {
+        "message": "40 сец"
+    },
+    "min1": {
+        "message": "1 минут"
+    },
+    "disable_time": {
+        "message": "Онемогући време"
     }
 }

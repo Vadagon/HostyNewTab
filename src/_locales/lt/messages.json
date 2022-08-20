@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "Generolas"
+    },
+    "search_box": {
+        "message": "Paieškos laukelis"
+    },
+    "background": {
+        "message": "Fonas"
+    },
+    "time": {
+        "message": "Laikas"
+    },
+    "privacy_and_security": {
+        "message": "Privatumas ir saugumas"
+    },
+    "add_folder": {
+        "message": "Pridėti aplanką"
+    },
+    "settings": {
+        "message": "Nustatymai"
+    },
+    "open_bookmarks": {
+        "message": "Atidarykite žymes"
+    },
+    "theme": {
+        "message": "tema"
+    },
+    "edit_bookmarks": {
+        "message": "Redaguoti žymes"
+    },
+    "open_bookmars_text": {
+        "message": "Ar tikrai norite atidaryti visas žymes?"
+    },
+    "upload_img_text": {
+        "message": "Spustelėkite ir sukurkite jums reikalingą peržiūrą"
+    },
+    "create_preview": {
+        "message": "Sukurti peržiūrą"
+    },
+    "less_100": {
+        "message": "Failas turi būti mažesnis nei 100 kb"
+    },
+    "search_placeholder": {
+        "message": "Ieškoti internete..."
+    },
+    "name": {
+        "message": "vardas"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Pašalinti"
+    },
+    "rate_us": {
+        "message": "Įvertinkite mus"
+    },
+    "cancel": {
+        "message": "Atšaukti"
+    },
+    "save": {
+        "message": "Sutaupyti"
+    },
+    "language": {
+        "message": "Kalba"
+    },
+    "import_bookmarks": {
+        "message": "Importuoti žymes"
+    },
+    "export_bookmarks": {
+        "message": "Eksportuoti žymes"
+    },
+    "import": {
+        "message": "Importuoti"
+    },
+    "export": {
+        "message": "Eksportuoti"
+    },
+    "default": {
+        "message": "Numatytas"
+    },
+    "custom": {
+        "message": "Pasirinktinis"
+    },
+    "upload_image": {
+        "message": "Įkelti paveikslėlį"
+    },
+    "add_image_url": {
+        "message": "Pridėkite vaizdo URL ir spustelėkite įkelti"
+    },
+    "load": {
+        "message": "Įkelti"
+    },
+    "delay": {
+        "message": "Uždelsimas"
+    },
+    "time_format": {
+        "message": "Laiko formatas"
+    },
+    "learn_more": {
+        "message": "Sužinokite daugiau"
+    },
+    "about_us": {
+        "message": "Apie mus"
+    },
+    "folder_name": {
+        "message": "Aplanko pavadinimas"
+    },
+    "font_color": {
+        "message": "Šrifto spalva"
+    },
+    "search_bookmark": {
+        "message": "Ieškoti žymės"
+    },
+    "based_hour24": {
+        "message": "Visą parą veikianti valanda"
+    },
+    "based_hour12": {
+        "message": "12 pagrįsta valanda"
+    },
+    "dark": {
+        "message": "Tamsus"
+    },
+    "light": {
+        "message": "Šviesa"
+    },
+    "sec20": {
+        "message": "20 sek"
+    },
+    "sec30": {
+        "message": "30 sek"
+    },
+    "sec40": {
+        "message": "40 sek"
+    },
+    "min1": {
+        "message": "1 minutė"
+    },
+    "disable_time": {
+        "message": "Išjungti laiką"
     }
 }

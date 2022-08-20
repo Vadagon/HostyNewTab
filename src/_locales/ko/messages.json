@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "일반적인"
+    },
+    "search_box": {
+        "message": "검색 창"
+    },
+    "background": {
+        "message": "배경"
+    },
+    "time": {
+        "message": "시간"
+    },
+    "privacy_and_security": {
+        "message": "개인 정보 보호 및 보안"
+    },
+    "add_folder": {
+        "message": "폴더 추가"
+    },
+    "settings": {
+        "message": "설정"
+    },
+    "open_bookmarks": {
+        "message": "책갈피 열기"
+    },
+    "theme": {
+        "message": "주제"
+    },
+    "edit_bookmarks": {
+        "message": "북마크 수정"
+    },
+    "open_bookmars_text": {
+        "message": "모든 책갈피를 여시겠습니까?"
+    },
+    "upload_img_text": {
+        "message": "필요한 미리보기를 클릭하고 만듭니다."
+    },
+    "create_preview": {
+        "message": "미리보기 만들기"
+    },
+    "less_100": {
+        "message": "파일은 100kb 미만이어야 합니다."
+    },
+    "search_placeholder": {
+        "message": "웹 사이트를 검색하다..."
+    },
+    "name": {
+        "message": "이름"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "제거하다"
+    },
+    "rate_us": {
+        "message": "평가"
+    },
+    "cancel": {
+        "message": "취소"
+    },
+    "save": {
+        "message": "구하다"
+    },
+    "language": {
+        "message": "언어"
+    },
+    "import_bookmarks": {
+        "message": "북마크 가져오기"
+    },
+    "export_bookmarks": {
+        "message": "북마크 내보내기"
+    },
+    "import": {
+        "message": "수입"
+    },
+    "export": {
+        "message": "내보내다"
+    },
+    "default": {
+        "message": "기본"
+    },
+    "custom": {
+        "message": "관습"
+    },
+    "upload_image": {
+        "message": "이미지 업로드"
+    },
+    "add_image_url": {
+        "message": "이미지 URL을 추가하고 로드를 클릭합니다."
+    },
+    "load": {
+        "message": "짐"
+    },
+    "delay": {
+        "message": "지연"
+    },
+    "time_format": {
+        "message": "시간 형식"
+    },
+    "learn_more": {
+        "message": "더 알아보기"
+    },
+    "about_us": {
+        "message": "회사 소개"
+    },
+    "folder_name": {
+        "message": "폴더 이름"
+    },
+    "font_color": {
+        "message": "글꼴 색상"
+    },
+    "search_bookmark": {
+        "message": "북마크 검색"
+    },
+    "based_hour24": {
+        "message": "24시간제"
+    },
+    "based_hour12": {
+        "message": "12 기반 시간"
+    },
+    "dark": {
+        "message": "어두운"
+    },
+    "light": {
+        "message": "빛"
+    },
+    "sec20": {
+        "message": "20초"
+    },
+    "sec30": {
+        "message": "30초"
+    },
+    "sec40": {
+        "message": "40초"
+    },
+    "min1": {
+        "message": "1 분"
+    },
+    "disable_time": {
+        "message": "비활성화 시간"
     }
 }

@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "ജനറൽ"
+    },
+    "search_box": {
+        "message": "തിരയൽ ബോക്സ്"
+    },
+    "background": {
+        "message": "പശ്ചാത്തലം"
+    },
+    "time": {
+        "message": "സമയം"
+    },
+    "privacy_and_security": {
+        "message": "സ്വകാര്യതയും സുരക്ഷയും"
+    },
+    "add_folder": {
+        "message": "ഫോൾഡർ ചേർക്കുക"
+    },
+    "settings": {
+        "message": "ക്രമീകരണങ്ങൾ"
+    },
+    "open_bookmarks": {
+        "message": "ബുക്ക്‌മാർക്കുകൾ തുറക്കുക"
+    },
+    "theme": {
+        "message": "തീം"
+    },
+    "edit_bookmarks": {
+        "message": "ബുക്ക്‌മാർക്കുകൾ എഡിറ്റ് ചെയ്യുക"
+    },
+    "open_bookmars_text": {
+        "message": "എല്ലാ ബുക്ക്‌മാർക്കുകളും തുറക്കണമെന്ന് തീർച്ചയാണോ?"
+    },
+    "upload_img_text": {
+        "message": "നിങ്ങൾക്ക് ആവശ്യമുള്ള പ്രിവ്യൂ ക്ലിക്ക് ചെയ്ത് സൃഷ്ടിക്കുക"
+    },
+    "create_preview": {
+        "message": "പ്രിവ്യൂ സൃഷ്ടിക്കുക"
+    },
+    "less_100": {
+        "message": "ഫയൽ 100kb കുറവായിരിക്കണം"
+    },
+    "search_placeholder": {
+        "message": "വെബിൽ തിരയുക..."
+    },
+    "name": {
+        "message": "പേര്"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "നീക്കം ചെയ്യുക"
+    },
+    "rate_us": {
+        "message": "ഞങ്ങളെ റേറ്റുചെയ്യുക"
+    },
+    "cancel": {
+        "message": "റദ്ദാക്കുക"
+    },
+    "save": {
+        "message": "രക്ഷിക്കും"
+    },
+    "language": {
+        "message": "ഭാഷ"
+    },
+    "import_bookmarks": {
+        "message": "ബുക്ക്മാർക്കുകൾ ഇറക്കുമതി ചെയ്യുക"
+    },
+    "export_bookmarks": {
+        "message": "ബുക്ക്മാർക്കുകൾ കയറ്റുമതി ചെയ്യുക"
+    },
+    "import": {
+        "message": "ഇറക്കുമതി ചെയ്യുക"
+    },
+    "export": {
+        "message": "കയറ്റുമതി"
+    },
+    "default": {
+        "message": "സ്ഥിരസ്ഥിതി"
+    },
+    "custom": {
+        "message": "കസ്റ്റം"
+    },
+    "upload_image": {
+        "message": "ചിത്രം അപ്ലോഡ് ചെയ്യുക"
+    },
+    "add_image_url": {
+        "message": "ഇമേജ് യുആർഎൽ ചേർത്ത് ലോഡ് ക്ലിക്ക് ചെയ്യുക"
+    },
+    "load": {
+        "message": "ലോഡ് ചെയ്യുക"
+    },
+    "delay": {
+        "message": "കാലതാമസം"
+    },
+    "time_format": {
+        "message": "സമയ ഫോർമാറ്റ്"
+    },
+    "learn_more": {
+        "message": "കൂടുതലറിയുക"
+    },
+    "about_us": {
+        "message": "ഞങ്ങളേക്കുറിച്ച്"
+    },
+    "folder_name": {
+        "message": "ഫോൾഡറിന്റെ പേര്"
+    },
+    "font_color": {
+        "message": "അക്ഷരത്തിന്റെ നിറം"
+    },
+    "search_bookmark": {
+        "message": "ബുക്ക്‌മാർക്ക് തിരയുക"
+    },
+    "based_hour24": {
+        "message": "24 അടിസ്ഥാനമാക്കിയുള്ള മണിക്കൂർ"
+    },
+    "based_hour12": {
+        "message": "12-അടിസ്ഥാനമായ മണിക്കൂർ"
+    },
+    "dark": {
+        "message": "ഇരുട്ട്"
+    },
+    "light": {
+        "message": "വെളിച്ചം"
+    },
+    "sec20": {
+        "message": "20 സെ"
+    },
+    "sec30": {
+        "message": "30 സെ"
+    },
+    "sec40": {
+        "message": "40 സെ"
+    },
+    "min1": {
+        "message": "1 മിനിറ്റ്"
+    },
+    "disable_time": {
+        "message": "സമയം പ്രവർത്തനരഹിതമാക്കുക"
     }
 }

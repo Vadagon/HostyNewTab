@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "Общий"
+    },
+    "search_box": {
+        "message": "Поисковая строка"
+    },
+    "background": {
+        "message": "Фон"
+    },
+    "time": {
+        "message": "Время"
+    },
+    "privacy_and_security": {
+        "message": "Конфиденциальность и безопасность"
+    },
+    "add_folder": {
+        "message": "Добавить папку"
+    },
+    "settings": {
+        "message": "Настройки"
+    },
+    "open_bookmarks": {
+        "message": "Открыть закладки"
+    },
+    "theme": {
+        "message": "Тема"
+    },
+    "edit_bookmarks": {
+        "message": "Редактировать закладки"
+    },
+    "open_bookmars_text": {
+        "message": "Вы уверены, что хотите открыть все закладки?"
+    },
+    "upload_img_text": {
+        "message": "Нажмите и создайте нужный вам предварительный просмотр"
+    },
+    "create_preview": {
+        "message": "Создать предварительный просмотр"
+    },
+    "less_100": {
+        "message": "Файл должен быть меньше 100kb"
+    },
+    "search_placeholder": {
+        "message": "Искать в Интернете..."
+    },
+    "name": {
+        "message": "Имя"
+    },
+    "url": {
+        "message": "URL-адрес"
+    },
+    "remove": {
+        "message": "Удалять"
+    },
+    "rate_us": {
+        "message": "Оцените нас"
+    },
+    "cancel": {
+        "message": "Отмена"
+    },
+    "save": {
+        "message": "Сохранять"
+    },
+    "language": {
+        "message": "Язык"
+    },
+    "import_bookmarks": {
+        "message": "Импорт закладок"
+    },
+    "export_bookmarks": {
+        "message": "Экспорт закладок"
+    },
+    "import": {
+        "message": "импорт"
+    },
+    "export": {
+        "message": "Экспорт"
+    },
+    "default": {
+        "message": "По умолчанию"
+    },
+    "custom": {
+        "message": "Обычай"
+    },
+    "upload_image": {
+        "message": "Загрузить изображение"
+    },
+    "add_image_url": {
+        "message": "Добавьте URL-адрес изображения и нажмите «Загрузить»."
+    },
+    "load": {
+        "message": "Нагрузка"
+    },
+    "delay": {
+        "message": "Задерживать"
+    },
+    "time_format": {
+        "message": "Формат времени"
+    },
+    "learn_more": {
+        "message": "Учить больше"
+    },
+    "about_us": {
+        "message": "О нас"
+    },
+    "folder_name": {
+        "message": "Имя папки"
+    },
+    "font_color": {
+        "message": "Цвет шрифта"
+    },
+    "search_bookmark": {
+        "message": "Закладка поиска"
+    },
+    "based_hour24": {
+        "message": "24 часа"
+    },
+    "based_hour12": {
+        "message": "12-часовой"
+    },
+    "dark": {
+        "message": "Темный"
+    },
+    "light": {
+        "message": "Легкий"
+    },
+    "sec20": {
+        "message": "20 сек"
+    },
+    "sec30": {
+        "message": "30 сек"
+    },
+    "sec40": {
+        "message": "40 сек"
+    },
+    "min1": {
+        "message": "1 мин"
+    },
+    "disable_time": {
+        "message": "Отключить время"
     }
 }

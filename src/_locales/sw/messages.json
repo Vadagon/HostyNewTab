@@ -7,5 +7,143 @@
     },
     "general": {
         "message": "Mkuu"
+    },
+    "search_box": {
+        "message": "Kisanduku cha Kutafuta"
+    },
+    "background": {
+        "message": "Usuli"
+    },
+    "time": {
+        "message": "Muda"
+    },
+    "privacy_and_security": {
+        "message": "Faragha na Usalama"
+    },
+    "add_folder": {
+        "message": "Ongeza Folda"
+    },
+    "settings": {
+        "message": "Mipangilio"
+    },
+    "open_bookmarks": {
+        "message": "Fungua Alamisho"
+    },
+    "theme": {
+        "message": "Mandhari"
+    },
+    "edit_bookmarks": {
+        "message": "Hariri Alamisho"
+    },
+    "open_bookmars_text": {
+        "message": "Je, una uhakika unataka kufungua alamisho zote?"
+    },
+    "upload_img_text": {
+        "message": "Bofya na uunde onyesho la kukagua unayohitaji"
+    },
+    "create_preview": {
+        "message": "Unda Onyesho la Kuchungulia"
+    },
+    "less_100": {
+        "message": "Faili inahitaji kuwa chini ya 100kb"
+    },
+    "search_placeholder": {
+        "message": "Tafuta Wavuti..."
+    },
+    "name": {
+        "message": "Jina"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Ondoa"
+    },
+    "rate_us": {
+        "message": "Tukadirie"
+    },
+    "cancel": {
+        "message": "Ghairi"
+    },
+    "save": {
+        "message": "Hifadhi"
+    },
+    "language": {
+        "message": "Lugha"
+    },
+    "import_bookmarks": {
+        "message": "Ingiza Alamisho"
+    },
+    "export_bookmarks": {
+        "message": "Hamisha Alamisho"
+    },
+    "import": {
+        "message": "Ingiza"
+    },
+    "export": {
+        "message": "Hamisha"
+    },
+    "default": {
+        "message": "Chaguomsingi"
+    },
+    "custom": {
+        "message": "Desturi"
+    },
+    "upload_image": {
+        "message": "Pakia Picha"
+    },
+    "add_image_url": {
+        "message": "Ongeza Url ya picha na ubofye mzigo"
+    },
+    "load": {
+        "message": "Mzigo"
+    },
+    "delay": {
+        "message": "Kuchelewa"
+    },
+    "time_format": {
+        "message": "Umbizo la Wakati"
+    },
+    "learn_more": {
+        "message": "Jifunze zaidi"
+    },
+    "about_us": {
+        "message": "Kuhusu sisi"
+    },
+    "folder_name": {
+        "message": "Jina la folda"
+    },
+    "font_color": {
+        "message": "Rangi ya herufi"
+    },
+    "search_bookmark": {
+        "message": "Tafuta alamisho"
+    },
+    "based_hour24": {
+        "message": "24-msingi Saa"
+    },
+    "based_hour12": {
+        "message": "12-msingi Saa"
+    },
+    "dark": {
+        "message": "Giza"
+    },
+    "light": {
+        "message": "Mwanga"
+    },
+    "sec20": {
+        "message": "20 sek"
+    },
+    "sec30": {
+        "message": "30 sek"
+    },
+    "sec40": {
+        "message": "40 sek"
+    },
+    "min1": {
+        "message": "Dakika 1"
+    },
+    "disable_time": {
+        "message": "Zima Muda"
     }
 }
