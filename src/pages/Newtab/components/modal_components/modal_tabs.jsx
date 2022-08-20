@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import import_ from '../../../../assets/img/import.png';
 import lang from '../../../../assets/img/lang.png';
 import amazon from '../../../../assets/img/amazon.png';
@@ -88,6 +88,7 @@ function getChildrens(e, i) {
   );
 }
 const ModalTabs = (props) => {
+  const refUpload = useRef(null);
   const store = useContext(UserContext);
   var [file, uploadFile] = useState('');
   async function convertBase64(file) {
@@ -107,6 +108,8 @@ const ModalTabs = (props) => {
     const base64 = await convertBase64(file);
     uploadFile(base64);
     console.log(base64);
+    store.store.settings['background'].custom = base64;
+    save(store.store, store);
     // file
   }
 
@@ -206,14 +209,33 @@ const ModalTabs = (props) => {
             <ModalRowItemDropdown title={i18n('default', store)} img={default_}>
               <div className=" grid grid-cols-3">
                 <div
-                  active={selected === 0 ? 'true' : ''}
-                  onClick={() => selectBg(0)}
+                  active={
+                    0 === store.store.settings['background'].selected
+                      ? 'true'
+                      : ''
+                  }
+                  onClick={() => {
+                    store.store.settings['background'].custom = null;
+                    store.store.settings['background'].selected = 0;
+                    save(store.store, store);
+                    selectBg(0);
+                  }}
                   className="bgs bg-[#343434] relative h-[80px] cursor-pointer mr-2 mb-2"
                 ></div>
                 {bg.map((x, i) => (
                   <div
-                    active={selected === i + 1 ? 'true' : ''}
-                    onClick={() => selectBg(i + 1)}
+                    active={
+                      i === store.store.settings['background'].selected - 1
+                        ? 'true'
+                        : ''
+                    }
+                    onClick={() => {
+                      store.store.settings['background'].custom = null;
+                      store.store.settings['background'].selected = i + 1;
+                      save(store.store, store);
+                      selectBg(i + 1);
+                      console.log(store.store.settings['background']);
+                    }}
                     key={i}
                     style={{ backgroundImage: 'url(' + x + ')' }}
                     className="bgs bg-[#343434] relative  bg-cover bg-no-repeat bg-center h-[80px] cursor-pointer mr-2 mb-2"
@@ -237,10 +259,21 @@ const ModalTabs = (props) => {
               <ModalRowItem title={'JPG / PNG / GIF'}>
                 <div className="flex">
                   <input
+                    ref={refUpload}
+                    onChange={(e) => {}}
                     className="border border-[#575757] h-[34px] w-[150px] py-2 px-3 text-[#929292] bg-[#464646]"
                     placeholder={i18n('add_image_url', store)}
                   />
-                  <div className="bg-[#2abe7d] rounded-l-none text-white w-[50px] h-[34px] flex justify-center items-center rounded-md cursor-pointer">
+                  <div
+                    onClick={() => {
+                      store.store.settings['background'].custom =
+                        refUpload.current.value;
+                      save(store.store, store);
+                      console.log(store.store.settings['background']);
+                      selectBg(0);
+                    }}
+                    className="bg-[#2abe7d] rounded-l-none text-white w-[50px] h-[34px] flex justify-center items-center rounded-md cursor-pointer"
+                  >
                     {i18n('load', store)}
                   </div>
                 </div>

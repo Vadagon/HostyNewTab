@@ -7,7 +7,11 @@ import createActivityDetector from 'activity-detector';
 import ModalEditBookmarks from './edit_bookmarks_modal';
 import { UserContext } from '../context';
 import { i18n } from '../../../components/Translation/Translation';
-
+import bg_1 from '../../../assets/img/custom_bg/bg_1.jpg';
+import bg_2 from '../../../assets/img/custom_bg/bg_2.jpg';
+import bg_3 from '../../../assets/img/custom_bg/bg_3.jpg';
+import bg_4 from '../../../assets/img/custom_bg/bg_4.jpg';
+import bg_5 from '../../../assets/img/custom_bg/bg_5.jpg';
 function useIdle(options) {
   const [isIdle, setIsIdle] = React.useState(false);
   React.useEffect(() => {
@@ -18,15 +22,27 @@ function useIdle(options) {
   }, []);
   return isIdle;
 }
+var bg = [bg_1, bg_2, bg_3, bg_4, bg_5];
 const MainView = (props) => {
   const store = useContext(UserContext);
   var [modal, openModal] = useState(false);
   // var [clock, openClock] = useState(false);
 
   const isIdle = useIdle({ timeToIdle: 5000 });
+  function getBgImage() {
+    if (store.store.settings['background'].custom) {
+      return store.store.settings['background'].custom;
+    }
 
+    return bg[store.store.settings['background'].selected - 1];
+  }
   return (
-    <div>
+    <div
+      style={{
+        backgroundImage: 'url(' + getBgImage() + ')',
+      }}
+      className="p-5 pl-[70px] bg-[#343434] bg-fixed  bg-cover bg-no-repeat bg-center    h-[100vh]"
+    >
       <div
         className={
           false
