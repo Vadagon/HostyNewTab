@@ -4,7 +4,7 @@ import Modal from './modal';
 import ClockBg from './clock';
 import Navbar from './navbar';
 import createActivityDetector from 'activity-detector';
-import ModalAddFolder from './modal_add_folder';
+import ModalEditBookmarks from './edit_bookmarks_modal';
 
 function useIdle(options) {
   const [isIdle, setIsIdle] = React.useState(false);
@@ -45,7 +45,7 @@ const MainView = (props) => {
             console.log('edit bookmark');
           }}
         >
-          <ModalAddFolder />
+          <ModalEditBookmarks />
         </Modal>
       </div>
       {/* BACKGROUND CLOCK */}
