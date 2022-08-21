@@ -3,7 +3,9 @@ import open_all from '../../../assets/img/open_all.svg';
 import edit_tab from '../../../assets/img/edit_tab.svg';
 import move_folder from '../../../assets/img/move_folder.svg';
 import { sortableHandle } from 'react-sortable-hoc';
-import React from 'react';
+import React, { useContext } from 'react';
+import { UserContext } from '../context';
+import { save } from '../../../components/Store/Store';
 
 const DragHandle = sortableHandle(() => (
   <div
@@ -12,10 +14,15 @@ const DragHandle = sortableHandle(() => (
   ></div>
 ));
 const DraggableListItem = (props) => {
+  const storage = useContext(UserContext);
   return (
     <li
       className="bg-[#313131] flex h-full items-center p-[10px] max-w-[220px] z-50"
       key={JSON.stringify(props)}
+      onClick={() => {
+        storage.store.settings.activeFolder = props.keyIndex;
+        save(storage.store, storage);
+      }}
     >
       <div
         style={{ backgroundImage: 'url(' + folder + ')' }}

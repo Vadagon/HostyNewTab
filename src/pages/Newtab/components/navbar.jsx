@@ -31,7 +31,7 @@ const Navbar = () => {
     i18n('privacy_and_security', store),
   ];
   var addFolderSidebar = ['General', 'Bookmarks'];
-  const SortableItem = SortableElement(({ value }) => (
+  const SortableItem = SortableElement(({ value, keyIndex }) => (
     <DraggableListItem
       edit_folder={() => {
         openModalAddFolder(!modalAddFolder);
@@ -40,6 +40,7 @@ const Navbar = () => {
         openModalBookmarks(!modalBookmarks);
       }}
       item={value}
+      keyIndex={keyIndex}
     />
   ));
 
@@ -47,7 +48,7 @@ const Navbar = () => {
     return (
       <ul>
         {items.map((value, index) => (
-          <SortableItem key={`item-${value}`} index={index} value={value} />
+          <SortableItem key={`item-${value.name}-${index}`} keyIndex={index} value={value.name} />
         ))}
       </ul>
     );
@@ -85,7 +86,7 @@ const Navbar = () => {
         </DraggableList> */}
           <SortableList
             useDragHandle={true}
-            items={listItems}
+            items={store.store.settings.folders}
             onSortEnd={(e) => onSortEnd(e)}
           />
         </div>
