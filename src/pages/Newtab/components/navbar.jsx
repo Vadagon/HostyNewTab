@@ -10,6 +10,7 @@ import {
 } from 'react-sortable-hoc';
 import { i18n } from '../../../components/Translation/Translation';
 import { UserContext } from '../context';
+import { save } from '../../../components/Store/Store';
 
 const Navbar = () => {
   var [modal, openModal] = useState(false);
@@ -54,7 +55,8 @@ const Navbar = () => {
 
   function onSortEnd({ oldIndex, newIndex }) {
     changeOrder(arrayMove(listItems, oldIndex, newIndex));
-    console.log(listItems);
+    // store.store.settings['folders_order'] = listItems;
+    // save(store.store, store);
   }
   return (
     <div>
