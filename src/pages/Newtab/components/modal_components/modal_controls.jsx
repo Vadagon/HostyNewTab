@@ -27,24 +27,26 @@ const ModalControls = (props) => {
           )}
         </div>
       )}
-      <div className="flex">
-        <div
-          onClick={() => {
-            props.cancel_click(false);
-          }}
-          className="mr-5 cursor-pointer rounded-md flex items-center justify-center text-white  w-[90px] flex-none  bg-[#464646] h-[34px]  border border-[#575757]"
-        >
-          {i18n('cancel', store)}
+      {!props.settings && (
+        <div className="flex">
+          <div
+            onClick={() => {
+              props.cancel_click(false);
+            }}
+            className="mr-5 cursor-pointer rounded-md flex items-center justify-center text-white  w-[90px] flex-none  bg-[#464646] h-[34px]  border border-[#575757]"
+          >
+            {i18n('cancel', store)}
+          </div>
+          <div
+            onClick={() => {
+              props.confirm_click(false);
+            }}
+            className="cursor-pointer rounded-md flex items-center justify-center text-white  w-[90px] flex-none  bg-[#1493ff] h-[34px] border border-[#575757]"
+          >
+            {props.confirm_text ? props.confirm_text : i18n('save', store)}
+          </div>
         </div>
-        <div
-          onClick={() => {
-            props.confirm_click(false);
-          }}
-          className="cursor-pointer rounded-md flex items-center justify-center text-white  w-[90px] flex-none  bg-[#1493ff] h-[34px] border border-[#575757]"
-        >
-          {props.confirm_text ? props.confirm_text : i18n('save', store)}
-        </div>
-      </div>
+      )}
     </div>
   );
 };

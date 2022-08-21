@@ -150,9 +150,9 @@ const ModalTabs = (props) => {
                 }}
               />
             </ModalRowItem>
-            <ModalRowItem title={i18n('theme', store)} img={theme}>
+            {/* <ModalRowItem title={i18n('theme', store)} img={theme}>
               <Dropdown data={mode} setting={'theme'} />
-            </ModalRowItem>
+            </ModalRowItem> */}
             {/* <ModalRowItem title={i18n('import_bookmarks', store)} img={import_}>
               <div className="bg-[#2abe7d] text-white w-[135px] h-[34px] flex justify-center items-center rounded-md cursor-pointer">
                 {i18n('import', store)}
@@ -245,7 +245,7 @@ const ModalTabs = (props) => {
             </ModalRowItemDropdown>
             <ModalRowItemDropdown title={i18n('custom', store)} img={upload_}>
               <ModalRowItem title={'JPG / PNG'}>
-                <label className="bg-[#2abe7d] text-white w-[135px] h-[34px] flex justify-center items-center rounded-md cursor-pointer">
+                <label className="bg-[#2abe7d] text-white max-w-[135px] h-[34px] flex justify-center items-center rounded-md cursor-pointer">
                   {i18n('upload_image', store)}
                   <input
                     onChange={(e) => {
@@ -282,7 +282,7 @@ const ModalTabs = (props) => {
           </div>
         )}
         {/* Time */}
-        {props.selectedTab === 3 && (
+        {/* {props.selectedTab === 3 && (
           <div className="tab ">
             <ModalRowItem title={i18n('delay', store)} img={clock_}>
               <Dropdown data={time} />
@@ -291,9 +291,9 @@ const ModalTabs = (props) => {
               <Dropdown data={time_format_} />
             </ModalRowItem>
           </div>
-        )}
+        )} */}
         {/* Privacy and Security */}
-        {props.selectedTab === 4 && (
+        {props.selectedTab === 3 && (
           <div className="tab ">
             <div className="text-white mb-3">
               This privacy statement describes how uTab collects and uses the

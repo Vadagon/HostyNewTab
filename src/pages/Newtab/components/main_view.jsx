@@ -30,10 +30,13 @@ const MainView = (props) => {
 
   const isIdle = useIdle({ timeToIdle: 5000 });
   function getBgImage() {
+    console.log(store.store.settings);
     if (store.store.settings['background'].custom) {
       return store.store.settings['background'].custom;
     }
-
+    if (store.store.settings['background'].selected === 0) {
+      return 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+    }
     return bg[store.store.settings['background'].selected - 1];
   }
   return (
