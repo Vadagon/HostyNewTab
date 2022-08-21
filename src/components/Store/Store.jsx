@@ -71,7 +71,7 @@ export const save = function (data, storage) {
     localStorage.setItem('data', JSON.stringify(data));
     // storage.store.settings.theme
     // store.settings.theme = 'dark'
-    setStore && setStore({ ...store, data });
+    setStore && setStore({ ...store, ...data });
     chrome.storage.local.set({ data: data });
 };
 
