@@ -45,7 +45,7 @@ export const loadLocalisations = async ({ store, setStore }) => {
 export const i18n = (str, { store }) => {
     var locale = store.l10n?.[store.settings.lang];
     var tr = locale?.[str]?.message;
-    return tr ?? str;
+    return tr ?? chrome.i18n.getMessage(str);
 }
 
 export function I18n(prop) {
