@@ -16,7 +16,7 @@ const GridLayout = (props) => {
   var activeFolder = storeClone.settings.folders[store.settings.activeFolder ?? 0];
   activeFolder.bookmarks.forEach((bookmark, bookmarkId) => {
     layout.push({
-      i: 'custom-' + bookmark.id + '-' + bookmark.name,
+      i: 'custom-' + bookmarkId + '-' + bookmark.name,
       x: bookmark.position.x,
       y: bookmark.position.y,
       w: 1,
@@ -48,7 +48,7 @@ const GridLayout = (props) => {
 
       default:
         return (
-          <ReactGridLayoutItem openModal={props.openModal} title={e.title} />
+          <ReactGridLayoutItem openModal={props.openModal} title={e.title} bookmarkId={parseInt(e.i.split('-')[1])} />
         );
     }
   }
