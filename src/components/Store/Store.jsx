@@ -20,6 +20,7 @@ export const initial_store = {
                 name: 'Welcome',
                 font_color: '#202124',
                 preview: null,
+                index: 1,
                 bookmarks: [
                     {
                         id: 0,
@@ -62,6 +63,7 @@ export const initial_store = {
                 name: 'Test Folder 123',
                 font_color: '#ffffff',
                 preview: null,
+                index: 0,
                 bookmarks: [
                     {
                         id: 0,

@@ -48,14 +48,16 @@ const Navbar = () => {
     return (
       <ul>
         {items.map((value, index) => (
-          <SortableItem key={`item-${value.name}-${index}`} keyIndex={index} value={value.name} />
+          <SortableItem key={`item-${value.name}-${index}`} index={index} keyIndex={index} value={value.name} />
         ))}
       </ul>
     );
   });
 
   function onSortEnd({ oldIndex, newIndex }) {
-    changeOrder(arrayMove(listItems, oldIndex, newIndex));
+    store.store.settings.folders = arrayMove(store.store.settings.folders, oldIndex, newIndex);
+    save(store.store, store);
+    // console.log(oldIndex, newIndex)
     // store.store.settings['folders_order'] = listItems;
     // save(store.store, store);
   }
