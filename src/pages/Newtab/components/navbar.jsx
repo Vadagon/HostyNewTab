@@ -18,17 +18,12 @@ const Navbar = () => {
   var [actionedFolder, setActionedFolderIndex] = useState(0);
   var [modalAddFolder, openModalAddFolder] = useState(false);
   const store = useContext(UserContext);
-  const [listItems, changeOrder] = useState([
-    'Private Time',
-    'EntertainmentEntertainment',
-    '12345',
-    'gggggg',
-  ]);
+
   var settingsSidebar = [
     i18n('general', store),
     i18n('search_box', store),
     i18n('background', store),
-    i18n('time', store),
+    // i18n('time', store),
     i18n('privacy_and_security', store),
   ];
   var addFolderSidebar = ['General', 'Bookmarks'];
@@ -50,14 +45,23 @@ const Navbar = () => {
     return (
       <ul>
         {items.map((value, index) => (
-          <SortableItem key={`item-${value.name}-${index}`} index={index} keyIndex={index} value={value.name} />
+          <SortableItem
+            key={`item-${value.name}-${index}`}
+            index={index}
+            keyIndex={index}
+            value={value.name}
+          />
         ))}
       </ul>
     );
   });
 
   function onSortEnd({ oldIndex, newIndex }) {
-    store.store.settings.folders = arrayMove(store.store.settings.folders, oldIndex, newIndex);
+    store.store.settings.folders = arrayMove(
+      store.store.settings.folders,
+      oldIndex,
+      newIndex
+    );
     save(store.store, store);
     // console.log(oldIndex, newIndex)
     // store.store.settings['folders_order'] = listItems;
@@ -119,7 +123,9 @@ const Navbar = () => {
         confirm_text={'Open'}
         title={i18n('open_bookmarks', store)}
         confirm_click={() => {
-          store.store.settings.folders[actionedFolder].bookmarks.forEach(e => e.url?.length > 5 && window.open(e.url, '_blank'));
+          store.store.settings.folders[actionedFolder].bookmarks.forEach(
+            (e) => e.url?.length > 5 && window.open(e.url, '_blank')
+          );
           openModalBookmarks(false);
         }}
         nosidebar

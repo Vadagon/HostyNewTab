@@ -17,18 +17,34 @@ const DraggableListItem = (props) => {
   const storage = useContext(UserContext);
   return (
     <li
-      className="bg-[#313131] flex h-full items-center p-[10px] max-w-[220px] z-50"
+      className="bg-[#313131] flex h-full cursor-pointer items-center p-[10px] max-w-[220px] z-50"
       key={JSON.stringify(props)}
-      onClick={() => {
-        storage.store.settings.activeFolder = props.keyIndex;
-        save(storage.store, storage);
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          storage.store.settings.activeFolder = props.keyIndex;
+          save(storage.store, storage);
+        }
       }}
     >
       <div
+        onClick={(e) => {
+          if (e.target === e.currentTarget) {
+            storage.store.settings.activeFolder = props.keyIndex;
+            save(storage.store, storage);
+          }
+        }}
         style={{ backgroundImage: 'url(' + folder + ')' }}
         className="w-[30px] flex-none h-[30px] rounded-full bg-cover overflow-hidden mr-3"
       ></div>
-      <div className="text-xs w-[85px] overflow-hidden flex-none whitespace-nowrap text-[#818181] text-ellipsis">
+      <div
+        onClick={(e) => {
+          if (e.target === e.currentTarget) {
+            storage.store.settings.activeFolder = props.keyIndex;
+            save(storage.store, storage);
+          }
+        }}
+        className="text-xs w-[85px] overflow-hidden flex-none whitespace-nowrap text-[#818181] text-ellipsis"
+      >
         {`${props.item}`}
       </div>
       <div className="manage flex">
