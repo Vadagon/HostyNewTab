@@ -15,6 +15,7 @@ import { save } from '../../../components/Store/Store';
 const Navbar = () => {
   var [modal, openModal] = useState(false);
   var [modalBookmarks, openModalBookmarks] = useState(false);
+  var [actionedFolder, setActionedFolderIndex] = useState(0);
   var [modalAddFolder, openModalAddFolder] = useState(false);
   const store = useContext(UserContext);
   const [listItems, changeOrder] = useState([
@@ -38,6 +39,7 @@ const Navbar = () => {
       }}
       bookmarks={() => {
         openModalBookmarks(!modalBookmarks);
+        setActionedFolderIndex(keyIndex);
       }}
       item={value}
       keyIndex={keyIndex}
@@ -117,7 +119,8 @@ const Navbar = () => {
         confirm_text={'Open'}
         title={i18n('open_bookmarks', store)}
         confirm_click={() => {
-          console.log('asd');
+          store.store.settings.folders[actionedFolder].bookmarks.forEach(e => e.url?.length > 5 && window.open(e.url, '_blank'));
+          openModalBookmarks(false);
         }}
         nosidebar
         open={modalBookmarks}

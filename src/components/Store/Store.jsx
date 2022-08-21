@@ -47,7 +47,7 @@ export const initial_store = {
                         id: 3,
                         position: { x: 7, y: 4 },
                         name: null,
-                        url: null,
+                        url: 'https://stackoverflow.com/',
                         preview: null,
                     },
                     {
