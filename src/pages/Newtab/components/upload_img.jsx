@@ -5,8 +5,22 @@ import { UserContext } from '../context';
 
 const UploadImage = (props) => {
   const store = useContext(UserContext);
-  var [file, uploadFile] = useState('');
+  var [file, uploadFile] = useState(null);
   const ref = useRef(null);
+
+  function getBgImg() {
+    if (file && props.file) {
+      return 'url(' + file + ')';
+    }
+    if (props.file) {
+      return (
+        'url(http://www.google.com/s2/favicons?sz=64&domain=' + props.file + ')'
+      );
+    }
+
+    return 'url(' + plus + ')';
+  }
+
   async function convertBase64(file) {
     return new Promise((resolve, reject) => {
       const fileReader = new FileReader();
@@ -27,6 +41,7 @@ const UploadImage = (props) => {
     }
     const base64 = await convertBase64(file);
     uploadFile(base64);
+    props.onLoadImage && props.onLoadImage(base64);
   }
   function upload() {
     ref.current.click();
@@ -34,14 +49,10 @@ const UploadImage = (props) => {
   return (
     <div className="flex mb-5 items-center">
       <div
-        style={
-          file
-            ? { backgroundImage: 'url(' + file + ')' }
-            : { backgroundImage: 'url(' + plus + ')' }
-        }
+        style={{ backgroundImage: getBgImg() }}
         active={file ? 'true' : ''}
         onClick={(e) => upload(e)}
-        className="bg_upload cursor-pointer bg-no-repeat bg-center   bg-[#464646] border border-[#575757] flex items-center justify-center rounded-full h-[82px] w-[82px]"
+        className="bg_upload cursor-pointer bg-no-repeat bg-center  bg-[#464646] border border-[#575757] flex items-center justify-center rounded-full h-[82px] w-[82px]"
       ></div>
       <div className="flex flex-col ml-5">
         <div className="text-white">{i18n('upload_img_text', store)}</div>
