@@ -13,7 +13,8 @@ const GridLayout = (props) => {
   const { store, setStore } = useContext(UserContext);
   var layout = [{ i: 'searchBar', x: 4, y: 3, w: 5, h: 1, static: true }];
   var storeClone = _.cloneDeep(store);
-  var activeFolder = storeClone.settings.folders[store.settings.activeFolder ?? 0];
+  var activeFolder =
+    storeClone.settings.folders[store.settings.activeFolder ?? 0];
   activeFolder.bookmarks.forEach((bookmark, bookmarkId) => {
     layout.push({
       i: 'custom-' + bookmarkId + '-' + bookmark.name,
@@ -48,7 +49,11 @@ const GridLayout = (props) => {
 
       default:
         return (
-          <ReactGridLayoutItem openModal={props.openModal} title={e.title} bookmarkId={parseInt(e.i.split('-')[1])} />
+          <ReactGridLayoutItem
+            openModal={props.openModal}
+            title={e.title}
+            bookmarkId={parseInt(e.i.split('-')[1])}
+          />
         );
     }
   }
@@ -72,8 +77,8 @@ const GridLayout = (props) => {
                 x: e.x,
                 y: e.y,
               };
-              // console.log(store)
               store.settings.lang && save(store, { store, setStore });
+              console.log(store);
               return e;
             } else {
               return null;
