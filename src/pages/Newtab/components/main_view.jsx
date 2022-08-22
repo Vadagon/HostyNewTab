@@ -68,7 +68,11 @@ const MainView = (props) => {
             console.log('edit bookmark');
           }}
         >
-          <ModalEditBookmarks />
+          <ModalEditBookmarks
+            onLoadImage={(e) => {
+              console.log(e);
+            }}
+          />
         </Modal>
       </div>
       {/* BACKGROUND CLOCK */}
