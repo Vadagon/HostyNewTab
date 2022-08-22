@@ -32,23 +32,19 @@ const ReactGridLayoutItem = (props) => {
           className="edit_on_hover  w-[24px] bg-[length:14px_14px]  bg-center bg-no-repeat h-[24px] bg-black bg-opacity-40 rounded-full -top-3 -right-3 cursor-pointer delay-200 transition-all duration-150 flex opacity-0 pointer-events-none absolute justify-center items-center p-1 "
         ></div>
         <div className="w-full flex justify-center min-h-[64px]">
-          <a
+          <div
+            onClick={() => window.open(bookmark.url, '_blank')}
             cover={bookmark.preview ? 'true' : ''}
-            target={'_blank'}
-            rel={'noreferrer'}
-            href={bookmark.url}
-            className="    rounded-md bg-center w-full h-full max-w-[64px] bg-no-repeat  "
+            className="  bg-contain  rounded-md bg-center w-full h-full max-w-[64px] bg-no-repeat  "
             style={{
               backgroundImage: getBgImg(),
             }}
           >
             {''}
-          </a>
+          </div>
         </div>
-        <a
-          target={'_blank'}
-          rel={'noreferrer'}
-          href={bookmark.url}
+        <div
+          onClick={() => window.open(bookmark.url, '_blank')}
           style={{
             color:
               storage.store.settings.folders[
@@ -58,7 +54,7 @@ const ReactGridLayoutItem = (props) => {
           className="text-white text-sm mt-[10%]  text-center text-ellipsis whitespace-nowrap overflow-hidden w-full"
         >
           {bookmark.name}
-        </a>
+        </div>
       </div>
     </div>
   );

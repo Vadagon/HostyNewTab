@@ -517,3 +517,6 @@ div[active=true].bg_upload{
 [cover=true]{
   background-size: cover;
 }
+.react-draggable-dragging {
+  pointer-events: none;
+}
