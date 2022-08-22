@@ -70,7 +70,7 @@ const GridLayout = (props) => {
         isResizable={false}
         margin={[0, 0]}
         onLayoutChange={(layout, layouts) => {
-          var d = layout.map(function (e) {
+          layout.forEach(function (e) {
             if (e.i.includes('custom-')) {
               var sss = parseInt(e.i.split('-')[1]);
               activeFolder.bookmarks.map(function (bookmark) {
@@ -87,7 +87,6 @@ const GridLayout = (props) => {
               return null;
             }
           });
-          console.log(d.filter((e) => e));
         }}
       >
         {layout.map((e) => (

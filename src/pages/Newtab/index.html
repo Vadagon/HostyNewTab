@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #343434">
   <head>
     <meta charset="UTF-8" />
     <title>Title</title>
+    <style>
+      #app-container {
+          animation: fadeInAnimation ease 0.5s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+      }
+      @keyframes fadeInAnimation {
+          0% {
+              opacity: 0;
+          }
+          50% {
+              opacity: 0;
+          }
+          100% {
+              opacity: 1;
+          }
+      }
+  </style>
   </head>
 
-  <body>
+  <body style="background-color: #343434; transition: visibility 0s, opacity 2s linear;  ">
     <div id="app-container"></div>
   </body>
 </html>

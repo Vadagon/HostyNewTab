@@ -30,7 +30,6 @@ const MainView = (props) => {
 
   const isIdle = useIdle({ timeToIdle: 5000 });
   function getBgImage() {
-    console.log(store.store.settings);
     if (store.store.settings['background'].custom) {
       return store.store.settings['background'].custom;
     }
