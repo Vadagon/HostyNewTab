@@ -26,7 +26,7 @@ const Navbar = () => {
     // i18n('time', store),
     i18n('privacy_and_security', store),
   ];
-  var addFolderSidebar = ['General', 'Bookmarks'];
+  var addFolderSidebar = [i18n('general', store), i18n('bookmarks', store)];
   const SortableItem = SortableElement(({ value, keyIndex }) => (
     <DraggableListItem
       edit_folder={() => {

@@ -245,7 +245,7 @@ const ModalTabs = (props) => {
             </ModalRowItemDropdown>
             <ModalRowItemDropdown title={i18n('custom', store)} img={upload_}>
               <ModalRowItem title={'JPG / PNG'}>
-                <label className="bg-[#2abe7d] text-white max-w-[135px] h-[34px] flex justify-center items-center rounded-md cursor-pointer">
+                <label className="bg-[#2abe7d] text-white px-3 h-[34px] flex justify-center items-center rounded-md cursor-pointer">
                   {i18n('upload_image', store)}
                   <input
                     onChange={(e) => {
@@ -261,7 +261,7 @@ const ModalTabs = (props) => {
                   <input
                     ref={refUpload}
                     onChange={(e) => {}}
-                    className="border border-[#575757] h-[34px] w-[150px] py-2 px-3 text-[#929292] bg-[#464646]"
+                    className="border border-[#575757] h-[34px]  py-2 px-3 text-[#929292] bg-[#464646]"
                     placeholder={i18n('add_image_url', store)}
                   />
                   <div
@@ -272,7 +272,7 @@ const ModalTabs = (props) => {
                       console.log(store.store.settings['background']);
                       selectBg(0);
                     }}
-                    className="bg-[#2abe7d] rounded-l-none text-white w-[50px] h-[34px] flex justify-center items-center rounded-md cursor-pointer"
+                    className="bg-[#2abe7d] rounded-l-none text-white px-3 h-[34px] flex justify-center items-center rounded-md cursor-pointer"
                   >
                     {i18n('load', store)}
                   </div>

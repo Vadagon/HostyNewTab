@@ -47,7 +47,7 @@ const UploadImage = (props) => {
         <div className="text-white">{i18n('upload_img_text', store)}</div>
         <div
           onClick={(e) => upload(e)}
-          className=" bg-[#2abe7d] mt-3 text-white w-[135px] h-[34px] flex justify-center items-center rounded-md cursor-pointer"
+          className=" bg-[#2abe7d] mt-3 text-white w-max px-3 h-[34px] flex justify-center items-center rounded-md cursor-pointer"
         >
           {i18n('create_preview', store)}
         </div>
