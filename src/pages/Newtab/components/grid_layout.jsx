@@ -18,8 +18,8 @@ const GridLayout = (props) => {
   activeFolder.bookmarks.forEach((bookmark, bookmarkId) => {
     layout.push({
       i: 'custom-' + bookmarkId + '-' + bookmark.name,
-      x: bookmark.position.x,
-      y: bookmark.position.y,
+      x: bookmark.position.x ?? 0,
+      y: bookmark.position.y ?? 0,
       w: 1,
       h: 1,
     });
@@ -73,12 +73,15 @@ const GridLayout = (props) => {
           var d = layout.map(function (e) {
             if (e.i.includes('custom-')) {
               var sss = parseInt(e.i.split('-')[1]);
-              activeFolder.bookmarks.filter((e) => e.id === sss)[0].position = {
-                x: e.x,
-                y: e.y,
-              };
-              store.settings.lang && save(store, { store, setStore });
-              console.log(store);
+              activeFolder.bookmarks.map(function (bookmark) {
+                if (bookmark.id === sss) bookmark.position = {
+                  x: e.x,
+                  y: e.y,
+                }
+                return e;
+              });
+              !_.isEqual(storeClone, store) && save(storeClone, { store, setStore });
+              // console.log(storeClone.settings.folders[0].bookmarks, store.settings.folders[0].bookmarks);
               return e;
             } else {
               return null;
