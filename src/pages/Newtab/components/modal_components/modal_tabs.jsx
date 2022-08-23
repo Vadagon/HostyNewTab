@@ -23,6 +23,7 @@ import {
 } from '../../../../components/Translation/Translation';
 import { UserContext } from '../../context';
 import { save } from '../../../../components/Store/Store';
+import BookmarkRow from './bookmark_row';
 var langs = [
   'English',
   'Deutsch',
@@ -86,16 +87,17 @@ const ModalTabs = (props) => {
   const [colorIcon, setColorIcon] = useState(
     store.store.settings['search_box'].icon_color
   );
+  var [search, setSearch] = useState('');
   const [selected, selectBg] = useState(5);
-  var time_format_ = [i18n('based_hour24', store), i18n('based_hour12', store)];
-  var time = [
-    i18n('sec20', store),
-    i18n('sec30', store),
-    i18n('sec40', store),
-    i18n('min1', store),
-    i18n('disable_time', store),
-  ];
-  var mode = [i18n('dark', store), i18n('light', store)];
+  // var time_format_ = [i18n('based_hour24', store), i18n('based_hour12', store)];
+  // var time = [
+  //   i18n('sec20', store),
+  //   i18n('sec30', store),
+  //   i18n('sec40', store),
+  //   i18n('min1', store),
+  //   i18n('disable_time', store),
+  // ];
+  // var mode = [i18n('dark', store), i18n('light', store)];
   if (props.settings) {
     return (
       <div className="tabs">
@@ -313,9 +315,36 @@ const ModalTabs = (props) => {
             <input
               className="border border-[#575757] h-[34px] mb-5 w-full py-2 px-3 text-[#929292] bg-[#464646]"
               placeholder={i18n('search_bookmark', store)}
+              value={search}
+              onChange={(e) => {
+                setSearch(e.target.value);
+                console.log(e.target.value);
+              }}
             />
             <div>
               {bookmarks.map((e, i) => {
+                if (search)
+                  return (
+                    <div>
+                      {getBookmarksArr(e).map((e2, i) => {
+                        if (
+                          e2.title
+                            .toLowerCase()
+                            .includes(search.toLowerCase()) ||
+                          e2.url.toLowerCase().includes(search.toLowerCase())
+                        )
+                          return (
+                            <BookmarkRow
+                              onChange={(e) => {
+                                props.setSelectedBookmarks({ e2, e, i });
+                                console.log(props.selectedBookmarks);
+                              }}
+                              data={{ e2, i }}
+                            />
+                          );
+                      })}
+                    </div>
+                  );
                 if (e.children.length === 0) return <div key={i}></div>;
                 return (
                   <ModalRowItemDropdown key={i} title={e.title}>
@@ -323,50 +352,14 @@ const ModalTabs = (props) => {
                       <div>
                         {getBookmarksArr(e).map((e2, i) => {
                           return (
-                            <div key={i} className="flex w-full mb-1">
-                              <label className="checbox_wrapper">
-                                <a
-                                  target={'_blank'}
-                                  rel="noreferrer"
-                                  className={' text-white flex w-full '}
-                                  href={e2.url}
-                                  key={'i' + i}
-                                >
-                                  <div
-                                    style={{
-                                      backgroundImage:
-                                        'url(http://www.google.com/s2/favicons?domain=' +
-                                        e2.url +
-                                        ')',
-                                    }}
-                                    className="w-[16px] flex-none h-[16px] bg-[length:16px_16px] bg-no-repeat bg-center mr-2"
-                                  ></div>
-                                  <div className=" overflow-hidden text-ellipsis whitespace-nowrap max-w-[calc(100%-30px)]">
-                                    {e2.title ? e2.title : e2.url}
-                                  </div>
-                                </a>
-                                <input
-                                  type="checkbox"
-                                  onChange={(e) => {
-                                    if (e.target.checked) {
-                                      var bookmarks = [];
-                                      bookmarks.push({
-                                        id: i,
-                                        position: { x: 0, y: 0 },
-                                        name: e2.title,
-                                        url: e2.url,
-                                        preview: null,
-                                      });
-                                    } else {
-                                      bookmarks.splice(i, 1);
-                                    }
-                                    props.setSelectedBookmarks(bookmarks);
-                                    console.log(props.selectedBookmarks);
-                                  }}
-                                />
-                                <span className="checkmark"></span>
-                              </label>
-                            </div>
+                            <BookmarkRow
+                              key={i + 's'}
+                              onChange={(e) => {
+                                props.setSelectedBookmarks({ e2, e, i });
+                                console.log(props.selectedBookmarks);
+                              }}
+                              data={{ e2, i }}
+                            />
                           );
                         })}
                       </div>
