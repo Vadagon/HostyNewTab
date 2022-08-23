@@ -16,6 +16,7 @@ const DraggableListItem = (props) => {
   const storage = useContext(UserContext);
   return (
     <li
+      active={storage.store.settings.activeFolder === props.index ? 'true' : ''}
       className="bg-[#313131] flex h-full cursor-pointer items-center p-[10px] max-w-[220px] z-50"
       key={props.keyIndex}
       onClick={(e) => {
