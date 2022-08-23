@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Bladwijzers openen"
     },
+    "bookmarks": {
+        "message": "Bladwijzers"
+    },
     "theme": {
         "message": "Thema"
     },

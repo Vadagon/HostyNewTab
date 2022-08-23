@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Avaa Kirjanmerkit"
     },
+    "bookmarks": {
+        "message": "Kirjanmerkit"
+    },
     "theme": {
         "message": "Teema"
     },

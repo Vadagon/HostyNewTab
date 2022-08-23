@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Offene Lesezeichen"
     },
+    "bookmarks": {
+        "message": "Lesezeichen"
+    },
     "theme": {
         "message": "Thema"
     },

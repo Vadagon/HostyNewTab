@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Nyissa meg a Könyvjelzőket"
     },
+    "bookmarks": {
+        "message": "Könyvjelzők"
+    },
     "theme": {
         "message": "Téma"
     },

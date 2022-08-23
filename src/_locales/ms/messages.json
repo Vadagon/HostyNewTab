@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Buka Penanda Halaman"
     },
+    "bookmarks": {
+        "message": "Penanda buku"
+    },
     "theme": {
         "message": "Tema"
     },

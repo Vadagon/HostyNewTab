@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "ブックマークを開く"
     },
+    "bookmarks": {
+        "message": "ブックマーク"
+    },
     "theme": {
         "message": "テーマ"
     },

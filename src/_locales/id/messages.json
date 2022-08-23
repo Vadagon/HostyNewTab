@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Buka Bookmark"
     },
+    "bookmarks": {
+        "message": "Bookmark"
+    },
     "theme": {
         "message": "Tema"
     },

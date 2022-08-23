@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "책갈피 열기"
     },
+    "bookmarks": {
+        "message": "책갈피"
+    },
     "theme": {
         "message": "주제"
     },

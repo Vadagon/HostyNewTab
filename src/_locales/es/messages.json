@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Abrir marcadores"
     },
+    "bookmarks": {
+        "message": "Marcadores"
+    },
     "theme": {
         "message": "Tema"
     },

@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Ouvrir les favoris"
     },
+    "bookmarks": {
+        "message": "Signets"
+    },
     "theme": {
         "message": "Thème"
     },
@@ -90,7 +93,7 @@
         "message": "Personnalisé"
     },
     "upload_image": {
-        "message": "Télécharger l'image"
+        "message": "Télécharger une image"
     },
     "add_image_url": {
         "message": "Ajoutez l'URL de l'image et cliquez sur charger"

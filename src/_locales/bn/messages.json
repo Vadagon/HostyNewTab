@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "বুকমার্ক খুলুন"
     },
+    "bookmarks": {
+        "message": "বুকমার্ক"
+    },
     "theme": {
         "message": "থিম"
     },
