@@ -437,6 +437,9 @@ div[active=true].arrow_down{
 div[active=true].bgs::after{
   opacity: 1;
 }
+li[active=true].sortable_item{
+  background:#313131;
+}
 .bg_upload{
   background-size: 24px;
 }

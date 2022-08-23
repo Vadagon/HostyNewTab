@@ -40,7 +40,7 @@ const MainView = () => {
       ...obj,
     }));
   };
-  const isIdle = useIdle({ timeToIdle: 5000 });
+  const isIdle = useIdle({ timeToIdle: 15000 });
   function getBgImage() {
     if (store.store.settings['background'].custom) {
       return store.store.settings['background'].custom;
@@ -59,7 +59,7 @@ const MainView = () => {
     >
       <div
         className={
-          false
+          isIdle
             ? 'opacity-0 duration-500 transition-all'
             : 'opacity-100 transition-all duration-500'
         }
@@ -134,7 +134,7 @@ const MainView = () => {
         </Modal>
       </div>
       {/* BACKGROUND CLOCK */}
-      <ClockBg active={false} />
+      <ClockBg active={isIdle} />
       <Footer />
     </div>
   );

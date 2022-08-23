@@ -14,10 +14,13 @@ const DragHandle = sortableHandle(() => (
 ));
 const DraggableListItem = (props) => {
   const storage = useContext(UserContext);
+  console.log(props.keyIndex);
   return (
     <li
-      active={storage.store.settings.activeFolder === props.index ? 'true' : ''}
-      className="bg-[#313131] flex h-full cursor-pointer items-center p-[10px] max-w-[220px] z-50"
+      active={
+        storage.store.settings.activeFolder === props.keyIndex ? 'true' : ''
+      }
+      className="sortable_item flex h-full cursor-pointer items-center p-[10px] max-w-[220px] z-50"
       key={props.keyIndex}
       onClick={(e) => {
         if (e.target === e.currentTarget) {
