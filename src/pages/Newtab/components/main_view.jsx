@@ -91,19 +91,14 @@ const MainView = () => {
             var storeClone = _.cloneDeep(store.store);
             storeClone.settings.folders[
               store.store.settings.activeFolder
-            ].bookmarks.splice(index, 1);
-            console.log(storeClone);
-            // arr.splice(index, 1);
-            // console.log(arr);
+            ].bookmarks = storeClone.settings.folders[
+              store.store.settings.activeFolder
+            ].bookmarks.filter(e => e.id !== index);
             save(storeClone, store);
             console.log('save');
             openModal(false);
-            // if (index2 > -1) { // only splice array when item is found
-            //   array.splice(index, 1); // 2nd parameter means remove one item only
-            // }
           }}
           confirm_click={() => {
-            // var bookmark = null
             store.store.settings.folders[
               store.store.settings.activeFolder
             ].bookmarks = store.store.settings.folders[
