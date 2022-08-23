@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import arrow from '../../../../assets/img/arrow.svg';
 
 const ModalRowItemDropdown = (props) => {
-  var [open, openDropdown] = useState(false);
+  var [open, openDropdown] = useState(props.open && true);
   return (
     <div className="flex-col relative">
       <div

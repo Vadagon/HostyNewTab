@@ -20,7 +20,7 @@ const Navbar = () => {
 
   const [colorFont, setColorFont] = useState('#ffffff');
   const [name, setName] = useState('');
-  const [selectedBookmarks, setSelectedBookmarks] = useState('');
+  const [selectedBookmarks, setSelectedBookmarks] = useState([]);
   const [img, setImg] = useState('');
 
   const store = useContext(UserContext);
@@ -33,7 +33,7 @@ const Navbar = () => {
     i18n('privacy_and_security', store),
   ];
   var addFolderSidebar = [i18n('general', store), i18n('bookmarks', store)];
-  const SortableItem = SortableElement(({ value, keyIndex }) => (
+  const SortableItem = SortableElement(({ value, keyIndex, preview }) => (
     <DraggableListItem
       edit_folder={() => {
         openModalAddFolder(!modalAddFolder);
@@ -42,6 +42,7 @@ const Navbar = () => {
         openModalBookmarks(!modalBookmarks);
         setActionedFolderIndex(keyIndex);
       }}
+      preview={preview}
       item={value}
       keyIndex={keyIndex}
     />
@@ -51,12 +52,15 @@ const Navbar = () => {
     return (
       <ul>
         {items.map((value, index) => (
-          <SortableItem
-            key={`item-${value.name}-${index}`}
-            index={index}
-            keyIndex={index}
-            value={value.name}
-          />
+          <div>
+            <SortableItem
+              key={`item-${value.name}-${index}`}
+              index={index}
+              preview={value.preview}
+              keyIndex={index}
+              value={value.name}
+            />
+          </div>
         ))}
       </ul>
     );
@@ -154,19 +158,20 @@ const Navbar = () => {
           console.log(e.e.target.checked);
           console.log(e.e2);
           console.log(e.i);
-          // if (e.target.checked) {
-          //   var bookmarks = [];
-          //   bookmarks.push({
-          //     id: i,
-          //     position: { x: 0, y: 0 },
-          //     name: e2.title,
-          //     url: e2.url,
-          //     preview: null,
-          //   });
-          // } else {
-          //   bookmarks.splice(i, 1);
-          // }
-          // setSelectedBookmarks(e)
+          var bookmarks = [];
+
+          if (e.e.target.checked) {
+            bookmarks.push({
+              id: e.i,
+              position: { x: 0, y: 0 },
+              name: e.e2.title,
+              url: e.e2.url,
+              preview: null,
+            });
+          } else {
+            selectedBookmarks.splice(e.i, 1);
+          }
+          setSelectedBookmarks((oldArray) => [...oldArray, ...bookmarks]);
         }}
         img={img}
         color={colorFont}
@@ -180,52 +185,16 @@ const Navbar = () => {
           console.log(img);
           console.log(colorFont);
           console.log(name);
-          // var text = {
-          //   name: 'Test Folder 123',
-          //   font_color: '#ffffff',
-          //   preview: null,
-          //   index: 0,
-          //   bookmarks: [
-          //     {
-          //       id: 0,
-          //       position: { x: 4, y: 4 },
-          //       name: 'Amazon',
-          //       url: 'https://www.amazon.com/',
-          //       preview: null,
-          //     },
-          //     {
-          //       id: 1,
-          //       position: { x: 5, y: 7 },
-          //       name: null,
-          //       url: null,
-          //       preview: null,
-          //     },
-          //     {
-          //       id: 2,
-          //       position: { x: 6, y: 4 },
-          //       name: null,
-          //       url: null,
-          //       preview: null,
-          //     },
-          //     {
-          //       id: 3,
-          //       position: { x: 7, y: 7 },
-          //       name: null,
-          //       url: null,
-          //       preview: null,
-          //     },
-          //     {
-          //       id: 4,
-          //       position: { x: 8, y: 4 },
-          //       name: null,
-          //       url: null,
-          //       preview: null,
-          //     },
-          //   ],
-          // };
-
-          // store.store.settings.folders.push(text);
+          console.log(selectedBookmarks);
+          var folder = {
+            name: name,
+            font_color: colorFont,
+            preview: img,
+            bookmarks: selectedBookmarks,
+          };
+          store.store.settings.folders.push(folder);
           console.log('add folder');
+          openModalAddFolder(false);
         }}
       ></Modal>
     </div>

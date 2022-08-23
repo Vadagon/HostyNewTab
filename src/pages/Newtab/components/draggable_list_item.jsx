@@ -33,7 +33,9 @@ const DraggableListItem = (props) => {
             save(storage.store, storage);
           }
         }}
-        style={{ backgroundImage: 'url(' + folder + ')' }}
+        style={{
+          backgroundImage: 'url(' + props.preview + ')',
+        }}
         className="w-[30px] flex-none h-[30px] rounded-full bg-cover overflow-hidden mr-3"
       ></div>
       <div

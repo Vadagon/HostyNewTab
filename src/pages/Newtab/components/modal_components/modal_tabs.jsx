@@ -24,14 +24,6 @@ import {
 import { UserContext } from '../../context';
 import { save } from '../../../../components/Store/Store';
 import BookmarkRow from './bookmark_row';
-var langs = [
-  'English',
-  'Deutsch',
-  'Español',
-  'Français',
-  'Русский',
-  'Укрїнська',
-];
 
 var bg = [bg_1, bg_2, bg_3, bg_4, bg_5];
 var bookmarks = {};
@@ -169,7 +161,11 @@ const ModalTabs = (props) => {
         {/* Background */}
         {props.selectedTab === 2 && (
           <div className="tab ">
-            <ModalRowItemDropdown title={i18n('default', store)} img={default_}>
+            <ModalRowItemDropdown
+              open
+              title={i18n('default', store)}
+              img={default_}
+            >
               <div className=" grid grid-cols-3">
                 <div
                   active={
@@ -223,7 +219,7 @@ const ModalTabs = (props) => {
                 <div className="flex">
                   <input
                     ref={refUpload}
-                    onChange={(e) => { }}
+                    onChange={(e) => {}}
                     className="border border-[#575757] h-[34px]  py-2 px-3 text-[#929292] bg-[#464646]"
                     placeholder={i18n('add_image_url', store)}
                   />
