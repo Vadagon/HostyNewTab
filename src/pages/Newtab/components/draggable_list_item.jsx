@@ -1,4 +1,3 @@
-import folder from '../../../assets/img/welcome-folder.png';
 import open_all from '../../../assets/img/open_all.svg';
 import edit_tab from '../../../assets/img/edit_tab.svg';
 import move_folder from '../../../assets/img/move_folder.svg';
@@ -18,7 +17,7 @@ const DraggableListItem = (props) => {
   return (
     <li
       className="bg-[#313131] flex h-full cursor-pointer items-center p-[10px] max-w-[220px] z-50"
-      key={JSON.stringify(props)}
+      key={props.keyIndex}
       onClick={(e) => {
         if (e.target === e.currentTarget) {
           storage.store.settings.activeFolder = props.keyIndex;
@@ -33,7 +32,9 @@ const DraggableListItem = (props) => {
             save(storage.store, storage);
           }
         }}
-        style={{ backgroundImage: 'url(' + folder + ')' }}
+        style={{
+          backgroundImage: 'url(' + props.preview + ')',
+        }}
         className="w-[30px] flex-none h-[30px] rounded-full bg-cover overflow-hidden mr-3"
       ></div>
       <div

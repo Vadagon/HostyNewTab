@@ -24,14 +24,6 @@ import {
 import { UserContext } from '../../context';
 import { save } from '../../../../components/Store/Store';
 import BookmarkRow from './bookmark_row';
-var langs = [
-  'English',
-  'Deutsch',
-  'Español',
-  'Français',
-  'Русский',
-  'Укрїнська',
-];
 
 var bg = [bg_1, bg_2, bg_3, bg_4, bg_5];
 var bookmarks = {};
@@ -169,7 +161,11 @@ const ModalTabs = (props) => {
         {/* Background */}
         {props.selectedTab === 2 && (
           <div className="tab ">
-            <ModalRowItemDropdown title={i18n('default', store)} img={default_}>
+            <ModalRowItemDropdown
+              open
+              title={i18n('default', store)}
+              img={default_}
+            >
               <div className=" grid grid-cols-3">
                 <div
                   active={
@@ -223,7 +219,7 @@ const ModalTabs = (props) => {
                 <div className="flex">
                   <input
                     ref={refUpload}
-                    onChange={(e) => { }}
+                    onChange={(e) => {}}
                     className="border border-[#575757] h-[34px]  py-2 px-3 text-[#929292] bg-[#464646]"
                     placeholder={i18n('add_image_url', store)}
                   />
@@ -292,13 +288,17 @@ const ModalTabs = (props) => {
       <div className="flex h-[calc(100%-60px)] overflow-hidden overflow-y-auto w-full flex-col">
         {props.selectedTab === 0 && (
           <div className="tab ">
-            <UploadImage file={props.img} onLoadImage={props.onLoadImage} />
+            <UploadImage
+              file={props.img}
+              folder={props.folder}
+              onLoadImage={props.onLoadImage}
+            />
 
             <ModalRowItem title={i18n('folder_name', store)}>
               <input
                 className="border border-[#575757] h-[34px] w-[250px] py-2 px-3 text-[#929292] bg-[#464646]"
                 placeholder={i18n('name', store)}
-                value={props.name}
+                defaultValue={props.name}
                 onChange={props.onChange}
               />
             </ModalRowItem>
@@ -327,6 +327,14 @@ const ModalTabs = (props) => {
                   return (
                     <div>
                       {getBookmarksArr(e).map((e2, i) => {
+                        var checked = false;
+                        store.store.settings.folders[
+                          store.store.settings.activeFolder
+                        ].bookmarks.forEach((e) => {
+                          if (e.url === e2.url) {
+                            checked = true;
+                          }
+                        });
                         if (
                           e2.title
                             .toLowerCase()
@@ -335,6 +343,8 @@ const ModalTabs = (props) => {
                         )
                           return (
                             <BookmarkRow
+                              key={i + 's'}
+                              checked={props.name && checked}
                               onChange={(e) => {
                                 props.setSelectedBookmarks({ e2, e, i });
                                 console.log(props.selectedBookmarks);
@@ -351,12 +361,21 @@ const ModalTabs = (props) => {
                     <div className="flex w-full flex-col">
                       <div>
                         {getBookmarksArr(e).map((e2, i) => {
+                          var checked = false;
+                          store.store.settings.folders[
+                            store.store.settings.activeFolder
+                          ].bookmarks.forEach((e) => {
+                            if (e.url === e2.url) {
+                              checked = true;
+                            }
+                          });
+
                           return (
                             <BookmarkRow
+                              checked={props.name && checked}
                               key={i + 's'}
                               onChange={(e) => {
                                 props.setSelectedBookmarks({ e2, e, i });
-                                console.log(props.selectedBookmarks);
                               }}
                               data={{ e2, i }}
                             />

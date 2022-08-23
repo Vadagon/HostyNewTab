@@ -14,6 +14,7 @@ import bg_4 from '../../../assets/img/custom_bg/bg_4.jpg';
 import bg_5 from '../../../assets/img/custom_bg/bg_5.jpg';
 import { save } from '../../../components/Store/Store';
 import _ from 'lodash';
+import Footer from './footer';
 function useIdle(options) {
   const [isIdle, setIsIdle] = React.useState(false);
   React.useEffect(() => {
@@ -67,17 +68,17 @@ const MainView = () => {
 
         <GridLayout
           editBookmark={(index) => {
-            var bookmark = null
-            store.store.settings.folders[store.store.settings.activeFolder].bookmarks.forEach(e => {
+            var bookmark = null;
+            store.store.settings.folders[
+              store.store.settings.activeFolder
+            ].bookmarks.forEach((e) => {
               if (e.id === index) {
                 bookmark = e;
               }
             });
             editModal(bookmark.id);
 
-            setBookmarkState(
-              bookmark
-            );
+            setBookmarkState(bookmark);
           }}
           openModal={openModal}
         />
@@ -88,13 +89,14 @@ const MainView = () => {
           openModal={openModal}
           remove_click={() => {
             var storeClone = _.cloneDeep(store.store);
-            storeClone.settings.folders[store.store.settings.activeFolder]
-              .bookmarks.splice(index, 1);
-            console.log(storeClone)
+            storeClone.settings.folders[
+              store.store.settings.activeFolder
+            ].bookmarks.splice(index, 1);
+            console.log(storeClone);
             // arr.splice(index, 1);
             // console.log(arr);
             save(storeClone, store);
-            console.log('save')
+            console.log('save');
             openModal(false);
             // if (index2 > -1) { // only splice array when item is found
             //   array.splice(index, 1); // 2nd parameter means remove one item only
@@ -102,7 +104,11 @@ const MainView = () => {
           }}
           confirm_click={() => {
             // var bookmark = null
-            store.store.settings.folders[store.store.settings.activeFolder].bookmarks = store.store.settings.folders[store.store.settings.activeFolder].bookmarks.map(function (e) {
+            store.store.settings.folders[
+              store.store.settings.activeFolder
+            ].bookmarks = store.store.settings.folders[
+              store.store.settings.activeFolder
+            ].bookmarks.map(function (e) {
               if (e.id === index) {
                 return bookmarkState;
               }
@@ -129,6 +135,7 @@ const MainView = () => {
       </div>
       {/* BACKGROUND CLOCK */}
       <ClockBg active={false} />
+      <Footer />
     </div>
   );
 };

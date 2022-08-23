@@ -4,6 +4,14 @@ import { TestContext, UserContext } from '../../context';
 // import { langsShorhands } from './modal_components/modal_tabs';
 
 const Dropdown = (props) => {
+  var langs = {
+    en: 'English',
+    de: 'Deutsch',
+    es: 'Español',
+    fr: 'Français',
+    ru: 'Русский',
+    uk: 'Укрїнська',
+  };
   var [drop, openDropdown] = useState(false);
   const storage = useContext(UserContext);
   const testStorage = useContext(TestContext);
@@ -17,7 +25,7 @@ const Dropdown = (props) => {
       active={drop ? 'active' : ''}
       className="drop_down cursor-pointer rounded-md relative min-w-[160px] bg-[#464646] text-[#929292] p-2 border border-[#575757] flex flex-col"
     >
-      <div className="drop_down_main">{props.data[selected]}</div>
+      <div className="drop_down_main">{langs[props.data[selected]]}</div>
       <div className="drop_down_tringle"></div>
       <div className={'drop_down_options'}>
         {props.data.map((item, i) => {
@@ -35,7 +43,7 @@ const Dropdown = (props) => {
               key={item}
               className={' px-2 py-1 '}
             >
-              {item}
+              {langs[item]}
             </div>
           );
         })}

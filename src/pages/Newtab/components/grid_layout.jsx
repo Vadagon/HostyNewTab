@@ -71,7 +71,6 @@ const GridLayout = (props) => {
         isResizable={false}
         margin={[0, 0]}
         onLayoutChange={(layout, layouts) => {
-
           var d = layout.map(function (e) {
             if (e.i.includes('custom-')) {
               var id = parseInt(e.i.split('-')[1]);
@@ -82,7 +81,7 @@ const GridLayout = (props) => {
                     y: e.y,
                   };
                 return e;
-              })
+              });
               activeFolder = activeFolder;
               return e;
             } else {

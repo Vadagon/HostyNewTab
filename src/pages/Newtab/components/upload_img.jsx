@@ -12,10 +12,13 @@ const UploadImage = (props) => {
     if (file && props.file) {
       return 'url(' + file + ')';
     }
-    if (props.file) {
+    if (props.file && !props.folder) {
       return (
         'url(http://www.google.com/s2/favicons?sz=64&domain=' + props.file + ')'
       );
+    }
+    if (props.folder) {
+      return 'url(' + props.file + ')';
     }
 
     return 'url(' + plus + ')';
