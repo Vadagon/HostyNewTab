@@ -235,8 +235,9 @@ const Navbar = () => {
           var bookmarks = [];
 
           if (e.e.target.checked) {
+            var maxId = Math.max(0, ...store.store.settings.folders[folderIndex].bookmarks.map(e => e.id))
             bookmarks.push({
-              id: e.i,
+              id: maxId + e.i,
               position: { x: 0, y: 0 },
               name: e.e2.title,
               url: e.e2.url,
@@ -261,9 +262,9 @@ const Navbar = () => {
           storeClone.settings.folders[folderIndex].name = nameEdit;
           storeClone.settings.folders[folderIndex].font_color = colorFontEdit;
           storeClone.settings.folders[folderIndex].preview = imgEdit;
-          // storeClone.settings.folders[folderIndex].bookmarks.push(
-          //   ...selectedBookmarks
-          // );
+          storeClone.settings.folders[folderIndex].bookmarks.push(
+            ...selectedBookmarks
+          );
 
           console.log(selectedBookmarks);
           save(storeClone, store);
