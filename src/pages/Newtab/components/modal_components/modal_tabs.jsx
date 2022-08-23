@@ -328,10 +328,11 @@ const ModalTabs = (props) => {
                     <div>
                       {getBookmarksArr(e).map((e2, i) => {
                         var checked = false;
+                        console.log(props.folderIndex)
                         store.store.settings.folders[
-                          store.store.settings.activeFolder
-                        ].bookmarks.forEach((e) => {
-                          if (e.url === e2.url) {
+                          props.folderIndex
+                        ].bookmarks.forEach((bookmarkLocal) => {
+                          if (bookmarkLocal.url === e2.url) {
                             checked = true;
                           }
                         });
@@ -362,18 +363,20 @@ const ModalTabs = (props) => {
                       <div>
                         {getBookmarksArr(e).map((e2, i) => {
                           var checked = false;
+                          console.log(props.folderIndex)
                           store.store.settings.folders[
-                            store.store.settings.activeFolder
-                          ].bookmarks.forEach((e) => {
-                            if (e.url === e2.url) {
+                            props.folderIndex
+                          ].bookmarks.forEach((bookmarkLocal) => {
+                            if (bookmarkLocal.url === e2.url) {
                               checked = true;
+                              console.log(e2)
                             }
                           });
 
                           return (
                             <BookmarkRow
                               checked={props.name && checked}
-                              key={i + 's'}
+                              key={i + 's' + props.folderIndex}
                               onChange={(e) => {
                                 props.setSelectedBookmarks({ e2, e, i });
                               }}

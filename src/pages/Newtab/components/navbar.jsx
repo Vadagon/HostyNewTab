@@ -126,6 +126,7 @@ const Navbar = () => {
           <div
             onClick={() => {
               openModalAddFolder(!modalAddFolder);
+              setSelectedBookmarks([])
             }}
             className="bg-blue-400 cursor-pointer h-[50px] flex justify-center items-center w-[220px] text-white"
           >
@@ -189,6 +190,7 @@ const Navbar = () => {
         }}
         img={img}
         color={colorFont}
+        folderIndex={folderIndex ? folderIndex : 0}
         setColorFont={setColorFont}
         openModal={openModalAddFolder}
         name={name}
@@ -231,6 +233,7 @@ const Navbar = () => {
         folder
         img={imgEdit}
         selectedBookmarks={selectedBookmarks}
+        folderIndex={folderIndex ? folderIndex : 0}
         setSelectedBookmarks={(e) => {
           var bookmarks = [];
 
@@ -251,6 +254,7 @@ const Navbar = () => {
         }}
         // img={img}
         color={colorFontEdit}
+
         setColorFont={setColorFontEdit}
         openModal={openModalEditFolder}
         name={nameEdit}
