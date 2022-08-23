@@ -150,7 +150,24 @@ const Navbar = () => {
           setImg(e);
         }}
         selectedBookmarks={selectedBookmarks}
-        setSelectedBookmarks={setSelectedBookmarks}
+        setSelectedBookmarks={(e) => {
+          console.log(e.e.target.checked);
+          console.log(e.e2);
+          console.log(e.i);
+          // if (e.target.checked) {
+          //   var bookmarks = [];
+          //   bookmarks.push({
+          //     id: i,
+          //     position: { x: 0, y: 0 },
+          //     name: e2.title,
+          //     url: e2.url,
+          //     preview: null,
+          //   });
+          // } else {
+          //   bookmarks.splice(i, 1);
+          // }
+          // setSelectedBookmarks(e)
+        }}
         img={img}
         color={colorFont}
         setColorFont={setColorFont}
