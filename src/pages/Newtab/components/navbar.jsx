@@ -262,12 +262,13 @@ const Navbar = () => {
           storeClone.settings.folders[folderIndex].name = nameEdit;
           storeClone.settings.folders[folderIndex].font_color = colorFontEdit;
           storeClone.settings.folders[folderIndex].preview = imgEdit;
-          storeClone.settings.folders[folderIndex].bookmarks.push(
-            ...selectedBookmarks
-          );
+          // storeClone.settings.folders[folderIndex].bookmarks.push(
+          //   ...selectedBookmarks
+          // );
+
 
           console.log(selectedBookmarks);
-          // save(storeClone, store);
+          save(storeClone, store);
           console.log('edit folder');
           openModalEditFolder(false);
         }}

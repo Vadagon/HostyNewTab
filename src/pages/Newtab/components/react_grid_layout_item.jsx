@@ -35,7 +35,7 @@ const ReactGridLayoutItem = (props) => {
             props.openModal(true);
             props.editBookmark(bookmark.id);
           }}
-          className="edit_on_hover  w-[32px] bg-[length:14px_14px]  bg-center bg-no-repeat h-[32px] z-50 bg-black  bg-opacity-40 rounded-full -top-3 -right-3 cursor-pointer  transition-all duration-150 flex opacity-0 pointer-events-none absolute justify-center items-center p-1 "
+          className="edit_on_hover  w-[32px] bg-[length:14px_14px]  bg-center bg-no-repeat h-[32px] z-50 top-0 right-0 cursor-pointer  transition-all duration-150 flex opacity-0 pointer-events-none absolute justify-center items-center p-1 "
         ></div>
         <div className="w-full flex justify-center h-full">
           <div
