@@ -12,13 +12,9 @@ import bg_2 from '../../../../assets/img/custom_bg/bg_2.jpg';
 import bg_3 from '../../../../assets/img/custom_bg/bg_3.jpg';
 import bg_4 from '../../../../assets/img/custom_bg/bg_4.jpg';
 import bg_5 from '../../../../assets/img/custom_bg/bg_5.jpg';
-import clock_ from '../../../../assets/img/clock.png';
-import time_format from '../../../../assets/img/time-forma.png';
 import font_color from '../../../../assets/img/font-color.png';
 import icon_color from '../../../../assets/img/icon-color.png';
 import search_bar_color from '../../../../assets/img/search-bar-color.png';
-import export_ from '../../../../assets/img/export.png';
-import theme from '../../../../assets/img/theme.png';
 import { PopoverPicker } from './color_picker';
 import UploadImage from '../upload_img';
 import {
@@ -51,42 +47,7 @@ function getBookmarksArr(e) {
   });
   return arr;
 }
-function getChildrens(e, i) {
-  return (
-    <div>
-      {getBookmarksArr(e).map((e2, i) => {
-        return (
-          <div key={i} className="flex w-full mb-1">
-            <label className="checbox_wrapper">
-              <a
-                target={'_blank'}
-                rel="noreferrer"
-                className={' text-white flex w-full '}
-                href={e2.url}
-                key={'i' + i}
-              >
-                <div
-                  style={{
-                    backgroundImage:
-                      'url(http://www.google.com/s2/favicons?domain=' +
-                      e2.url +
-                      ')',
-                  }}
-                  className="w-[16px] flex-none h-[16px] bg-[length:16px_16px] bg-no-repeat bg-center mr-2"
-                ></div>
-                <div className=" overflow-hidden text-ellipsis whitespace-nowrap max-w-[calc(100%-30px)]">
-                  {e2.title ? e2.title : e2.url}
-                </div>
-              </a>
-              <input type="checkbox" />
-              <span className="checkmark"></span>
-            </label>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
+
 const ModalTabs = (props) => {
   const refUpload = useRef(null);
   const store = useContext(UserContext);
@@ -329,16 +290,21 @@ const ModalTabs = (props) => {
       <div className="flex h-[calc(100%-60px)] overflow-hidden overflow-y-auto w-full flex-col">
         {props.selectedTab === 0 && (
           <div className="tab ">
-            <UploadImage />
+            <UploadImage file={props.img} onLoadImage={props.onLoadImage} />
 
             <ModalRowItem title={i18n('folder_name', store)}>
               <input
                 className="border border-[#575757] h-[34px] w-[250px] py-2 px-3 text-[#929292] bg-[#464646]"
                 placeholder={i18n('name', store)}
+                value={props.name}
+                onChange={props.onChange}
               />
             </ModalRowItem>
             <ModalRowItem title={i18n('font_color', store)}>
-              <PopoverPicker color={colorFont} onChange={setColorFont} />
+              <PopoverPicker
+                color={props.color}
+                onChange={props.setColorFont}
+              />
             </ModalRowItem>
           </div>
         )}
@@ -354,7 +320,56 @@ const ModalTabs = (props) => {
                 return (
                   <ModalRowItemDropdown key={i} title={e.title}>
                     <div className="flex w-full flex-col">
-                      {getChildrens(e, i)}
+                      <div>
+                        {getBookmarksArr(e).map((e2, i) => {
+                          return (
+                            <div key={i} className="flex w-full mb-1">
+                              <label className="checbox_wrapper">
+                                <a
+                                  target={'_blank'}
+                                  rel="noreferrer"
+                                  className={' text-white flex w-full '}
+                                  href={e2.url}
+                                  key={'i' + i}
+                                >
+                                  <div
+                                    style={{
+                                      backgroundImage:
+                                        'url(http://www.google.com/s2/favicons?domain=' +
+                                        e2.url +
+                                        ')',
+                                    }}
+                                    className="w-[16px] flex-none h-[16px] bg-[length:16px_16px] bg-no-repeat bg-center mr-2"
+                                  ></div>
+                                  <div className=" overflow-hidden text-ellipsis whitespace-nowrap max-w-[calc(100%-30px)]">
+                                    {e2.title ? e2.title : e2.url}
+                                  </div>
+                                </a>
+                                <input
+                                  type="checkbox"
+                                  onChange={(e) => {
+                                    if (e.target.checked) {
+                                      var bookmarks = [];
+                                      bookmarks.push({
+                                        id: i,
+                                        position: { x: 0, y: 0 },
+                                        name: e2.title,
+                                        url: e2.url,
+                                        preview: null,
+                                      });
+                                    } else {
+                                      bookmarks.splice(i, 1);
+                                    }
+                                    props.setSelectedBookmarks(bookmarks);
+                                    console.log(props.selectedBookmarks);
+                                  }}
+                                />
+                                <span className="checkmark"></span>
+                              </label>
+                            </div>
+                          );
+                        })}
+                      </div>
                     </div>
                   </ModalRowItemDropdown>
                 );

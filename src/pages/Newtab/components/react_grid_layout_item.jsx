@@ -28,8 +28,9 @@ const ReactGridLayoutItem = (props) => {
           style={{ backgroundImage: 'url(' + edit + ')' }}
           onClick={() => {
             props.openModal(true);
+            props.editBookmark(props.bookmarkId);
           }}
-          className="edit_on_hover  w-[24px] bg-[length:14px_14px]  bg-center bg-no-repeat h-[24px] bg-black bg-opacity-40 rounded-full -top-3 -right-3 cursor-pointer delay-200 transition-all duration-150 flex opacity-0 pointer-events-none absolute justify-center items-center p-1 "
+          className="edit_on_hover  w-[32px] bg-[length:14px_14px]  bg-center bg-no-repeat h-[32px] z-50 bg-black bg-opacity-40 rounded-full -top-3 -right-3 cursor-pointer delay-200 transition-all duration-150 flex opacity-0 pointer-events-none absolute justify-center items-center p-1 "
         ></div>
         <div className="w-full flex justify-center min-h-[64px]">
           <div

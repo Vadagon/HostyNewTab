@@ -12,6 +12,7 @@ import bg_2 from '../../../assets/img/custom_bg/bg_2.jpg';
 import bg_3 from '../../../assets/img/custom_bg/bg_3.jpg';
 import bg_4 from '../../../assets/img/custom_bg/bg_4.jpg';
 import bg_5 from '../../../assets/img/custom_bg/bg_5.jpg';
+import { save } from '../../../components/Store/Store';
 function useIdle(options) {
   const [isIdle, setIsIdle] = React.useState(false);
   React.useEffect(() => {
@@ -23,11 +24,20 @@ function useIdle(options) {
   return isIdle;
 }
 var bg = [bg_1, bg_2, bg_3, bg_4, bg_5];
-const MainView = (props) => {
+const MainView = () => {
   const store = useContext(UserContext);
   var [modal, openModal] = useState(false);
-  // var [clock, openClock] = useState(false);
+  var [index, editModal] = useState(false);
+  const [bookmarkState, setBookmarkState] = useState(
+    store.store.settings.folders[store.store.settings.activeFolder].bookmarks[0]
+  );
 
+  const handleChange = (obj) => {
+    setBookmarkState((bookmarkState) => ({
+      ...bookmarkState,
+      ...obj,
+    }));
+  };
   const isIdle = useIdle({ timeToIdle: 5000 });
   function getBgImage() {
     if (store.store.settings['background'].custom) {
@@ -54,22 +64,53 @@ const MainView = (props) => {
       >
         <Navbar />
 
-        <GridLayout openModal={openModal} />
+        <GridLayout
+          editBookmark={(index) => {
+            editModal(index);
+            setBookmarkState(
+              store.store.settings.folders[store.store.settings.activeFolder]
+                .bookmarks[index]
+            );
+          }}
+          openModal={openModal}
+        />
         <Modal
           title={i18n('edit_bookmarks', store)}
           open={modal}
           nosidebar
           openModal={openModal}
           remove_click={() => {
-            console.log('remove bookmark');
+            var arr =
+              store.store.settings.folders[store.store.settings.activeFolder]
+                .bookmarks;
+            arr.splice(index, 1);
+            console.log(arr);
+            // arr.splice(index, 1);
+            // console.log(arr);
+            save(store.store, store);
+            openModal(false);
+            // if (index2 > -1) { // only splice array when item is found
+            //   array.splice(index, 1); // 2nd parameter means remove one item only
+            // }
           }}
           confirm_click={() => {
-            console.log('edit bookmark');
+            store.store.settings.folders[
+              store.store.settings.activeFolder
+            ].bookmarks[index] = bookmarkState;
+            save(store.store, store);
+            openModal(false);
           }}
         >
           <ModalEditBookmarks
+            bookmark={bookmarkState}
+            onEditName={(e) => {
+              handleChange({ name: e.target.value });
+            }}
+            onEditUrl={(e) => {
+              handleChange({ url: e.target.value });
+            }}
             onLoadImage={(e) => {
-              console.log(e);
+              handleChange({ preview: e });
             }}
           />
         </Modal>
