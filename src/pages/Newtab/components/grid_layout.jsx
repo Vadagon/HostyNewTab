@@ -50,6 +50,7 @@ const GridLayout = (props) => {
       default:
         return (
           <ReactGridLayoutItem
+            editBookmark={props.editBookmark}
             openModal={props.openModal}
             title={e.title}
             bookmarkId={parseInt(e.i.split('-')[1])}
@@ -70,23 +71,25 @@ const GridLayout = (props) => {
         isResizable={false}
         margin={[0, 0]}
         onLayoutChange={(layout, layouts) => {
-          layout.forEach(function (e) {
+          var d = layout.map(function (e) {
             if (e.i.includes('custom-')) {
               var sss = parseInt(e.i.split('-')[1]);
               activeFolder.bookmarks.map(function (bookmark) {
-                if (bookmark.id === sss) bookmark.position = {
-                  x: e.x,
-                  y: e.y,
-                }
+                if (bookmark.id === sss)
+                  bookmark.position = {
+                    x: e.x,
+                    y: e.y,
+                  };
                 return e;
               });
+              !_.isEqual(storeClone, store) &&
+                save(storeClone, { store, setStore });
               // console.log(storeClone.settings.folders[0].bookmarks, store.settings.folders[0].bookmarks);
               return e;
             } else {
               return null;
             }
           });
-          !_.isEqual(storeClone, store) && save(storeClone, { store, setStore });
         }}
       >
         {layout.map((e) => (
