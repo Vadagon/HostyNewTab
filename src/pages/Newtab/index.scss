@@ -341,13 +341,19 @@ div[active='active'] .drop_down_tringle{
   left: 0;
   z-index: 10000;
   background: rgba(48,48,48,0.418);
-  transition: all 0.2s ease-in;
-  display: none;
+  transition: all 0.2s ease-in .5s;
+  display: block;
+  visibility: hidden;
+  z-index: -100;
+  opacity: 0;
   backdrop-filter: blur(5px);
+  
 }
 
 div[active='active'].clock_bg{
-  display: block;
+  visibility: visible;
+  z-index: 100;
+  opacity: 1;
 }
 time{
   color: white;

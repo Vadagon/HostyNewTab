@@ -61,8 +61,8 @@ const MainView = () => {
       <div
         className={
           isIdle
-            ? 'opacity-0 duration-500 transition-all'
-            : 'opacity-100 transition-all duration-500'
+            ? 'opacity-0 duration-500 transition-all delay-500'
+            : 'opacity-100 transition-all duration-500 delay-500'
         }
       >
         <Navbar />
