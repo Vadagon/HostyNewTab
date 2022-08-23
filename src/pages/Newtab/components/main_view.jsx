@@ -13,6 +13,7 @@ import bg_3 from '../../../assets/img/custom_bg/bg_3.jpg';
 import bg_4 from '../../../assets/img/custom_bg/bg_4.jpg';
 import bg_5 from '../../../assets/img/custom_bg/bg_5.jpg';
 import { save } from '../../../components/Store/Store';
+import _ from 'lodash';
 function useIdle(options) {
   const [isIdle, setIsIdle] = React.useState(false);
   React.useEffect(() => {
@@ -66,10 +67,16 @@ const MainView = () => {
 
         <GridLayout
           editBookmark={(index) => {
-            editModal(index);
+            var bookmark = null
+            store.store.settings.folders[store.store.settings.activeFolder].bookmarks.forEach(e => {
+              if (e.id === index) {
+                bookmark = e;
+              }
+            });
+            editModal(bookmark.id);
+
             setBookmarkState(
-              store.store.settings.folders[store.store.settings.activeFolder]
-                .bookmarks[index]
+              bookmark
             );
           }}
           openModal={openModal}
@@ -80,23 +87,28 @@ const MainView = () => {
           nosidebar
           openModal={openModal}
           remove_click={() => {
-            var arr =
-              store.store.settings.folders[store.store.settings.activeFolder]
-                .bookmarks;
-            arr.splice(index, 1);
-            console.log(arr);
+            var storeClone = _.cloneDeep(store.store);
+            storeClone.settings.folders[store.store.settings.activeFolder]
+              .bookmarks.splice(index, 1);
+            console.log(storeClone)
             // arr.splice(index, 1);
             // console.log(arr);
-            save(store.store, store);
+            save(storeClone, store);
+            console.log('save')
             openModal(false);
             // if (index2 > -1) { // only splice array when item is found
             //   array.splice(index, 1); // 2nd parameter means remove one item only
             // }
           }}
           confirm_click={() => {
-            store.store.settings.folders[
-              store.store.settings.activeFolder
-            ].bookmarks[index] = bookmarkState;
+            // var bookmark = null
+            store.store.settings.folders[store.store.settings.activeFolder].bookmarks = store.store.settings.folders[store.store.settings.activeFolder].bookmarks.map(function (e) {
+              if (e.id === index) {
+                return bookmarkState;
+              }
+              return e;
+            });
+            // bookmark = bookmarkState;
             save(store.store, store);
             openModal(false);
           }}
