@@ -255,16 +255,16 @@ const Navbar = () => {
           setNameEdit(e.target.value);
         }}
         confirm_click={() => {
-          // var storeClone = _.cloneDeep(store.store);
-          // storeClone.settings.folders[folderIndex].name = nameEdit;
-          // storeClone.settings.folders[folderIndex].font_color = colorFontEdit;
-          // storeClone.settings.folders[folderIndex].preview = imgEdit;
+          var storeClone = _.cloneDeep(store.store);
+          storeClone.settings.folders[folderIndex].name = nameEdit;
+          storeClone.settings.folders[folderIndex].font_color = colorFontEdit;
+          storeClone.settings.folders[folderIndex].preview = imgEdit;
           // storeClone.settings.folders[folderIndex].bookmarks.push(
           //   ...selectedBookmarks
           // );
 
           console.log(selectedBookmarks);
-          // save(storeClone, store);
+          save(storeClone, store);
           console.log('edit folder');
           openModalEditFolder(false);
         }}
