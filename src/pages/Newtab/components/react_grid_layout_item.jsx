@@ -6,12 +6,13 @@ const ReactGridLayoutItem = (props) => {
   // console.log(props.bookmarkId);
   // console.log(storage.store.settings.folders[0].bookmarks);
   var bookmark = null;
-  storage.store.settings.folders[storage.store.settings.activeFolder]
-    .bookmarks.forEach(e => {
-      if (e.id === props.bookmarkId) {
-        bookmark = e;
-      }
-    })
+  storage.store.settings.folders[
+    storage.store.settings.activeFolder
+  ].bookmarks.forEach((e) => {
+    if (e.id === props.bookmarkId) {
+      bookmark = e;
+    }
+  });
   function getBgImg() {
     if (bookmark.preview) {
       return 'url(' + bookmark.preview + ')';
@@ -34,9 +35,9 @@ const ReactGridLayoutItem = (props) => {
             props.openModal(true);
             props.editBookmark(bookmark.id);
           }}
-          className="edit_on_hover  w-[32px] bg-[length:14px_14px]  bg-center bg-no-repeat h-[32px] z-50 bg-black bg-opacity-40 rounded-full -top-3 -right-3 cursor-pointer delay-200 transition-all duration-150 flex opacity-0 pointer-events-none absolute justify-center items-center p-1 "
+          className="edit_on_hover  w-[32px] bg-[length:14px_14px]  bg-center bg-no-repeat h-[32px] z-50 bg-black  bg-opacity-40 rounded-full -top-3 -right-3 cursor-pointer  transition-all duration-150 flex opacity-0 pointer-events-none absolute justify-center items-center p-1 "
         ></div>
-        <div className="w-full flex justify-center min-h-[64px]">
+        <div className="w-full flex justify-center h-full">
           <div
             onClick={() => window.open(bookmark.url, '_blank')}
             cover={bookmark.preview ? 'true' : ''}
@@ -56,7 +57,7 @@ const ReactGridLayoutItem = (props) => {
                 storage.store.settings.activeFolder
               ].font_color,
           }}
-          className="text-white text-sm mt-[10%]  text-center text-ellipsis whitespace-nowrap overflow-hidden w-full"
+          className="text-white text-sm h-6  text-center text-ellipsis whitespace-nowrap overflow-hidden w-full"
         >
           {bookmark.name}
         </div>

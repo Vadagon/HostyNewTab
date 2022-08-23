@@ -24,7 +24,11 @@ const BookmarkRow = (props) => {
             {props.data.e2.title ? props.data.e2.title : props.data.e2.url}
           </div>
         </a>
-        <input type="checkbox" onChange={props.onChange} />
+        <input
+          type="checkbox"
+          defaultChecked={props.checked}
+          onChange={props.onChange}
+        />
         <span className="checkmark"></span>
       </label>
     </div>

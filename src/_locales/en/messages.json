@@ -59,6 +59,9 @@
   "url": {
     "message": "URL"
   },
+  "edit_folder": {
+    "message": "Edit Folder"
+  },
   "remove": {
     "message": "Remove"
   },

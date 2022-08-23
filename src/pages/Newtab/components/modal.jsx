@@ -39,10 +39,11 @@ const Modal = (props) => {
                   onLoadImage={props.onLoadImage}
                   color={props.color}
                   setColorFont={props.setColorFont}
-                  value={props.name}
+                  name={props.name}
                   onChange={props.onChange}
                   settings={props.settings}
                   selectedTab={selectedTab}
+                  folder={props.folder}
                 />
               </div>
             </div>

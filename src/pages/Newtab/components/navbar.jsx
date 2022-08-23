@@ -11,20 +11,33 @@ import {
 import { i18n } from '../../../components/Translation/Translation';
 import { UserContext } from '../context';
 import { save } from '../../../components/Store/Store';
+import _ from 'lodash';
 
 const Navbar = () => {
   var [modal, openModal] = useState(false);
   var [modalBookmarks, openModalBookmarks] = useState(false);
   var [actionedFolder, setActionedFolderIndex] = useState(0);
   var [modalAddFolder, openModalAddFolder] = useState(false);
+  var [modalEditFolder, openModalEditFolder] = useState(false);
+  var [folderIndex, setIndexFolder] = useState(0);
 
   const [colorFont, setColorFont] = useState('#ffffff');
+
   const [name, setName] = useState('');
   const [selectedBookmarks, setSelectedBookmarks] = useState([]);
   const [img, setImg] = useState('');
 
   const store = useContext(UserContext);
+  const [imgEdit, setImgEdit] = useState(
+    store.store.settings.folders[folderIndex].preview
+  );
+  const [colorFontEdit, setColorFontEdit] = useState(
+    store.store.settings.folders[folderIndex].font_color
+  );
 
+  const [nameEdit, setNameEdit] = useState(
+    store.store.settings.folders[folderIndex].name
+  );
   var settingsSidebar = [
     i18n('general', store),
     i18n('search_box', store),
@@ -36,7 +49,8 @@ const Navbar = () => {
   const SortableItem = SortableElement(({ value, keyIndex, preview }) => (
     <DraggableListItem
       edit_folder={() => {
-        openModalAddFolder(!modalAddFolder);
+        openModalEditFolder(!modalAddFolder);
+        setIndexFolder(keyIndex);
       }}
       bookmarks={() => {
         openModalBookmarks(!modalBookmarks);
@@ -52,15 +66,13 @@ const Navbar = () => {
     return (
       <ul>
         {items.map((value, index) => (
-          <div>
-            <SortableItem
-              key={`item-${value.name}-${index}`}
-              index={index}
-              preview={value.preview}
-              keyIndex={index}
-              value={value.name}
-            />
-          </div>
+          <SortableItem
+            key={`item-${value.name}-${index}`}
+            index={index}
+            preview={value.preview}
+            keyIndex={index}
+            value={value.name}
+          />
         ))}
       </ul>
     );
@@ -182,19 +194,76 @@ const Navbar = () => {
           setName(e.target.value);
         }}
         confirm_click={() => {
-          console.log(img);
-          console.log(colorFont);
-          console.log(name);
-          console.log(selectedBookmarks);
+          // console.log(img);
+          // console.log(colorFont);
+          // console.log(name);
+          // console.log(selectedBookmarks);
           var folder = {
             name: name,
             font_color: colorFont,
             preview: img,
             bookmarks: selectedBookmarks,
           };
+
           store.store.settings.folders.push(folder);
           console.log('add folder');
+          setSelectedBookmarks([]);
+          setColorFont('#ffffff');
+          setName('');
+          setImg('');
           openModalAddFolder(false);
+        }}
+      ></Modal>
+
+      {/* Modal editFolder */}
+      <Modal
+        sidebar={addFolderSidebar}
+        title={i18n('edit_folder', store)}
+        open={modalEditFolder}
+        onLoadImage={(e) => {
+          setImgEdit(e);
+        }}
+        folder
+        img={imgEdit}
+        selectedBookmarks={selectedBookmarks}
+        setSelectedBookmarks={(e) => {
+          var bookmarks = [];
+
+          if (e.e.target.checked) {
+            bookmarks.push({
+              id: e.i,
+              position: { x: 0, y: 0 },
+              name: e.e2.title,
+              url: e.e2.url,
+              preview: null,
+            });
+          } else {
+            selectedBookmarks.splice(e.i, 1);
+          }
+          setSelectedBookmarks((oldArray) => [...oldArray, ...bookmarks]);
+        }}
+        // img={img}
+        color={colorFontEdit}
+        setColorFont={setColorFontEdit}
+        openModal={openModalEditFolder}
+        name={nameEdit}
+        onChange={(e) => {
+          console.log(store.store.settings.folders[folderIndex]);
+          setNameEdit(e.target.value);
+        }}
+        confirm_click={() => {
+          var storeClone = _.cloneDeep(store.store);
+          storeClone.settings.folders[folderIndex].name = nameEdit;
+          storeClone.settings.folders[folderIndex].font_color = colorFontEdit;
+          storeClone.settings.folders[folderIndex].preview = imgEdit;
+          storeClone.settings.folders[folderIndex].bookmarks.push(
+            ...selectedBookmarks
+          );
+
+          console.log(selectedBookmarks);
+          // save(storeClone, store);
+          console.log('edit folder');
+          openModalEditFolder(false);
         }}
       ></Modal>
     </div>
