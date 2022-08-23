@@ -17,6 +17,12 @@ const Navbar = () => {
   var [modalBookmarks, openModalBookmarks] = useState(false);
   var [actionedFolder, setActionedFolderIndex] = useState(0);
   var [modalAddFolder, openModalAddFolder] = useState(false);
+
+  const [colorFont, setColorFont] = useState('#ffffff');
+  const [name, setName] = useState('');
+  const [selectedBookmarks, setSelectedBookmarks] = useState('');
+  const [img, setImg] = useState('');
+
   const store = useContext(UserContext);
 
   var settingsSidebar = [
@@ -140,8 +146,68 @@ const Navbar = () => {
         sidebar={addFolderSidebar}
         title={i18n('add_folder', store)}
         open={modalAddFolder}
+        onLoadImage={(e) => {
+          setImg(e);
+        }}
+        selectedBookmarks={selectedBookmarks}
+        setSelectedBookmarks={setSelectedBookmarks}
+        img={img}
+        color={colorFont}
+        setColorFont={setColorFont}
         openModal={openModalAddFolder}
+        value={name}
+        onChange={(e) => {
+          setName(e.target.value);
+        }}
         confirm_click={() => {
+          console.log(img);
+          console.log(colorFont);
+          console.log(name);
+          // var text = {
+          //   name: 'Test Folder 123',
+          //   font_color: '#ffffff',
+          //   preview: null,
+          //   index: 0,
+          //   bookmarks: [
+          //     {
+          //       id: 0,
+          //       position: { x: 4, y: 4 },
+          //       name: 'Amazon',
+          //       url: 'https://www.amazon.com/',
+          //       preview: null,
+          //     },
+          //     {
+          //       id: 1,
+          //       position: { x: 5, y: 7 },
+          //       name: null,
+          //       url: null,
+          //       preview: null,
+          //     },
+          //     {
+          //       id: 2,
+          //       position: { x: 6, y: 4 },
+          //       name: null,
+          //       url: null,
+          //       preview: null,
+          //     },
+          //     {
+          //       id: 3,
+          //       position: { x: 7, y: 7 },
+          //       name: null,
+          //       url: null,
+          //       preview: null,
+          //     },
+          //     {
+          //       id: 4,
+          //       position: { x: 8, y: 4 },
+          //       name: null,
+          //       url: null,
+          //       preview: null,
+          //     },
+          //   ],
+          // };
+
+          // store.store.settings.folders.push(text);
           console.log('add folder');
         }}
       ></Modal>

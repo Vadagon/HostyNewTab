@@ -80,7 +80,18 @@ const MainView = () => {
           nosidebar
           openModal={openModal}
           remove_click={() => {
-            console.log('remove bookmark');
+            var arr =
+              store.store.settings.folders[store.store.settings.activeFolder]
+                .bookmarks;
+            arr.splice(index, 1);
+            console.log(arr);
+            // arr.splice(index, 1);
+            // console.log(arr);
+            save(store.store, store);
+            openModal(false);
+            // if (index2 > -1) { // only splice array when item is found
+            //   array.splice(index, 1); // 2nd parameter means remove one item only
+            // }
           }}
           confirm_click={() => {
             store.store.settings.folders[

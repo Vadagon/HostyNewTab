@@ -33,6 +33,14 @@ const Modal = (props) => {
               )}
               <div className="modal_content w-[calc(100%-170px)] p-5 ">
                 <ModalTabs
+                  selectedBookmarks={props.selectedBookmarks}
+                  setSelectedBookmarks={props.setSelectedBookmarks}
+                  img={props.img}
+                  onLoadImage={props.onLoadImage}
+                  color={props.color}
+                  setColorFont={props.setColorFont}
+                  value={props.name}
+                  onChange={props.onChange}
                   settings={props.settings}
                   selectedTab={selectedTab}
                 />
