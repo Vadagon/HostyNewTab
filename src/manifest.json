@@ -17,10 +17,7 @@
     "storage",
     "unlimitedStorage",
     "activeTab",
-    "https://sshot.org/*",
-    "contextMenus",
-    "chrome://favicon/*",
-    "<all_urls>"
+    "contextMenus"
   ],
   "web_accessible_resources": [
     {
