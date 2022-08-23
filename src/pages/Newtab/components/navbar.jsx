@@ -48,11 +48,12 @@ const Navbar = () => {
   const SortableItem = SortableElement(({ value, keyIndex, preview }) => (
     <DraggableListItem
       edit_folder={() => {
-        openModalEditFolder(!modalAddFolder);
+        setIndexFolder(keyIndex);
+
         setNameEdit(store.store.settings.folders[keyIndex].name);
         setColorFontEdit(store.store.settings.folders[keyIndex].font_color);
         setImgEdit(store.store.settings.folders[keyIndex].preview);
-        setIndexFolder(keyIndex);
+        openModalEditFolder(!modalAddFolder);
       }}
       bookmarks={() => {
         openModalBookmarks(!modalBookmarks);
