@@ -33,6 +33,7 @@ const MainView = () => {
   const [bookmarkState, setBookmarkState] = useState(
     store.store.settings.folders[store.store.settings.activeFolder].bookmarks[0]
   );
+  console.log(store)
 
   const handleChange = (obj) => {
     setBookmarkState((bookmarkState) => ({

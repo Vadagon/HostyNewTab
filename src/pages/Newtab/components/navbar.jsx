@@ -49,7 +49,6 @@ const Navbar = () => {
     <DraggableListItem
       edit_folder={() => {
         setIndexFolder(keyIndex);
-
         setNameEdit(store.store.settings.folders[keyIndex].name);
         setColorFontEdit(store.store.settings.folders[keyIndex].font_color);
         setImgEdit(store.store.settings.folders[keyIndex].preview);
@@ -237,6 +236,7 @@ const Navbar = () => {
 
           if (e.e.target.checked) {
             var maxId = Math.max(0, ...store.store.settings.folders[folderIndex].bookmarks.map(e => e.id))
+            console.log(maxId, maxId + e.i)
             bookmarks.push({
               id: maxId + e.i,
               position: { x: 0, y: 0 },
@@ -266,6 +266,7 @@ const Navbar = () => {
           storeClone.settings.folders[folderIndex].bookmarks.push(
             ...selectedBookmarks
           );
+          storeClone.settings.folders[folderIndex].bookmarks = storeClone.settings.folders[folderIndex].bookmarks.filter((v, i, a) => a.findIndex(v2 => (v2.id === v.id)) === i).filter((v, i, a) => a.findIndex(v2 => (v2.url === v.url)) === i);
 
           console.log(selectedBookmarks);
           save(storeClone, store);

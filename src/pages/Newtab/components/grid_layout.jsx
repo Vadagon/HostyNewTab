@@ -17,7 +17,7 @@ const GridLayout = (props) => {
     storeClone.settings.folders[store.settings.activeFolder ?? 0];
   activeFolder.bookmarks.forEach((bookmark, bookmarkId) => {
     layout.push({
-      i: 'custom-' + bookmark.id + '-' + bookmark.name,
+      i: 'custom-' + bookmark.id + '-' + bookmarkId + '-' + store.settings.activeFolder,
       x: bookmark.position.x ?? 0,
       y: bookmark.position.y ?? 0,
       w: 1,
