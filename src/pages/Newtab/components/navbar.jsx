@@ -208,7 +208,7 @@ const Navbar = () => {
           };
 
           store.store.settings.folders.push(folder);
-          save(store.store, store)
+          save(store.store, store);
           console.log('add folder');
           setSelectedBookmarks([]);
           setColorFont('#ffffff');
