@@ -41,20 +41,19 @@ const MainView = () => {
     }));
   };
   const isIdle = useIdle({ timeToIdle: 15000 });
-  function getBgImage() {
-    if (store.store.settings['background'].custom) {
-      return store.store.settings['background'].custom;
+  function getBgImage(customBg) {
+    if (customBg) {
+      return customBg;
     }
     if (store.store.settings['background'].selected === 0) {
       return 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
     }
     return bg[store.store.settings['background'].selected - 1];
   }
-  console.log(bookmarkState);
   return (
     <div
       style={{
-        backgroundImage: 'url(' + getBgImage() + ')',
+        backgroundImage: 'url(' + getBgImage(store.store.settings['background'].custom) + ')',
       }}
       className="p-5 pl-[70px] bg-[#343434] bg-fixed  bg-cover bg-no-repeat bg-center    h-[100vh]"
     >

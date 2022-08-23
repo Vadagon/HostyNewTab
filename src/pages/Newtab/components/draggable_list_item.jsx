@@ -14,7 +14,6 @@ const DragHandle = sortableHandle(() => (
 ));
 const DraggableListItem = (props) => {
   const storage = useContext(UserContext);
-  console.log(props.keyIndex);
   return (
     <li
       active={

@@ -50,6 +50,9 @@ const Navbar = () => {
     <DraggableListItem
       edit_folder={() => {
         openModalEditFolder(!modalAddFolder);
+        setNameEdit(store.store.settings.folders[keyIndex].name)
+        setColorFontEdit(store.store.settings.folders[keyIndex].font_color)
+        setImgEdit(store.store.settings.folders[keyIndex].preview)
         setIndexFolder(keyIndex);
       }}
       bookmarks={() => {
@@ -262,6 +265,7 @@ const Navbar = () => {
           // storeClone.settings.folders[folderIndex].bookmarks.push(
           //   ...selectedBookmarks
           // );
+
 
           console.log(selectedBookmarks);
           save(storeClone, store);
