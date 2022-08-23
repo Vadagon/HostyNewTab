@@ -35,9 +35,8 @@ const Navbar = () => {
     store.store.settings.folders[folderIndex].font_color
   );
 
-  const [nameEdit, setNameEdit] = useState(
-    store.store.settings.folders[folderIndex].name
-  );
+  const [nameEdit, setNameEdit] = useState('');
+  // store.store.settings.folders[folderIndex].name
   var settingsSidebar = [
     i18n('general', store),
     i18n('search_box', store),
@@ -50,9 +49,9 @@ const Navbar = () => {
     <DraggableListItem
       edit_folder={() => {
         openModalEditFolder(!modalAddFolder);
-        setNameEdit(store.store.settings.folders[keyIndex].name)
-        setColorFontEdit(store.store.settings.folders[keyIndex].font_color)
-        setImgEdit(store.store.settings.folders[keyIndex].preview)
+        setNameEdit(store.store.settings.folders[keyIndex].name);
+        setColorFontEdit(store.store.settings.folders[keyIndex].font_color);
+        setImgEdit(store.store.settings.folders[keyIndex].preview);
         setIndexFolder(keyIndex);
       }}
       bookmarks={() => {
@@ -192,7 +191,7 @@ const Navbar = () => {
         color={colorFont}
         setColorFont={setColorFont}
         openModal={openModalAddFolder}
-        value={name}
+        name={name}
         onChange={(e) => {
           setName(e.target.value);
         }}
@@ -265,7 +264,6 @@ const Navbar = () => {
           // storeClone.settings.folders[folderIndex].bookmarks.push(
           //   ...selectedBookmarks
           // );
-
 
           console.log(selectedBookmarks);
           save(storeClone, store);
