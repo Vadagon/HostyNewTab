@@ -50,6 +50,7 @@ const MainView = () => {
     }
     return bg[store.store.settings['background'].selected - 1];
   }
+  console.log(bookmarkState);
   return (
     <div
       style={{

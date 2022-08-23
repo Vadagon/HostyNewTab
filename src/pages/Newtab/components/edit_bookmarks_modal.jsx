@@ -10,17 +10,17 @@ const ModalEditBookmarks = (props) => {
 
   return (
     <div className="">
-      <UploadImage file={props.bookmark.url} onLoadImage={props.onLoadImage} />
+      <UploadImage file={props.bookmark?.url} onLoadImage={props.onLoadImage} />
       <ModalRowItem title={i18n('name', store)}>
         <CustomInput
-          value={props.bookmark.name}
+          value={props.bookmark?.name}
           onChange={props.onEditName}
           placeholder={i18n('name', store)}
         />
       </ModalRowItem>
       <ModalRowItem title={i18n('url', store)}>
         <CustomInput
-          value={props.bookmark.url}
+          value={props.bookmark?.url}
           onChange={props.onEditUrl}
           placeholder={i18n('url', store)}
         />
