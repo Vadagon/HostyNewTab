@@ -70,7 +70,7 @@ const ModalTabs = (props) => {
     uploadFile(base64);
     console.log(base64);
     store.store.settings['background'].custom = base64;
-    save(store.store, store);
+    // save(store.store, store);
     // file
   }
 
@@ -134,7 +134,7 @@ const ModalTabs = (props) => {
                 color={color}
                 onChange={(e) => {
                   store.store.settings['search_box'].color = e;
-                  save(store.store, store);
+                  // save(store.store, store);
                   console.log(store);
                   setColor(e);
                 }}
@@ -221,7 +221,7 @@ const ModalTabs = (props) => {
                 <div className="flex">
                   <input
                     ref={refUpload}
-                    onChange={(e) => {}}
+                    onChange={(e) => { }}
                     className="border border-[#575757] h-[34px]  py-2 px-3 text-[#929292] bg-[#464646]"
                     placeholder={i18n('add_image_url', store)}
                   />

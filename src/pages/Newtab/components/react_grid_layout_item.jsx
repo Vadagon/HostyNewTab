@@ -5,9 +5,13 @@ const ReactGridLayoutItem = (props) => {
   var storage = useContext(UserContext);
   // console.log(props.bookmarkId);
   // console.log(storage.store.settings.folders[0].bookmarks);
-  var bookmark =
-    storage.store.settings.folders[storage.store.settings.activeFolder]
-      .bookmarks[props.bookmarkId];
+  var bookmark = null;
+  storage.store.settings.folders[storage.store.settings.activeFolder]
+    .bookmarks.forEach(e => {
+      if (e.id === props.bookmarkId) {
+        bookmark = e;
+      }
+    })
   function getBgImg() {
     if (bookmark.preview) {
       return 'url(' + bookmark.preview + ')';
@@ -28,7 +32,7 @@ const ReactGridLayoutItem = (props) => {
           style={{ backgroundImage: 'url(' + edit + ')' }}
           onClick={() => {
             props.openModal(true);
-            props.editBookmark(props.bookmarkId);
+            props.editBookmark(bookmark.id);
           }}
           className="edit_on_hover  w-[32px] bg-[length:14px_14px]  bg-center bg-no-repeat h-[32px] z-50 bg-black bg-opacity-40 rounded-full -top-3 -right-3 cursor-pointer delay-200 transition-all duration-150 flex opacity-0 pointer-events-none absolute justify-center items-center p-1 "
         ></div>

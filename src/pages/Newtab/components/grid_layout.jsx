@@ -17,7 +17,7 @@ const GridLayout = (props) => {
     storeClone.settings.folders[store.settings.activeFolder ?? 0];
   activeFolder.bookmarks.forEach((bookmark, bookmarkId) => {
     layout.push({
-      i: 'custom-' + bookmarkId + '-' + bookmark.name,
+      i: 'custom-' + bookmark.id + '-' + bookmark.name,
       x: bookmark.position.x ?? 0,
       y: bookmark.position.y ?? 0,
       w: 1,
@@ -71,25 +71,26 @@ const GridLayout = (props) => {
         isResizable={false}
         margin={[0, 0]}
         onLayoutChange={(layout, layouts) => {
+
           var d = layout.map(function (e) {
             if (e.i.includes('custom-')) {
-              var sss = parseInt(e.i.split('-')[1]);
+              var id = parseInt(e.i.split('-')[1]);
               activeFolder.bookmarks.map(function (bookmark) {
-                if (bookmark.id === sss)
+                if (bookmark.id === id)
                   bookmark.position = {
                     x: e.x,
                     y: e.y,
                   };
                 return e;
-              });
-              !_.isEqual(storeClone, store) &&
-                save(storeClone, { store, setStore });
-              // console.log(storeClone.settings.folders[0].bookmarks, store.settings.folders[0].bookmarks);
+              })
+              activeFolder = activeFolder;
               return e;
             } else {
               return null;
             }
           });
+          !_.isEqual(storeClone, store) &&
+            save(storeClone, { store, setStore });
         }}
       >
         {layout.map((e) => (
