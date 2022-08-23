@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Otevřete záložky"
     },
+    "bookmarks": {
+        "message": "Záložky"
+    },
     "theme": {
         "message": "Téma"
     },

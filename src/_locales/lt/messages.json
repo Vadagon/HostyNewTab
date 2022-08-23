@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Atidarykite žymes"
     },
+    "bookmarks": {
+        "message": "Žymės"
+    },
     "theme": {
         "message": "tema"
     },

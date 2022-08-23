@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "బుక్‌మార్క్‌లను తెరవండి"
     },
+    "bookmarks": {
+        "message": "బుక్‌మార్క్‌లు"
+    },
     "theme": {
         "message": "థీమ్"
     },

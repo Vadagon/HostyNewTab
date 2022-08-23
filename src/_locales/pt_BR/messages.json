@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Abrir favoritos"
     },
+    "bookmarks": {
+        "message": "Favoritos"
+    },
     "theme": {
         "message": "Tema"
     },
@@ -120,7 +123,7 @@
         "message": "Pesquisar marcador"
     },
     "based_hour24": {
-        "message": "24 horas por hora"
+        "message": "Hora baseada em 24 horas"
     },
     "based_hour12": {
         "message": "Hora baseada em 12"

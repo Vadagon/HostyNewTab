@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Ανοίξτε τους Σελιδοδείκτες"
     },
+    "bookmarks": {
+        "message": "Σελιδοδείκτες"
+    },
     "theme": {
         "message": "Θέμα"
     },

@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Otwórz zakładki"
     },
+    "bookmarks": {
+        "message": "Zakładki"
+    },
     "theme": {
         "message": "Motyw"
     },
@@ -93,7 +96,7 @@
         "message": "Załaduj obrazek"
     },
     "add_image_url": {
-        "message": "Dodaj URL obrazu i kliknij wczytaj"
+        "message": "Dodaj adres URL obrazu i kliknij wczytaj"
     },
     "load": {
         "message": "Obciążenie"

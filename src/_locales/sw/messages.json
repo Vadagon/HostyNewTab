@@ -15,7 +15,7 @@
         "message": "Usuli"
     },
     "time": {
-        "message": "Muda"
+        "message": "Wakati"
     },
     "privacy_and_security": {
         "message": "Faragha na Usalama"
@@ -28,6 +28,9 @@
     },
     "open_bookmarks": {
         "message": "Fungua Alamisho"
+    },
+    "bookmarks": {
+        "message": "Alamisho"
     },
     "theme": {
         "message": "Mandhari"

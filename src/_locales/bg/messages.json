@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Отворете Отметки"
     },
+    "bookmarks": {
+        "message": "Отметки"
+    },
     "theme": {
         "message": "Тема"
     },

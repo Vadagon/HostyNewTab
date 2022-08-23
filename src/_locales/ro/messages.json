@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Deschideți Marcaje"
     },
+    "bookmarks": {
+        "message": "Marcaje"
+    },
     "theme": {
         "message": "Temă"
     },

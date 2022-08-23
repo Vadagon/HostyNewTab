@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "ዕልባቶችን ክፈት"
     },
+    "bookmarks": {
+        "message": "ዕልባቶች"
+    },
     "theme": {
         "message": "ጭብጥ"
     },
@@ -93,7 +96,7 @@
         "message": "ምስል ስቀል"
     },
     "add_image_url": {
-        "message": "የምስል ዩአርኤል ያክሉ እና ጭነትን ጠቅ ያድርጉ"
+        "message": "የምስል ዩአርኤልን ያክሉ እና ጫንን ጠቅ ያድርጉ"
     },
     "load": {
         "message": "ጫን"

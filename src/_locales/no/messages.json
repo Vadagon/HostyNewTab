@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Åpne bokmerker"
     },
+    "bookmarks": {
+        "message": "Bokmerker"
+    },
     "theme": {
         "message": "Tema"
     },
@@ -45,7 +48,7 @@
         "message": "Opprett forhåndsvisning"
     },
     "less_100": {
-        "message": "Filen må være mindre 100kb"
+        "message": "Filen må være mindre enn 100 kb"
     },
     "search_placeholder": {
         "message": "Søke på nettet..."

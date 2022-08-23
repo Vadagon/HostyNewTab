@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "બુકમાર્ક્સ ખોલો"
     },
+    "bookmarks": {
+        "message": "બુકમાર્ક્સ"
+    },
     "theme": {
         "message": "થીમ"
     },

@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Buksan ang Mga Bookmark"
     },
+    "bookmarks": {
+        "message": "Mga bookmark"
+    },
     "theme": {
         "message": "Tema"
     },
@@ -42,7 +45,7 @@
         "message": "I-click at gawin ang preview na kailangan mo"
     },
     "create_preview": {
-        "message": "Lumikha ng Preview"
+        "message": "Gumawa ng Preview"
     },
     "less_100": {
         "message": "Ang file ay kailangang mas mababa sa 100kb"

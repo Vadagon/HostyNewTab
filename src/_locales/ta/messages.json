@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "புக்மார்க்குகளைத் திறக்கவும்"
     },
+    "bookmarks": {
+        "message": "புக்மார்க்குகள்"
+    },
     "theme": {
         "message": "தீம்"
     },

@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "العناوين مفتوحة"
     },
+    "bookmarks": {
+        "message": "إشارات مرجعية"
+    },
     "theme": {
         "message": "سمة"
     },

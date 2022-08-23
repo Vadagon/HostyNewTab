@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "Obriu els marcadors"
     },
+    "bookmarks": {
+        "message": "Adreces d'interès"
+    },
     "theme": {
         "message": "Tema"
     },

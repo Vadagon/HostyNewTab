@@ -29,6 +29,9 @@
     "open_bookmarks": {
         "message": "פתח את הסימניות"
     },
+    "bookmarks": {
+        "message": "סימניות"
+    },
     "theme": {
         "message": "נושא"
     },
@@ -117,7 +120,7 @@
         "message": "צבע גופן"
     },
     "search_bookmark": {
-        "message": "חפש סימנייה"
+        "message": "חפש סימניה"
     },
     "based_hour24": {
         "message": "24 שעות מבוססות"
