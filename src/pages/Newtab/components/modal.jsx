@@ -40,7 +40,7 @@ const Modal = (props) => {
                   color={props.color}
                   setColorFont={props.setColorFont}
                   name={props.name}
-                  folderIndex={props.folderIndex ? props.folderIndex : 0}
+                  folderIndex={props.folderIndex}
                   onChange={props.onChange}
                   settings={props.settings}
                   selectedTab={selectedTab}

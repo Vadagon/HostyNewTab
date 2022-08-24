@@ -329,11 +329,13 @@ const ModalTabs = (props) => {
                       {getBookmarksArr(e).map((e2, i) => {
                         var checked = false;
                         console.log(props.folderIndex)
-                        store.store.settings.folders[
+                        var _localBookmarks = props.folderIndex != null ? store.store.settings.folders[
                           props.folderIndex
-                        ].bookmarks.forEach((bookmarkLocal) => {
+                        ].bookmarks || [] : [];
+                        [..._localBookmarks, ...props.selectedBookmarks].forEach((bookmarkLocal) => {
                           if (bookmarkLocal.url === e2.url) {
                             checked = true;
+                            console.log(bookmarkLocal, props.name)
                           }
                         });
                         if (
@@ -344,8 +346,8 @@ const ModalTabs = (props) => {
                         )
                           return (
                             <BookmarkRow
-                              key={i + 's'}
-                              checked={props.name && checked}
+                              key={i + 's' + props.folderIndex + '-' + Math.random()}
+                              checked={checked}
                               onChange={(e) => {
                                 props.setSelectedBookmarks({ e2, e, i });
                                 console.log(props.selectedBookmarks);
@@ -363,21 +365,20 @@ const ModalTabs = (props) => {
                       <div>
                         {getBookmarksArr(e).map((e2, i) => {
                           var checked = false;
-                          console.log(props.folderIndex)
-                          store.store.settings.folders[
+                          var _localBookmarks = props.folderIndex != null ? store.store.settings.folders[
                             props.folderIndex
-                          ].bookmarks.forEach((bookmarkLocal) => {
+                          ].bookmarks || [] : [];
+                          [..._localBookmarks, ...props.selectedBookmarks].forEach((bookmarkLocal) => {
                             if (bookmarkLocal.url === e2.url) {
                               checked = true;
-                              console.log(e2)
                             }
                           });
-
                           return (
                             <BookmarkRow
-                              checked={props.name && checked}
-                              key={i + 's' + props.folderIndex}
+                              checked={checked}
+                              key={i + 's' + props.folderIndex + '-' + Math.random()}
                               onChange={(e) => {
+                                console.log({ e2, e, i })
                                 props.setSelectedBookmarks({ e2, e, i });
                               }}
                               data={{ e2, i }}

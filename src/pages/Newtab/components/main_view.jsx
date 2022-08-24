@@ -28,12 +28,13 @@ function useIdle(options) {
 var bg = [bg_1, bg_2, bg_3, bg_4, bg_5];
 const MainView = () => {
   const store = useContext(UserContext);
+  // console.log(store)
   var [modal, openModal] = useState(false);
   var [index, editModal] = useState(false);
   const [bookmarkState, setBookmarkState] = useState(
     store.store.settings.folders[store.store.settings.activeFolder].bookmarks[0]
   );
-  console.log(store)
+
 
   const handleChange = (obj) => {
     setBookmarkState((bookmarkState) => ({
