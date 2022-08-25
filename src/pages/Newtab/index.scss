@@ -206,7 +206,7 @@ body{
   width: 100vw;
   overflow: hidden;
   font-family: 'Lato';
-  background-color: #3D3D3D;
+  background-color: #222;
 }
 .font-base{
   color: white;
@@ -220,7 +220,7 @@ body{
   width: 50px;
   transition: 0.2s ease;
   overflow: hidden;
-  background: #3D3D3D;
+  background: #222;
   z-index: 1;
 }
 .navbar:hover{
@@ -253,11 +253,10 @@ pointer-events: all;
     width: 650px;
     height: 600px;
     box-sizing: border-box;
-    background: #3D3D3D;
+    background: #222;
     display: flex;
     flex-direction: column;
     transition: all 0.2s ease-in;
-    border-radius: 15px;
     box-shadow: 0px 0px 15px -5px rgb(0 0 0 / 45%);
     position: relative;
   }
@@ -303,11 +302,10 @@ pointer-events: all;
   pointer-events: none;
   position: absolute;
   width: 160px;
-  background: #464646;
+  background: #2d2d2d;
   left: 0;
   top: 29px;
-  border: 1px solid #575757;
-  border-radius: 0 0 6px 6px;
+  border: 1px solid #fff;
   border-top: 0;
   left: -1px;
   transition: all .15s ease;
@@ -325,7 +323,7 @@ div[active='active'] .drop_down_options{
   height: 0;
   border-style: solid;
   border-width: 6px 5.5px 0 5.5px;
-  border-color: #575757 transparent transparent transparent;
+  border-color: #fff transparent transparent transparent;
   transition: all .15s ease;
 
 }
@@ -380,16 +378,17 @@ line-height: 4vw;
   height: 100%;
   top: 0;
   right: 0;
-  border-radius: 5px 0 0 5px;
   position: absolute;
-  background-color: rgb(42 190 125 );
+  background-color: #fff;
 }
 div[active=true].list_item::after{
   transform: rotateY(0deg);
   opacity: 1;
  
 }
-
+.react-colorful__saturation,.react-colorful__last-control{
+  border-radius: 0px !important;
+}
 .drop_down_bg{
   top: 36px;
   left: 0;
@@ -411,7 +410,7 @@ div[active=true].list_item::after{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #575757;
+  background: #fff;
 }
 
 div[active=true].drop_down_bg{
@@ -433,7 +432,8 @@ div[active=true].arrow_down{
   right: 0px;
   width: 20px;
   height: 20px;
-  background: rgb(42 190 125 );
+  background: #2d2d2d;
+  border: 1px solid white;
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTUwNC41MDIsNzUuNDk2Yy05Ljk5Ny05Ljk5OC0yNi4yMDUtOS45OTgtMzYuMjA0LDBMMTYxLjU5NCwzODIuMjAzTDQzLjcwMiwyNjQuMzExYy05Ljk5Ny05Ljk5OC0yNi4yMDUtOS45OTctMzYuMjA0LDAKCQkJYy05Ljk5OCw5Ljk5Ny05Ljk5OCwyNi4yMDUsMCwzNi4yMDNsMTM1Ljk5NCwxMzUuOTkyYzkuOTk0LDkuOTk3LDI2LjIxNCw5Ljk5LDM2LjIwNCwwTDUwNC41MDIsMTExLjcKCQkJQzUxNC41LDEwMS43MDMsNTE0LjQ5OSw4NS40OTQsNTA0LjUwMiw3NS40OTZ6Ii8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
   background-size: 9px;
   background-position: center;
@@ -444,8 +444,9 @@ div[active=true].bgs::after{
   opacity: 1;
 }
 li[active=true].sortable_item{
-  background:#313131;
+  background:#ffffff10;
 }
+
 .bg_upload{
   background-size: 24px;
 }
@@ -507,14 +508,13 @@ div[active=true].bg_upload{
 
 /* Style the checkmark/indicator */
 .checbox_wrapper .checkmark:after {
-  background: #1493ff;
+  background: #2d2d2d;
   width: 14px;
   height: 14px;
   
 }
 .react-grid-placeholder {
   background-color: #fff !important;
-  border-radius: 6px;
 }
 .custom_placeholder::placeholder{
   color:var(--placeholder-color) ;

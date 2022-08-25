@@ -13,7 +13,7 @@ export const PopoverPicker = ({ color, onChange }) => {
   return (
     <div className="w-[62px] h-[34px]  relative  cursor-pointer ">
       <div
-        className="w-[62px] h-[34px]  relative rounded-md cursor-pointer"
+        className="w-[62px] h-[34px]  relative  cursor-pointer border border-white"
         style={{ backgroundColor: color }}
         onClick={() => toggle(true)}
       />

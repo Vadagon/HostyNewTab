@@ -23,7 +23,7 @@ const Dropdown = (props) => {
         openDropdown(!drop);
       }}
       active={drop ? 'active' : ''}
-      className="drop_down cursor-pointer rounded-md relative min-w-[160px] bg-[#464646] text-[#929292] p-2 border border-[#575757] flex flex-col"
+      className="drop_down cursor-pointer relative min-w-[160px] bg-[#2d2d2d] text-[#929292] p-2 border border-[#fff] flex flex-col"
     >
       <div className="drop_down_main">{langs[props.data[selected]]}</div>
       <div className="drop_down_tringle"></div>

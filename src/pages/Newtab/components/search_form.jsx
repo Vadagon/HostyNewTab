@@ -11,7 +11,7 @@ const SearchForm = (props) => {
           backgroundColor: store.store.settings['search_box'].color,
         }}
         className={
-          'rounded-md relative mr-2 w-[60px] p-4  bg-[#3D3D3DFF]  bg-center bg-no-repeat'
+          ' relative mr-2 w-[60px] p-4  bg-[#3D3D3DFF]  bg-center bg-no-repeat'
         }
       >
         <svg
@@ -48,7 +48,7 @@ const SearchForm = (props) => {
           color: store.store.settings['search_box'].font_color,
         }}
         className={
-          'custom_placeholder rounded-md  w-full text-base h-[60px]  p-4 bg-[#3D3D3DFF] text-white  transition-all duration-150'
+          'custom_placeholder   w-full text-base h-[60px]  p-4 bg-[#222] text-white  transition-all duration-150'
         }
       />
     </form>

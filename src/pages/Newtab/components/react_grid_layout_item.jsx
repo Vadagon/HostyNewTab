@@ -28,7 +28,7 @@ const ReactGridLayoutItem = (props) => {
   }
   return (
     <div className="h-full flex w-full">
-      <div className="drag_item handle rounded-md p-2 h-full  w-full cursor-pointer flex  items-center flex-col relative hover:bg-black hover:bg-opacity-40  duration-150">
+      <div className="drag_item handle  p-2 h-full  w-full cursor-pointer flex  items-center flex-col relative hover:bg-black hover:bg-opacity-40  duration-150">
         <div
           style={{ backgroundImage: 'url(' + edit + ')' }}
           onClick={() => {
@@ -41,7 +41,7 @@ const ReactGridLayoutItem = (props) => {
           <div
             onClick={() => window.open(bookmark.url, '_blank')}
             cover={bookmark.preview ? 'true' : ''}
-            className="  bg-contain  rounded-md bg-center w-full h-full max-w-[64px] bg-no-repeat  "
+            className="  bg-contain   bg-center w-full h-full max-w-[64px] bg-no-repeat  "
             style={{
               backgroundImage: getBgImg(),
             }}
