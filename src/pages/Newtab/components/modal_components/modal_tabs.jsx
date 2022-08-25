@@ -109,12 +109,12 @@ const ModalTabs = (props) => {
               <Dropdown data={mode} setting={'theme'} />
             </ModalRowItem> */}
             {/* <ModalRowItem title={i18n('import_bookmarks', store)} img={import_}>
-              <div className="bg-[#2abe7d] text-white w-[135px] h-[34px] flex justify-center items-center rounded-md cursor-pointer">
+              <div className="bg-[#2abe7d] text-white w-[135px] h-[34px] flex justify-center items-center  cursor-pointer">
                 {i18n('import', store)}
               </div>
             </ModalRowItem>
             <ModalRowItem title={i18n('export_bookmarks', store)} img={export_}>
-              <div className="bg-[#2abe7d] text-white w-[135px] h-[34px] flex justify-center items-center rounded-md cursor-pointer">
+              <div className="bg-[#2abe7d] text-white w-[135px] h-[34px] flex justify-center items-center  cursor-pointer">
                 {i18n('export', store)}
               </div>
             </ModalRowItem> */}
@@ -179,7 +179,7 @@ const ModalTabs = (props) => {
                     save(store.store, store);
                     selectBg(0);
                   }}
-                  className="bgs bg-[#343434] relative h-[80px] cursor-pointer mr-2 mb-2"
+                  className="bgs bg-[#2d2d2d] relative h-[80px] cursor-pointer mr-2 mb-2"
                 ></div>
                 {bg.map((x, i) => (
                   <div
@@ -197,14 +197,14 @@ const ModalTabs = (props) => {
                     }}
                     key={i}
                     style={{ backgroundImage: 'url(' + x + ')' }}
-                    className="bgs bg-[#343434] relative  bg-cover bg-no-repeat bg-center h-[80px] cursor-pointer mr-2 mb-2"
+                    className="bgs bg-[#2d2d2d] relative  bg-cover bg-no-repeat bg-center h-[80px] cursor-pointer mr-2 mb-2"
                   ></div>
                 ))}
               </div>
             </ModalRowItemDropdown>
             <ModalRowItemDropdown title={i18n('custom', store)} img={upload_}>
               <ModalRowItem title={'JPG / PNG'}>
-                <label className="bg-[#2abe7d] text-white px-3 h-[34px] flex justify-center items-center rounded-md cursor-pointer">
+                <label className="bg-[#2abe7d] text-white px-3 h-[34px] flex justify-center items-center  cursor-pointer">
                   {i18n('upload_image', store)}
                   <input
                     onChange={(e) => {
@@ -219,8 +219,8 @@ const ModalTabs = (props) => {
                 <div className="flex">
                   <input
                     ref={refUpload}
-                    onChange={(e) => { }}
-                    className="border border-[#575757] h-[34px]  py-2 px-3 text-[#929292] bg-[#464646]"
+                    onChange={(e) => {}}
+                    className="border border-[#fff] h-[34px] border-r-0 py-2 px-3 text-[#929292] bg-[#2d2d2d]"
                     placeholder={i18n('add_image_url', store)}
                   />
                   <div
@@ -231,7 +231,7 @@ const ModalTabs = (props) => {
                       console.log(store.store.settings['background']);
                       selectBg(0);
                     }}
-                    className="bg-[#2abe7d] rounded-l-none text-white px-3 h-[34px] flex justify-center items-center rounded-md cursor-pointer"
+                    className="bg-[#2abe7d] rounded-l-none text-white px-3 h-[34px] flex justify-center items-center  cursor-pointer"
                   >
                     {i18n('load', store)}
                   </div>
@@ -296,7 +296,7 @@ const ModalTabs = (props) => {
 
             <ModalRowItem title={i18n('folder_name', store)}>
               <input
-                className="border border-[#575757] h-[34px] w-[250px] py-2 px-3 text-[#929292] bg-[#464646]"
+                className="border border-[#fff] h-[34px] w-[250px] py-2 px-3 text-[#929292] bg-[#2d2d2d]"
                 placeholder={i18n('name', store)}
                 defaultValue={props.name}
                 onChange={props.onChange}
@@ -313,7 +313,7 @@ const ModalTabs = (props) => {
         {props.selectedTab === 1 && (
           <div className="tab ">
             <input
-              className="border border-[#575757] h-[34px] mb-5 w-full py-2 px-3 text-[#929292] bg-[#464646]"
+              className="border border-[#fff] h-[34px] mb-5 w-full py-2 px-3 text-[#929292] bg-[#2d2d2d]"
               placeholder={i18n('search_bookmark', store)}
               value={search}
               onChange={(e) => {
@@ -328,14 +328,19 @@ const ModalTabs = (props) => {
                     <div>
                       {getBookmarksArr(e).map((e2, i) => {
                         var checked = false;
-                        console.log(props.folderIndex)
-                        var _localBookmarks = props.folderIndex != null ? store.store.settings.folders[
-                          props.folderIndex
-                        ].bookmarks || [] : [];
-                        [..._localBookmarks, ...props.selectedBookmarks].forEach((bookmarkLocal) => {
+                        console.log(props.folderIndex);
+                        var _localBookmarks =
+                          props.folderIndex != null
+                            ? store.store.settings.folders[props.folderIndex]
+                                .bookmarks || []
+                            : [];
+                        [
+                          ..._localBookmarks,
+                          ...props.selectedBookmarks,
+                        ].forEach((bookmarkLocal) => {
                           if (bookmarkLocal.url === e2.url) {
                             checked = true;
-                            console.log(bookmarkLocal, props.name)
+                            console.log(bookmarkLocal, props.name);
                           }
                         });
                         if (
@@ -346,7 +351,13 @@ const ModalTabs = (props) => {
                         )
                           return (
                             <BookmarkRow
-                              key={i + 's' + props.folderIndex + '-' + Math.random()}
+                              key={
+                                i +
+                                's' +
+                                props.folderIndex +
+                                '-' +
+                                Math.random()
+                              }
                               checked={checked}
                               onChange={(e) => {
                                 props.setSelectedBookmarks({ e2, e, i });
@@ -365,10 +376,15 @@ const ModalTabs = (props) => {
                       <div>
                         {getBookmarksArr(e).map((e2, i) => {
                           var checked = false;
-                          var _localBookmarks = props.folderIndex != null ? store.store.settings.folders[
-                            props.folderIndex
-                          ].bookmarks || [] : [];
-                          [..._localBookmarks, ...props.selectedBookmarks].forEach((bookmarkLocal) => {
+                          var _localBookmarks =
+                            props.folderIndex != null
+                              ? store.store.settings.folders[props.folderIndex]
+                                  .bookmarks || []
+                              : [];
+                          [
+                            ..._localBookmarks,
+                            ...props.selectedBookmarks,
+                          ].forEach((bookmarkLocal) => {
                             if (bookmarkLocal.url === e2.url) {
                               checked = true;
                             }
@@ -376,9 +392,15 @@ const ModalTabs = (props) => {
                           return (
                             <BookmarkRow
                               checked={checked}
-                              key={i + 's' + props.folderIndex + '-' + Math.random()}
+                              key={
+                                i +
+                                's' +
+                                props.folderIndex +
+                                '-' +
+                                Math.random()
+                              }
                               onChange={(e) => {
-                                console.log({ e2, e, i })
+                                console.log({ e2, e, i });
                                 props.setSelectedBookmarks({ e2, e, i });
                               }}
                               data={{ e2, i }}

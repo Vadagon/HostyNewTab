@@ -35,7 +35,6 @@ const MainView = () => {
     store.store.settings.folders[store.store.settings.activeFolder].bookmarks[0]
   );
 
-
   const handleChange = (obj) => {
     setBookmarkState((bookmarkState) => ({
       ...bookmarkState,
@@ -55,13 +54,14 @@ const MainView = () => {
   return (
     <div
       style={{
-        backgroundImage: 'url(' + getBgImage(store.store.settings['background'].custom) + ')',
+        backgroundImage:
+          'url(' + getBgImage(store.store.settings['background'].custom) + ')',
       }}
-      className="p-5 pl-[70px] bg-[#343434] bg-fixed  bg-cover bg-no-repeat bg-center    h-[100vh]"
+      className="p-5 pl-[70px] bg-[#2d2d2d] bg-fixed  bg-cover bg-no-repeat bg-center    h-[100vh]"
     >
       <div
         className={
-          isIdle
+          false
             ? 'opacity-0 duration-500 transition-all delay-5000'
             : 'opacity-100 transition-all duration-500 delay-5000'
         }
@@ -95,7 +95,7 @@ const MainView = () => {
               store.store.settings.activeFolder
             ].bookmarks = storeClone.settings.folders[
               store.store.settings.activeFolder
-            ].bookmarks.filter(e => e.id !== index);
+            ].bookmarks.filter((e) => e.id !== index);
             save(storeClone, store);
             console.log('save');
             openModal(false);
@@ -131,7 +131,7 @@ const MainView = () => {
         </Modal>
       </div>
       {/* BACKGROUND CLOCK */}
-      <ClockBg active={isIdle} />
+      <ClockBg active={false} />
       <Footer />
     </div>
   );

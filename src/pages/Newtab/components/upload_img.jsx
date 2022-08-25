@@ -55,13 +55,13 @@ const UploadImage = (props) => {
         style={{ backgroundImage: getBgImg() }}
         active={file ? 'true' : ''}
         onClick={(e) => upload(e)}
-        className="bg_upload cursor-pointer bg-no-repeat bg-center  bg-[#464646] border border-[#575757] flex items-center justify-center rounded-full h-[82px] w-[82px]"
+        className="bg_upload cursor-pointer bg-no-repeat bg-center  bg-[#2d2d2d] border border-[#fff] flex items-center justify-center  h-[82px] w-[82px]"
       ></div>
-      <div className="flex flex-col ml-5">
+      <div className="flex flex-col ml-5 h-[82px]">
         <div className="text-white">{i18n('upload_img_text', store)}</div>
         <div
           onClick={(e) => upload(e)}
-          className=" bg-[#2abe7d] mt-3 text-white w-max px-3 h-[34px] flex justify-center items-center rounded-md cursor-pointer"
+          className=" bg-[#fff] mt-3 text-[#2d2d2d]] w-max px-3 h-[34px] flex justify-center items-center  cursor-pointer"
         >
           {i18n('create_preview', store)}
         </div>

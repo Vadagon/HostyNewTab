@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = (props) => {
   return (
-    <div className="fixed bottom-1">
+    <div className="fixed bottom-1 right-0">
       <a href={'#'} rel={'noreferrer'} className="text-[#ffffff8a] mr-3">
         Privacy Policy
       </a>

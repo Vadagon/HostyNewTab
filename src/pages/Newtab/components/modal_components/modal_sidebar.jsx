@@ -2,7 +2,7 @@ import React from 'react';
 
 const ModalSidebar = (props) => {
   return (
-    <div className="modal_sidebar relative pt-5 w-[170px] flex flex-col flex-none border-[#313131] border-r">
+    <div className="modal_sidebar relative pt-5 w-[170px] flex flex-col flex-none border-[#fff] border-r">
       {props.items.map((item, i) => (
         <div
           onClick={() => {

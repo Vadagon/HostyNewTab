@@ -38,7 +38,7 @@ const DraggableListItem = (props) => {
         style={{
           backgroundImage: 'url(' + props.preview + ')',
         }}
-        className="w-[30px] flex-none h-[30px] rounded-full bg-cover overflow-hidden mr-3"
+        className="w-[30px] flex-none h-[30px]  bg-cover overflow-hidden mr-3"
       ></div>
       <div
         onClick={(e) => {
