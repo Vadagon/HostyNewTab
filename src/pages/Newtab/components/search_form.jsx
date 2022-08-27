@@ -5,7 +5,7 @@ const SearchForm = (props) => {
   const store = useContext(UserContext);
 
   return (
-    <form action="http://www.google.com/search" method="get" className="flex  ">
+    <form action="https://www.bing.com/search" method="get" className="flex  ">
       <div
         style={{
           backgroundColor: store.store.settings['search_box'].color,

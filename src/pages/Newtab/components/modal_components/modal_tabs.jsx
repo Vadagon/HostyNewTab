@@ -1,7 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import import_ from '../../../../assets/img/import.png';
 import lang from '../../../../assets/img/lang.png';
-import amazon from '../../../../assets/img/amazon.png';
 import Dropdown from './dropdown';
 import ModalRowItem from './modal_row_item';
 import ModalRowItemDropdown from './modal_row_item_dropdown';
@@ -252,7 +250,7 @@ const ModalTabs = (props) => {
           </div>
         )} */}
         {/* Privacy and Security */}
-        {props.selectedTab === 3 && (
+        {/* {props.selectedTab === 3 && (
           <div className="tab ">
             <div className="text-white mb-3">
               This privacy statement describes how uTab collects and uses the
@@ -280,7 +278,7 @@ const ModalTabs = (props) => {
               </a>
             </div>
           </div>
-        )}
+        )} */}
       </div>
     );
   } else {
