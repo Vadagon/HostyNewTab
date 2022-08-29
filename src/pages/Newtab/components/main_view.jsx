@@ -61,7 +61,7 @@ const MainView = () => {
     >
       <div
         className={
-          false
+          isIdle
             ? 'opacity-0 duration-500 transition-all delay-5000'
             : 'opacity-100 transition-all duration-500 delay-5000'
         }
@@ -131,7 +131,7 @@ const MainView = () => {
         </Modal>
       </div>
       {/* BACKGROUND CLOCK */}
-      <ClockBg active={false} />
+      <ClockBg active={isIdle} />
       <Footer />
     </div>
   );

@@ -15,14 +15,14 @@ const ModalControls = (props) => {
         </div>
       ) : (
         <div>
-          {props.settings && (
+          {/* {props.settings && (
             <a
               href=""
               className="cursor-pointer  flex items-center justify-center text-white rate-us  bottom-5 bg-yellow-500 h-[34px] w-[90px] "
             >
               {i18n('rate_us', store)}
             </a>
-          )}
+          )} */}
         </div>
       )}
       {!props.settings && (
