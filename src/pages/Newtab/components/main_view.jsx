@@ -16,14 +16,15 @@ import { save } from '../../../components/Store/Store';
 import _ from 'lodash';
 import Footer from './footer';
 function useIdle(options) {
-  const [isIdle, setIsIdle] = React.useState(false);
-  React.useEffect(() => {
-    const activityDetector = createActivityDetector(options);
-    activityDetector.on('idle', () => setIsIdle(true));
-    activityDetector.on('active', () => setIsIdle(false));
-    return () => activityDetector.stop();
-  }, []);
-  return isIdle;
+
+  // const [isIdle, setIsIdle] = React.useState(false);
+  // React.useEffect(() => {
+  //   const activityDetector = createActivityDetector(options);
+  //   activityDetector.on('idle', () => setIsIdle(true));
+  //   activityDetector.on('active', () => setIsIdle(false));
+  //   return () => activityDetector.stop();
+  // }, []);
+  return false;
 }
 var bg = [bg_1, bg_2, bg_3, bg_4, bg_5];
 const MainView = () => {
