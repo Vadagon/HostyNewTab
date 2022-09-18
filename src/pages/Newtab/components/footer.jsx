@@ -9,9 +9,9 @@ const Footer = (props) => {
       <a href={'https://mainbox.info/terms/'} rel={'noreferrer'} className="text-[#ffffff8a] mr-3">
         Terms of Use
       </a>
-      {/* <a href={'#'} rel={'noreferrer'} className="text-[#ffffff8a] mr-3">
-        About
-      </a> */}
+      <a href={'https://mainbox.info/eula/'} rel={'noreferrer'} className="text-[#ffffff8a] mr-3">
+        EULA
+      </a>
       <a href={'https://mainbox.info/contact/'} rel={'noreferrer'} className="text-[#ffffff8a] mr-3">
         Contact Us
       </a>
