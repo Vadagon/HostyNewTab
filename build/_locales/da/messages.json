@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Brugerdefineret ny fane"
+        "message": "IQ Fane - Brugerdefineret ny fane"
     },
     "app_description": {
         "message": "Tilpas baggrunden for din nye fane i Google Chrome"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Rediger mappe"
     },
     "remove": {
         "message": "Fjerne"

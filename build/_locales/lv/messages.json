@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab — pielāgota jauna cilne"
+        "message": "IQ cilne — pielāgota jauna cilne"
     },
     "app_description": {
         "message": "Pielāgojiet Google Chrome jaunas cilnes lapas fonu"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Rediģēt mapi"
     },
     "remove": {
         "message": "Noņemt"

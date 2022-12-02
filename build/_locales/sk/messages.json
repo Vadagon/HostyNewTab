@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab – Vlastná nová karta"
+        "message": "Karta IQ – Vlastná nová karta"
     },
     "app_description": {
         "message": "Prispôsobte si pozadie stránky na novej karte prehliadača Google Chrome"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Upraviť priečinok"
     },
     "remove": {
         "message": "Odstrániť"

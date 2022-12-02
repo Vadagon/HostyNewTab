@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - カスタムの新しいタブ"
+        "message": "IQ タブ - カスタムの新しいタブ"
     },
     "app_description": {
         "message": "Google Chrome の新しいタブ ページの背景をカスタマイズする"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "フォルダーの編集"
     },
     "remove": {
         "message": "削除する"

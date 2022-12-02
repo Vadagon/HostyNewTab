@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Kichupo Kipya Maalum"
+        "message": "Kichupo cha IQ - Kichupo Kipya Maalum"
     },
     "app_description": {
         "message": "Binafsisha mandharinyuma ya ukurasa wako wa kichupo kipya cha Google Chrome"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Badilisha Folda"
     },
     "remove": {
         "message": "Ondoa"

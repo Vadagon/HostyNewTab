@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Custom New Tab"
+        "message": "IQ Tab - Custom New Tab"
     },
     "app_description": {
         "message": "Customize your Google Chrome new tab page background"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Edit Folder"
     },
     "remove": {
         "message": "Remove"

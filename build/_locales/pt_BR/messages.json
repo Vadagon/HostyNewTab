@@ -1,9 +1,9 @@
 {
     "app_name": {
-        "message": "qTab - Nova guia personalizada"
+        "message": "Guia IQ - Nova guia personalizada"
     },
     "app_description": {
-        "message": "Personalize o fundo da página de nova guia do Google Chrome"
+        "message": "Personalize o plano de fundo da nova guia do Google Chrome"
     },
     "general": {
         "message": "Em geral"
@@ -27,7 +27,7 @@
         "message": "Definições"
     },
     "open_bookmarks": {
-        "message": "Abrir favoritos"
+        "message": "Marcadores abertos"
     },
     "bookmarks": {
         "message": "Favoritos"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Editar pasta"
     },
     "remove": {
         "message": "Remover"
@@ -120,13 +123,13 @@
         "message": "Cor da fonte"
     },
     "search_bookmark": {
-        "message": "Pesquisar marcador"
+        "message": "Marcador de pesquisa"
     },
     "based_hour24": {
-        "message": "Hora baseada em 24 horas"
+        "message": "baseado em 24 horas"
     },
     "based_hour12": {
-        "message": "Hora baseada em 12"
+        "message": "12 horas baseadas"
     },
     "dark": {
         "message": "Escuro"
@@ -135,18 +138,18 @@
         "message": "Leve"
     },
     "sec20": {
-        "message": "20 segundos"
+        "message": "20 seg"
     },
     "sec30": {
-        "message": "30 segundos"
+        "message": "30 seg"
     },
     "sec40": {
-        "message": "40 segundos"
+        "message": "40 seg"
     },
     "min1": {
         "message": "1 minuto"
     },
     "disable_time": {
-        "message": "Tempo de desativação"
+        "message": "Desativar tempo"
     }
 }

@@ -3,6 +3,7 @@
   "name": "__MSG_app_name__",
   "description": "__MSG_app_description__",
   "default_locale": "en",
+  "version": "4.3.7",
   "background": {
     "service_worker": "background.bundle.js"
   },

@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Mukautettu uusi välilehti"
+        "message": "IQ-välilehti - Mukautettu uusi välilehti"
     },
     "app_description": {
         "message": "Muokkaa Google Chromen uuden välilehden sivun taustaa"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL-osoite"
+    },
+    "edit_folder": {
+        "message": "Muokkaa kansiota"
     },
     "remove": {
         "message": "Poista"

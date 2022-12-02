@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - แท็บใหม่ที่กำหนดเอง"
+        "message": "IQ Tab - แท็บใหม่ที่กำหนดเอง"
     },
     "app_description": {
         "message": "ปรับแต่งพื้นหลังหน้าแท็บใหม่ของ Google Chrome"
@@ -27,7 +27,7 @@
         "message": "การตั้งค่า"
     },
     "open_bookmarks": {
-        "message": "เปิดบุ๊คมาร์ค"
+        "message": "เปิดบุ๊กมาร์ก"
     },
     "bookmarks": {
         "message": "ที่คั่นหนังสือ"
@@ -45,10 +45,10 @@
         "message": "คลิกและสร้างตัวอย่างที่คุณต้องการ"
     },
     "create_preview": {
-        "message": "สร้างตัวอย่าง"
+        "message": "สร้างการแสดงตัวอย่าง"
     },
     "less_100": {
-        "message": "ไฟล์ต้องน้อยกว่า 100kb"
+        "message": "ไฟล์ต้องมีขนาดน้อยกว่า 100kb"
     },
     "search_placeholder": {
         "message": "ค้นหาเว็บ..."
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "แก้ไขโฟลเดอร์"
     },
     "remove": {
         "message": "ลบ"
@@ -93,10 +96,10 @@
         "message": "กำหนดเอง"
     },
     "upload_image": {
-        "message": "อัพโหลดภาพ"
+        "message": "อัปโหลดรูปภาพ"
     },
     "add_image_url": {
-        "message": "เพิ่ม URL รูปภาพแล้วคลิกโหลด"
+        "message": "เพิ่ม URL รูปภาพและคลิกโหลด"
     },
     "load": {
         "message": "โหลด"
@@ -120,13 +123,13 @@
         "message": "สีตัวอักษร"
     },
     "search_bookmark": {
-        "message": "ค้นหาบุ๊คมาร์ค"
+        "message": "ค้นหาบุ๊กมาร์ก"
     },
     "based_hour24": {
         "message": "24 ชั่วโมง"
     },
     "based_hour12": {
-        "message": "แบบ 12 ชั่วโมง"
+        "message": "12 ชั่วโมง"
     },
     "dark": {
         "message": "มืด"

@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Aangepast nieuw tabblad"
+        "message": "IQ-tabblad - Aangepast nieuw tabblad"
     },
     "app_description": {
         "message": "Pas de achtergrond van uw nieuwe tabbladpagina van Google Chrome aan"
@@ -18,7 +18,7 @@
         "message": "Tijd"
     },
     "privacy_and_security": {
-        "message": "Privacy en beveiliging"
+        "message": "Privacy en veiligheid"
     },
     "add_folder": {
         "message": "Map toevoegen"
@@ -42,13 +42,13 @@
         "message": "Weet u zeker dat u alle bladwijzers wilt openen?"
     },
     "upload_img_text": {
-        "message": "Klik en maak het voorbeeld dat je nodig hebt"
+        "message": "Klik en maak het voorbeeld dat u nodig hebt"
     },
     "create_preview": {
-        "message": "Voorbeeld maken"
+        "message": "Voorvertoning maken"
     },
     "less_100": {
-        "message": "Bestand moet kleiner zijn dan 100kb"
+        "message": "Bestand moet kleiner zijn dan 100 kb"
     },
     "search_placeholder": {
         "message": "Zoeken op het internet..."
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Map bewerken"
     },
     "remove": {
         "message": "Verwijderen"
@@ -123,7 +126,7 @@
         "message": "Zoek bladwijzer"
     },
     "based_hour24": {
-        "message": "24-uurs"
+        "message": "24 uur per dag"
     },
     "based_hour12": {
         "message": "12-gebaseerd uur"
@@ -135,13 +138,13 @@
         "message": "Licht"
     },
     "sec20": {
-        "message": "20 seconden"
+        "message": "20 sec"
     },
     "sec30": {
-        "message": "30 seconden"
+        "message": "30 sec"
     },
     "sec40": {
-        "message": "40 seconden"
+        "message": "40 sec"
     },
     "min1": {
         "message": "1 minuut"

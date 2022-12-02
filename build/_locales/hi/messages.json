@@ -1,9 +1,9 @@
 {
     "app_name": {
-        "message": "qTab - कस्टम नया टैब"
+        "message": "बुद्धि टैब - कस्टम नया टैब"
     },
     "app_description": {
-        "message": "अपना Google Chrome नया टैब पृष्ठ पृष्ठभूमि अनुकूलित करें"
+        "message": "अपने Google Chrome नए टैब पृष्ठ की पृष्ठभूमि को अनुकूलित करें"
     },
     "general": {
         "message": "सामान्य"
@@ -42,13 +42,13 @@
         "message": "क्या आप वाकई सभी बुकमार्क खोलना चाहते हैं?"
     },
     "upload_img_text": {
-        "message": "आपको जिस पूर्वावलोकन की आवश्यकता है उसे क्लिक करें और बनाएं"
+        "message": "क्लिक करें और अपनी जरूरत का पूर्वावलोकन बनाएं"
     },
     "create_preview": {
-        "message": "पूर्वावलोकन बनाएं"
+        "message": "पूर्वावलोकन बनाएँ"
     },
     "less_100": {
-        "message": "फ़ाइल 100kb . से कम होनी चाहिए"
+        "message": "फ़ाइल 100kb से कम होनी चाहिए"
     },
     "search_placeholder": {
         "message": "वेब खोज..."
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "यूआरएल"
+    },
+    "edit_folder": {
+        "message": "फ़ोल्डर संपादित करें"
     },
     "remove": {
         "message": "हटाना"
@@ -147,6 +150,6 @@
         "message": "1 मिनट"
     },
     "disable_time": {
-        "message": "समय अक्षम करें"
+        "message": "अक्षम समय"
     }
 }

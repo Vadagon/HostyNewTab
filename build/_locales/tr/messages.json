@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Özel Yeni Sekme"
+        "message": "IQ Sekmesi - Özel Yeni Sekme"
     },
     "app_description": {
         "message": "Google Chrome yeni sekme sayfası arka planınızı özelleştirin"
@@ -36,7 +36,7 @@
         "message": "Tema"
     },
     "edit_bookmarks": {
-        "message": "Yer İmlerini Düzenle"
+        "message": "Yer İşaretlerini Düzenle"
     },
     "open_bookmars_text": {
         "message": "Tüm yer imlerini açmak istediğinizden emin misiniz?"
@@ -48,7 +48,7 @@
         "message": "Önizleme Oluştur"
     },
     "less_100": {
-        "message": "Dosyanın daha az 100 kb olması gerekiyor"
+        "message": "Dosyanın 100kb'den az olması gerekir"
     },
     "search_placeholder": {
         "message": "İnternette ara..."
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Klasörü Düzenle"
     },
     "remove": {
         "message": "Kaldırmak"
@@ -75,10 +78,10 @@
         "message": "Dil"
     },
     "import_bookmarks": {
-        "message": "Yer İmlerini İçe Aktar"
+        "message": "Yer İşaretlerini İçe Aktar"
     },
     "export_bookmarks": {
-        "message": "Yer İmlerini Dışa Aktar"
+        "message": "Yer İşaretlerini Dışa Aktar"
     },
     "import": {
         "message": "İçe aktarmak"
@@ -120,7 +123,7 @@
         "message": "Yazı rengi"
     },
     "search_bookmark": {
-        "message": "Yer imi ara"
+        "message": "Yer iminde ara"
     },
     "based_hour24": {
         "message": "24 tabanlı Saat"

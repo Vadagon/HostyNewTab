@@ -1,9 +1,9 @@
 {
     "app_name": {
-        "message": "qTab - Tab mới tùy chỉnh"
+        "message": "Thẻ IQ - Thẻ mới tùy chỉnh"
     },
     "app_description": {
-        "message": "Tùy chỉnh nền trang tab mới của Google Chrome của bạn"
+        "message": "Tùy chỉnh nền trang tab mới Google Chrome của bạn"
     },
     "general": {
         "message": "Chung"
@@ -18,7 +18,7 @@
         "message": "Thời gian"
     },
     "privacy_and_security": {
-        "message": "Quyền riêng tư và Bảo mật"
+        "message": "Quyền riêng tư và bảo mật"
     },
     "add_folder": {
         "message": "Thêm thư mục"
@@ -33,13 +33,13 @@
         "message": "Dấu trang"
     },
     "theme": {
-        "message": "Chủ đề"
+        "message": "chủ đề"
     },
     "edit_bookmarks": {
         "message": "Chỉnh sửa Dấu trang"
     },
     "open_bookmars_text": {
-        "message": "Bạn có chắc chắn muốn mở tất cả các dấu trang không?"
+        "message": "Bạn có chắc chắn muốn mở tất cả dấu trang không?"
     },
     "upload_img_text": {
         "message": "Nhấp và tạo bản xem trước bạn cần"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Chỉnh sửa thư mục"
     },
     "remove": {
         "message": "Loại bỏ"
@@ -105,7 +108,7 @@
         "message": "Sự chậm trễ"
     },
     "time_format": {
-        "message": "Định dạng thời gian"
+        "message": "định dạng thời gian"
     },
     "learn_more": {
         "message": "Tìm hiểu thêm"

@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Filă nouă personalizată"
+        "message": "Fila IQ - Filă nouă personalizată"
     },
     "app_description": {
         "message": "Personalizați fundalul paginii cu filă nouă Google Chrome"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Editați dosarul"
     },
     "remove": {
         "message": "Elimina"

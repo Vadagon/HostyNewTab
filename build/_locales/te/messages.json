@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - అనుకూల కొత్త ట్యాబ్"
+        "message": "IQ ట్యాబ్ - అనుకూల కొత్త ట్యాబ్"
     },
     "app_description": {
         "message": "మీ Google Chrome కొత్త ట్యాబ్ పేజీ నేపథ్యాన్ని అనుకూలీకరించండి"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "ఫోల్డర్‌ని సవరించండి"
     },
     "remove": {
         "message": "తొలగించు"

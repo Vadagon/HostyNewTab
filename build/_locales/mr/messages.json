@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - सानुकूल नवीन टॅब"
+        "message": "IQ टॅब - सानुकूल नवीन टॅब"
     },
     "app_description": {
         "message": "तुमची Google Chrome नवीन टॅब पृष्ठ पार्श्वभूमी सानुकूलित करा"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "फोल्डर संपादित करा"
     },
     "remove": {
         "message": "काढा"

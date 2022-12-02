@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab – kohandatud uus vahekaart"
+        "message": "IQ vahekaart – kohandatud uus vahekaart"
     },
     "app_description": {
         "message": "Kohandage oma Google Chrome'i uue vahelehe tausta"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Redigeeri kausta"
     },
     "remove": {
         "message": "Eemalda"

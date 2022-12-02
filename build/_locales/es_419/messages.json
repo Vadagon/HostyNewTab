@@ -1,9 +1,9 @@
 {
     "app_name": {
-        "message": "qTab - Nueva pestaña personalizada"
+        "message": "Pestaña IQ - Nueva pestaña personalizada"
     },
     "app_description": {
-        "message": "Personaliza el fondo de la página de nueva pestaña de Google Chrome"
+        "message": "Personaliza el fondo de tu página de nueva pestaña de Google Chrome"
     },
     "general": {
         "message": "General"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Editar carpeta"
     },
     "remove": {
         "message": "Remover"

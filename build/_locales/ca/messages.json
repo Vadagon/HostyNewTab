@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Pestanya nova personalitzada"
+        "message": "Pestanya IQ - Pestanya nova personalitzada"
     },
     "app_description": {
         "message": "Personalitzeu el fons de la pàgina de la pestanya nova de Google Chrome"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Edita la carpeta"
     },
     "remove": {
         "message": "Eliminar"

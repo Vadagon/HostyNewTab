@@ -1,9 +1,9 @@
 {
     "app_name": {
-        "message": "qTab - Tab Baru Khusus"
+        "message": "Tab IQ - Tab Baru Kustom"
     },
     "app_description": {
-        "message": "Sesuaikan latar belakang halaman tab baru Google Chrome Anda"
+        "message": "Sesuaikan latar belakang laman tab baru Google Chrome Anda"
     },
     "general": {
         "message": "Umum"
@@ -39,7 +39,7 @@
         "message": "Edit Bookmark"
     },
     "open_bookmars_text": {
-        "message": "Anda yakin ingin membuka semua bookmark?"
+        "message": "Yakin ingin membuka semua bookmark?"
     },
     "upload_img_text": {
         "message": "Klik dan buat pratinjau yang Anda butuhkan"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Sunting Map"
     },
     "remove": {
         "message": "Menghapus"
@@ -123,10 +126,10 @@
         "message": "Cari bookmark"
     },
     "based_hour24": {
-        "message": "24 jam berbasis"
+        "message": "Jam Berbasis 24"
     },
     "based_hour12": {
-        "message": "Jam berbasis 12"
+        "message": "Jam Berbasis 12"
     },
     "dark": {
         "message": "Gelap"
@@ -144,7 +147,7 @@
         "message": "40 detik"
     },
     "min1": {
-        "message": "1 menit"
+        "message": "1 mnt"
     },
     "disable_time": {
         "message": "Nonaktifkan Waktu"
