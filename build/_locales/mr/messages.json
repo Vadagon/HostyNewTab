@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - सानुकूल नवीन टॅब"
+    },
+    "app_description": {
+        "message": "तुमची Google Chrome नवीन टॅब पृष्ठ पार्श्वभूमी सानुकूलित करा"
+    },
+    "general": {
+        "message": "सामान्य"
+    },
+    "search_box": {
+        "message": "शोध बॉक्स"
+    },
+    "background": {
+        "message": "पार्श्वभूमी"
+    },
+    "time": {
+        "message": "वेळ"
+    },
+    "privacy_and_security": {
+        "message": "गोपनीयता आणि सुरक्षितता"
+    },
+    "add_folder": {
+        "message": "फोल्डर जोडा"
+    },
+    "settings": {
+        "message": "सेटिंग्ज"
+    },
+    "open_bookmarks": {
+        "message": "बुकमार्क उघडा"
+    },
+    "bookmarks": {
+        "message": "बुकमार्क"
+    },
+    "theme": {
+        "message": "थीम"
+    },
+    "edit_bookmarks": {
+        "message": "बुकमार्क संपादित करा"
+    },
+    "open_bookmars_text": {
+        "message": "तुमची खात्री आहे की तुम्ही सर्व बुकमार्क उघडू इच्छिता?"
+    },
+    "upload_img_text": {
+        "message": "क्लिक करा आणि तुम्हाला आवश्यक पूर्वावलोकन तयार करा"
+    },
+    "create_preview": {
+        "message": "पूर्वावलोकन तयार करा"
+    },
+    "less_100": {
+        "message": "फाइल 100kb कमी असणे आवश्यक आहे"
+    },
+    "search_placeholder": {
+        "message": "वेबवर शोधा..."
+    },
+    "name": {
+        "message": "नाव"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "काढा"
+    },
+    "rate_us": {
+        "message": "आम्हाला रेट करा"
+    },
+    "cancel": {
+        "message": "रद्द करा"
+    },
+    "save": {
+        "message": "जतन करा"
+    },
+    "language": {
+        "message": "इंग्रजी"
+    },
+    "import_bookmarks": {
+        "message": "बुकमार्क आयात करा"
+    },
+    "export_bookmarks": {
+        "message": "बुकमार्क निर्यात करा"
+    },
+    "import": {
+        "message": "आयात करा"
+    },
+    "export": {
+        "message": "निर्यात करा"
+    },
+    "default": {
+        "message": "डीफॉल्ट"
+    },
+    "custom": {
+        "message": "सानुकूल"
+    },
+    "upload_image": {
+        "message": "प्रतिमा अपलोड करा"
+    },
+    "add_image_url": {
+        "message": "इमेज Url जोडा आणि लोड वर क्लिक करा"
+    },
+    "load": {
+        "message": "लोड"
+    },
+    "delay": {
+        "message": "विलंब"
+    },
+    "time_format": {
+        "message": "वेळ स्वरूप"
+    },
+    "learn_more": {
+        "message": "अधिक जाणून घ्या"
+    },
+    "about_us": {
+        "message": "आमच्याबद्दल"
+    },
+    "folder_name": {
+        "message": "फोल्डरचे नाव"
+    },
+    "font_color": {
+        "message": "फॉन्टचा रंग"
+    },
+    "search_bookmark": {
+        "message": "बुकमार्क शोधा"
+    },
+    "based_hour24": {
+        "message": "24-आधारित तास"
+    },
+    "based_hour12": {
+        "message": "12-आधारित तास"
+    },
+    "dark": {
+        "message": "गडद"
+    },
+    "light": {
+        "message": "प्रकाश"
+    },
+    "sec20": {
+        "message": "20 से"
+    },
+    "sec30": {
+        "message": "३० से"
+    },
+    "sec40": {
+        "message": "४० से"
+    },
+    "min1": {
+        "message": "1 मिनिट"
+    },
+    "disable_time": {
+        "message": "वेळ अक्षम करा"
+    }
+}

@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - 自定义新标签"
+    },
+    "app_description": {
+        "message": "自定义您的谷歌浏览器新标签页背景"
+    },
+    "general": {
+        "message": "一般的"
+    },
+    "search_box": {
+        "message": "搜索框"
+    },
+    "background": {
+        "message": "背景"
+    },
+    "time": {
+        "message": "时间"
+    },
+    "privacy_and_security": {
+        "message": "隐私和安全"
+    },
+    "add_folder": {
+        "message": "新增文件夹"
+    },
+    "settings": {
+        "message": "设置"
+    },
+    "open_bookmarks": {
+        "message": "打开书签"
+    },
+    "bookmarks": {
+        "message": "书签"
+    },
+    "theme": {
+        "message": "主题"
+    },
+    "edit_bookmarks": {
+        "message": "编辑书签"
+    },
+    "open_bookmars_text": {
+        "message": "您确定要打开所有书签吗？"
+    },
+    "upload_img_text": {
+        "message": "单击并创建您需要的预览"
+    },
+    "create_preview": {
+        "message": "创建预览"
+    },
+    "less_100": {
+        "message": "文件需要小于 100kb"
+    },
+    "search_placeholder": {
+        "message": "搜索网页..."
+    },
+    "name": {
+        "message": "姓名"
+    },
+    "url": {
+        "message": "网址"
+    },
+    "remove": {
+        "message": "消除"
+    },
+    "rate_us": {
+        "message": "评价我们"
+    },
+    "cancel": {
+        "message": "取消"
+    },
+    "save": {
+        "message": "节省"
+    },
+    "language": {
+        "message": "语"
+    },
+    "import_bookmarks": {
+        "message": "导入书签"
+    },
+    "export_bookmarks": {
+        "message": "导出书签"
+    },
+    "import": {
+        "message": "进口"
+    },
+    "export": {
+        "message": "出口"
+    },
+    "default": {
+        "message": "默认"
+    },
+    "custom": {
+        "message": "风俗"
+    },
+    "upload_image": {
+        "message": "上传图片"
+    },
+    "add_image_url": {
+        "message": "添加图片Url并点击加载"
+    },
+    "load": {
+        "message": "加载"
+    },
+    "delay": {
+        "message": "延迟"
+    },
+    "time_format": {
+        "message": "时间格式"
+    },
+    "learn_more": {
+        "message": "学到更多"
+    },
+    "about_us": {
+        "message": "关于我们"
+    },
+    "folder_name": {
+        "message": "文件夹名称"
+    },
+    "font_color": {
+        "message": "字体颜色"
+    },
+    "search_bookmark": {
+        "message": "搜索书签"
+    },
+    "based_hour24": {
+        "message": "24 小时制"
+    },
+    "based_hour12": {
+        "message": "12 小时制"
+    },
+    "dark": {
+        "message": "黑暗的"
+    },
+    "light": {
+        "message": "光"
+    },
+    "sec20": {
+        "message": "20 秒"
+    },
+    "sec30": {
+        "message": "30 秒"
+    },
+    "sec40": {
+        "message": "40 秒"
+    },
+    "min1": {
+        "message": "1分钟"
+    },
+    "disable_time": {
+        "message": "禁用时间"
+    }
+}

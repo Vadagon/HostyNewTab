@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - কাস্টম নতুন ট্যাব"
+    },
+    "app_description": {
+        "message": "আপনার Google Chrome নতুন ট্যাব পৃষ্ঠার পটভূমি কাস্টমাইজ করুন"
+    },
+    "general": {
+        "message": "সাধারণ"
+    },
+    "search_box": {
+        "message": "অনুসন্ধান বাক্স"
+    },
+    "background": {
+        "message": "পটভূমি"
+    },
+    "time": {
+        "message": "সময়"
+    },
+    "privacy_and_security": {
+        "message": "গোপনীয়তা এবং নিরাপত্তা"
+    },
+    "add_folder": {
+        "message": "ফোল্ডার যোগ করুন"
+    },
+    "settings": {
+        "message": "সেটিংস"
+    },
+    "open_bookmarks": {
+        "message": "বুকমার্ক খুলুন"
+    },
+    "bookmarks": {
+        "message": "বুকমার্ক"
+    },
+    "theme": {
+        "message": "থিম"
+    },
+    "edit_bookmarks": {
+        "message": "বুকমার্ক এডিট করুন"
+    },
+    "open_bookmars_text": {
+        "message": "আপনি কি সব বুকমার্ক খুলতে চান?"
+    },
+    "upload_img_text": {
+        "message": "ক্লিক করুন এবং আপনার প্রয়োজনীয় পূর্বরূপ তৈরি করুন"
+    },
+    "create_preview": {
+        "message": "প্রিভিউ তৈরি করুন"
+    },
+    "less_100": {
+        "message": "ফাইল 100kb কম হতে হবে"
+    },
+    "search_placeholder": {
+        "message": "ওয়েব অনুসন্ধান..."
+    },
+    "name": {
+        "message": "নাম"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "অপসারণ"
+    },
+    "rate_us": {
+        "message": "আমাদের ব্যাপারে আপনার মতামত দিন"
+    },
+    "cancel": {
+        "message": "বাতিল করুন"
+    },
+    "save": {
+        "message": "সংরক্ষণ"
+    },
+    "language": {
+        "message": "ভাষা"
+    },
+    "import_bookmarks": {
+        "message": "বুকমার্ক আমদানি করুন"
+    },
+    "export_bookmarks": {
+        "message": "বুকমার্ক রপ্তানি করুন"
+    },
+    "import": {
+        "message": "আমদানি"
+    },
+    "export": {
+        "message": "রপ্তানি"
+    },
+    "default": {
+        "message": "ডিফল্ট"
+    },
+    "custom": {
+        "message": "কাস্টম"
+    },
+    "upload_image": {
+        "message": "চিত্র আপলোড"
+    },
+    "add_image_url": {
+        "message": "ইমেজ ইউআরএল যোগ করুন এবং লোড ক্লিক করুন"
+    },
+    "load": {
+        "message": "ভার"
+    },
+    "delay": {
+        "message": "বিলম্ব"
+    },
+    "time_format": {
+        "message": "সময় ফর্ম্যাট"
+    },
+    "learn_more": {
+        "message": "আরও জানুন"
+    },
+    "about_us": {
+        "message": "আমাদের সম্পর্কে"
+    },
+    "folder_name": {
+        "message": "ফোল্ডারের নাম"
+    },
+    "font_color": {
+        "message": "ফন্টের রঙ"
+    },
+    "search_bookmark": {
+        "message": "বুকমার্ক অনুসন্ধান করুন"
+    },
+    "based_hour24": {
+        "message": "24-ভিত্তিক ঘন্টা"
+    },
+    "based_hour12": {
+        "message": "12-ভিত্তিক ঘন্টা"
+    },
+    "dark": {
+        "message": "অন্ধকার"
+    },
+    "light": {
+        "message": "আলো"
+    },
+    "sec20": {
+        "message": "20 সেকেন্ড"
+    },
+    "sec30": {
+        "message": "30 সেকেন্ড"
+    },
+    "sec40": {
+        "message": "40 সেকেন্ড"
+    },
+    "min1": {
+        "message": "1 মিনিট"
+    },
+    "disable_time": {
+        "message": "সময় অক্ষম করুন"
+    }
+}

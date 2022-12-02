@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab – Egyéni új lap"
+        "message": "IQ Tab – Egyéni új lap"
     },
     "app_description": {
         "message": "Szabja személyre a Google Chrome új lap oldalának hátterét"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Mappa szerkesztése"
     },
     "remove": {
         "message": "Távolítsa el"

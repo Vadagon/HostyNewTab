@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab — Пользовательская новая вкладка"
+        "message": "Вкладка IQ — Пользовательская новая вкладка"
     },
     "app_description": {
         "message": "Настройте фон страницы новой вкладки Google Chrome"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL-адрес"
+    },
+    "edit_folder": {
+        "message": "Изменить папку"
     },
     "remove": {
         "message": "Удалять"

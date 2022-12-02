@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Benutzerdefinierte neue Registerkarte"
+        "message": "IQ-Tab - Benutzerdefinierter neuer Tab"
     },
     "app_description": {
         "message": "Passen Sie den Hintergrund Ihrer neuen Registerkarte in Google Chrome an"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Ordner bearbeiten"
     },
     "remove": {
         "message": "Entfernen"

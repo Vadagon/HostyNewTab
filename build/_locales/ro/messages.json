@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - Filă nouă personalizată"
+    },
+    "app_description": {
+        "message": "Personalizați fundalul paginii cu filă nouă Google Chrome"
+    },
+    "general": {
+        "message": "General"
+    },
+    "search_box": {
+        "message": "Caseta de căutare"
+    },
+    "background": {
+        "message": "fundal"
+    },
+    "time": {
+        "message": "Timp"
+    },
+    "privacy_and_security": {
+        "message": "Confidențialitate și securitate"
+    },
+    "add_folder": {
+        "message": "Adaugă folder"
+    },
+    "settings": {
+        "message": "Setări"
+    },
+    "open_bookmarks": {
+        "message": "Deschideți Marcaje"
+    },
+    "bookmarks": {
+        "message": "Marcaje"
+    },
+    "theme": {
+        "message": "Temă"
+    },
+    "edit_bookmarks": {
+        "message": "Editați marcajele"
+    },
+    "open_bookmars_text": {
+        "message": "Sigur doriți să deschideți toate marcajele?"
+    },
+    "upload_img_text": {
+        "message": "Faceți clic și creați previzualizarea de care aveți nevoie"
+    },
+    "create_preview": {
+        "message": "Creați previzualizare"
+    },
+    "less_100": {
+        "message": "Fișierul trebuie să aibă mai puțin de 100 kb"
+    },
+    "search_placeholder": {
+        "message": "Cauta pe net..."
+    },
+    "name": {
+        "message": "Nume"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Elimina"
+    },
+    "rate_us": {
+        "message": "Ne evalua"
+    },
+    "cancel": {
+        "message": "Anulare"
+    },
+    "save": {
+        "message": "Salvați"
+    },
+    "language": {
+        "message": "Limba"
+    },
+    "import_bookmarks": {
+        "message": "Importați marcaje"
+    },
+    "export_bookmarks": {
+        "message": "Exportați marcaje"
+    },
+    "import": {
+        "message": "Import"
+    },
+    "export": {
+        "message": "Export"
+    },
+    "default": {
+        "message": "Mod implicit"
+    },
+    "custom": {
+        "message": "Personalizat"
+    },
+    "upload_image": {
+        "message": "Incarca imaginea"
+    },
+    "add_image_url": {
+        "message": "Adăugați adresa URL a imaginii și faceți clic pe încărcare"
+    },
+    "load": {
+        "message": "Sarcină"
+    },
+    "delay": {
+        "message": "Întârziere"
+    },
+    "time_format": {
+        "message": "Format de timp"
+    },
+    "learn_more": {
+        "message": "Află mai multe"
+    },
+    "about_us": {
+        "message": "Despre noi"
+    },
+    "folder_name": {
+        "message": "Numele fisierului"
+    },
+    "font_color": {
+        "message": "Culoare font"
+    },
+    "search_bookmark": {
+        "message": "Căutare marcaj"
+    },
+    "based_hour24": {
+        "message": "24 de ore"
+    },
+    "based_hour12": {
+        "message": "Ora bazată pe 12"
+    },
+    "dark": {
+        "message": "Întuneric"
+    },
+    "light": {
+        "message": "Ușoară"
+    },
+    "sec20": {
+        "message": "20 sec"
+    },
+    "sec30": {
+        "message": "30 sec"
+    },
+    "sec40": {
+        "message": "40 sec"
+    },
+    "min1": {
+        "message": "1 min"
+    },
+    "disable_time": {
+        "message": "Dezactivați Ora"
+    }
+}

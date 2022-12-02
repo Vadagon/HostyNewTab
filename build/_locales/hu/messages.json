@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab – Egyéni új lap"
+    },
+    "app_description": {
+        "message": "Szabja személyre a Google Chrome új lap oldalának hátterét"
+    },
+    "general": {
+        "message": "Tábornok"
+    },
+    "search_box": {
+        "message": "Keresőmező"
+    },
+    "background": {
+        "message": "Háttér"
+    },
+    "time": {
+        "message": "Idő"
+    },
+    "privacy_and_security": {
+        "message": "Adatvédelem és biztonság"
+    },
+    "add_folder": {
+        "message": "Mappa hozzáadása"
+    },
+    "settings": {
+        "message": "Beállítások"
+    },
+    "open_bookmarks": {
+        "message": "Nyissa meg a Könyvjelzőket"
+    },
+    "bookmarks": {
+        "message": "Könyvjelzők"
+    },
+    "theme": {
+        "message": "Téma"
+    },
+    "edit_bookmarks": {
+        "message": "Könyvjelzők szerkesztése"
+    },
+    "open_bookmars_text": {
+        "message": "Biztosan megnyitja az összes könyvjelzőt?"
+    },
+    "upload_img_text": {
+        "message": "Kattintson, és hozza létre a kívánt előnézetet"
+    },
+    "create_preview": {
+        "message": "Előnézet létrehozása"
+    },
+    "less_100": {
+        "message": "A fájlnak 100 kb méretűnek kell lennie"
+    },
+    "search_placeholder": {
+        "message": "Keresés a weben..."
+    },
+    "name": {
+        "message": "Név"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Távolítsa el"
+    },
+    "rate_us": {
+        "message": "Értékelj minket"
+    },
+    "cancel": {
+        "message": "Megszünteti"
+    },
+    "save": {
+        "message": "Megment"
+    },
+    "language": {
+        "message": "Nyelv"
+    },
+    "import_bookmarks": {
+        "message": "Könyvjelzők importálása"
+    },
+    "export_bookmarks": {
+        "message": "Könyvjelzők exportálása"
+    },
+    "import": {
+        "message": "Importálás"
+    },
+    "export": {
+        "message": "Export"
+    },
+    "default": {
+        "message": "Alapértelmezett"
+    },
+    "custom": {
+        "message": "Egyedi"
+    },
+    "upload_image": {
+        "message": "Kép feltöltése"
+    },
+    "add_image_url": {
+        "message": "Adja hozzá a kép URL-jét, és kattintson a Betöltés gombra"
+    },
+    "load": {
+        "message": "Betöltés"
+    },
+    "delay": {
+        "message": "Késleltetés"
+    },
+    "time_format": {
+        "message": "Idő formátum"
+    },
+    "learn_more": {
+        "message": "Tudj meg többet"
+    },
+    "about_us": {
+        "message": "Rólunk"
+    },
+    "folder_name": {
+        "message": "Mappa neve"
+    },
+    "font_color": {
+        "message": "Betű szín"
+    },
+    "search_bookmark": {
+        "message": "Könyvjelző keresése"
+    },
+    "based_hour24": {
+        "message": "24 alapú óra"
+    },
+    "based_hour12": {
+        "message": "12 alapú óra"
+    },
+    "dark": {
+        "message": "Sötét"
+    },
+    "light": {
+        "message": "Könnyű"
+    },
+    "sec20": {
+        "message": "20 mp"
+    },
+    "sec30": {
+        "message": "30 mp"
+    },
+    "sec40": {
+        "message": "40 mp"
+    },
+    "min1": {
+        "message": "1 perc"
+    },
+    "disable_time": {
+        "message": "Idő kikapcsolása"
+    }
+}

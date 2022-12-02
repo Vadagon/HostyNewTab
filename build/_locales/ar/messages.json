@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - علامة تبويب جديدة مخصصة"
+    },
+    "app_description": {
+        "message": "تخصيص خلفية صفحة علامة تبويب جديدة في Google Chrome"
+    },
+    "general": {
+        "message": "عام"
+    },
+    "search_box": {
+        "message": "مربع البحث"
+    },
+    "background": {
+        "message": "خلفية"
+    },
+    "time": {
+        "message": "زمن"
+    },
+    "privacy_and_security": {
+        "message": "الخصوصية والأمن"
+    },
+    "add_folder": {
+        "message": "أضف المجلد"
+    },
+    "settings": {
+        "message": "إعدادات"
+    },
+    "open_bookmarks": {
+        "message": "العناوين مفتوحة"
+    },
+    "bookmarks": {
+        "message": "إشارات مرجعية"
+    },
+    "theme": {
+        "message": "سمة"
+    },
+    "edit_bookmarks": {
+        "message": "تحرير الإشارات المرجعية"
+    },
+    "open_bookmars_text": {
+        "message": "هل أنت متأكد أنك تريد فتح كل الإشارات المرجعية؟"
+    },
+    "upload_img_text": {
+        "message": "انقر وإنشاء المعاينة التي تحتاجها"
+    },
+    "create_preview": {
+        "message": "إنشاء معاينة"
+    },
+    "less_100": {
+        "message": "يجب أن يكون حجم الملف أقل من 100 كيلوبايت"
+    },
+    "search_placeholder": {
+        "message": "ابحث في شبكة الانترنت..."
+    },
+    "name": {
+        "message": "اسم"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "إزالة"
+    },
+    "rate_us": {
+        "message": "قيمنا"
+    },
+    "cancel": {
+        "message": "يلغي"
+    },
+    "save": {
+        "message": "يحفظ"
+    },
+    "language": {
+        "message": "لغة"
+    },
+    "import_bookmarks": {
+        "message": "استيراد الإشارات المرجعية"
+    },
+    "export_bookmarks": {
+        "message": "تصدير الإشارات المرجعية"
+    },
+    "import": {
+        "message": "يستورد"
+    },
+    "export": {
+        "message": "يصدّر"
+    },
+    "default": {
+        "message": "تقصير"
+    },
+    "custom": {
+        "message": "العادة"
+    },
+    "upload_image": {
+        "message": "تحميل الصور"
+    },
+    "add_image_url": {
+        "message": "أضف رابط الصورة وانقر فوق تحميل"
+    },
+    "load": {
+        "message": "حمل"
+    },
+    "delay": {
+        "message": "تأخير"
+    },
+    "time_format": {
+        "message": "تنسيق الوقت"
+    },
+    "learn_more": {
+        "message": "يتعلم أكثر"
+    },
+    "about_us": {
+        "message": "معلومات عنا"
+    },
+    "folder_name": {
+        "message": "إسم الملف"
+    },
+    "font_color": {
+        "message": "لون الخط"
+    },
+    "search_bookmark": {
+        "message": "بحث المرجعية"
+    },
+    "based_hour24": {
+        "message": "24 ساعة"
+    },
+    "based_hour12": {
+        "message": "12 ساعة مقرها"
+    },
+    "dark": {
+        "message": "مظلم"
+    },
+    "light": {
+        "message": "خفيفة"
+    },
+    "sec20": {
+        "message": "20 ثانية"
+    },
+    "sec30": {
+        "message": "30 ثانية"
+    },
+    "sec40": {
+        "message": "40 ثانية"
+    },
+    "min1": {
+        "message": "1 دقيقة"
+    },
+    "disable_time": {
+        "message": "تعطيل الوقت"
+    }
+}

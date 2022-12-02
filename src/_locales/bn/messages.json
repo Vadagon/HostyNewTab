@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - কাস্টম নতুন ট্যাব"
+        "message": "আইকিউ ট্যাব - কাস্টম নতুন ট্যাব"
     },
     "app_description": {
         "message": "আপনার Google Chrome নতুন ট্যাব পৃষ্ঠার পটভূমি কাস্টমাইজ করুন"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "ফোল্ডার সম্পাদনা করুন"
     },
     "remove": {
         "message": "অপসারণ"

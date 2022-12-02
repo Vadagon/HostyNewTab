@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Персонализиран нов раздел"
+        "message": "IQ раздел - Персонализиран нов раздел"
     },
     "app_description": {
         "message": "Персонализирайте фона на страницата с нов раздел в Google Chrome"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL адрес"
+    },
+    "edit_folder": {
+        "message": "Редактиране на папка"
     },
     "remove": {
         "message": "Премахване"

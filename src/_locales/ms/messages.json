@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Tab Baharu Tersuai"
+        "message": "Tab IQ - Tab Baharu Tersuai"
     },
     "app_description": {
         "message": "Sesuaikan latar belakang halaman tab baharu Google Chrome anda"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Edit Folder"
     },
     "remove": {
         "message": "Alih keluar"

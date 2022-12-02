@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab – kohandatud uus vahekaart"
+    },
+    "app_description": {
+        "message": "Kohandage oma Google Chrome'i uue vahelehe tausta"
+    },
+    "general": {
+        "message": "Kindral"
+    },
+    "search_box": {
+        "message": "Otsingukast"
+    },
+    "background": {
+        "message": "Taust"
+    },
+    "time": {
+        "message": "Aeg"
+    },
+    "privacy_and_security": {
+        "message": "Privaatsus ja turvalisus"
+    },
+    "add_folder": {
+        "message": "Lisa kaust"
+    },
+    "settings": {
+        "message": "Seaded"
+    },
+    "open_bookmarks": {
+        "message": "Avage järjehoidjad"
+    },
+    "bookmarks": {
+        "message": "Järjehoidjad"
+    },
+    "theme": {
+        "message": "Teema"
+    },
+    "edit_bookmarks": {
+        "message": "Redigeeri järjehoidjaid"
+    },
+    "open_bookmars_text": {
+        "message": "Kas soovite kindlasti kõik järjehoidjad avada?"
+    },
+    "upload_img_text": {
+        "message": "Klõpsake ja looge vajalik eelvaade"
+    },
+    "create_preview": {
+        "message": "Loo eelvaade"
+    },
+    "less_100": {
+        "message": "Fail peab olema väiksem kui 100 kb"
+    },
+    "search_placeholder": {
+        "message": "Otsi veebist..."
+    },
+    "name": {
+        "message": "Nimi"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Eemalda"
+    },
+    "rate_us": {
+        "message": "Hinda meid"
+    },
+    "cancel": {
+        "message": "Tühista"
+    },
+    "save": {
+        "message": "Salvesta"
+    },
+    "language": {
+        "message": "Keel"
+    },
+    "import_bookmarks": {
+        "message": "Impordi järjehoidjad"
+    },
+    "export_bookmarks": {
+        "message": "Ekspordi järjehoidjad"
+    },
+    "import": {
+        "message": "Import"
+    },
+    "export": {
+        "message": "Ekspordi"
+    },
+    "default": {
+        "message": "Vaikimisi"
+    },
+    "custom": {
+        "message": "Kohandatud"
+    },
+    "upload_image": {
+        "message": "Lae pilt üles"
+    },
+    "add_image_url": {
+        "message": "Lisage pildi URL ja klõpsake nuppu Laadi"
+    },
+    "load": {
+        "message": "Laadige"
+    },
+    "delay": {
+        "message": "Viivitus"
+    },
+    "time_format": {
+        "message": "Aja vorming"
+    },
+    "learn_more": {
+        "message": "Lisateavet"
+    },
+    "about_us": {
+        "message": "Meist"
+    },
+    "folder_name": {
+        "message": "Kausta nimi"
+    },
+    "font_color": {
+        "message": "Fondi värv"
+    },
+    "search_bookmark": {
+        "message": "Otsi järjehoidjat"
+    },
+    "based_hour24": {
+        "message": "24-põhine tund"
+    },
+    "based_hour12": {
+        "message": "12-põhine tund"
+    },
+    "dark": {
+        "message": "Tume"
+    },
+    "light": {
+        "message": "Valgus"
+    },
+    "sec20": {
+        "message": "20 sek"
+    },
+    "sec30": {
+        "message": "30 sek"
+    },
+    "sec40": {
+        "message": "40 sek"
+    },
+    "min1": {
+        "message": "1 min"
+    },
+    "disable_time": {
+        "message": "Keela aeg"
+    }
+}

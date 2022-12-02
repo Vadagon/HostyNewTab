@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - تب جدید سفارشی"
+        "message": "تب IQ - تب جدید سفارشی"
     },
     "app_description": {
         "message": "پس‌زمینه صفحه برگه جدید Google Chrome خود را سفارشی کنید"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "ویرایش پوشه"
     },
     "remove": {
         "message": "برداشتن"

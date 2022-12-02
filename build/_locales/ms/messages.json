@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - Tab Baharu Tersuai"
+    },
+    "app_description": {
+        "message": "Sesuaikan latar belakang halaman tab baharu Google Chrome anda"
+    },
+    "general": {
+        "message": "Umum"
+    },
+    "search_box": {
+        "message": "Kotak carian"
+    },
+    "background": {
+        "message": "Latar belakang"
+    },
+    "time": {
+        "message": "Masa"
+    },
+    "privacy_and_security": {
+        "message": "Privasi dan Keselamatan"
+    },
+    "add_folder": {
+        "message": "Tambah folder"
+    },
+    "settings": {
+        "message": "tetapan"
+    },
+    "open_bookmarks": {
+        "message": "Buka Penanda Halaman"
+    },
+    "bookmarks": {
+        "message": "Penanda buku"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "edit_bookmarks": {
+        "message": "Edit Penanda Halaman"
+    },
+    "open_bookmars_text": {
+        "message": "Adakah anda pasti mahu membuka semua penanda halaman?"
+    },
+    "upload_img_text": {
+        "message": "Klik dan buat pratonton yang anda perlukan"
+    },
+    "create_preview": {
+        "message": "Buat Pratonton"
+    },
+    "less_100": {
+        "message": "Fail mestilah kurang 100kb"
+    },
+    "search_placeholder": {
+        "message": "Cari di Web..."
+    },
+    "name": {
+        "message": "Nama"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Alih keluar"
+    },
+    "rate_us": {
+        "message": "Nilaikan Kami"
+    },
+    "cancel": {
+        "message": "Batal"
+    },
+    "save": {
+        "message": "Jimat"
+    },
+    "language": {
+        "message": "Bahasa"
+    },
+    "import_bookmarks": {
+        "message": "Import Penanda Halaman"
+    },
+    "export_bookmarks": {
+        "message": "Eksport Penanda Halaman"
+    },
+    "import": {
+        "message": "Import"
+    },
+    "export": {
+        "message": "Eksport"
+    },
+    "default": {
+        "message": "Lalai"
+    },
+    "custom": {
+        "message": "Adat"
+    },
+    "upload_image": {
+        "message": "Muat Naik Imej"
+    },
+    "add_image_url": {
+        "message": "Tambah Url imej dan klik muatkan"
+    },
+    "load": {
+        "message": "Muatkan"
+    },
+    "delay": {
+        "message": "kelewatan"
+    },
+    "time_format": {
+        "message": "Format masa"
+    },
+    "learn_more": {
+        "message": "Ketahui lebih lanjut"
+    },
+    "about_us": {
+        "message": "Tentang kita"
+    },
+    "folder_name": {
+        "message": "Nama folder"
+    },
+    "font_color": {
+        "message": "Warna Fon"
+    },
+    "search_bookmark": {
+        "message": "Cari penanda buku"
+    },
+    "based_hour24": {
+        "message": "24 berasaskan Jam"
+    },
+    "based_hour12": {
+        "message": "12 berasaskan Jam"
+    },
+    "dark": {
+        "message": "Gelap"
+    },
+    "light": {
+        "message": "Cahaya"
+    },
+    "sec20": {
+        "message": "20 saat"
+    },
+    "sec30": {
+        "message": "30 saat"
+    },
+    "sec40": {
+        "message": "40 saat"
+    },
+    "min1": {
+        "message": "1 minit"
+    },
+    "disable_time": {
+        "message": "Lumpuhkan Masa"
+    }
+}

@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - Pestanya nova personalitzada"
+    },
+    "app_description": {
+        "message": "Personalitzeu el fons de la pàgina de la pestanya nova de Google Chrome"
+    },
+    "general": {
+        "message": "General"
+    },
+    "search_box": {
+        "message": "Quadre de cerca"
+    },
+    "background": {
+        "message": "Fons"
+    },
+    "time": {
+        "message": "Temps"
+    },
+    "privacy_and_security": {
+        "message": "Privacitat i seguretat"
+    },
+    "add_folder": {
+        "message": "Afegir carpeta"
+    },
+    "settings": {
+        "message": "Configuració"
+    },
+    "open_bookmarks": {
+        "message": "Obriu els marcadors"
+    },
+    "bookmarks": {
+        "message": "Adreces d'interès"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "edit_bookmarks": {
+        "message": "Edita les adreces d'interès"
+    },
+    "open_bookmars_text": {
+        "message": "Confirmes que vols obrir totes les adreces d'interès?"
+    },
+    "upload_img_text": {
+        "message": "Feu clic i creeu la vista prèvia que necessiteu"
+    },
+    "create_preview": {
+        "message": "Crea una vista prèvia"
+    },
+    "less_100": {
+        "message": "El fitxer ha de tenir menys de 100 kb"
+    },
+    "search_placeholder": {
+        "message": "Cerca al web..."
+    },
+    "name": {
+        "message": "Nom"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Eliminar"
+    },
+    "rate_us": {
+        "message": "Puntua'ns"
+    },
+    "cancel": {
+        "message": "Cancel · lar"
+    },
+    "save": {
+        "message": "Desa"
+    },
+    "language": {
+        "message": "Llenguatge"
+    },
+    "import_bookmarks": {
+        "message": "Importa les adreces d'interès"
+    },
+    "export_bookmarks": {
+        "message": "Exporta les adreces d'interès"
+    },
+    "import": {
+        "message": "Importar"
+    },
+    "export": {
+        "message": "Exporta"
+    },
+    "default": {
+        "message": "Per defecte"
+    },
+    "custom": {
+        "message": "Personalitzat"
+    },
+    "upload_image": {
+        "message": "Carrega la imatge"
+    },
+    "add_image_url": {
+        "message": "Afegiu l'URL de la imatge i feu clic a carregar"
+    },
+    "load": {
+        "message": "Carrega"
+    },
+    "delay": {
+        "message": "Retard"
+    },
+    "time_format": {
+        "message": "Format horari"
+    },
+    "learn_more": {
+        "message": "Aprèn més"
+    },
+    "about_us": {
+        "message": "Sobre nosaltres"
+    },
+    "folder_name": {
+        "message": "Nom de la carpeta"
+    },
+    "font_color": {
+        "message": "Color de la lletra"
+    },
+    "search_bookmark": {
+        "message": "Cerca a favorits"
+    },
+    "based_hour24": {
+        "message": "24 hores"
+    },
+    "based_hour12": {
+        "message": "Hora basada en 12"
+    },
+    "dark": {
+        "message": "Fosc"
+    },
+    "light": {
+        "message": "Llum"
+    },
+    "sec20": {
+        "message": "20 segons"
+    },
+    "sec30": {
+        "message": "30 segons"
+    },
+    "sec40": {
+        "message": "40 segons"
+    },
+    "min1": {
+        "message": "1 min"
+    },
+    "disable_time": {
+        "message": "Desactiva el temps"
+    }
+}

@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - ಕಸ್ಟಮ್ ಹೊಸ ಟ್ಯಾಬ್"
+        "message": "IQ ಟ್ಯಾಬ್ - ಕಸ್ಟಮ್ ಹೊಸ ಟ್ಯಾಬ್"
     },
     "app_description": {
         "message": "ನಿಮ್ಮ Google Chrome ಹೊಸ ಟ್ಯಾಬ್ ಪುಟದ ಹಿನ್ನೆಲೆಯನ್ನು ಕಸ್ಟಮೈಸ್ ಮಾಡಿ"
@@ -59,6 +59,9 @@
     "url": {
         "message": "URL"
     },
+    "edit_folder": {
+        "message": "ಫೋಲ್ಡರ್ ಸಂಪಾದಿಸಿ"
+    },
     "remove": {
         "message": "ತೆಗೆದುಹಾಕಿ"
     },
@@ -66,7 +69,7 @@
         "message": "ನಮ್ಮನ್ನು ರೇಟ್ ಮಾಡಿ"
     },
     "cancel": {
-        "message": "ರದ್ದುಮಾಡಿ"
+        "message": "ರದ್ದುಮಾಡು"
     },
     "save": {
         "message": "ಉಳಿಸಿ"

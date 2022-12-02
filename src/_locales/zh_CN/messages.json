@@ -1,9 +1,9 @@
 {
     "app_name": {
-        "message": "qTab - 自定义新标签"
+        "message": "IQ 标签 - 自定义新标签"
     },
     "app_description": {
-        "message": "自定义您的谷歌浏览器新标签页背景"
+        "message": "自定义您的 Google Chrome 新标签页背景"
     },
     "general": {
         "message": "一般的"
@@ -59,6 +59,9 @@
     "url": {
         "message": "网址"
     },
+    "edit_folder": {
+        "message": "编辑文件夹"
+    },
     "remove": {
         "message": "消除"
     },
@@ -96,7 +99,7 @@
         "message": "上传图片"
     },
     "add_image_url": {
-        "message": "添加图片Url并点击加载"
+        "message": "添加图片网址并点击加载"
     },
     "load": {
         "message": "加载"
@@ -135,10 +138,10 @@
         "message": "光"
     },
     "sec20": {
-        "message": "20 秒"
+        "message": "20秒"
     },
     "sec30": {
-        "message": "30 秒"
+        "message": "30秒"
     },
     "sec40": {
         "message": "40 秒"

@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab – Egendefinert ny fane"
+        "message": "IQ Tab – Egendefinert ny fane"
     },
     "app_description": {
         "message": "Tilpass bakgrunnen for ny fane i Google Chrome"
@@ -48,7 +48,7 @@
         "message": "Opprett forhåndsvisning"
     },
     "less_100": {
-        "message": "Filen må være mindre enn 100 kb"
+        "message": "Filen må være mindre 100kb"
     },
     "search_placeholder": {
         "message": "Søke på nettet..."
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Rediger mappe"
     },
     "remove": {
         "message": "Fjerne"

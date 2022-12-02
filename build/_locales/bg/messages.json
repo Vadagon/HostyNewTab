@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - Персонализиран нов раздел"
+    },
+    "app_description": {
+        "message": "Персонализирайте фона на страницата с нов раздел в Google Chrome"
+    },
+    "general": {
+        "message": "Общ"
+    },
+    "search_box": {
+        "message": "Поле за търсене"
+    },
+    "background": {
+        "message": "Заден план"
+    },
+    "time": {
+        "message": "време"
+    },
+    "privacy_and_security": {
+        "message": "Поверителност и сигурност"
+    },
+    "add_folder": {
+        "message": "Добави папка"
+    },
+    "settings": {
+        "message": "Настройки"
+    },
+    "open_bookmarks": {
+        "message": "Отворете Отметки"
+    },
+    "bookmarks": {
+        "message": "Отметки"
+    },
+    "theme": {
+        "message": "Тема"
+    },
+    "edit_bookmarks": {
+        "message": "Редактиране на отметки"
+    },
+    "open_bookmars_text": {
+        "message": "Сигурни ли сте, че искате да отворите всички отметки?"
+    },
+    "upload_img_text": {
+        "message": "Кликнете и създайте визуализацията, от която се нуждаете"
+    },
+    "create_preview": {
+        "message": "Създаване на визуализация"
+    },
+    "less_100": {
+        "message": "Файлът трябва да е под 100kb"
+    },
+    "search_placeholder": {
+        "message": "Търси в мрежата..."
+    },
+    "name": {
+        "message": "Име"
+    },
+    "url": {
+        "message": "URL адрес"
+    },
+    "remove": {
+        "message": "Премахване"
+    },
+    "rate_us": {
+        "message": "Оцени ни"
+    },
+    "cancel": {
+        "message": "Отказ"
+    },
+    "save": {
+        "message": "Запазване"
+    },
+    "language": {
+        "message": "език"
+    },
+    "import_bookmarks": {
+        "message": "Импортиране на отметки"
+    },
+    "export_bookmarks": {
+        "message": "Експортиране на отметки"
+    },
+    "import": {
+        "message": "Импортиране"
+    },
+    "export": {
+        "message": "Експортиране"
+    },
+    "default": {
+        "message": "По подразбиране"
+    },
+    "custom": {
+        "message": "Персонализиран"
+    },
+    "upload_image": {
+        "message": "Качи изображение"
+    },
+    "add_image_url": {
+        "message": "Добавете URL адрес на изображението и щракнете върху зареждане"
+    },
+    "load": {
+        "message": "Заредете"
+    },
+    "delay": {
+        "message": "Закъснение"
+    },
+    "time_format": {
+        "message": "Времеви формат"
+    },
+    "learn_more": {
+        "message": "Научете повече"
+    },
+    "about_us": {
+        "message": "За нас"
+    },
+    "folder_name": {
+        "message": "Име на папка"
+    },
+    "font_color": {
+        "message": "Цвят на шрифта"
+    },
+    "search_bookmark": {
+        "message": "Отметка за търсене"
+    },
+    "based_hour24": {
+        "message": "24-базиран час"
+    },
+    "based_hour12": {
+        "message": "12-базиран час"
+    },
+    "dark": {
+        "message": "Тъмно"
+    },
+    "light": {
+        "message": "Светлина"
+    },
+    "sec20": {
+        "message": "20 сек"
+    },
+    "sec30": {
+        "message": "30 сек"
+    },
+    "sec40": {
+        "message": "40 сек"
+    },
+    "min1": {
+        "message": "1 минута"
+    },
+    "disable_time": {
+        "message": "Деактивиране на времето"
+    }
+}

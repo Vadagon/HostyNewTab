@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - કસ્ટમ નવી ટેબ"
+    },
+    "app_description": {
+        "message": "તમારા Google Chrome નવા ટેબ પૃષ્ઠ પૃષ્ઠભૂમિને કસ્ટમાઇઝ કરો"
+    },
+    "general": {
+        "message": "જનરલ"
+    },
+    "search_box": {
+        "message": "શોધ બોક્સ"
+    },
+    "background": {
+        "message": "પૃષ્ઠભૂમિ"
+    },
+    "time": {
+        "message": "સમય"
+    },
+    "privacy_and_security": {
+        "message": "ગોપનીયતા અને સુરક્ષા"
+    },
+    "add_folder": {
+        "message": "ફોલ્ડર ઉમેરો"
+    },
+    "settings": {
+        "message": "સેટિંગ્સ"
+    },
+    "open_bookmarks": {
+        "message": "બુકમાર્ક્સ ખોલો"
+    },
+    "bookmarks": {
+        "message": "બુકમાર્ક્સ"
+    },
+    "theme": {
+        "message": "થીમ"
+    },
+    "edit_bookmarks": {
+        "message": "બુકમાર્ક્સ સંપાદિત કરો"
+    },
+    "open_bookmars_text": {
+        "message": "શું તમે ખરેખર બધા બુકમાર્ક્સ ખોલવા માંગો છો?"
+    },
+    "upload_img_text": {
+        "message": "ક્લિક કરો અને તમને જોઈતું પૂર્વાવલોકન બનાવો"
+    },
+    "create_preview": {
+        "message": "પૂર્વાવલોકન બનાવો"
+    },
+    "less_100": {
+        "message": "ફાઇલ 100kb ઓછી હોવી જરૂરી છે"
+    },
+    "search_placeholder": {
+        "message": "વેબ પર શોધો..."
+    },
+    "name": {
+        "message": "નામ"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "દૂર કરો"
+    },
+    "rate_us": {
+        "message": "અમને રેટ કરો"
+    },
+    "cancel": {
+        "message": "રદ કરો"
+    },
+    "save": {
+        "message": "સાચવો"
+    },
+    "language": {
+        "message": "ભાષા"
+    },
+    "import_bookmarks": {
+        "message": "બુકમાર્ક્સ આયાત કરો"
+    },
+    "export_bookmarks": {
+        "message": "બુકમાર્ક્સ નિકાસ કરો"
+    },
+    "import": {
+        "message": "આયાત કરો"
+    },
+    "export": {
+        "message": "નિકાસ કરો"
+    },
+    "default": {
+        "message": "ડિફૉલ્ટ"
+    },
+    "custom": {
+        "message": "કસ્ટમ"
+    },
+    "upload_image": {
+        "message": "છબી અપલોડ કરો"
+    },
+    "add_image_url": {
+        "message": "ઇમેજ Url ઉમેરો અને લોડ પર ક્લિક કરો"
+    },
+    "load": {
+        "message": "લોડ"
+    },
+    "delay": {
+        "message": "વિલંબ"
+    },
+    "time_format": {
+        "message": "સમય ફોર્મેટ"
+    },
+    "learn_more": {
+        "message": "વધુ શીખો"
+    },
+    "about_us": {
+        "message": "અમારા વિશે"
+    },
+    "folder_name": {
+        "message": "ફોલ્ડરનું નામ"
+    },
+    "font_color": {
+        "message": "ફોન્ટ રંગ"
+    },
+    "search_bookmark": {
+        "message": "બુકમાર્ક શોધો"
+    },
+    "based_hour24": {
+        "message": "24-આધારિત કલાક"
+    },
+    "based_hour12": {
+        "message": "12-આધારિત કલાક"
+    },
+    "dark": {
+        "message": "શ્યામ"
+    },
+    "light": {
+        "message": "પ્રકાશ"
+    },
+    "sec20": {
+        "message": "20 સે"
+    },
+    "sec30": {
+        "message": "30 સે"
+    },
+    "sec40": {
+        "message": "40 સે"
+    },
+    "min1": {
+        "message": "1 મિનિટ"
+    },
+    "disable_time": {
+        "message": "સમય અક્ષમ કરો"
+    }
+}

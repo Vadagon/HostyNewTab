@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - Nova guia personalizada"
+    },
+    "app_description": {
+        "message": "Personalize o fundo da página de nova guia do Google Chrome"
+    },
+    "general": {
+        "message": "Em geral"
+    },
+    "search_box": {
+        "message": "Caixa de pesquisa"
+    },
+    "background": {
+        "message": "Fundo"
+    },
+    "time": {
+        "message": "Tempo"
+    },
+    "privacy_and_security": {
+        "message": "Privacidade e segurança"
+    },
+    "add_folder": {
+        "message": "Adicionar pasta"
+    },
+    "settings": {
+        "message": "Definições"
+    },
+    "open_bookmarks": {
+        "message": "Abrir favoritos"
+    },
+    "bookmarks": {
+        "message": "Favoritos"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "edit_bookmarks": {
+        "message": "Editar favoritos"
+    },
+    "open_bookmars_text": {
+        "message": "Tem certeza de que deseja abrir todos os favoritos?"
+    },
+    "upload_img_text": {
+        "message": "Clique e crie a visualização que você precisa"
+    },
+    "create_preview": {
+        "message": "Criar visualização"
+    },
+    "less_100": {
+        "message": "O arquivo precisa ter menos de 100kb"
+    },
+    "search_placeholder": {
+        "message": "Pesquise na internet..."
+    },
+    "name": {
+        "message": "Nome"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Remover"
+    },
+    "rate_us": {
+        "message": "Nos avalie"
+    },
+    "cancel": {
+        "message": "Cancelar"
+    },
+    "save": {
+        "message": "Salvar"
+    },
+    "language": {
+        "message": "Linguagem"
+    },
+    "import_bookmarks": {
+        "message": "Importar favoritos"
+    },
+    "export_bookmarks": {
+        "message": "Exportar favoritos"
+    },
+    "import": {
+        "message": "Importar"
+    },
+    "export": {
+        "message": "Exportar"
+    },
+    "default": {
+        "message": "Predefinição"
+    },
+    "custom": {
+        "message": "Personalizado"
+    },
+    "upload_image": {
+        "message": "Enviar Imagem"
+    },
+    "add_image_url": {
+        "message": "Adicione o URL da imagem e clique em carregar"
+    },
+    "load": {
+        "message": "Carregar"
+    },
+    "delay": {
+        "message": "Atraso"
+    },
+    "time_format": {
+        "message": "Formato de hora"
+    },
+    "learn_more": {
+        "message": "Saber mais"
+    },
+    "about_us": {
+        "message": "Sobre nós"
+    },
+    "folder_name": {
+        "message": "Nome da pasta"
+    },
+    "font_color": {
+        "message": "Cor da fonte"
+    },
+    "search_bookmark": {
+        "message": "Pesquisar marcador"
+    },
+    "based_hour24": {
+        "message": "Hora baseada em 24 horas"
+    },
+    "based_hour12": {
+        "message": "Hora baseada em 12 horas"
+    },
+    "dark": {
+        "message": "Escuro"
+    },
+    "light": {
+        "message": "Leve"
+    },
+    "sec20": {
+        "message": "20 segundos"
+    },
+    "sec30": {
+        "message": "30 segundos"
+    },
+    "sec40": {
+        "message": "40 segundos"
+    },
+    "min1": {
+        "message": "1 minuto"
+    },
+    "disable_time": {
+        "message": "Tempo de desativação"
+    }
+}

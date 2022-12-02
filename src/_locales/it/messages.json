@@ -1,9 +1,9 @@
 {
     "app_name": {
-        "message": "qTab - Nuova scheda personalizzata"
+        "message": "Scheda IQ - Nuova scheda personalizzata"
     },
     "app_description": {
-        "message": "Personalizza lo sfondo della pagina della nuova scheda di Google Chrome"
+        "message": "Personalizza lo sfondo della pagina Nuova scheda di Google Chrome"
     },
     "general": {
         "message": "Generale"
@@ -42,13 +42,13 @@
         "message": "Sei sicuro di voler aprire tutti i segnalibri?"
     },
     "upload_img_text": {
-        "message": "Fare clic e creare l'anteprima di cui hai bisogno"
+        "message": "Fai clic e crea l'anteprima che ti serve"
     },
     "create_preview": {
         "message": "Crea anteprima"
     },
     "less_100": {
-        "message": "Il file deve essere inferiore a 100 kb"
+        "message": "Il file deve essere inferiore a 100kb"
     },
     "search_placeholder": {
         "message": "Cercare in rete..."
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Modifica cartella"
     },
     "remove": {
         "message": "Rimuovere"
@@ -96,7 +99,7 @@
         "message": "Carica immagine"
     },
     "add_image_url": {
-        "message": "Aggiungi l'URL dell'immagine e fai clic su Carica"
+        "message": "Aggiungi l'URL dell'immagine e fai clic su carica"
     },
     "load": {
         "message": "Carico"
@@ -123,7 +126,7 @@
         "message": "Cerca segnalibro"
     },
     "based_hour24": {
-        "message": "24 ore"
+        "message": "Ora basata su 24"
     },
     "based_hour12": {
         "message": "Ora basata su 12"

@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab – naujas tinkintas skirtukas"
+        "message": "IQ skirtukas – naujas tinkintas skirtukas"
     },
     "app_description": {
         "message": "Tinkinkite „Google Chrome“ naujo skirtuko puslapio foną"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Redaguoti aplanką"
     },
     "remove": {
         "message": "Pašalinti"

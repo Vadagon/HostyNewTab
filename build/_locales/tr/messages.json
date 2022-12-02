@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - Özel Yeni Sekme"
+    },
+    "app_description": {
+        "message": "Google Chrome yeni sekme sayfası arka planınızı özelleştirin"
+    },
+    "general": {
+        "message": "Genel"
+    },
+    "search_box": {
+        "message": "Arama kutusu"
+    },
+    "background": {
+        "message": "Arka fon"
+    },
+    "time": {
+        "message": "Zaman"
+    },
+    "privacy_and_security": {
+        "message": "Gizlilik ve güvenlik"
+    },
+    "add_folder": {
+        "message": "Klasörü eklemek"
+    },
+    "settings": {
+        "message": "Ayarlar"
+    },
+    "open_bookmarks": {
+        "message": "Yer imlerini aç"
+    },
+    "bookmarks": {
+        "message": "Yer imleri"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "edit_bookmarks": {
+        "message": "Yer İmlerini Düzenle"
+    },
+    "open_bookmars_text": {
+        "message": "Tüm yer imlerini açmak istediğinizden emin misiniz?"
+    },
+    "upload_img_text": {
+        "message": "Tıklayın ve ihtiyacınız olan önizlemeyi oluşturun"
+    },
+    "create_preview": {
+        "message": "Önizleme Oluştur"
+    },
+    "less_100": {
+        "message": "Dosyanın daha az 100 kb olması gerekiyor"
+    },
+    "search_placeholder": {
+        "message": "İnternette ara..."
+    },
+    "name": {
+        "message": "İsim"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Kaldırmak"
+    },
+    "rate_us": {
+        "message": "Bizi değerlendirin"
+    },
+    "cancel": {
+        "message": "İptal"
+    },
+    "save": {
+        "message": "Kaydetmek"
+    },
+    "language": {
+        "message": "Dil"
+    },
+    "import_bookmarks": {
+        "message": "Yer İmlerini İçe Aktar"
+    },
+    "export_bookmarks": {
+        "message": "Yer İmlerini Dışa Aktar"
+    },
+    "import": {
+        "message": "İçe aktarmak"
+    },
+    "export": {
+        "message": "İhracat"
+    },
+    "default": {
+        "message": "Varsayılan"
+    },
+    "custom": {
+        "message": "Gelenek"
+    },
+    "upload_image": {
+        "message": "Fotoğraf yükleniyor"
+    },
+    "add_image_url": {
+        "message": "Resim URL'si ekleyin ve yükle'yi tıklayın"
+    },
+    "load": {
+        "message": "Yük"
+    },
+    "delay": {
+        "message": "Gecikme"
+    },
+    "time_format": {
+        "message": "Zaman formatı"
+    },
+    "learn_more": {
+        "message": "Daha fazla bilgi edin"
+    },
+    "about_us": {
+        "message": "Hakkımızda"
+    },
+    "folder_name": {
+        "message": "Klasör adı"
+    },
+    "font_color": {
+        "message": "Yazı rengi"
+    },
+    "search_bookmark": {
+        "message": "Yer imi ara"
+    },
+    "based_hour24": {
+        "message": "24 tabanlı Saat"
+    },
+    "based_hour12": {
+        "message": "12 tabanlı Saat"
+    },
+    "dark": {
+        "message": "Karanlık"
+    },
+    "light": {
+        "message": "Işık"
+    },
+    "sec20": {
+        "message": "20 saniye"
+    },
+    "sec30": {
+        "message": "30 saniye"
+    },
+    "sec40": {
+        "message": "40 saniye"
+    },
+    "min1": {
+        "message": "1 dakika"
+    },
+    "disable_time": {
+        "message": "Zamanı Devre Dışı Bırak"
+    }
+}

@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - Brugerdefineret ny fane"
+    },
+    "app_description": {
+        "message": "Tilpas baggrunden for din nye fane i Google Chrome"
+    },
+    "general": {
+        "message": "Generel"
+    },
+    "search_box": {
+        "message": "Søgefelt"
+    },
+    "background": {
+        "message": "Baggrund"
+    },
+    "time": {
+        "message": "Tid"
+    },
+    "privacy_and_security": {
+        "message": "Privatliv og sikkerhed"
+    },
+    "add_folder": {
+        "message": "Tilføj mappe"
+    },
+    "settings": {
+        "message": "Indstillinger"
+    },
+    "open_bookmarks": {
+        "message": "Åbn Bogmærker"
+    },
+    "bookmarks": {
+        "message": "Bogmærker"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "edit_bookmarks": {
+        "message": "Rediger bogmærker"
+    },
+    "open_bookmars_text": {
+        "message": "Er du sikker på, at du vil åbne alle bogmærker?"
+    },
+    "upload_img_text": {
+        "message": "Klik og opret den forhåndsvisning, du har brug for"
+    },
+    "create_preview": {
+        "message": "Opret forhåndsvisning"
+    },
+    "less_100": {
+        "message": "Filen skal være mindre end 100 kb"
+    },
+    "search_placeholder": {
+        "message": "Søg på nettet..."
+    },
+    "name": {
+        "message": "Navn"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Fjerne"
+    },
+    "rate_us": {
+        "message": "Bedøm os"
+    },
+    "cancel": {
+        "message": "Afbestille"
+    },
+    "save": {
+        "message": "Gemme"
+    },
+    "language": {
+        "message": "Sprog"
+    },
+    "import_bookmarks": {
+        "message": "Importer bogmærker"
+    },
+    "export_bookmarks": {
+        "message": "Eksporter bogmærker"
+    },
+    "import": {
+        "message": "Importere"
+    },
+    "export": {
+        "message": "Eksport"
+    },
+    "default": {
+        "message": "Standard"
+    },
+    "custom": {
+        "message": "Brugerdefinerede"
+    },
+    "upload_image": {
+        "message": "Upload billede"
+    },
+    "add_image_url": {
+        "message": "Tilføj billed-url, og klik på indlæs"
+    },
+    "load": {
+        "message": "belastning"
+    },
+    "delay": {
+        "message": "Forsinke"
+    },
+    "time_format": {
+        "message": "Tidsformat"
+    },
+    "learn_more": {
+        "message": "Lær mere"
+    },
+    "about_us": {
+        "message": "Om os"
+    },
+    "folder_name": {
+        "message": "Mappenavn"
+    },
+    "font_color": {
+        "message": "Skrift farve"
+    },
+    "search_bookmark": {
+        "message": "Søg bogmærke"
+    },
+    "based_hour24": {
+        "message": "24-baseret time"
+    },
+    "based_hour12": {
+        "message": "12-baseret time"
+    },
+    "dark": {
+        "message": "Mørk"
+    },
+    "light": {
+        "message": "Lys"
+    },
+    "sec20": {
+        "message": "20 sek"
+    },
+    "sec30": {
+        "message": "30 sek"
+    },
+    "sec40": {
+        "message": "40 sek"
+    },
+    "min1": {
+        "message": "1 min"
+    },
+    "disable_time": {
+        "message": "Deaktiver tid"
+    }
+}

@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - Nov zavihek po meri"
+    },
+    "app_description": {
+        "message": "Prilagodite ozadje strani novega zavihka Google Chrome"
+    },
+    "general": {
+        "message": "Splošno"
+    },
+    "search_box": {
+        "message": "Iskalno polje"
+    },
+    "background": {
+        "message": "Ozadje"
+    },
+    "time": {
+        "message": "Čas"
+    },
+    "privacy_and_security": {
+        "message": "Zasebnost in varnost"
+    },
+    "add_folder": {
+        "message": "Dodaj mapo"
+    },
+    "settings": {
+        "message": "nastavitve"
+    },
+    "open_bookmarks": {
+        "message": "Odprite Zaznamke"
+    },
+    "bookmarks": {
+        "message": "Zaznamki"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "edit_bookmarks": {
+        "message": "Uredi zaznamke"
+    },
+    "open_bookmars_text": {
+        "message": "Ali ste prepričani, da želite odpreti vse zaznamke?"
+    },
+    "upload_img_text": {
+        "message": "Kliknite in ustvarite predogled, ki ga potrebujete"
+    },
+    "create_preview": {
+        "message": "Ustvari predogled"
+    },
+    "less_100": {
+        "message": "Datoteka mora biti manjša od 100 kb"
+    },
+    "search_placeholder": {
+        "message": "Iskanje po spletu ..."
+    },
+    "name": {
+        "message": "Ime"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Odstrani"
+    },
+    "rate_us": {
+        "message": "Ocenite nas"
+    },
+    "cancel": {
+        "message": "Prekliči"
+    },
+    "save": {
+        "message": "Shrani"
+    },
+    "language": {
+        "message": "Jezik"
+    },
+    "import_bookmarks": {
+        "message": "Uvozi zaznamke"
+    },
+    "export_bookmarks": {
+        "message": "Izvozi zaznamke"
+    },
+    "import": {
+        "message": "Uvozi"
+    },
+    "export": {
+        "message": "Izvozi"
+    },
+    "default": {
+        "message": "Privzeto"
+    },
+    "custom": {
+        "message": "Po meri"
+    },
+    "upload_image": {
+        "message": "Naloži sliko"
+    },
+    "add_image_url": {
+        "message": "Dodajte URL slike in kliknite naloži"
+    },
+    "load": {
+        "message": "obremenitev"
+    },
+    "delay": {
+        "message": "Zamuda"
+    },
+    "time_format": {
+        "message": "Format časa"
+    },
+    "learn_more": {
+        "message": "Nauči se več"
+    },
+    "about_us": {
+        "message": "O nas"
+    },
+    "folder_name": {
+        "message": "Ime mape"
+    },
+    "font_color": {
+        "message": "Barva pisave"
+    },
+    "search_bookmark": {
+        "message": "Išči zaznamek"
+    },
+    "based_hour24": {
+        "message": "24-osnovna ura"
+    },
+    "based_hour12": {
+        "message": "12-osnovna ura"
+    },
+    "dark": {
+        "message": "Temno"
+    },
+    "light": {
+        "message": "Svetloba"
+    },
+    "sec20": {
+        "message": "20 sekund"
+    },
+    "sec30": {
+        "message": "30 sekund"
+    },
+    "sec40": {
+        "message": "40 sekund"
+    },
+    "min1": {
+        "message": "1 min"
+    },
+    "disable_time": {
+        "message": "Onemogoči čas"
+    }
+}

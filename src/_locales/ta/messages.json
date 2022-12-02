@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - தனிப்பயன் புதிய தாவல்"
+        "message": "IQ தாவல் - தனிப்பயன் புதிய தாவல்"
     },
     "app_description": {
         "message": "உங்கள் Google Chrome புதிய தாவல் பக்கத்தின் பின்னணியைத் தனிப்பயனாக்குங்கள்"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "கோப்புறையைத் திருத்து"
     },
     "remove": {
         "message": "அகற்று"

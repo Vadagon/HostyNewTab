@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - prilagođena nova kartica"
+    },
+    "app_description": {
+        "message": "Prilagodite pozadinu stranice nove kartice u pregledniku Google Chrome"
+    },
+    "general": {
+        "message": "Općenito"
+    },
+    "search_box": {
+        "message": "Okvir za pretraživanje"
+    },
+    "background": {
+        "message": "Pozadina"
+    },
+    "time": {
+        "message": "Vrijeme"
+    },
+    "privacy_and_security": {
+        "message": "Privatnost i sigurnost"
+    },
+    "add_folder": {
+        "message": "Dodaj mapu"
+    },
+    "settings": {
+        "message": "postavke"
+    },
+    "open_bookmarks": {
+        "message": "Otvorite Oznake"
+    },
+    "bookmarks": {
+        "message": "Oznake"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "edit_bookmarks": {
+        "message": "Uredi oznake"
+    },
+    "open_bookmars_text": {
+        "message": "Jeste li sigurni da želite otvoriti sve oznake?"
+    },
+    "upload_img_text": {
+        "message": "Kliknite i stvorite pregled koji vam je potreban"
+    },
+    "create_preview": {
+        "message": "Stvori pretpregled"
+    },
+    "less_100": {
+        "message": "Datoteka mora biti manja od 100 kb"
+    },
+    "search_placeholder": {
+        "message": "Pretraži internet..."
+    },
+    "name": {
+        "message": "Ime"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Ukloniti"
+    },
+    "rate_us": {
+        "message": "Ocijeni nas"
+    },
+    "cancel": {
+        "message": "Otkazati"
+    },
+    "save": {
+        "message": "Uštedjeti"
+    },
+    "language": {
+        "message": "Jezik"
+    },
+    "import_bookmarks": {
+        "message": "Uvoz knjižnih oznaka"
+    },
+    "export_bookmarks": {
+        "message": "Izvoz knjižnih oznaka"
+    },
+    "import": {
+        "message": "Uvoz"
+    },
+    "export": {
+        "message": "Izvoz"
+    },
+    "default": {
+        "message": "Zadano"
+    },
+    "custom": {
+        "message": "Prilagođen"
+    },
+    "upload_image": {
+        "message": "Učitaj sliku"
+    },
+    "add_image_url": {
+        "message": "Dodajte URL slike i kliknite Učitaj"
+    },
+    "load": {
+        "message": "Opterećenje"
+    },
+    "delay": {
+        "message": "Odgoditi"
+    },
+    "time_format": {
+        "message": "Vremenski format"
+    },
+    "learn_more": {
+        "message": "Saznajte više"
+    },
+    "about_us": {
+        "message": "O nama"
+    },
+    "folder_name": {
+        "message": "Ime datoteke"
+    },
+    "font_color": {
+        "message": "Boja fonta"
+    },
+    "search_bookmark": {
+        "message": "Oznaka pretraživanja"
+    },
+    "based_hour24": {
+        "message": "24 sata"
+    },
+    "based_hour12": {
+        "message": "Sat na bazi 12"
+    },
+    "dark": {
+        "message": "tamno"
+    },
+    "light": {
+        "message": "Svjetlo"
+    },
+    "sec20": {
+        "message": "20 sek"
+    },
+    "sec30": {
+        "message": "30 sek"
+    },
+    "sec40": {
+        "message": "40 sek"
+    },
+    "min1": {
+        "message": "1 minuta"
+    },
+    "disable_time": {
+        "message": "Onemogući vrijeme"
+    }
+}

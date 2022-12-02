@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - علامة تبويب جديدة مخصصة"
+        "message": "علامة تبويب IQ - علامة تبويب جديدة مخصصة"
     },
     "app_description": {
         "message": "تخصيص خلفية صفحة علامة تبويب جديدة في Google Chrome"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "تحرير المجلد"
     },
     "remove": {
         "message": "إزالة"

@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - Aangepast nieuw tabblad"
+    },
+    "app_description": {
+        "message": "Pas de achtergrond van uw nieuwe tabbladpagina van Google Chrome aan"
+    },
+    "general": {
+        "message": "Algemeen"
+    },
+    "search_box": {
+        "message": "Zoekvak"
+    },
+    "background": {
+        "message": "Achtergrond"
+    },
+    "time": {
+        "message": "Tijd"
+    },
+    "privacy_and_security": {
+        "message": "Privacy en beveiliging"
+    },
+    "add_folder": {
+        "message": "Map toevoegen"
+    },
+    "settings": {
+        "message": "Instellingen"
+    },
+    "open_bookmarks": {
+        "message": "Bladwijzers openen"
+    },
+    "bookmarks": {
+        "message": "Bladwijzers"
+    },
+    "theme": {
+        "message": "Thema"
+    },
+    "edit_bookmarks": {
+        "message": "Bladwijzers bewerken"
+    },
+    "open_bookmars_text": {
+        "message": "Weet u zeker dat u alle bladwijzers wilt openen?"
+    },
+    "upload_img_text": {
+        "message": "Klik en maak het voorbeeld dat je nodig hebt"
+    },
+    "create_preview": {
+        "message": "Voorbeeld maken"
+    },
+    "less_100": {
+        "message": "Bestand moet kleiner zijn dan 100kb"
+    },
+    "search_placeholder": {
+        "message": "Zoeken op het internet..."
+    },
+    "name": {
+        "message": "Naam"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Verwijderen"
+    },
+    "rate_us": {
+        "message": "Beoordeel ons"
+    },
+    "cancel": {
+        "message": "Annuleren"
+    },
+    "save": {
+        "message": "Opslaan"
+    },
+    "language": {
+        "message": "Taal"
+    },
+    "import_bookmarks": {
+        "message": "Bladwijzers importeren"
+    },
+    "export_bookmarks": {
+        "message": "Bladwijzers exporteren"
+    },
+    "import": {
+        "message": "Importeren"
+    },
+    "export": {
+        "message": "Exporteren"
+    },
+    "default": {
+        "message": "Standaard"
+    },
+    "custom": {
+        "message": "Aangepast"
+    },
+    "upload_image": {
+        "message": "Afbeelding uploaden"
+    },
+    "add_image_url": {
+        "message": "Voeg afbeeldings-URL toe en klik op laden"
+    },
+    "load": {
+        "message": "Laden"
+    },
+    "delay": {
+        "message": "Vertraging"
+    },
+    "time_format": {
+        "message": "Tijd formaat"
+    },
+    "learn_more": {
+        "message": "Leer meer"
+    },
+    "about_us": {
+        "message": "Over ons"
+    },
+    "folder_name": {
+        "message": "Naam van de map"
+    },
+    "font_color": {
+        "message": "Letterkleur"
+    },
+    "search_bookmark": {
+        "message": "Zoek bladwijzer"
+    },
+    "based_hour24": {
+        "message": "24-uurs"
+    },
+    "based_hour12": {
+        "message": "12-gebaseerd uur"
+    },
+    "dark": {
+        "message": "Donker"
+    },
+    "light": {
+        "message": "Licht"
+    },
+    "sec20": {
+        "message": "20 seconden"
+    },
+    "sec30": {
+        "message": "30 seconden"
+    },
+    "sec40": {
+        "message": "40 seconden"
+    },
+    "min1": {
+        "message": "1 minuut"
+    },
+    "disable_time": {
+        "message": "Tijd uitschakelen"
+    }
+}

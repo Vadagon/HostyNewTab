@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - כרטיסייה חדשה מותאמת אישית"
+        "message": "Tab IQ - כרטיסייה חדשה מותאמת אישית"
     },
     "app_description": {
         "message": "התאם אישית את הרקע של דף הכרטיסייה החדשה שלך ב-Google Chrome"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "כתובת אתר"
+    },
+    "edit_folder": {
+        "message": "ערוך תיקייה"
     },
     "remove": {
         "message": "לְהַסִיר"

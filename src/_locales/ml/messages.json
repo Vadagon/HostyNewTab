@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - ഇഷ്‌ടാനുസൃത പുതിയ ടാബ്"
+        "message": "IQ ടാബ് - ഇഷ്‌ടാനുസൃത പുതിയ ടാബ്"
     },
     "app_description": {
         "message": "നിങ്ങളുടെ Google Chrome പുതിയ ടാബ് പേജ് പശ്ചാത്തലം ഇഷ്ടാനുസൃതമാക്കുക"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "ഫോൾഡർ എഡിറ്റ് ചെയ്യുക"
     },
     "remove": {
         "message": "നീക്കം ചെയ്യുക"

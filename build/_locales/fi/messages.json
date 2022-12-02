@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - Mukautettu uusi välilehti"
+    },
+    "app_description": {
+        "message": "Muokkaa Google Chromen uuden välilehden sivun taustaa"
+    },
+    "general": {
+        "message": "Kenraali"
+    },
+    "search_box": {
+        "message": "Hakulaatikko"
+    },
+    "background": {
+        "message": "Tausta"
+    },
+    "time": {
+        "message": "Aika"
+    },
+    "privacy_and_security": {
+        "message": "Yksityisyys ja turvallisuus"
+    },
+    "add_folder": {
+        "message": "Lisää kansio"
+    },
+    "settings": {
+        "message": "asetukset"
+    },
+    "open_bookmarks": {
+        "message": "Avaa Kirjanmerkit"
+    },
+    "bookmarks": {
+        "message": "Kirjanmerkit"
+    },
+    "theme": {
+        "message": "Teema"
+    },
+    "edit_bookmarks": {
+        "message": "Muokkaa kirjanmerkkejä"
+    },
+    "open_bookmars_text": {
+        "message": "Haluatko varmasti avata kaikki kirjanmerkit?"
+    },
+    "upload_img_text": {
+        "message": "Napsauta ja luo tarvitsemasi esikatselu"
+    },
+    "create_preview": {
+        "message": "Luo esikatselu"
+    },
+    "less_100": {
+        "message": "Tiedoston koko on oltava alle 100 kt"
+    },
+    "search_placeholder": {
+        "message": "Hae verkosta..."
+    },
+    "name": {
+        "message": "Nimi"
+    },
+    "url": {
+        "message": "URL-osoite"
+    },
+    "remove": {
+        "message": "Poista"
+    },
+    "rate_us": {
+        "message": "Anna meille arvosana"
+    },
+    "cancel": {
+        "message": "Peruuttaa"
+    },
+    "save": {
+        "message": "Tallentaa"
+    },
+    "language": {
+        "message": "Kieli"
+    },
+    "import_bookmarks": {
+        "message": "Tuo kirjanmerkit"
+    },
+    "export_bookmarks": {
+        "message": "Vie kirjanmerkit"
+    },
+    "import": {
+        "message": "Tuonti"
+    },
+    "export": {
+        "message": "Viedä"
+    },
+    "default": {
+        "message": "Oletus"
+    },
+    "custom": {
+        "message": "Mukautettu"
+    },
+    "upload_image": {
+        "message": "Lataa kuva"
+    },
+    "add_image_url": {
+        "message": "Lisää kuvan URL-osoite ja napsauta Lataa"
+    },
+    "load": {
+        "message": "Ladata"
+    },
+    "delay": {
+        "message": "Viive"
+    },
+    "time_format": {
+        "message": "Aikamuoto"
+    },
+    "learn_more": {
+        "message": "Lue lisää"
+    },
+    "about_us": {
+        "message": "Meistä"
+    },
+    "folder_name": {
+        "message": "Kansion nimi"
+    },
+    "font_color": {
+        "message": "Fontin väri"
+    },
+    "search_bookmark": {
+        "message": "Etsi kirjanmerkki"
+    },
+    "based_hour24": {
+        "message": "24-pohjainen tunti"
+    },
+    "based_hour12": {
+        "message": "12-pohjainen tunti"
+    },
+    "dark": {
+        "message": "Tumma"
+    },
+    "light": {
+        "message": "Kevyt"
+    },
+    "sec20": {
+        "message": "20 sekuntia"
+    },
+    "sec30": {
+        "message": "30 sek"
+    },
+    "sec40": {
+        "message": "40 sek"
+    },
+    "min1": {
+        "message": "1 minuutti"
+    },
+    "disable_time": {
+        "message": "Poista aika käytöstä"
+    }
+}

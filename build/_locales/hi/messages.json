@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - कस्टम नया टैब"
+    },
+    "app_description": {
+        "message": "अपना Google Chrome नया टैब पृष्ठ पृष्ठभूमि अनुकूलित करें"
+    },
+    "general": {
+        "message": "सामान्य"
+    },
+    "search_box": {
+        "message": "खोज बॉक्स"
+    },
+    "background": {
+        "message": "पार्श्वभूमि"
+    },
+    "time": {
+        "message": "समय"
+    },
+    "privacy_and_security": {
+        "message": "गोपनीयता और सुरक्षा"
+    },
+    "add_folder": {
+        "message": "फ़ोल्डर जोड़ें"
+    },
+    "settings": {
+        "message": "समायोजन"
+    },
+    "open_bookmarks": {
+        "message": "बुकमार्क खोलें"
+    },
+    "bookmarks": {
+        "message": "बुकमार्क"
+    },
+    "theme": {
+        "message": "थीम"
+    },
+    "edit_bookmarks": {
+        "message": "बुकमार्क संपादित करें"
+    },
+    "open_bookmars_text": {
+        "message": "क्या आप वाकई सभी बुकमार्क खोलना चाहते हैं?"
+    },
+    "upload_img_text": {
+        "message": "आपको जिस पूर्वावलोकन की आवश्यकता है उसे क्लिक करें और बनाएं"
+    },
+    "create_preview": {
+        "message": "पूर्वावलोकन बनाएं"
+    },
+    "less_100": {
+        "message": "फ़ाइल 100kb . से कम होनी चाहिए"
+    },
+    "search_placeholder": {
+        "message": "वेब खोज..."
+    },
+    "name": {
+        "message": "नाम"
+    },
+    "url": {
+        "message": "यूआरएल"
+    },
+    "remove": {
+        "message": "हटाना"
+    },
+    "rate_us": {
+        "message": "हमें रेटिंग दें"
+    },
+    "cancel": {
+        "message": "रद्द करना"
+    },
+    "save": {
+        "message": "बचाना"
+    },
+    "language": {
+        "message": "भाषा"
+    },
+    "import_bookmarks": {
+        "message": "बुकमार्क आयात करें"
+    },
+    "export_bookmarks": {
+        "message": "बुकमार्क निर्यात करें"
+    },
+    "import": {
+        "message": "आयात"
+    },
+    "export": {
+        "message": "निर्यात करना"
+    },
+    "default": {
+        "message": "चूक"
+    },
+    "custom": {
+        "message": "रीति"
+    },
+    "upload_image": {
+        "message": "तस्विर अपलोड करना"
+    },
+    "add_image_url": {
+        "message": "छवि यूआरएल जोड़ें और लोड पर क्लिक करें"
+    },
+    "load": {
+        "message": "भार"
+    },
+    "delay": {
+        "message": "देरी"
+    },
+    "time_format": {
+        "message": "समय प्रारूप"
+    },
+    "learn_more": {
+        "message": "और अधिक जानें"
+    },
+    "about_us": {
+        "message": "हमारे बारे में"
+    },
+    "folder_name": {
+        "message": "फोल्डर का नाम"
+    },
+    "font_color": {
+        "message": "लिपि का रंग"
+    },
+    "search_bookmark": {
+        "message": "बुकमार्क खोजें"
+    },
+    "based_hour24": {
+        "message": "24-आधारित घंटा"
+    },
+    "based_hour12": {
+        "message": "12-आधारित घंटा"
+    },
+    "dark": {
+        "message": "अँधेरा"
+    },
+    "light": {
+        "message": "रोशनी"
+    },
+    "sec20": {
+        "message": "20 सेकंड"
+    },
+    "sec30": {
+        "message": "30 सेकंड"
+    },
+    "sec40": {
+        "message": "40 सेकंड"
+    },
+    "min1": {
+        "message": "1 मिनट"
+    },
+    "disable_time": {
+        "message": "समय अक्षम करें"
+    }
+}

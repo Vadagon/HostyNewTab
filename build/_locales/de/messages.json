@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - Benutzerdefinierte neue Registerkarte"
+    },
+    "app_description": {
+        "message": "Passen Sie den Hintergrund Ihrer neuen Registerkarte in Google Chrome an"
+    },
+    "general": {
+        "message": "Allgemein"
+    },
+    "search_box": {
+        "message": "Suchbox"
+    },
+    "background": {
+        "message": "Hintergrund"
+    },
+    "time": {
+        "message": "Zeit"
+    },
+    "privacy_and_security": {
+        "message": "Privatsphäre und Sicherheit"
+    },
+    "add_folder": {
+        "message": "Ordner hinzufügen"
+    },
+    "settings": {
+        "message": "Einstellungen"
+    },
+    "open_bookmarks": {
+        "message": "Offene Lesezeichen"
+    },
+    "bookmarks": {
+        "message": "Lesezeichen"
+    },
+    "theme": {
+        "message": "Thema"
+    },
+    "edit_bookmarks": {
+        "message": "Lesezeichen bearbeiten"
+    },
+    "open_bookmars_text": {
+        "message": "Möchten Sie wirklich alle Lesezeichen öffnen?"
+    },
+    "upload_img_text": {
+        "message": "Klicken Sie auf und erstellen Sie die gewünschte Vorschau"
+    },
+    "create_preview": {
+        "message": "Vorschau erstellen"
+    },
+    "less_100": {
+        "message": "Die Datei muss weniger als 100 KB groß sein"
+    },
+    "search_placeholder": {
+        "message": "Durchsuche das Web..."
+    },
+    "name": {
+        "message": "Name"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Entfernen"
+    },
+    "rate_us": {
+        "message": "Bewerten Sie uns"
+    },
+    "cancel": {
+        "message": "Absagen"
+    },
+    "save": {
+        "message": "Speichern"
+    },
+    "language": {
+        "message": "Sprache"
+    },
+    "import_bookmarks": {
+        "message": "Lesezeichen importieren"
+    },
+    "export_bookmarks": {
+        "message": "Lesezeichen exportieren"
+    },
+    "import": {
+        "message": "Importieren"
+    },
+    "export": {
+        "message": "Export"
+    },
+    "default": {
+        "message": "Standard"
+    },
+    "custom": {
+        "message": "Brauch"
+    },
+    "upload_image": {
+        "message": "Bild hochladen"
+    },
+    "add_image_url": {
+        "message": "Bild-URL hinzufügen und auf Laden klicken"
+    },
+    "load": {
+        "message": "Belastung"
+    },
+    "delay": {
+        "message": "Verzögerung"
+    },
+    "time_format": {
+        "message": "Zeitformat"
+    },
+    "learn_more": {
+        "message": "Mehr erfahren"
+    },
+    "about_us": {
+        "message": "Über uns"
+    },
+    "folder_name": {
+        "message": "Ordnernamen"
+    },
+    "font_color": {
+        "message": "Schriftfarbe"
+    },
+    "search_bookmark": {
+        "message": "Lesezeichen suchen"
+    },
+    "based_hour24": {
+        "message": "24-basierte Stunde"
+    },
+    "based_hour12": {
+        "message": "12-basierte Stunde"
+    },
+    "dark": {
+        "message": "Dunkel"
+    },
+    "light": {
+        "message": "Licht"
+    },
+    "sec20": {
+        "message": "20 Sek"
+    },
+    "sec30": {
+        "message": "30 Sekunden"
+    },
+    "sec40": {
+        "message": "40 Sek"
+    },
+    "min1": {
+        "message": "1 Minute"
+    },
+    "disable_time": {
+        "message": "Zeit deaktivieren"
+    }
+}

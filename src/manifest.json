@@ -15,9 +15,7 @@
   "permissions": [
     "bookmarks",
     "storage",
-    "unlimitedStorage",
-    "activeTab",
-    "contextMenus"
+    "unlimitedStorage"
   ],
   "web_accessible_resources": [
     {

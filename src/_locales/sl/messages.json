@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Nov zavihek po meri"
+        "message": "Zavihek IQ - Nov zavihek po meri"
     },
     "app_description": {
         "message": "Prilagodite ozadje strani novega zavihka Google Chrome"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Uredi mapo"
     },
     "remove": {
         "message": "Odstrani"

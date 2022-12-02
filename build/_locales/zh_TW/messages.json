@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - 自定義新標籤"
+    },
+    "app_description": {
+        "message": "自定義您的谷歌瀏覽器新標籤頁背景"
+    },
+    "general": {
+        "message": "一般的"
+    },
+    "search_box": {
+        "message": "搜索框"
+    },
+    "background": {
+        "message": "背景"
+    },
+    "time": {
+        "message": "時間"
+    },
+    "privacy_and_security": {
+        "message": "隱私和安全"
+    },
+    "add_folder": {
+        "message": "新增文件夾"
+    },
+    "settings": {
+        "message": "設置"
+    },
+    "open_bookmarks": {
+        "message": "打開書籤"
+    },
+    "bookmarks": {
+        "message": "書籤"
+    },
+    "theme": {
+        "message": "主題"
+    },
+    "edit_bookmarks": {
+        "message": "編輯書籤"
+    },
+    "open_bookmars_text": {
+        "message": "您確定要打開所有書籤嗎？"
+    },
+    "upload_img_text": {
+        "message": "單擊並創建您需要的預覽"
+    },
+    "create_preview": {
+        "message": "創建預覽"
+    },
+    "less_100": {
+        "message": "文件需要小於 100kb"
+    },
+    "search_placeholder": {
+        "message": "搜索網頁..."
+    },
+    "name": {
+        "message": "姓名"
+    },
+    "url": {
+        "message": "網址"
+    },
+    "remove": {
+        "message": "消除"
+    },
+    "rate_us": {
+        "message": "評價我們"
+    },
+    "cancel": {
+        "message": "取消"
+    },
+    "save": {
+        "message": "節省"
+    },
+    "language": {
+        "message": "語"
+    },
+    "import_bookmarks": {
+        "message": "導入書籤"
+    },
+    "export_bookmarks": {
+        "message": "導出書籤"
+    },
+    "import": {
+        "message": "進口"
+    },
+    "export": {
+        "message": "出口"
+    },
+    "default": {
+        "message": "默認"
+    },
+    "custom": {
+        "message": "風俗"
+    },
+    "upload_image": {
+        "message": "上傳圖片"
+    },
+    "add_image_url": {
+        "message": "添加圖片Url並點擊加載"
+    },
+    "load": {
+        "message": "加載"
+    },
+    "delay": {
+        "message": "延遲"
+    },
+    "time_format": {
+        "message": "時間格式"
+    },
+    "learn_more": {
+        "message": "學到更多"
+    },
+    "about_us": {
+        "message": "關於我們"
+    },
+    "folder_name": {
+        "message": "文件夾名稱"
+    },
+    "font_color": {
+        "message": "字體顏色"
+    },
+    "search_bookmark": {
+        "message": "搜索書籤"
+    },
+    "based_hour24": {
+        "message": "24 小時制"
+    },
+    "based_hour12": {
+        "message": "12 小時制"
+    },
+    "dark": {
+        "message": "黑暗的"
+    },
+    "light": {
+        "message": "光"
+    },
+    "sec20": {
+        "message": "20 秒"
+    },
+    "sec30": {
+        "message": "30 秒"
+    },
+    "sec40": {
+        "message": "40 秒"
+    },
+    "min1": {
+        "message": "1分鐘"
+    },
+    "disable_time": {
+        "message": "禁用時間"
+    }
+}

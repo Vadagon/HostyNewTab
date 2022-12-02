@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Niestandardowa nowa karta"
+        "message": "Karta IQ — niestandardowa nowa karta"
     },
     "app_description": {
         "message": "Dostosuj tło strony nowej karty Google Chrome"
@@ -48,7 +48,7 @@
         "message": "Utwórz podgląd"
     },
     "less_100": {
-        "message": "Plik musi być mniejszy niż 100kb"
+        "message": "Plik musi mieć mniej niż 100 KB"
     },
     "search_placeholder": {
         "message": "Przeszukaj internet..."
@@ -57,7 +57,10 @@
         "message": "Nazwa"
     },
     "url": {
-        "message": "URL"
+        "message": "Adres URL"
+    },
+    "edit_folder": {
+        "message": "Edytuj folder"
     },
     "remove": {
         "message": "Usunąć"
@@ -96,7 +99,7 @@
         "message": "Załaduj obrazek"
     },
     "add_image_url": {
-        "message": "Dodaj adres URL obrazu i kliknij wczytaj"
+        "message": "Dodaj adres URL obrazu i kliknij ładuj"
     },
     "load": {
         "message": "Obciążenie"
@@ -123,7 +126,7 @@
         "message": "Wyszukaj zakładkę"
     },
     "based_hour24": {
-        "message": "24-godzinna godzina"
+        "message": "Godzina 24-godzinna"
     },
     "based_hour12": {
         "message": "Godzina oparta na 12"
@@ -135,13 +138,13 @@
         "message": "Światło"
     },
     "sec20": {
-        "message": "20 sekund"
+        "message": "20 sek"
     },
     "sec30": {
-        "message": "30 sekund"
+        "message": "30 sek"
     },
     "sec40": {
-        "message": "40 sekund"
+        "message": "40 sek"
     },
     "min1": {
         "message": "1 minuta"

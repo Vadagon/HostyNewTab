@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab – vlastní nová karta"
+    },
+    "app_description": {
+        "message": "Přizpůsobte si pozadí stránky nové karty v prohlížeči Google Chrome"
+    },
+    "general": {
+        "message": "Všeobecné"
+    },
+    "search_box": {
+        "message": "Vyhledávací pole"
+    },
+    "background": {
+        "message": "Pozadí"
+    },
+    "time": {
+        "message": "Čas"
+    },
+    "privacy_and_security": {
+        "message": "Ochrana osobních údajů a zabezpečení"
+    },
+    "add_folder": {
+        "message": "Přidat složku"
+    },
+    "settings": {
+        "message": "Nastavení"
+    },
+    "open_bookmarks": {
+        "message": "Otevřete záložky"
+    },
+    "bookmarks": {
+        "message": "Záložky"
+    },
+    "theme": {
+        "message": "Téma"
+    },
+    "edit_bookmarks": {
+        "message": "Upravit záložky"
+    },
+    "open_bookmars_text": {
+        "message": "Opravdu chcete otevřít všechny záložky?"
+    },
+    "upload_img_text": {
+        "message": "Klikněte a vytvořte požadovaný náhled"
+    },
+    "create_preview": {
+        "message": "Vytvořit náhled"
+    },
+    "less_100": {
+        "message": "Soubor musí být menší než 100 kB"
+    },
+    "search_placeholder": {
+        "message": "Prohledat internet..."
+    },
+    "name": {
+        "message": "název"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Odstranit"
+    },
+    "rate_us": {
+        "message": "Ohodnoťte nás"
+    },
+    "cancel": {
+        "message": "zrušení"
+    },
+    "save": {
+        "message": "Uložit"
+    },
+    "language": {
+        "message": "Jazyk"
+    },
+    "import_bookmarks": {
+        "message": "Importovat záložky"
+    },
+    "export_bookmarks": {
+        "message": "Exportovat záložky"
+    },
+    "import": {
+        "message": "Import"
+    },
+    "export": {
+        "message": "Vývozní"
+    },
+    "default": {
+        "message": "Výchozí"
+    },
+    "custom": {
+        "message": "Zvyk"
+    },
+    "upload_image": {
+        "message": "Nahrát obrázek"
+    },
+    "add_image_url": {
+        "message": "Přidejte adresu URL obrázku a klikněte na tlačítko Načíst"
+    },
+    "load": {
+        "message": "Zatížení"
+    },
+    "delay": {
+        "message": "Zpoždění"
+    },
+    "time_format": {
+        "message": "Časový formát"
+    },
+    "learn_more": {
+        "message": "Zjistěte více"
+    },
+    "about_us": {
+        "message": "O nás"
+    },
+    "folder_name": {
+        "message": "Název složky"
+    },
+    "font_color": {
+        "message": "Barva fontu"
+    },
+    "search_bookmark": {
+        "message": "Hledat záložku"
+    },
+    "based_hour24": {
+        "message": "24 hodinový provoz"
+    },
+    "based_hour12": {
+        "message": "12-založená hodina"
+    },
+    "dark": {
+        "message": "Temný"
+    },
+    "light": {
+        "message": "Světlo"
+    },
+    "sec20": {
+        "message": "20 sec"
+    },
+    "sec30": {
+        "message": "30 sec"
+    },
+    "sec40": {
+        "message": "40 sec"
+    },
+    "min1": {
+        "message": "1 min"
+    },
+    "disable_time": {
+        "message": "Zakázat čas"
+    }
+}

@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - prilagođena nova kartica"
+        "message": "Kartica IQ - prilagođena nova kartica"
     },
     "app_description": {
         "message": "Prilagodite pozadinu stranice nove kartice u pregledniku Google Chrome"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Uredi mapu"
     },
     "remove": {
         "message": "Ukloniti"

@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab – Egendefinert ny fane"
+    },
+    "app_description": {
+        "message": "Tilpass bakgrunnen for ny fane i Google Chrome"
+    },
+    "general": {
+        "message": "Generell"
+    },
+    "search_box": {
+        "message": "Søkefelt"
+    },
+    "background": {
+        "message": "Bakgrunn"
+    },
+    "time": {
+        "message": "Tid"
+    },
+    "privacy_and_security": {
+        "message": "Personvern og sikkerhet"
+    },
+    "add_folder": {
+        "message": "Legg til mappe"
+    },
+    "settings": {
+        "message": "Innstillinger"
+    },
+    "open_bookmarks": {
+        "message": "Åpne bokmerker"
+    },
+    "bookmarks": {
+        "message": "Bokmerker"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "edit_bookmarks": {
+        "message": "Rediger bokmerker"
+    },
+    "open_bookmars_text": {
+        "message": "Er du sikker på at du vil åpne alle bokmerker?"
+    },
+    "upload_img_text": {
+        "message": "Klikk og lag forhåndsvisningen du trenger"
+    },
+    "create_preview": {
+        "message": "Opprett forhåndsvisning"
+    },
+    "less_100": {
+        "message": "Filen må være mindre enn 100 kb"
+    },
+    "search_placeholder": {
+        "message": "Søke på nettet..."
+    },
+    "name": {
+        "message": "Navn"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Fjerne"
+    },
+    "rate_us": {
+        "message": "Rangere oss"
+    },
+    "cancel": {
+        "message": "Avbryt"
+    },
+    "save": {
+        "message": "Lagre"
+    },
+    "language": {
+        "message": "Språk"
+    },
+    "import_bookmarks": {
+        "message": "Importer bokmerker"
+    },
+    "export_bookmarks": {
+        "message": "Eksporter bokmerker"
+    },
+    "import": {
+        "message": "Import"
+    },
+    "export": {
+        "message": "Eksport"
+    },
+    "default": {
+        "message": "Misligholde"
+    },
+    "custom": {
+        "message": "Tilpasset"
+    },
+    "upload_image": {
+        "message": "Last opp bilde"
+    },
+    "add_image_url": {
+        "message": "Legg til bilde-URL og klikk last"
+    },
+    "load": {
+        "message": "Laste"
+    },
+    "delay": {
+        "message": "Forsinkelse"
+    },
+    "time_format": {
+        "message": "Tidsformat"
+    },
+    "learn_more": {
+        "message": "Lære mer"
+    },
+    "about_us": {
+        "message": "Om oss"
+    },
+    "folder_name": {
+        "message": "Mappenavn"
+    },
+    "font_color": {
+        "message": "Skriftfarge"
+    },
+    "search_bookmark": {
+        "message": "Søk bokmerke"
+    },
+    "based_hour24": {
+        "message": "24-baserte timer"
+    },
+    "based_hour12": {
+        "message": "12-basert time"
+    },
+    "dark": {
+        "message": "Mørk"
+    },
+    "light": {
+        "message": "Lys"
+    },
+    "sec20": {
+        "message": "20 sek"
+    },
+    "sec30": {
+        "message": "30 sek"
+    },
+    "sec40": {
+        "message": "40 sek"
+    },
+    "min1": {
+        "message": "1 minutt"
+    },
+    "disable_time": {
+        "message": "Deaktiver tid"
+    }
+}

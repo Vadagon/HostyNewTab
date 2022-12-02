@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - כרטיסייה חדשה מותאמת אישית"
+    },
+    "app_description": {
+        "message": "התאם אישית את הרקע של דף הכרטיסייה החדשה שלך ב-Google Chrome"
+    },
+    "general": {
+        "message": "כללי"
+    },
+    "search_box": {
+        "message": "תיבת חיפוש"
+    },
+    "background": {
+        "message": "רקע כללי"
+    },
+    "time": {
+        "message": "זְמַן"
+    },
+    "privacy_and_security": {
+        "message": "פרטיות ואבטחה"
+    },
+    "add_folder": {
+        "message": "הוסף תיקיה"
+    },
+    "settings": {
+        "message": "הגדרות"
+    },
+    "open_bookmarks": {
+        "message": "פתח את הסימניות"
+    },
+    "bookmarks": {
+        "message": "סימניות"
+    },
+    "theme": {
+        "message": "נושא"
+    },
+    "edit_bookmarks": {
+        "message": "ערוך סימניות"
+    },
+    "open_bookmars_text": {
+        "message": "האם אתה בטוח שברצונך לפתוח את כל הסימניות?"
+    },
+    "upload_img_text": {
+        "message": "לחץ וצור את התצוגה המקדימה שאתה צריך"
+    },
+    "create_preview": {
+        "message": "צור תצוגה מקדימה"
+    },
+    "less_100": {
+        "message": "הקובץ צריך להיות פחות 100kb"
+    },
+    "search_placeholder": {
+        "message": "חפש ברשת..."
+    },
+    "name": {
+        "message": "שֵׁם"
+    },
+    "url": {
+        "message": "כתובת אתר"
+    },
+    "remove": {
+        "message": "לְהַסִיר"
+    },
+    "rate_us": {
+        "message": "דרג אותנו"
+    },
+    "cancel": {
+        "message": "לְבַטֵל"
+    },
+    "save": {
+        "message": "להציל"
+    },
+    "language": {
+        "message": "שפה"
+    },
+    "import_bookmarks": {
+        "message": "ייבוא סימניות"
+    },
+    "export_bookmarks": {
+        "message": "ייצוא סימניות"
+    },
+    "import": {
+        "message": "יְבוּא"
+    },
+    "export": {
+        "message": "יְצוּא"
+    },
+    "default": {
+        "message": "בְּרִירַת מֶחדָל"
+    },
+    "custom": {
+        "message": "המותאם אישית"
+    },
+    "upload_image": {
+        "message": "העלאת תמונה"
+    },
+    "add_image_url": {
+        "message": "הוסף כתובת אתר של תמונה ולחץ על טען"
+    },
+    "load": {
+        "message": "לִטעוֹן"
+    },
+    "delay": {
+        "message": "לְעַכֵּב"
+    },
+    "time_format": {
+        "message": "פורמט זמן"
+    },
+    "learn_more": {
+        "message": "למד עוד"
+    },
+    "about_us": {
+        "message": "עלינו"
+    },
+    "folder_name": {
+        "message": "שם התיקיה"
+    },
+    "font_color": {
+        "message": "צבע גופן"
+    },
+    "search_bookmark": {
+        "message": "חפש סימניה"
+    },
+    "based_hour24": {
+        "message": "24 שעות מבוססות"
+    },
+    "based_hour12": {
+        "message": "שעה מבוססת 12"
+    },
+    "dark": {
+        "message": "אפל"
+    },
+    "light": {
+        "message": "אוֹר"
+    },
+    "sec20": {
+        "message": "20 שניות"
+    },
+    "sec30": {
+        "message": "30 שניות"
+    },
+    "sec40": {
+        "message": "40 שניות"
+    },
+    "min1": {
+        "message": "דקה 1"
+    },
+    "disable_time": {
+        "message": "השבת זמן"
+    }
+}

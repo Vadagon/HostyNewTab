@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Nouvel onglet personnalisé"
+        "message": "Onglet IQ - Nouvel onglet personnalisé"
     },
     "app_description": {
         "message": "Personnalisez l'arrière-plan de la page Nouvel onglet de Google Chrome"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Modifier le dossier"
     },
     "remove": {
         "message": "Retirer"

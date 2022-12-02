@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - అనుకూల కొత్త ట్యాబ్"
+    },
+    "app_description": {
+        "message": "మీ Google Chrome కొత్త ట్యాబ్ పేజీ నేపథ్యాన్ని అనుకూలీకరించండి"
+    },
+    "general": {
+        "message": "జనరల్"
+    },
+    "search_box": {
+        "message": "శోధన పెట్టె"
+    },
+    "background": {
+        "message": "నేపథ్య"
+    },
+    "time": {
+        "message": "సమయం"
+    },
+    "privacy_and_security": {
+        "message": "గోప్యత మరియు భద్రత"
+    },
+    "add_folder": {
+        "message": "ఫోల్డర్‌ని జోడించండి"
+    },
+    "settings": {
+        "message": "సెట్టింగ్‌లు"
+    },
+    "open_bookmarks": {
+        "message": "బుక్‌మార్క్‌లను తెరవండి"
+    },
+    "bookmarks": {
+        "message": "బుక్‌మార్క్‌లు"
+    },
+    "theme": {
+        "message": "థీమ్"
+    },
+    "edit_bookmarks": {
+        "message": "బుక్‌మార్క్‌లను సవరించండి"
+    },
+    "open_bookmars_text": {
+        "message": "మీరు ఖచ్చితంగా అన్ని బుక్‌మార్క్‌లను తెరవాలనుకుంటున్నారా?"
+    },
+    "upload_img_text": {
+        "message": "క్లిక్ చేసి, మీకు అవసరమైన ప్రివ్యూని సృష్టించండి"
+    },
+    "create_preview": {
+        "message": "ప్రివ్యూని సృష్టించండి"
+    },
+    "less_100": {
+        "message": "ఫైల్ 100kb కంటే తక్కువ ఉండాలి"
+    },
+    "search_placeholder": {
+        "message": "వెబ్‌లో శోధించండి..."
+    },
+    "name": {
+        "message": "పేరు"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "తొలగించు"
+    },
+    "rate_us": {
+        "message": "మాకు రేట్ చేయండి"
+    },
+    "cancel": {
+        "message": "రద్దు చేయండి"
+    },
+    "save": {
+        "message": "సేవ్ చేయండి"
+    },
+    "language": {
+        "message": "భాష"
+    },
+    "import_bookmarks": {
+        "message": "బుక్‌మార్క్‌లను దిగుమతి చేయండి"
+    },
+    "export_bookmarks": {
+        "message": "బుక్‌మార్క్‌లను ఎగుమతి చేయండి"
+    },
+    "import": {
+        "message": "దిగుమతి"
+    },
+    "export": {
+        "message": "ఎగుమతి చేయండి"
+    },
+    "default": {
+        "message": "డిఫాల్ట్"
+    },
+    "custom": {
+        "message": "కస్టమ్"
+    },
+    "upload_image": {
+        "message": "చిత్రాన్ని అప్‌లోడ్ చేయండి"
+    },
+    "add_image_url": {
+        "message": "చిత్రం Urlని జోడించి, లోడ్ క్లిక్ చేయండి"
+    },
+    "load": {
+        "message": "లోడ్ చేయండి"
+    },
+    "delay": {
+        "message": "ఆలస్యం"
+    },
+    "time_format": {
+        "message": "సమయ నమూనా"
+    },
+    "learn_more": {
+        "message": "ఇంకా నేర్చుకో"
+    },
+    "about_us": {
+        "message": "మా గురించి"
+    },
+    "folder_name": {
+        "message": "ఫోల్డర్ పేరు"
+    },
+    "font_color": {
+        "message": "ఫాంట్ రంగు"
+    },
+    "search_bookmark": {
+        "message": "బుక్‌మార్క్‌ని శోధించండి"
+    },
+    "based_hour24": {
+        "message": "24-ఆధారిత గంట"
+    },
+    "based_hour12": {
+        "message": "12-ఆధారిత గంట"
+    },
+    "dark": {
+        "message": "చీకటి"
+    },
+    "light": {
+        "message": "కాంతి"
+    },
+    "sec20": {
+        "message": "20 సె"
+    },
+    "sec30": {
+        "message": "30 సె"
+    },
+    "sec40": {
+        "message": "40 సె"
+    },
+    "min1": {
+        "message": "1 నిమిషం"
+    },
+    "disable_time": {
+        "message": "సమయాన్ని నిలిపివేయండి"
+    }
+}

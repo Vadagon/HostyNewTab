@@ -1,0 +1,152 @@
+{
+    "app_name": {
+        "message": "qTab - Custom na Bagong Tab"
+    },
+    "app_description": {
+        "message": "I-customize ang background ng iyong pahina ng bagong tab sa Google Chrome"
+    },
+    "general": {
+        "message": "Heneral"
+    },
+    "search_box": {
+        "message": "Search Box"
+    },
+    "background": {
+        "message": "Background"
+    },
+    "time": {
+        "message": "Oras"
+    },
+    "privacy_and_security": {
+        "message": "Pagkapribado at Seguridad"
+    },
+    "add_folder": {
+        "message": "Magdagdag ng folder"
+    },
+    "settings": {
+        "message": "Mga setting"
+    },
+    "open_bookmarks": {
+        "message": "Buksan ang Mga Bookmark"
+    },
+    "bookmarks": {
+        "message": "Mga bookmark"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "edit_bookmarks": {
+        "message": "I-edit ang Mga Bookmark"
+    },
+    "open_bookmars_text": {
+        "message": "Sigurado ka bang gusto mong buksan ang lahat ng bookmark?"
+    },
+    "upload_img_text": {
+        "message": "I-click at gawin ang preview na kailangan mo"
+    },
+    "create_preview": {
+        "message": "Gumawa ng Preview"
+    },
+    "less_100": {
+        "message": "Ang file ay kailangang mas mababa sa 100kb"
+    },
+    "search_placeholder": {
+        "message": "Maghanap sa Web..."
+    },
+    "name": {
+        "message": "Pangalan"
+    },
+    "url": {
+        "message": "URL"
+    },
+    "remove": {
+        "message": "Alisin"
+    },
+    "rate_us": {
+        "message": "I-rate Kami"
+    },
+    "cancel": {
+        "message": "Kanselahin"
+    },
+    "save": {
+        "message": "I-save"
+    },
+    "language": {
+        "message": "Wika"
+    },
+    "import_bookmarks": {
+        "message": "Mag-import ng Mga Bookmark"
+    },
+    "export_bookmarks": {
+        "message": "I-export ang Mga Bookmark"
+    },
+    "import": {
+        "message": "Angkat"
+    },
+    "export": {
+        "message": "I-export"
+    },
+    "default": {
+        "message": "Default"
+    },
+    "custom": {
+        "message": "Custom"
+    },
+    "upload_image": {
+        "message": "Mag-upload ng Larawan"
+    },
+    "add_image_url": {
+        "message": "Magdagdag ng Url ng larawan at i-click ang load"
+    },
+    "load": {
+        "message": "Magkarga"
+    },
+    "delay": {
+        "message": "Pagkaantala"
+    },
+    "time_format": {
+        "message": "Format ng Oras"
+    },
+    "learn_more": {
+        "message": "Matuto pa"
+    },
+    "about_us": {
+        "message": "Tungkol sa atin"
+    },
+    "folder_name": {
+        "message": "Pangalan ng Folder"
+    },
+    "font_color": {
+        "message": "Kulay ng Font"
+    },
+    "search_bookmark": {
+        "message": "Maghanap ng bookmark"
+    },
+    "based_hour24": {
+        "message": "24-based na Oras"
+    },
+    "based_hour12": {
+        "message": "12-based na Oras"
+    },
+    "dark": {
+        "message": "Madilim"
+    },
+    "light": {
+        "message": "Liwanag"
+    },
+    "sec20": {
+        "message": "20 seg"
+    },
+    "sec30": {
+        "message": "30 seg"
+    },
+    "sec40": {
+        "message": "40 seg"
+    },
+    "min1": {
+        "message": "1 min"
+    },
+    "disable_time": {
+        "message": "Huwag paganahin ang Oras"
+    }
+}

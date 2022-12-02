@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - Anpassad ny flik"
+        "message": "IQ Tab - Anpassad ny flik"
     },
     "app_description": {
         "message": "Anpassa bakgrunden för din nya flik i Google Chrome"
@@ -58,6 +58,9 @@
     },
     "url": {
         "message": "URL"
+    },
+    "edit_folder": {
+        "message": "Redigera mapp"
     },
     "remove": {
         "message": "Ta bort"

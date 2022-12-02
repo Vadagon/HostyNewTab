@@ -1,6 +1,6 @@
 {
     "app_name": {
-        "message": "qTab - 사용자 정의 새 탭"
+        "message": "IQ 탭 - 사용자 정의 새 탭"
     },
     "app_description": {
         "message": "Chrome 새 탭 페이지 배경 맞춤설정"
@@ -27,22 +27,22 @@
         "message": "설정"
     },
     "open_bookmarks": {
-        "message": "책갈피 열기"
+        "message": "북마크 열기"
     },
     "bookmarks": {
-        "message": "책갈피"
+        "message": "북마크"
     },
     "theme": {
         "message": "주제"
     },
     "edit_bookmarks": {
-        "message": "북마크 수정"
+        "message": "북마크 편집"
     },
     "open_bookmars_text": {
-        "message": "모든 책갈피를 여시겠습니까?"
+        "message": "모든 북마크를 여시겠습니까?"
     },
     "upload_img_text": {
-        "message": "필요한 미리보기를 클릭하고 만듭니다."
+        "message": "클릭하고 필요한 미리보기를 만듭니다."
     },
     "create_preview": {
         "message": "미리보기 만들기"
@@ -59,11 +59,14 @@
     "url": {
         "message": "URL"
     },
+    "edit_folder": {
+        "message": "폴더 편집"
+    },
     "remove": {
         "message": "제거하다"
     },
     "rate_us": {
-        "message": "평가"
+        "message": "우리를 평가"
     },
     "cancel": {
         "message": "취소"
@@ -123,7 +126,7 @@
         "message": "북마크 검색"
     },
     "based_hour24": {
-        "message": "24시간제"
+        "message": "24 기반 시간"
     },
     "based_hour12": {
         "message": "12 기반 시간"
